@@ -1,17 +1,6 @@
 {
  "style": "flat vector, plain white background, 2048x2048",
- "missing": [
-  {
-   "id": 13,
-   "who": "jack",
-   "pose": "talking-left"
-  },
-  {
-   "id": 16,
-   "who": "jack",
-   "pose": "surprised-left"
-  }
- ],
+ "missing": [],
  "items": [
   {
    "id": 1,
@@ -122,6 +111,15 @@
    "background": "white"
   },
   {
+   "id": 13,
+   "file": "13-jack-talking-left.jpg",
+   "who": "jack",
+   "pose": "talking-left",
+   "facing": "left",
+   "use": "Dialogue – Jack speaking",
+   "background": "white"
+  },
+  {
    "id": 14,
    "file": "14-jack-listening-left.jpg",
    "who": "jack",
@@ -137,6 +135,15 @@
    "pose": "shrug-left",
    "facing": "left",
    "use": "Dialogue – Jack answering, 'who knows?'",
+   "background": "white"
+  },
+  {
+   "id": 16,
+   "file": "16-jack-surprised-left.jpg",
+   "who": "jack",
+   "pose": "surprised-left",
+   "facing": "left",
+   "use": "Dialogue – Jack surprised",
    "background": "white"
   },
   {
@@ -272,6 +279,42 @@
    "pose": "quiz",
    "facing": "front",
    "use": "Quiz section, questions",
+   "background": "white"
+  },
+  {
+   "id": 32,
+   "file": "32-lucy-coffee-chat-right.jpg",
+   "who": "lucy",
+   "pose": "coffee-chat-right",
+   "facing": "right",
+   "use": "Dialogue – Lucy chatting with a coffee (café scenes)",
+   "background": "white"
+  },
+  {
+   "id": 33,
+   "file": "33-jack-blue-scarf-good-morning.jpg",
+   "who": "jack",
+   "pose": "blue-scarf-good-morning",
+   "facing": "front",
+   "use": "Greetings, mornings, winter, bus stop",
+   "background": "white"
+  },
+  {
+   "id": 34,
+   "file": "34-lucy-shy-but-brave.jpg",
+   "who": "lucy",
+   "pose": "shy-but-brave",
+   "facing": "front",
+   "use": "Shyness, confidence, first tries",
+   "background": "white"
+  },
+  {
+   "id": 35,
+   "file": "35-jack-reading-card.jpg",
+   "who": "jack",
+   "pose": "reading-card",
+   "facing": "front",
+   "use": "Kindness, messages, emotional stories",
    "background": "white"
   }
  ]

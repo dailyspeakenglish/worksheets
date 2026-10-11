@@ -20,8 +20,10 @@ so in a chat-style dialogue Lucy sits on the left and Jack on the right, looking
 | 10 | Lucy | listening-right | right | Dialogue – Lucy listening |
 | 11 | Lucy | asking-right | right | Dialogue – Lucy asking |
 | 12 | Lucy | laughing-right | right | Dialogue – Lucy laughing |
+| 13 | Jack | talking-left | left | Dialogue – Jack speaking |
 | 14 | Jack | listening-left | left | Dialogue – Jack listening |
 | 15 | Jack | shrug-left | left | Dialogue – Jack answering, 'who knows?' |
+| 16 | Jack | surprised-left | left | Dialogue – Jack surprised |
 | 17 | Lucy | winter-tea | front | Winter, cold weather, hot drinks |
 | 18 | Jack | winter-cold | front | Winter, cold weather |
 | 19 | Lucy | glasses-book | front | Reading, studying |
@@ -37,8 +39,12 @@ so in a chat-style dialogue Lucy sits on the left and Jack on the right, looking
 | 29 | Duo | high-five | front | Answer key, celebration |
 | 30 | Duo | waving | front | Cover, goodbye, end page |
 | 31 | Duo | quiz | front | Quiz section, questions |
+| 32 | Lucy | coffee-chat-right | right | Dialogue – Lucy chatting with a coffee (café scenes) |
+| 33 | Jack | blue-scarf-good-morning | front | Greetings, mornings, winter, bus stop |
+| 34 | Lucy | shy-but-brave | front | Shyness, confidence, first tries |
+| 35 | Jack | reading-card | front | Kindness, messages, emotional stories |
 
-**Still to make:** 13 Jack talking (facing left), 16 Jack surprised (facing left).
+**Tip:** when making new images, attach one of these library images as the reference so the flat style stays the same.
 
 ## Using an image on a coloured background
 `python3 cutout.py <image.jpg> <out.png> [--keep x,y ...]` removes the white background.
