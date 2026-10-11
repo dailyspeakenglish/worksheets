@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Daily Speak English – Daylight Worksheet</title>
+<style>
+@page { size: A4; margin: 0; }
+:root{
+  --navy:#17324D; --navy2:#24496E; --orange:#F28C28; --orange-l:#FDE7CF;
+  --cream:#FFF8EC; --sun:#FFD23F; --sun-l:#FFF3C4; --sky:#E3F2FB; --sky2:#9FD3F2;
+  --mint:#DDF5EA; --green:#2E9E6B; --coral:#FF7A5C; --ink:#1F2933; --muted:#5B6B7A; --line:#D9CFC0;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font-family:'Poppins','Noto Color Emoji',sans-serif;color:var(--ink);font-size:10.4pt;line-height:1.45;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.page{width:210mm;height:297mm;position:relative;overflow:hidden;padding:13mm 14mm 18mm;background:#fff;page-break-after:always}
+.page:last-child{page-break-after:auto}
+.page::before{content:"";position:absolute;inset:0 0 auto 0;height:5mm;background:linear-gradient(90deg,var(--orange) 0 40%,var(--sun) 40% 70%,var(--sky2) 70% 100%)}
+.footer{position:absolute;left:14mm;right:14mm;bottom:7mm;display:flex;justify-content:space-between;align-items:center;font-size:7.6pt;color:var(--muted);border-top:1px solid var(--line);padding-top:2.2mm}
+.footer b{color:var(--navy)}
+.footer a{color:var(--navy);text-decoration:none;font-weight:600}
+.brand{display:flex;align-items:center;gap:2.4mm;font-weight:700;color:var(--navy);font-size:9pt}
+.mic{width:6.2mm;height:6.2mm;border-radius:50%;background:var(--orange);display:inline-flex;align-items:center;justify-content:center;color:#fff;font-size:8pt}
+h1{font-size:23pt;line-height:1.08;margin:0;color:var(--navy);font-weight:700;letter-spacing:-.2pt}
+h2{font-size:13.2pt;margin:0;color:var(--navy);font-weight:700;display:flex;align-items:center;gap:2.5mm}
+h2 .num{display:inline-flex;align-items:center;justify-content:center;width:8.5mm;height:8.5mm;border-radius:50%;background:var(--orange);color:#fff;font-size:11pt;flex:none}
+.sec{margin-top:6mm}
+.instr{font-size:9.4pt;color:var(--muted);margin:1.2mm 0 2.6mm 11mm}
+.tag{display:inline-block;font-size:7.6pt;font-weight:600;padding:.5mm 2.4mm;border-radius:10mm;background:var(--sky);color:var(--navy2);margin-left:1.5mm;vertical-align:middle}
+.tag.or{background:var(--orange-l);color:#9A4A06}
+.tag.sun{background:var(--sun-l);color:#7A5A00}
+.card{background:var(--cream);border-radius:4mm;padding:4mm 5mm;border:1px solid #F1E3CC}
+.card.sky{background:var(--sky);border-color:#CBE6F6}
+.card.mint{background:var(--mint);border-color:#C3EAD7}
+.card.sun{background:var(--sun-l);border-color:#F5E09A}
+.blank{display:inline-block;border-bottom:1.3px solid var(--navy);min-width:24mm;height:4.6mm;vertical-align:bottom}
+.blank.s{min-width:13mm}.blank.l{min-width:60mm}.blank.xl{min-width:100%}
+.box{display:inline-flex;width:6.2mm;height:6.2mm;border:1.4px solid var(--navy);border-radius:1.4mm;vertical-align:middle}
+table{border-collapse:collapse;width:100%}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:4mm}
+.avatar{width:15mm;height:15mm;border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 1.5px var(--orange);flex:none;object-fit:cover}
+.avatar.j{box-shadow:0 0 0 1.5px #C9B48F}
+.bubble{display:flex;gap:3mm;align-items:center}
+.bubble .txt{background:#fff;border:1.4px solid var(--line);border-radius:4mm;padding:2.4mm 3.6mm;font-size:9.2pt;position:relative}
+.bubble .txt b{color:var(--navy)}
+.pill{display:inline-block;background:var(--navy);color:var(--sun);font-weight:700;border-radius:10mm;padding:.6mm 3mm;font-size:9pt}
+.pill.o{background:var(--orange);color:#fff}
+.lines{height:7mm;border-bottom:1px dashed #C9BBA6}
+.small{font-size:8.6pt;color:var(--muted)}
+ol.q{margin:0;padding-left:5mm}
+ol.q li{margin:0 0 2.2mm 0;padding-left:1mm}
+.mc{display:grid;grid-template-columns:1fr 1fr;gap:2.6mm 5mm}
+.mcq{background:#fff;border:1.2px solid var(--line);border-radius:3mm;padding:2.6mm 3.4mm}
+.mcq .qq{font-weight:600;color:var(--navy);font-size:9.6pt;margin-bottom:1.2mm}
+.opt{display:flex;gap:2mm;align-items:center;font-size:9.3pt;margin:.7mm 0}
+.opt .c{width:4.6mm;height:4.6mm;border-radius:50%;border:1.3px solid var(--navy);display:inline-flex;align-items:center;justify-content:center;font-size:7pt;font-weight:700;color:var(--navy);flex:none}
+.hint{font-size:7.6pt;color:#9A4A06;font-weight:600}
+.tf td{padding:1.9mm 2mm;border-bottom:1px solid #EFE6D8;font-size:9.5pt;vertical-align:middle}
+.tf th{font-size:8pt;color:var(--muted);font-weight:600;text-align:center;padding-bottom:1.4mm}
+.tf td.n{width:6mm;font-weight:700;color:var(--orange)}
+.tf td.ck{width:17mm;text-align:center}
+.match td{padding:1.5mm 1.6mm;font-size:9.4pt;vertical-align:top}
+.match .w{font-weight:700;color:var(--navy);white-space:nowrap}
+.match .ans{width:10mm}
+.wordbank{display:flex;flex-wrap:wrap;gap:2mm;justify-content:center;margin-bottom:3mm}
+.wordbank span{background:#fff;border:1.4px dashed var(--orange);border-radius:10mm;padding:.6mm 3.4mm;font-weight:600;color:var(--navy);font-size:9.4pt}
+.reading{column-count:1;font-size:10.2pt;line-height:1.85}
+.reading .g{display:inline-block;min-width:22mm;border-bottom:1.3px solid var(--navy);text-align:center;font-weight:700;color:var(--orange);font-size:8pt;line-height:1.2}
+.dialog .row{display:flex;gap:3mm;align-items:flex-start;margin:1.6mm 0}
+.dialog .who{width:13mm;font-weight:700;color:var(--navy);flex:none}
+.dialog .who.l{color:#C26A10}
+.ws{border-collapse:separate;border-spacing:1.1mm;margin:0 auto}
+.ws td{width:6.6mm;height:6.6mm;text-align:center;font-weight:700;font-size:9.6pt;color:var(--navy);background:#fff;border-radius:1.6mm;border:1px solid #E6DCCB}
+.wsk td{width:4.6mm;height:4.6mm;font-size:6.4pt;border-radius:.8mm;border:1px solid #EFE6D8;color:#B9AE9C;font-weight:600;text-align:center}
+.wsk td.on{background:var(--sun);color:var(--navy);border-color:#E7BE2A}
+.chal th{background:var(--navy);color:#fff;font-size:8.4pt;font-weight:600;padding:2mm 1mm}
+.chal th:first-child{border-radius:3mm 0 0 0}.chal th:last-child{border-radius:0 3mm 0 0}
+.chal td{border:1px solid #E8DCC8;height:6.3mm;text-align:center;font-size:9pt}
+.chal td.d{font-weight:700;color:var(--navy);background:var(--cream);width:16mm}
+.key h3{margin:0 0 1.2mm;font-size:10pt;color:var(--navy)}
+.key p{margin:0 0 2.6mm;font-size:8.9pt;line-height:1.5}
+.key .k{background:var(--cream);border-radius:3mm;padding:3mm 3.6mm;border:1px solid #F1E3CC}
+.fact{display:flex;gap:3mm;align-items:flex-start}
+.fact .ic{font-size:16pt;line-height:1}
+.lux{display:grid;grid-template-columns:repeat(3,1fr);gap:3mm;margin-top:2mm}
+.lux .p{background:#fff;border:1.3px solid var(--line);border-radius:3mm;padding:3mm;text-align:center}
+.lux .e{font-size:20pt;line-height:1.2}
+.lux .t{font-size:9pt;font-weight:600;color:var(--navy);min-height:10mm}
+.rank{display:flex;align-items:center;justify-content:center;gap:2mm;margin-top:3mm;font-weight:600;color:var(--navy);font-size:9.6pt}
+.idiom td{padding:1.5mm 1mm;font-size:9.5pt;vertical-align:bottom}
+.chips{display:flex;flex-wrap:wrap;gap:1.8mm}
+.chips span{background:var(--sun-l);border:1px solid #F0D774;color:#6B4E00;border-radius:10mm;padding:.5mm 3mm;font-size:8.8pt;font-weight:600}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:3mm}
+.step{background:#fff;border:1.3px solid var(--line);border-radius:3.4mm;padding:2.8mm 3.2mm}
+.step .h{font-weight:700;color:var(--navy);font-size:9.6pt}
+.step .s{font-size:8.6pt;color:var(--muted);line-height:1.4}
+</style>
+</head>
+<body>
+
+<!-- ================= PAGE 1 ================= -->
+<section class="page">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-top:1mm">
+    <div class="brand"><span class="mic">🎙</span>DAILY SPEAK ENGLISH · PODCAST WORKSHEET</div>
+    <div><span class="pill">B1–B2</span> <span class="pill o">⏱ 45 min</span></div>
+  </div>
+
+  <div style="display:grid;grid-template-columns:1.05fr 1fr;gap:5mm;margin-top:5mm;align-items:center">
+    <div>
+      <div class="small" style="font-weight:600;color:var(--orange);letter-spacing:.6pt">LISTEN · LEARN · SPEAK</div>
+      <h1>Why You Need More Daylight Than You Think</h1>
+      <p style="margin:2.4mm 0 0;font-size:9.8pt;color:var(--muted)">Jack and Lucy explain how light controls your body clock, why winter makes you tired, and how to talk about the weather like a native speaker.</p>
+      <div style="margin-top:4mm;display:grid;grid-template-columns:auto 1fr;gap:1.6mm 3mm;font-size:9.4pt;align-items:end">
+        <b style="color:var(--navy)">Name:</b><span class="blank xl"></span>
+        <b style="color:var(--navy)">Date:</b><span class="blank xl"></span>
+        <b style="color:var(--navy)">My score:</b><span><span class="blank s"></span> / 100 ⭐</span>
+      </div>
+    </div>
+    <div style="border-radius:5mm;overflow:hidden;border:2px solid var(--orange-l);height:62mm"><img src="hero.jpg" style="width:100%;height:100%;object-fit:cover;object-position:40% 30%"></div>
+  </div>
+
+  <div class="sec">
+    <h2><span class="num">★</span>How to use this worksheet</h2>
+    <div class="steps" style="margin-top:2.6mm">
+      <div class="step"><div class="h">1 · Before you listen 🤔</div><div class="s">Do the warm-up, learn the key words and make your predictions.</div></div>
+      <div class="step"><div class="h">2 · While you listen 🎧</div><div class="s">Answer the questions. Use the ⏱ times to find each part of the video.</div></div>
+      <div class="step"><div class="h">3 · After you listen ✍️</div><div class="s">Practise the phrases, try the challenge and share your answer in the comments!</div></div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><span class="num">0</span>Warm-up: Guess the brightness! <span class="tag sun">fun</span></h2>
+    <p class="instr">Scientists measure brightness in <b>lux</b>. Put these places in order from <b>darkest (1)</b> to <b>brightest (3)</b>. Then check your answer at ⏱ 0:00.</p>
+    <div class="lux">
+      <div class="p"><div class="e">🌳😎</div><div class="t">Sitting in the shade on a sunny day</div><span class="box"></span></div>
+      <div class="p"><div class="e">🛋️💡</div><div class="t">Your living room in the evening, with every light on</div><span class="box"></span></div>
+      <div class="p"><div class="e">☁️🌥️</div><div class="t">Outside on a grey, cloudy afternoon</div><span class="box"></span></div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><span class="num">💬</span>Let's talk</h2>
+    <p class="instr">Answer with a partner, or say your answers out loud to yourself.</p>
+    <div class="grid2">
+      <div class="card sky"><b>1.</b> Are you an <b>early bird</b> or a <b>night owl</b>? How do you know?</div>
+      <div class="card sky"><b>2.</b> How much time do you spend outside on a normal weekday?</div>
+      <div class="card sky"><b>3.</b> Do you feel different in winter? What changes?</div>
+      <div class="card sky"><b>4.</b> What's the weather like where you are today?</div>
+    </div>
+  </div>
+
+  <div class="footer"><span class="brand" style="font-size:7.6pt"><span class="mic" style="width:4.6mm;height:4.6mm;font-size:6pt">🎙</span>Daily Speak English</span><span>Watch the episode: <a href="https://www.youtube.com/@DailySpeak_English">youtube.com/@DailySpeak_English</a></span><span>1 / 8</span></div>
+</section>
+
+<!-- ================= PAGE 2 ================= -->
+<section class="page">
+  <div class="sec" style="margin-top:3mm">
+    <h2><span class="num">1</span>Key words <span class="tag">vocabulary</span><span class="tag or">10 points</span></h2>
+    <p class="instr">Match each word (1–10) to its meaning (a–j). Write the letter in the box.</p>
+    <div class="grid2" style="gap:5mm;align-items:start">
+      <table class="match">
+        <tr><td class="ans"><span class="box"></span></td><td class="w">1. daylight</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td class="w">2. dawn</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td class="w">3. dusk</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td class="w">4. body clock</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td class="w">5. night owl</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td class="w">6. early bird</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td class="w">7. dim</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td class="w">8. overcast</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td class="w">9. gloomy</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td class="w">10. pitch black</td></tr>
+      </table>
+      <div class="card" style="font-size:9.3pt;line-height:1.62">
+        <b>a)</b> completely dark<br>
+        <b>b)</b> the natural system inside you that tells you when to sleep and wake<br>
+        <b>c)</b> not bright<br>
+        <b>d)</b> a person who likes to wake up early<br>
+        <b>e)</b> the time in the evening when it starts to get dark<br>
+        <b>f)</b> with the sky completely covered by clouds<br>
+        <b>g)</b> the natural light of the day<br>
+        <b>h)</b> dark, grey and a bit depressing<br>
+        <b>i)</b> a person who likes to stay up late<br>
+        <b>j)</b> the time early in the morning when light first appears
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><span class="num">2</span>Predict, then check <span class="tag">listening</span><span class="tag or">10 points</span></h2>
+    <p class="instr"><b>Before</b> you listen, guess: True ✓ or False ✗? <b>While</b> you listen, write the correct answer (T or F).</p>
+    <table class="tf">
+      <tr><th></th><th style="text-align:left">Statement</th><th>My guess</th><th>Answer</th></tr>
+      <tr><td class="n">1</td><td>A cloudy day outside is usually darker than a living room with all the lights on.</td><td class="ck"><span class="box"></span></td><td class="ck"><span class="box"></span></td></tr>
+      <tr><td class="n">2</td><td>Morning light helps to reset your body clock.</td><td class="ck"><span class="box"></span></td><td class="ck"><span class="box"></span></td></tr>
+      <tr><td class="n">3</td><td>In the Colorado study, people went camping for a whole month.</td><td class="ck"><span class="box"></span></td><td class="ck"><span class="box"></span></td></tr>
+      <tr><td class="n">4</td><td>After camping, people's body clocks moved about two hours earlier.</td><td class="ck"><span class="box"></span></td><td class="ck"><span class="box"></span></td></tr>
+      <tr><td class="n">5</td><td>Jack went outside every morning for two weeks – in February.</td><td class="ck"><span class="box"></span></td><td class="ck"><span class="box"></span></td></tr>
+      <tr><td class="n">6</td><td>The study of 85,000 people <b>proved</b> that daylight causes better mental health.</td><td class="ck"><span class="box"></span></td><td class="ck"><span class="box"></span></td></tr>
+      <tr><td class="n">7</td><td>In most of Europe, the clocks go back one hour at the end of October.</td><td class="ck"><span class="box"></span></td><td class="ck"><span class="box"></span></td></tr>
+      <tr><td class="n">8</td><td>Mr Patel asked Sofia to walk his dog because his knees were really bad.</td><td class="ck"><span class="box"></span></td><td class="ck"><span class="box"></span></td></tr>
+      <tr><td class="n">9</td><td>Brazil still changes its clocks every year.</td><td class="ck"><span class="box"></span></td><td class="ck"><span class="box"></span></td></tr>
+      <tr><td class="n">10</td><td>Sofia moved from São Paulo to London in the summer.</td><td class="ck"><span class="box"></span></td><td class="ck"><span class="box"></span></td></tr>
+    </table>
+  </div>
+
+  <div class="sec">
+    <div class="bubble"><img class="avatar" src="lucy.png"><div class="txt"><b>Lucy's tip:</b> Don't worry if you don't catch every word. Listen for the <b>key words</b> in each sentence – numbers, names and places help a lot!</div></div>
+  </div>
+
+  <div class="footer"><span class="brand" style="font-size:7.6pt"><span class="mic" style="width:4.6mm;height:4.6mm;font-size:6pt">🎙</span>Daily Speak English</span><span>Watch the episode: <a href="https://www.youtube.com/@DailySpeak_English">youtube.com/@DailySpeak_English</a></span><span>2 / 8</span></div>
+</section>
+
+<!-- ================= PAGE 3 ================= -->
+<section class="page">
+  <div class="sec" style="margin-top:3mm">
+    <h2><span class="num">3</span>Know it or hear it? <span class="tag">quiz + listening</span><span class="tag or">10 points</span></h2>
+    <p class="instr">Circle a, b or c. Questions 🧠 1–5: you can probably answer them <b>before</b> you listen. Questions 🎧 6–10: listen to find the answer.</p>
+    <div class="small" style="margin:0 0 1.6mm 11mm;font-weight:700;color:var(--green)">🧠 YOU MIGHT ALREADY KNOW</div>
+    <div class="mc"><div class="mcq"><div class="qq">1. Scientists measure brightness in…</div><div class="opt"><span class="c">a</span>watts</div><div class="opt"><span class="c">b</span>lux</div><div class="opt"><span class="c">c</span>degrees</div><div class="hint">🧠 Remember the warm-up?</div></div><div class="mcq"><div class="qq">2. In most of Europe, the clocks go back one hour at the end of…</div><div class="opt"><span class="c">a</span>March</div><div class="opt"><span class="c">b</span>December</div><div class="opt"><span class="c">c</span>October</div><div class="hint">🧠 General knowledge</div></div><div class="mcq"><div class="qq">3. Someone who likes to stay up late is…</div><div class="opt"><span class="c">a</span>a night owl</div><div class="opt"><span class="c">b</span>an early bird</div><div class="opt"><span class="c">c</span>a night bird</div><div class="hint">🧠 Look at Exercise 1</div></div><div class="mcq"><div class="qq">4. "It's overcast today" means…</div><div class="opt"><span class="c">a</span>it's very windy</div><div class="opt"><span class="c">b</span>the sky is full of clouds</div><div class="opt"><span class="c">c</span>it's raining heavily</div><div class="hint">🧠 Look at Exercise 1</div></div><div class="mcq"><div class="qq">5. Which is usually the brightest?</div><div class="opt"><span class="c">a</span>an office with all the lights on</div><div class="opt"><span class="c">b</span>a phone screen</div><div class="opt"><span class="c">c</span>a sunny day outside</div><div class="hint">🧠 Use your common sense</div></div><div class="mcq" style="background:var(--mint);border-color:#C3EAD7;display:flex;align-items:center;gap:3mm"><span style="font-size:18pt">🎉</span><span style="font-size:9.2pt"><b style="color:var(--navy)">How many did you know?</b><br>Now let's test your ears!</span></div></div>
+    <div class="small" style="margin:3.4mm 0 1.6mm 11mm;font-weight:700;color:var(--orange)">🎧 LISTEN AND FIND OUT</div>
+    <div class="mc"><div class="mcq"><div class="qq">6. How many adults went camping in the Colorado study?</div><div class="opt"><span class="c">a</span>8</div><div class="opt"><span class="c">b</span>18</div><div class="opt"><span class="c">c</span>80</div><div class="hint">🎧 ⏱ 3:28</div></div><div class="mcq"><div class="qq">7. During the camping week, people only had light from…</div><div class="opt"><span class="c">a</span>phones and torches</div><div class="opt"><span class="c">b</span>sunlight and campfires</div><div class="opt"><span class="c">c</span>small electric lamps</div><div class="hint">🎧 ⏱ 3:28</div></div><div class="mcq"><div class="qq">8. Which people changed the most after camping?</div><div class="opt"><span class="c">a</span>the early birds</div><div class="opt"><span class="c">b</span>the oldest people</div><div class="opt"><span class="c">c</span>the night owls</div><div class="hint">🎧 ⏱ 3:28</div></div><div class="mcq"><div class="qq">9. What does Lucy say about sunglasses on your morning walk?</div><div class="opt"><span class="c">a</span>Always wear them.</div><div class="opt"><span class="c">b</span>Don't wear them unless the sun is really strong.</div><div class="opt"><span class="c">c</span>Only wear them on cloudy days.</div><div class="hint">🎧 ⏱ 8:44</div></div><div class="mcq"><div class="qq">10. What was the name of Mr Patel's dog?</div><div class="opt"><span class="c">a</span>Lucky</div><div class="opt"><span class="c">b</span>Sunny</div><div class="opt"><span class="c">c</span>Daisy</div><div class="hint">🎧 ⏱ 18:45</div></div><div class="mcq" style="background:var(--cream);border-color:#F6DDB8;display:flex;align-items:center;gap:3mm"><img class="avatar j" src="jack.png" style="width:13mm;height:13mm;flex:none"><span style="font-size:8.9pt;line-height:1.45"><b style="color:var(--navy)">Jack's tip:</b> I'm a terrible night owl – but 15 minutes outside every morning made me sleepy at 10:30 p.m. Try it for one week!</span></div></div>
+  </div>
+
+  <div class="footer"><span class="brand" style="font-size:7.6pt"><span class="mic" style="width:4.6mm;height:4.6mm;font-size:6pt">🎙</span>Daily Speak English</span><span>Watch the episode: <a href="https://www.youtube.com/@DailySpeak_English">youtube.com/@DailySpeak_English</a></span><span>3 / 8</span></div>
+</section>
+
+<!-- ================= PAGE 4 ================= -->
+<section class="page">
+  <div class="sec" style="margin-top:3mm">
+    <h2><span class="num">4</span>Read and complete <span class="tag">reading</span><span class="tag or">8 points</span></h2>
+    <p class="instr">Complete the article with the words in the box. Use each word once.</p>
+    <div class="wordbank"><span>signal</span><span>outside</span><span>dim</span><span>earlier</span><span>screens</span><span>reset</span><span>brighter</span><span>cloudy</span></div>
+    <div class="card" style="padding:5mm 6mm">
+      <div style="font-weight:700;color:var(--navy);font-size:12pt;margin-bottom:1.5mm">☀️ The Light Your Body Is Missing</div>
+      <div class="reading">
+        Most of us spend our days inside, where the light is quite <span class="g">1</span>. A room with every lamp switched on may only reach a few hundred lux, while even a <span class="g">2</span> afternoon outside can be several times <span class="g">3</span>.
+        Inside your brain, a master clock decides when you feel sleepy and when you feel alert. But it needs to be <span class="g">4</span> every day, and morning light is its most important <span class="g">5</span>.
+        In one famous study, eight adults went camping for a week with no electric lights. Their body clocks moved about two hours <span class="g">6</span>, and they started waking up more naturally.
+        The problem with modern life is simple: we get too little light in the day and too much light from lamps and <span class="g">7</span> at night. The good news? The answer is free. Try to go <span class="g">8</span> for ten or twenty minutes soon after you wake up – even when the sky is grey.
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><span class="num">5</span>Listen and complete the dialogue <span class="tag">listening</span><span class="tag or">6 points</span></h2>
+    <p class="instr">Two friends on a grey autumn morning. Listen at ⏱ 10:42 and write <b>one word</b> in each gap.</p>
+    <div class="card sky dialog">
+      <div class="row"><span class="who l">Lucy:</span><span>Morning! Fancy a quick <span class="blank s"></span> (1) before work?</span></div>
+      <div class="row"><span class="who">Jack:</span><span>Have you seen it out there? It's so <span class="blank"></span> (2). I'd rather stay in with a cup of tea.</span></div>
+      <div class="row"><span class="who l">Lucy:</span><span>I know, but honestly, even a grey day is good for you. Come on, just fifteen minutes.</span></div>
+      <div class="row"><span class="who">Jack:</span><span>Fine. But only because the days are <span class="blank"></span> (3) in and I'm starting to feel like a <span class="blank"></span> (4).</span></div>
+      <div class="row"><span class="who l">Lucy:</span><span>I know what you mean. It gets dark so early now.</span></div>
+      <div class="row"><span class="who">Jack:</span><span>By half past five, it's <span class="blank"></span> (5) black.</span></div>
+      <div class="row"><span class="who l">Lucy:</span><span>That's why I try to get some daylight while it <span class="blank"></span> (6). Oh, look. The sun's coming out a bit.</span></div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="bubble"><img class="avatar" src="lucy.png"><div class="txt"><b>Say it out loud!</b> Read the dialogue with a friend – or play both parts yourself. Try to copy our rhythm and intonation. 🎭</div></div>
+  </div>
+
+  <div class="footer"><span class="brand" style="font-size:7.6pt"><span class="mic" style="width:4.6mm;height:4.6mm;font-size:6pt">🎙</span>Daily Speak English</span><span>Watch the episode: <a href="https://www.youtube.com/@DailySpeak_English">youtube.com/@DailySpeak_English</a></span><span>4 / 8</span></div>
+</section>
+
+<!-- ================= PAGE 5 ================= -->
+<section class="page">
+  <div class="sec" style="margin-top:3mm">
+    <h2><span class="num">6</span>What does it mean? <span class="tag">phrases</span><span class="tag or">7 points</span></h2>
+    <p class="instr">Match the natural phrases from the dialogue (1–7) to their meanings (a–g).</p>
+    <div class="grid2" style="gap:5mm;align-items:start">
+      <table class="match">
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--navy)">1.</b> "Fancy a quick walk?"</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--navy)">2.</b> "It's so gloomy."</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--navy)">3.</b> "The days are drawing in."</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--navy)">4.</b> "I'm starting to feel like a zombie."</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--navy)">5.</b> "It's pitch black."</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--navy)">6.</b> "…while it lasts."</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--navy)">7.</b> "You've got yourself a deal."</td></tr>
+      </table>
+      <div class="card" style="font-size:9.4pt;line-height:1.8">
+        <b>a)</b> I agree.<br>
+        <b>b)</b> The days are getting shorter.<br>
+        <b>c)</b> Would you like to go for a short walk?<br>
+        <b>d)</b> before it ends<br>
+        <b>e)</b> I feel extremely tired.<br>
+        <b>f)</b> It's completely dark.<br>
+        <b>g)</b> It's dark, grey and a bit depressing.
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><span class="num">7</span>Say it better <span class="tag">common mistakes</span><span class="tag or">12 points</span></h2>
+    <p class="instr">These sentences have a mistake that many learners make. Write a more natural version (2 points each). ⏱ 16:25</p>
+    <table style="font-size:9.6pt">
+      <tr><td style="width:46%;padding:1.5mm 0">❌ 1. Can you open the light?</td><td>✅ <span class="blank l"></span></td></tr>
+      <tr><td style="padding:1.5mm 0">❌ 2. The weather is closed today.</td><td>✅ <span class="blank l"></span></td></tr>
+      <tr><td style="padding:1.5mm 0">❌ 3. It is darking early.</td><td>✅ <span class="blank l"></span></td></tr>
+      <tr><td style="padding:1.5mm 0">❌ 4. I am a night person.</td><td>✅ <span class="blank l"></span></td></tr>
+      <tr><td style="padding:1.5mm 0">❌ 5. I need to take sun.</td><td>✅ <span class="blank l"></span></td></tr>
+      <tr><td style="padding:1.5mm 0">❌ 6. In the winter the days are more short.</td><td>✅ <span class="blank l"></span></td></tr>
+    </table>
+  </div>
+
+  <div class="sec">
+    <div class="bubble"><img class="avatar j" src="jack.png"><div class="txt"><b>Quick tip:</b> We <b>turn on / turn off</b> (or <b>switch on / switch off</b>) a light. <br><b>Grammar corner:</b> Short adjectives take <b>-er</b>: short → <b>shorter</b>, dark → <b>darker</b>, bright → <b>brighter</b>. We don't say "more short".</div></div>
+  </div>
+
+  <div class="sec">
+    <h2><span class="num">8</span>Sunny idioms <span class="tag">idioms</span><span class="tag or">5 points</span></h2>
+    <p class="instr">Complete each sentence with one of the expressions. ⏱ 13:35</p>
+    <div class="chips" style="margin:0 0 3mm 11mm"><span>a ray of sunshine</span><span>light at the end of the tunnel</span><span>every cloud has a silver lining</span><span>make hay while the sun shines</span><span>in broad daylight</span></div>
+    <table class="idiom">
+      <tr><td>1. My exams finish next week. After months of studying, I can finally see the <span class="blank l" style="min-width:52mm"></span>.</td></tr>
+      <tr><td>2. I missed my train, but I met an old friend at the station. I guess <span class="blank l"></span>!</td></tr>
+      <tr><td>3. The weather is perfect today, so let's paint the fence now. We should <span class="blank l"></span>.</td></tr>
+      <tr><td>4. Our new neighbour is always smiling and helping people. She's <span class="blank l"></span>.</td></tr>
+      <tr><td>5. Someone stole my bike at two o'clock in the afternoon – <span class="blank l"></span>!</td></tr>
+    </table>
+  </div>
+
+  <div class="footer"><span class="brand" style="font-size:7.6pt"><span class="mic" style="width:4.6mm;height:4.6mm;font-size:6pt">🎙</span>Daily Speak English</span><span>Watch the episode: <a href="https://www.youtube.com/@DailySpeak_English">youtube.com/@DailySpeak_English</a></span><span>5 / 8</span></div>
+</section>
+
+<!-- ================= PAGE 6 ================= -->
+<section class="page">
+  <div class="sec" style="margin-top:3mm">
+    <h2><span class="num">9</span>Weather small talk <span class="tag">speaking</span><span class="tag or">6 points</span></h2>
+    <p class="instr">In English, the weather is the easiest way to start a conversation. Complete the question tags. ⏱ 12:29</p>
+    <div class="grid2">
+      <div class="card sky" style="line-height:2.05;font-size:9.6pt">
+        1. Lovely day, <span class="blank s"></span> it?<br>
+        2. It's freezing this morning, <span class="blank s"></span> it?<br>
+        3. It gets dark so early now, <span class="blank s"></span> it?
+      </div>
+      <div class="card sky" style="line-height:2.05;font-size:9.6pt">
+        4. The days are drawing in, <span class="blank s"></span> they?<br>
+        5. You walked to work today, <span class="blank s"></span> you?<br>
+        6. It was really gloomy yesterday, <span class="blank s"></span> it?
+      </div>
+    </div>
+    <div class="card" style="margin-top:3mm">
+      <div style="display:flex;gap:4mm;align-items:center">
+        <img class="avatar j" src="jack.png" style="width:12mm;height:12mm">
+        <div style="font-size:9.4pt"><b style="color:var(--navy)">Now you!</b> Someone at the bus stop says: <i>"Freezing today, isn't it?"</i> Write a friendly reply.<br>
+        <span class="small">Example: "Absolutely freezing! I can't feel my fingers."</span></div>
+      </div>
+      <div class="lines"></div><div class="lines"></div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><span class="num">10</span>All about you <span class="tag">speaking + writing</span><span class="tag or">6 points</span></h2>
+    <p class="instr">Finish the sentences about <b>your</b> life. Then read them out loud – or record yourself! 🎙️ (2 points each)</p>
+    <div class="card sky" style="font-size:9.6pt;line-height:1.5">
+      <div>1. If I went outside every morning for a week, I think I would <span class="blank l" style="min-width:72mm"></span></div><div class="lines" style="height:8mm"></div>
+      <div style="margin-top:3mm">2. In my country, people usually talk about the weather when <span class="blank l" style="min-width:66mm"></span></div><div class="lines" style="height:8mm"></div>
+      <div style="margin-top:3mm">3. I feel most awake when <span class="blank l" style="min-width:108mm"></span></div><div class="lines" style="height:8mm"></div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="card sun">
+      <div style="display:flex;justify-content:space-between;align-items:center"><b style="color:var(--navy);font-size:11pt">🦉 or 🐦? Fun quiz: Night owl or early bird?</b><span class="small">Circle a or b</span></div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:3mm;margin-top:2mm;font-size:9pt">
+        <div><b>1. On a free day, you wake up…</b><br>a) before 8 a.m.<br>b) after 10 a.m.</div>
+        <div><b>2. Your best time to study is…</b><br>a) in the morning<br>b) late at night</div>
+        <div><b>3. Your alarm clock feels like…</b><br>a) a friendly "hello"<br>b) an attack!</div>
+      </div>
+      <div class="small" style="margin-top:2mm"><b>Mostly a:</b> you're an early bird 🐦 · <b>Mostly b:</b> you're a night owl 🦉 – try the daylight challenge on the next page!</div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="bubble"><img class="avatar" src="lucy.png"><div class="txt"><b>Lucy's tip:</b> Record yourself reading your answers to Exercise 10 today. Listen again next week – you'll be surprised how much better you sound! 🎧</div></div>
+  </div>
+
+  <div class="footer"><span class="brand" style="font-size:7.6pt"><span class="mic" style="width:4.6mm;height:4.6mm;font-size:6pt">🎙</span>Daily Speak English</span><span>Watch the episode: <a href="https://www.youtube.com/@DailySpeak_English">youtube.com/@DailySpeak_English</a></span><span>6 / 8</span></div>
+</section>
+
+<!-- ================= PAGE 7 ================= -->
+<section class="page">
+  <div class="sec" style="margin-top:3mm">
+    <h2><span class="num">11</span>Word search <span class="tag sun">fun</span><span class="tag or">12 points</span></h2>
+    <p class="instr">Find 12 words from the episode. Words go → across, ↓ down or ↘ diagonally.</p>
+    <div style="display:grid;grid-template-columns:auto 1fr;gap:6mm;align-items:center">
+      {{WORDSEARCH}}
+      <div class="card sun" style="font-size:9.4pt;line-height:1.95">
+        <b style="color:var(--navy)">Find these words:</b><br>
+        ☐ DAYLIGHT &nbsp; ☐ OVERCAST<br>☐ SUNRISE &nbsp; ☐ SUNSET<br>☐ GLOOMY &nbsp; ☐ CLOCK<br>☐ DAWN &nbsp; ☐ DUSK<br>☐ OWL &nbsp; ☐ DIM<br>☐ LUX &nbsp; ☐ SUNNY 🐶
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><span class="num">12</span>The 7-day daylight challenge ☀️ <span class="tag sun">your mission</span></h2>
+    <p class="instr">Get outside within 1–2 hours of waking up. Tick the boxes every day and see how you feel!</p>
+    <table class="chal">
+      <tr><th>Day</th><th>Minutes outside ☀️</th><th>Before 10 a.m.? ✓</th><th>Dim lights at night? 🌙</th><th>How I feel today 😴 😐 😊</th></tr>
+      <tr><td class="d">Mon</td><td></td><td></td><td></td><td></td></tr>
+      <tr><td class="d">Tue</td><td></td><td></td><td></td><td></td></tr>
+      <tr><td class="d">Wed</td><td></td><td></td><td></td><td></td></tr>
+      <tr><td class="d">Thu</td><td></td><td></td><td></td><td></td></tr>
+      <tr><td class="d">Fri</td><td></td><td></td><td></td><td></td></tr>
+      <tr><td class="d">Sat</td><td></td><td></td><td></td><td></td></tr>
+      <tr><td class="d">Sun</td><td></td><td></td><td></td><td></td></tr>
+    </table>
+  </div>
+
+  <div class="sec">
+    <h2><span class="num">13</span>Your turn! <span class="tag">writing</span><span class="tag or">8 points</span></h2>
+    <p class="instr">What's the weather like where you live today, and how much daylight do you get? Write 4 sentences (2 points each). Use at least <b>two</b> words from this worksheet.</p>
+    <div class="card">
+      <div class="lines"></div><div class="lines"></div><div class="lines"></div><div class="lines"></div>
+      <div style="display:flex;align-items:center;gap:3mm;margin-top:3mm"><img class="avatar" src="lucy.png" style="width:11mm;height:11mm"><div style="font-size:9.3pt"><b style="color:var(--navy)">Share it with us!</b> Post your sentences in the comments under the video. We read every single one. 💛</div></div>
+    </div>
+  </div>
+
+  <div class="footer"><span class="brand" style="font-size:7.6pt"><span class="mic" style="width:4.6mm;height:4.6mm;font-size:6pt">🎙</span>Daily Speak English</span><span>Watch the episode: <a href="https://www.youtube.com/@DailySpeak_English">youtube.com/@DailySpeak_English</a></span><span>7 / 8</span></div>
+</section>
+
+<!-- ================= PAGE 8 (KEY) ================= -->
+<section class="page key">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-top:2mm">
+    <h2 style="font-size:16pt"><span class="num">✓</span>Answer key</h2>
+    <span class="small">Count your points and write your score on page 1!</span>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:3.4mm;margin-top:4mm">
+    <div class="k"><h3>0 · Guess the brightness</h3><p>1 (darkest) living room in the evening – a few hundred lux · 2 grey, cloudy afternoon – about 1,000–2,000 lux · 3 (brightest) shade on a sunny day – about 20,000 lux</p></div>
+    <div class="k"><h3>1 · Key words</h3><p>1 g · 2 j · 3 e · 4 b · 5 i · 6 d · 7 c · 8 f · 9 h · 10 a</p></div>
+    <div class="k"><h3>2 · Predict, then check</h3><p>1 F (the cloudy day is brighter) · 2 T · 3 F (one week) · 4 T · 5 T · 6 F (connected, not proved) · 7 T · 8 F (his knees were fine – he made it up!) · 9 F (it stopped in 2019) · 10 F (in November)</p></div>
+    <div class="k"><h3>3 · Know it or hear it?</h3><p>1 b · 2 c · 3 a · 4 b · 5 c · 6 a · 7 b · 8 c · 9 b · 10 b</p></div>
+    <div class="k"><h3>4 · Read and complete</h3><p>1 dim · 2 cloudy · 3 brighter · 4 reset · 5 signal · 6 earlier · 7 screens · 8 outside</p></div>
+    <div class="k"><h3>5 · Complete the dialogue</h3><p>1 walk · 2 gloomy · 3 drawing · 4 zombie · 5 pitch · 6 lasts</p></div>
+    <div class="k"><h3>6 · What does it mean?</h3><p>1 c · 2 g · 3 b · 4 e · 5 f · 6 d · 7 a</p></div>
+    <div class="k"><h3>7 · Say it better (2 points each)</h3><p>1 Can you turn on the light? · 2 It's cloudy / overcast today. · 3 It's getting dark early. · 4 I'm a night owl. / I'm not a morning person. · 5 I need some sunlight. · 6 In winter, the days are shorter.</p></div>
+    <div class="k"><h3>8 · Sunny idioms</h3><p>1 light at the end of the tunnel · 2 every cloud has a silver lining · 3 make hay while the sun shines · 4 a ray of sunshine · 5 in broad daylight</p></div>
+    <div class="k"><h3>9 · Weather small talk</h3><p>1 isn't · 2 isn't · 3 doesn't · 4 aren't · 5 didn't · 6 wasn't</p><h3>10 &amp; 13 · About you &amp; writing</h3><p>Your own answers! Give yourself 2 points for each complete, correct sentence.</p></div>
+  </div>
+  <div style="display:grid;grid-template-columns:auto 1fr;gap:5mm;margin-top:3.4mm;align-items:start">
+    <div class="k"><h3>11 · Word search</h3>{{WORDSEARCH_KEY}}</div>
+    <div class="card" style="background:var(--navy);border:none;color:#fff;display:flex;gap:4mm;align-items:center;padding:5mm">
+      <img src="qr.png" style="width:30mm;height:30mm;border-radius:2mm;background:#fff;padding:1mm">
+      <div>
+        <div style="font-weight:700;font-size:12.5pt;color:var(--sun)">Enjoyed this worksheet? 🎉</div>
+        <div style="font-size:9pt;line-height:1.5;margin-top:1mm">Scan to find a new episode of <b>Daily Speak English</b> every week. Subscribe, practise with Jack and Lucy, and download the next worksheet!</div>
+        <div style="margin-top:2mm;font-size:8.6pt"><a href="https://www.youtube.com/@DailySpeak_English" style="color:var(--sun);font-weight:600">youtube.com/@DailySpeak_English</a></div>
+      </div>
+    </div>
+  </div>
+  <div class="footer"><span class="brand" style="font-size:7.6pt"><span class="mic" style="width:4.6mm;height:4.6mm;font-size:6pt">🎙</span>Daily Speak English</span><span>Free for personal and classroom use. Please share the video link, not the file alone. 💛</span><span>8 / 8</span></div>
+</section>
+
+</body>
+</html>
