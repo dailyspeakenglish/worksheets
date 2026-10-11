@@ -21,6 +21,39 @@
       "Word search and a 7-day daylight challenge",
       "Full answer key — score yourself out of 100"
     ],
-    "previews": ["page3.webp", "page7.webp", "key.webp"]
+    "previews": [
+      "page3.webp",
+      "page7.webp",
+      "key.webp"
+    ]
+  },
+  {
+    "slug": "talk-to-strangers",
+    "title": "Why You Should Talk to Strangers",
+    "topic": "Small talk, starting conversations with strangers and the power of weak ties",
+    "summary": "Surprising research about tiny conversations, easy English phrases to start, keep going and end a chat politely – and Jack's bus stop story you won't forget.",
+    "level": "B1–B2",
+    "pages": 10,
+    "exercises": 13,
+    "minutes": 50,
+    "pdf": "daily-speak-english-talk-to-strangers-worksheet.pdf",
+    "video": "",
+    "date": "2026-10-11",
+    "inside": [
+      "Warm-up: silence or chat? + predict the words",
+      "Key words: stranger, acquaintance, small talk…",
+      "Big-idea listening + know it or hear it? quiz",
+      "Chat-style café dialogue with Jack and Lucy",
+      "Your conversation map: start, keep going, end",
+      "Question tag intonation: sure or not sure?",
+      "Say it better, chatty idioms and safe topics",
+      "Ana's 7-day one-chat-a-day challenge + pocket phrase card",
+      "Full answer key – score yourself out of 100"
+    ],
+    "previews": [
+      "page5.webp",
+      "page6.webp",
+      "page9.webp"
+    ]
   }
 ]

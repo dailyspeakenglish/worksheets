@@ -1,0 +1,12 @@
+{
+  "_note": "Extra options for cutout.py so teeth, eyes and other white details stay. Coordinates are in the 2048px original.",
+  "02-jack-lightbulb-idea.jpg": "--keep 1028,919",
+  "03-lucy-did-you-know.jpg": "--keep 1020,868",
+  "04-jack-thinking.jpg": "--keep 1125,625 --keep 892,641",
+  "07-lucy-great-job.jpg": "--keep 1019,825",
+  "08-jack-waving.jpg": "--keep 1025,860",
+  "11-lucy-asking-right.jpg": "--keep 1262,836",
+  "15-jack-shrug-left.jpg": "--keep 966,763",
+  "23-jack-hot-chocolate.jpg": "--keep 1011,1289",
+  "30-duo-waving.jpg": "--keep 1407,830 --min-area 2000"
+}
