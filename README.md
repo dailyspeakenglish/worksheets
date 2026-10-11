@@ -10,6 +10,7 @@ Free printable B1–B2 English worksheets for the [Daily Speak English](https://
 - `build.py` – regenerates `index.html` and every `<slug>/index.html` from `worksheets.json`
 - `assets/` – shared styles, channel logo and host avatars
 - `_source/` – the HTML templates used to build each worksheet PDF
+- `_library/characters/` – Jack & Lucy image library for worksheets (see its README)
 
 ## Adding a worksheet
 1. Create a folder `<slug>/` with the PDF, `cover.jpg`, `og.jpg` and preview images.
