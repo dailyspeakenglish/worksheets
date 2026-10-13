@@ -167,8 +167,13 @@ def message_slots(message):
     """Blank boxes for the secret message, word by word (apostrophes shown)."""
     out = []
     for word in message.split():
-        out.append('<span class="mw">' + "".join(
-            '<span class="ap">\'</span>' if ch == "'" else '<span class="mb"></span>' for ch in word) + "</span>")
+        cells = []
+        for ch in word:
+            if ch.isalpha():
+                cells.append('<span class="mb"></span>')
+            else:  # apostrophes, commas, question marks are printed, not boxed
+                cells.append('<span class="ap">' + ch + '</span>')
+        out.append('<span class="mw">' + "".join(cells) + "</span>")
     return "".join(out)
 
 
