@@ -23,11 +23,11 @@ On the far right edge sits Jack, a young man with short blonde hair, wearing his
 
 Both hosts, their hands, [PROPS] and their microphones stay close to the outer edges of the image. The wide centre of the image is open, calm [COLOUR] wall, and the headline sits directly on it.
 
-Headline, centred in that open space, in a heavy, bold, rounded sans-serif font, all capital letters, very large and commanding:
+Headline, centred in that open space, in a bold, rounded sans-serif font, all capital letters, large and clear but not oversized: the two headline lines together take up only about one third of the image height, with plenty of open wall around them.
 Line 1: "[LINE 1]" in cream-white (#FFF6E3)
 Line 2: "[LINE 2]" in [ACCENT] ([HEX])
-Both lines have a thick very dark navy (#0A1A4A) outline and a soft drop shadow, which makes them pop strongly off the wall.
-Beneath them, on its own single line, the subtitle "[SMALL LINE]" in the same heavy, bold, rounded sans-serif, in cream-white (#FFF6E3), with the same thick very dark navy (#0A1A4A) outline and soft drop shadow as the headline. The subtitle must be easy to read even when the thumbnail is shown small on a phone: its capital letters are about one third as tall as the headline letters (never tiny), its letters are thick, and the line is about as wide as Line 1. It sits close under Line 2, centred, with nothing behind it but the plain wall.
+Both lines have only a thin, crisp very dark navy (#0A1A4A) outline, like a fine pen line around each letter, and no drop shadow. The letters stay bright and clean; the dark outline never looks heavy or thick.
+Beneath them, on its own single line, the subtitle "[SMALL LINE]" in the same rounded sans-serif in a medium-bold weight, in cream-white (#FFF6E3), with the same thin very dark navy (#0A1A4A) outline and no drop shadow. It is clearly readable on a phone but modest in size: its capital letters are about one quarter as tall as the headline letters, and the line is noticeably narrower than Line 1. It sits close under Line 2, centred, with nothing behind it but the plain wall.
 Every word and number in the headline and subtitle is spelled exactly as written, each line on a single line.
 
 Top-left corner: a small rounded sunshine-yellow pill containing "B1–B2" in bold very dark navy capitals. Directly to the right of it, in the same row, a small rounded white tag containing a simple paper-sheet icon with a folded corner and a small red label reading "PDF", followed by the words "FREE WORKSHEET" in bold very dark navy capitals. In the top-right corner, a small cream circle containing a simple minimal microphone icon. On the desk at the far left, a single small green potted plant. The bottom-right corner is simply plain desk and wall.
