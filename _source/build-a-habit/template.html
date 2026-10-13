@@ -1,0 +1,680 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Daily Speak English – Build a Habit Worksheet</title>
+<style>
+@page { size: A4; margin: 0; }
+:root{
+  --night:#1B2147; --night2:#2F3A6B; --mauve:#6E5D8C; --mauve-d:#4E3F6B; --lav:#F1EDF8; --lav2:#DED5EE;
+  --peach:#F2AE94; --peach-l:#FDEDE5; --peach-d:#A9532F; --sage:#D7E7DD; --sage-d:#2F5E50; --teal-l:#E3F0F3; --teal-d:#2C6577;
+  --cream:#FCF6EE; --ink:#22263F; --muted:#61647E; --line:#E3DCEC;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font-family:'Poppins','Noto Color Emoji',sans-serif;color:var(--ink);font-size:10.3pt;line-height:1.45;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.page{width:210mm;height:297mm;position:relative;overflow:hidden;padding:12mm 14mm 18mm;background:#fff;page-break-after:always}
+.page:last-child{page-break-after:auto}
+.page::before{content:"";position:absolute;inset:0 0 auto 0;height:4.5mm;background:linear-gradient(90deg,var(--night) 0 34%,var(--mauve) 34% 62%,var(--peach) 62% 84%,#B9D3C4 84% 100%)}
+.footer{position:absolute;left:14mm;right:14mm;bottom:7mm;display:flex;justify-content:space-between;align-items:center;font-size:7.5pt;color:var(--muted);border-top:1px solid var(--line);padding-top:2.2mm}
+.footer a{color:var(--night);text-decoration:none;font-weight:600}
+.footer>span{white-space:nowrap}
+.arr{display:inline-block;width:1.05em;height:1.05em;vertical-align:-.15em}
+.brand{display:flex;align-items:center;gap:2.2mm;font-weight:700;color:var(--night);font-size:8.8pt;letter-spacing:.3pt}
+.brand img{width:7mm;height:7mm;border-radius:50%}
+.footer .brand img{width:5mm;height:5mm}
+.footer .brand{font-size:7.5pt;letter-spacing:0}
+h1{font-size:25pt;line-height:1.06;margin:0;color:var(--night);font-weight:800;letter-spacing:-.3pt}
+h2{font-size:13pt;margin:0;color:var(--night);font-weight:700;display:flex;align-items:center;gap:2.4mm}
+h2 .num{display:inline-flex;align-items:center;justify-content:center;width:8.4mm;height:8.4mm;border-radius:50%;background:var(--mauve);color:#fff;font-size:10.5pt;flex:none}
+.sec{margin-top:5.6mm}
+.instr{font-size:9.2pt;color:var(--muted);margin:1.1mm 0 2.6mm 10.8mm}
+.tag{display:inline-block;font-size:7.4pt;font-weight:600;padding:.5mm 2.4mm;border-radius:10mm;background:var(--lav);color:var(--mauve-d);margin-left:1.2mm;vertical-align:middle}
+.tag.pts{background:var(--peach-l);color:var(--peach-d)}
+.tag.fun{background:var(--sage);color:var(--sage-d)}
+.card{background:var(--lav);border-radius:4mm;padding:3.6mm 4.6mm;border:1px solid var(--lav2)}
+.card.peach{background:var(--peach-l);border-color:#F6D3C3}
+.card.sage{background:var(--sage);border-color:#BFD7C8}
+.card.teal{background:var(--teal-l);border-color:#C6DFE6}
+.card.white{background:#fff;border:1.3px solid var(--line)}
+.blank{display:inline-block;border-bottom:1.3px solid var(--night);min-width:24mm;height:4.6mm;vertical-align:bottom}
+.blank.s{min-width:13mm}.blank.l{min-width:58mm}.blank.xl{min-width:100%}
+.box{display:inline-flex;width:6.2mm;height:6.2mm;border:1.4px solid var(--night);border-radius:1.4mm;vertical-align:middle;flex:none;background:#fff}
+.box.sm{width:5mm;height:5mm;border-radius:1.1mm}
+table{border-collapse:collapse;width:100%}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:4mm}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:3mm}
+.pill{display:inline-block;background:var(--night);color:#F8E3C4;font-weight:700;border-radius:10mm;padding:.6mm 3mm;font-size:8.8pt}
+.pill.p{background:var(--peach);color:var(--night)}
+.small{font-size:8.4pt;color:var(--muted)}
+.lines{height:7mm;border-bottom:1px dashed #C9BFD9}
+.char{display:block;object-fit:contain}
+.bub{display:flex;gap:3mm;align-items:center}
+.bub .txt{background:#fff;border:1.4px solid var(--line);border-radius:4mm;padding:2.4mm 3.6mm;font-size:9.1pt;flex:1}
+.bub .txt b{color:var(--night)}
+.ava{width:17mm;height:17mm;border-radius:50%;background:var(--lav);overflow:hidden;flex:none;border:2px solid #fff;box-shadow:0 0 0 1.4px var(--lav2)}
+.ava img{width:100%;height:130%;object-fit:cover;object-position:50% 4%}
+.mc{display:grid;grid-template-columns:1fr 1fr;gap:2.4mm 4.6mm}
+.mcq{background:#fff;border:1.2px solid var(--line);border-radius:3mm;padding:2.4mm 3.4mm}
+.mcq .qq{font-weight:600;color:var(--night);font-size:9.5pt;margin-bottom:1.1mm}
+.opt{display:flex;gap:2mm;align-items:center;font-size:9.2pt;margin:.6mm 0}
+.opt .c{width:4.6mm;height:4.6mm;border-radius:50%;border:1.3px solid var(--night);display:inline-flex;align-items:center;justify-content:center;font-size:7pt;font-weight:700;color:var(--night);flex:none}
+.hint{font-size:7.5pt;color:var(--peach-d);font-weight:600;margin-top:.6mm}
+.tf td{padding:1.45mm 2mm;border-bottom:1px solid #EEE8F4;font-size:9.4pt;vertical-align:middle}
+.tf th{font-size:7.8pt;color:var(--muted);font-weight:600;text-align:center;padding-bottom:1.2mm}
+.tf td.n{width:6mm;font-weight:700;color:var(--mauve)}
+.tf td.ck{width:17mm;text-align:center;white-space:nowrap}
+.tf td.tm{width:15mm;font-size:7.6pt;color:var(--peach-d);font-weight:600;text-align:right}
+.circ{display:inline-flex;width:6mm;height:6mm;border-radius:50%;border:1.3px solid var(--night);align-items:center;justify-content:center;font-weight:700;font-size:8pt;color:var(--night)}
+.match td{padding:1.35mm 1.6mm;font-size:9.3pt;vertical-align:middle}
+.match .ans{width:9mm}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:3mm}
+.step{background:#fff;border:1.3px solid var(--line);border-radius:3.4mm;padding:2.6mm 3.2mm}
+.step .h{font-weight:700;color:var(--night);font-size:9.4pt}
+.step .s{font-size:8.4pt;color:var(--muted);line-height:1.4}
+/* chat */
+.chat{display:flex;flex-direction:column;gap:1.5mm}
+.msg{display:flex;align-items:flex-end;gap:2.6mm}
+.msg.j{flex-direction:row-reverse}
+.msg .ava{width:13mm;height:13mm}
+.msg .b{max-width:132mm;border-radius:4.5mm;padding:1.6mm 3.6mm;font-size:9.4pt;line-height:1.5}
+.msg.l .b{background:var(--peach-l);border:1.2px solid #F4D2C2;border-bottom-left-radius:1mm}
+.msg.j .b{background:var(--lav);border:1.2px solid var(--lav2);border-bottom-right-radius:1mm}
+.msg .who{display:block;font-size:7pt;font-weight:700;letter-spacing:.4pt;margin-bottom:.1mm}
+.msg.l .who{color:var(--peach-d)} .msg.j .who{color:var(--mauve-d)}
+.gap{display:inline-block;min-width:21mm;border-bottom:1.3px solid var(--night);text-align:left;font-size:7.4pt;font-weight:700;color:var(--mauve);line-height:1.1;padding-left:.6mm}
+/* conversation map */
+.bank{display:grid;grid-template-columns:1fr 1fr;gap:1.4mm 4mm;font-size:9.1pt}
+.bank div{display:flex;gap:2mm;align-items:baseline}
+.bank b{color:var(--mauve);width:4mm;flex:none}
+.map{display:grid;grid-template-columns:1fr 7mm 1fr 7mm 1fr;align-items:stretch;margin-top:3mm}
+.col{border-radius:4mm;padding:3mm;text-align:center}
+.col .h{font-weight:800;font-size:10.5pt;letter-spacing:.4pt}
+.col .s{font-size:7.8pt;margin-bottom:2mm}
+.col .slots{display:flex;justify-content:center;gap:2mm}
+.col.c1{background:var(--sage);color:var(--sage-d)} .col.c2{background:var(--lav);color:var(--mauve-d)} .col.c3{background:var(--peach-l);color:var(--peach-d)}
+.arrow{display:flex;align-items:center;justify-content:center;font-size:15pt;color:var(--mauve);font-weight:700}
+/* situation cards */
+.sit{background:#fff;border:1.3px solid var(--line);border-radius:3.4mm;padding:2.4mm 3mm;display:flex;flex-direction:column;gap:1.4mm}
+.sit .e{font-size:17pt;line-height:1.1}
+.sit .t{font-size:8.8pt;color:var(--ink);min-height:12.5mm}
+.sit .ch{display:flex;gap:3mm;font-size:8pt;font-weight:600;color:var(--night);align-items:center}
+.sit .ch span{display:flex;gap:1.2mm;align-items:center}
+.key h3{margin:0 0 1mm;font-size:9.6pt;color:var(--night)}
+.key p{margin:0;font-size:8.5pt;line-height:1.48}
+.key .k{background:var(--cream);border-radius:3mm;padding:2.6mm 3.4mm;border:1px solid #EFE2D0}
+.chips{display:flex;flex-wrap:wrap;gap:1.8mm}
+.chips span{background:var(--lav);border:1px solid var(--lav2);color:var(--mauve-d);border-radius:10mm;padding:.5mm 3mm;font-size:8.8pt;font-weight:600}
+.chal th{background:var(--night);color:#F8E3C4;font-size:8.2pt;font-weight:600;padding:1.8mm 1.4mm;text-align:left}
+.chal th:first-child{border-radius:3mm 0 0 0}.chal th:last-child{border-radius:0 3mm 0 0;text-align:center}
+.chal td{border:1px solid #E6DFEE;height:8.6mm;font-size:8.5pt;padding:0 2mm;vertical-align:middle}
+.chal td.d{font-weight:700;color:var(--night);background:var(--lav);width:13mm;text-align:center}
+.chal td.f{text-align:center;font-size:10pt;letter-spacing:2mm;width:27mm}
+.cando td{padding:1.6mm 1.6mm;border-bottom:1px solid #EEE8F4;font-size:9pt}
+.cando td.f{text-align:center;width:12mm;font-size:11pt}
+.cando th{font-size:7.6pt;color:var(--muted);font-weight:600;text-align:center}
+.pocket{border:1.6px dashed var(--mauve);border-radius:4mm;padding:3mm 4mm;position:relative;background:#fff}
+.pocket .sc{position:absolute;top:-3.4mm;left:6mm;background:#fff;padding:0 1.4mm;font-size:9pt;color:var(--mauve)}
+.pocket .pc{display:grid;grid-template-columns:repeat(4,1fr);gap:2.4mm;font-size:7.9pt;line-height:1.35}
+.pocket .pc div b{display:block;font-size:8.2pt;margin-bottom:.6mm}
+.story{display:grid;grid-template-columns:1fr 1fr;gap:2.4mm 4mm}
+.story .ev{display:flex;gap:2.6mm;align-items:center;background:#fff;border:1.3px solid var(--line);border-radius:3mm;padding:2.2mm 3mm;font-size:9pt}
+.story .ev .e{font-size:15pt;flex:none}
+.story .ev .l{font-weight:800;color:var(--mauve);flex:none;width:4mm}
+/* ---- new in build-a-habit ---- */
+.nums{display:grid;grid-template-columns:repeat(4,1fr);gap:2.4mm}
+.nums .nc{background:#fff;border:1.3px solid var(--line);border-radius:3.4mm;padding:2.2mm 2.6mm;display:flex;flex-direction:column;gap:1.2mm}
+.nums .nc .q{font-size:8.5pt;line-height:1.36;min-height:12mm}
+.nums .nc .a{display:flex;align-items:center;justify-content:space-between}
+.nums .nc .bx{width:16mm;height:7.4mm;border:1.4px solid var(--night);border-radius:1.6mm;background:var(--lav)}
+.nums .nc .t{font-size:7.3pt;color:var(--peach-d);font-weight:600}
+.conf{display:grid;grid-template-columns:repeat(3,auto);justify-content:space-between;gap:1.6mm 3mm;font-size:9pt}
+.conf div{display:flex;gap:2mm;align-items:center}
+.coll td{padding:1.5mm 1mm;font-size:9.3pt;line-height:1.5}
+.rule{display:grid;grid-template-columns:repeat(3,1fr);gap:2.4mm}
+.rule div{border-radius:3mm;padding:2.2mm 2.8mm;font-size:8.4pt;line-height:1.4}
+.rule b.h{display:block;font-size:9.4pt;margin-bottom:.6mm}
+.ws{border-collapse:separate;border-spacing:.9mm;margin:0 auto}
+.ws td{width:7.2mm;height:7.2mm;text-align:center;font-weight:700;font-size:10pt;color:var(--night);background:#fff;border-radius:1.6mm;border:1px solid var(--lav2)}
+.clues{font-size:8.6pt;line-height:1.38;display:flex;flex-direction:column;gap:1.25mm}
+.clues div{display:flex;gap:1.6mm;align-items:baseline}
+.clues .n{font-weight:800;color:var(--mauve);width:4.4mm;flex:none}
+.msgrow{display:flex;flex-wrap:wrap;gap:1mm;justify-content:center}
+.msgrow span{width:5.2mm;height:6.4mm;border-bottom:1.4px solid var(--night)}
+.msgrow i{width:3mm}
+.wsk{border-collapse:separate;border-spacing:.35mm}
+.wsk td{width:3.4mm;height:3.4mm;font-size:5.4pt;text-align:center;font-weight:600;color:#B9AEC9;border-radius:.6mm;background:#fff}
+.wsk td.on{background:var(--peach);color:var(--night)}
+.path{display:grid;grid-template-columns:repeat(7,1fr);gap:2.2mm 2mm;margin-top:2mm}
+.stone{height:11mm;border-radius:50%;background:#EDE7F6;border:1.4px solid var(--lav2);display:flex;align-items:center;justify-content:center;font-size:8pt;font-weight:700;color:var(--mauve-d);position:relative}
+.path .stone:nth-child(even){transform:translateY(1.6mm)}
+.grass{background:linear-gradient(180deg,#EAF3EC,#D7E7DD);border-radius:4mm;padding:3mm 4mm 4.4mm;border:1px solid #BFD7C8}
+.react table td{padding:1.35mm 1.4mm;font-size:9.1pt;vertical-align:middle;border-bottom:1px solid #EEE8F4}
+.bands{display:grid;grid-template-columns:repeat(4,1fr);gap:2mm;margin-top:2.4mm}
+.bands div{background:var(--lav);border-radius:3mm;padding:1.6mm 2.2mm;font-size:7.8pt;line-height:1.33;text-align:center}
+.bands b{display:block;color:var(--night);font-size:8.4pt}
+</style>
+</head>
+<body>
+
+<!-- ================= PAGE 1 ================= -->
+<section class="page">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-top:1mm">
+    <div class="brand"><img src="img/logo.jpg">DAILY SPEAK ENGLISH · PODCAST WORKSHEET</div>
+    <div><span class="pill">B1–B2</span> <span class="pill p">⏱ 50 min</span></div>
+  </div>
+
+  <div style="display:grid;grid-template-columns:1.12fr .88fr;gap:4mm;margin-top:5mm;align-items:center">
+    <div>
+      <div class="small" style="font-weight:700;color:var(--mauve);letter-spacing:.7pt">LISTEN · LEARN · SPEAK</div>
+      <h1>How Long Does It Really Take to Build a Habit?</h1>
+      <p style="margin:2.4mm 0 0;font-size:9.6pt;color:var(--muted)">The truth about the 21-day myth, what really happens when you miss a day, and natural English for talking about your habits – plus Jack's orange running shoes.</p>
+      <div style="margin-top:4mm;display:grid;grid-template-columns:auto 1fr;gap:1.6mm 3mm;font-size:9.3pt;align-items:end">
+        <b style="color:var(--night)">Name:</b><span class="blank xl"></span>
+        <b style="color:var(--night)">Date:</b><span class="blank xl"></span>
+        <b style="color:var(--night)">My score:</b><span><span class="blank s"></span> / 100 ⭐</span>
+      </div>
+    </div>
+    <div style="background:var(--lav);border-radius:6mm;height:62mm;position:relative;overflow:hidden;border:1px solid var(--lav2)">
+      <div style="position:absolute;z-index:2;top:3.4mm;left:4mm;background:#fff;border-radius:4mm;padding:1mm 3mm;font-size:8.6pt;font-weight:700;color:var(--night);box-shadow:0 1px 0 var(--lav2)">Day 1 starts now! 🌱</div>
+      <img class="char" src="img/f/30-duo-waving-lav.jpg" style="position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:76mm">
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><span class="num">★</span>How to use this worksheet</h2>
+    <div class="steps" style="margin-top:2.4mm">
+      <div class="step"><div class="h">1 · Before you listen 🧠</div><div class="s">Do the warm-up and learn the key words. Questions with 🧠 can be answered before listening.</div></div>
+      <div class="step"><div class="h">2 · While you listen 🎧</div><div class="s">Answer the 🎧 questions. The ⏱ times show where to find each part of the video.</div></div>
+      <div class="step"><div class="h">3 · After you listen 💬</div><div class="s">Solve the word search, plan your tiny habit and share it in the comments!</div></div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><span class="num">0</span>Warm-up: My habit confession <span class="tag fun">fun · no points</span></h2>
+    <p class="instr">Be honest! Tick every habit you started with lots of energy… and then stopped. 😅</p>
+    <div style="display:grid;grid-template-columns:1.3fr .7fr;gap:4mm;align-items:stretch">
+      <div class="card white" style="display:flex;flex-direction:column;gap:2.4mm;justify-content:center">
+        <div class="conf">
+          <div><span class="box sm"></span>👟 running</div>
+          <div><span class="box sm"></span>📓 a journal</div>
+          <div><span class="box sm"></span>📱 an app</div>
+          <div><span class="box sm"></span>🏋️ the gym</div>
+          <div><span class="box sm"></span>📚 reading</div>
+          <div><span class="box sm"></span>🎸 music</div>
+        </div>
+        <div style="border-top:1px dashed var(--lav2);padding-top:2mm;font-size:8.9pt"><b style="color:var(--night)">When did you stop?</b></div>
+        <div style="display:flex;gap:4mm;font-size:8.9pt;flex-wrap:wrap"><span><span class="circ">a</span> after 1 week</span><span><span class="circ">b</span> after 2–3 weeks</span><span><span class="circ">c</span> after one missed day</span></div>
+        <div class="hint">🎧 Many people stop at the same time – find out why at ⏱ 5:19</div>
+      </div>
+      <div class="card peach" style="display:flex;flex-direction:column;align-items:center;gap:1.4mm;padding:2.6mm 3mm 0;justify-content:space-between">
+        <div style="background:#fff;border-radius:4mm;padding:2mm 2.8mm;font-size:8.5pt;border:1.2px solid #F4D2C2;line-height:1.4"><b style="color:var(--night)">Jack:</b> "I bought bright orange running shoes in April. Now they're very expensive slippers. Great for making tea!" ☕</div>
+        <img class="char" src="img/f/23-jack-hot-chocolate-peach.jpg" style="width:27mm">
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><span class="num">💬</span>Let's talk</h2>
+    <p class="instr">Say your answers out loud – or write them in your notebook.</p>
+    <div class="grid2" style="gap:3mm">
+      <div class="card teal"><b>1.</b> What's one good habit you have now? How did it start?</div>
+      <div class="card teal"><b>2.</b> How many days do you think it takes to build a habit?</div>
+      <div class="card teal"><b>3.</b> What do you do every day on "autopilot"?</div>
+      <div class="card teal"><b>4.</b> What do you do when you miss a day of studying?</div>
+    </div>
+  </div>
+
+  {{FOOT1}}
+</section>
+
+<!-- ================= PAGE 2 ================= -->
+<section class="page">
+  <div class="sec" style="margin-top:3mm">
+    <h2><span class="num">1</span>Key words <span class="tag">vocabulary</span><span class="tag pts">10 points</span></h2>
+    <p class="instr">Match each word or phrase (1–10) to its meaning (a–j). Write the letter in the box. 🧠 Check in the Word Tour at ⏱ 13:41</p>
+    <div class="grid2" style="gap:5mm;align-items:start">
+      <table class="match">
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--night)">1.</b> automatic</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--night)">2.</b> on autopilot</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--night)">3.</b> consistent</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--night)">4.</b> context</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--night)">5.</b> willpower</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--night)">6.</b> a myth</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--night)">7.</b> a streak</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--night)">8.</b> to fall behind</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--night)">9.</b> it slipped my mind</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--night)">10.</b> to get back on track</td></tr>
+      </table>
+      <div class="card" style="font-size:9.1pt;line-height:1.62">
+        <b>a)</b> an idea many people believe, but it isn't true<br>
+        <b>b)</b> I forgot about it<br>
+        <b>c)</b> doing things without really paying attention<br>
+        <b>d)</b> the ability to control yourself and do something difficult<br>
+        <b>e)</b> done without thinking, like brushing your teeth<br>
+        <b>f)</b> to return to your plan after a difficult time<br>
+        <b>g)</b> the situation, place or time around something<br>
+        <b>h)</b> a period of doing something every day without missing<br>
+        <b>i)</b> doing something regularly, in the same way<br>
+        <b>j)</b> to do less than you planned, so you're not where you wanted to be
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="bub">
+      <img class="char" src="img/f/19-lucy-glasses-book-w.jpg" style="width:24mm;flex:none">
+      <div class="txt"><b>Pronunciation corner 🔊</b> Find the strong part! con-<b style="color:var(--peach-d)">SIS</b>-tent · au-to-<b style="color:var(--peach-d)">MA</b>-tic · <b style="color:var(--peach-d)">AU</b>-to-pi-lot · <b style="color:var(--peach-d)">WILL</b>-pow-er · <b style="color:var(--peach-d)">HA</b>-bit. Say it out loud: <i>"Being consistent is more important than willpower."</i></div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><span class="num">2</span>First listen: the big idea <span class="tag">listening</span><span class="tag pts">2 points</span></h2>
+    <p class="instr">Watch the whole episode once without stopping. Which sentence is the <b>main message</b>? 🎧</p>
+    <div class="card white">
+      <div class="opt" style="font-size:9.6pt;margin:1.2mm 0"><span class="c">a</span>If you work hard, any new habit becomes automatic in exactly 21 days.</div>
+      <div class="opt" style="font-size:9.6pt;margin:1.2mm 0"><span class="c">b</span>Good habits depend mostly on strong willpower, so you must never miss a day.</div>
+      <div class="opt" style="font-size:9.6pt;margin:1.2mm 0"><span class="c">c</span>A new habit often takes two months or more – and one missed day doesn't ruin it.</div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="bub">
+      <div class="ava" style="width:22mm;height:22mm"><img src="img/f/06-jack-listening-lav.jpg" style="height:140%"></div>
+      <div class="txt"><b>Jack's tip:</b> First listen = the <b>big picture</b>. Don't stop the video and don't worry about every word. Second listen = the <b>details</b>. That's when you answer the 🎧 questions.</div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="card sage">
+      <b style="color:var(--night)">🔮 Predict before you listen!</b> <span class="small">(no points)</span> Seven of these words are in the episode. One is <b>not</b>. Circle the one you think you <b>won't</b> hear – then check while you listen.
+      <div class="chips" style="margin-top:2.4mm;justify-content:center"><span>slippers</span><span>journal</span><span>bridge</span><span>pillow</span><span>guitar</span><span>shortcut</span><span>dog walker</span><span>chocolate</span></div>
+    </div>
+  </div>
+
+  {{FOOT2}}
+</section>
+
+<!-- ================= PAGE 3 ================= -->
+<section class="page">
+  <div class="sec" style="margin-top:3mm;display:flex;justify-content:space-between;align-items:flex-start;gap:4mm">
+    <div>
+      <h2><span class="num">3</span>Know it or hear it? <span class="tag">quiz + listening</span><span class="tag pts">10 points</span></h2>
+      <p class="instr" style="margin-bottom:0">Circle a, b or c. Questions 🧠 1–5: you can probably answer them <b>before</b> you listen. Questions 🎧 6–10: listen to find the answer.</p>
+    </div>
+    <img class="char" src="img/f/31-duo-quiz-w.jpg" style="width:36mm;flex:none;margin-top:-2mm">
+  </div>
+  <div class="small" style="margin:2.4mm 0 1.6mm 10.8mm;font-weight:700;color:var(--sage-d)">🧠 YOU MIGHT ALREADY KNOW</div>
+  <div class="mc">
+    <div class="mcq"><div class="qq">1. If something is "automatic", you do it…</div><div class="opt"><span class="c">a</span>very slowly</div><div class="opt"><span class="c">b</span>without thinking</div><div class="opt"><span class="c">c</span>with a friend</div><div class="hint">🧠 Look at Exercise 1</div></div>
+    <div class="mcq"><div class="qq">2. "I've got into the habit ______ reading before bed."</div><div class="opt"><span class="c">a</span>to</div><div class="opt"><span class="c">b</span>for</div><div class="opt"><span class="c">c</span>of</div><div class="hint">🧠 Grammar you know</div></div>
+    <div class="mcq"><div class="qq">3. You forgot your English lesson. The most natural sentence is…</div><div class="opt"><span class="c">a</span>"It slipped my mind."</div><div class="opt"><span class="c">b</span>"My mind slipped it."</div><div class="opt"><span class="c">c</span>"It went out from my head."</div><div class="hint">🧠 Look at Exercise 1</div></div>
+    <div class="mcq"><div class="qq">4. A "myth" is an idea that is…</div><div class="opt"><span class="c">a</span>popular, but not true</div><div class="opt"><span class="c">b</span>new and scientific</div><div class="opt"><span class="c">c</span>difficult to understand</div><div class="hint">🧠 Look at Exercise 1</div></div>
+    <div class="mcq"><div class="qq">5. To start a new habit, it's usually best to…</div><div class="opt"><span class="c">a</span>wait for next Monday</div><div class="opt"><span class="c">b</span>start with something big</div><div class="opt"><span class="c">c</span>start with something tiny</div><div class="hint">🧠 Common sense</div></div>
+    <div class="mcq" style="background:var(--sage);border-color:#BFD7C8;display:flex;align-items:center;gap:3mm"><span style="font-size:18pt">🎉</span><span style="font-size:9.1pt"><b style="color:var(--night)">How many did you know?</b><br>Now press play and test your ears!</span></div>
+  </div>
+  <div class="small" style="margin:3.4mm 0 1.6mm 10.8mm;font-weight:700;color:var(--peach-d)">🎧 LISTEN AND FIND OUT</div>
+  <div class="mc">
+    <div class="mcq"><div class="qq">6. What was Maxwell Maltz's job?</div><div class="opt"><span class="c">a</span>a sports coach</div><div class="opt"><span class="c">b</span>a plastic surgeon</div><div class="opt"><span class="c">c</span>a teacher</div><div class="hint">🎧 ⏱ 2:30</div></div>
+    <div class="mcq"><div class="qq">7. Which habits became automatic faster?</div><div class="opt"><span class="c">a</span>simple ones, like drinking water with lunch</div><div class="opt"><span class="c">b</span>difficult ones, like exercise</div><div class="opt"><span class="c">c</span>all habits took the same time</div><div class="hint">🎧 ⏱ 3:45</div></div>
+    <div class="mcq"><div class="qq">8. Weeks two and three are hard because…</div><div class="opt"><span class="c">a</span>people get ill</div><div class="opt"><span class="c">b</span>the habit becomes boring forever</div><div class="opt"><span class="c">c</span>the excitement has gone, but the habit isn't automatic yet</div><div class="hint">🎧 ⏱ 5:19</div></div>
+    <div class="mcq"><div class="qq">9. Wendy Wood says habits are mostly about…</div><div class="opt"><span class="c">a</span>context</div><div class="opt"><span class="c">b</span>willpower</div><div class="opt"><span class="c">c</span>money</div><div class="hint">🎧 ⏱ 8:09</div></div>
+    <div class="mcq"><div class="qq">10. Where did Jack put his running shoes the night before his run?</div><div class="opt"><span class="c">a</span>under his bed</div><div class="opt"><span class="c">b</span>by the front door</div><div class="opt"><span class="c">c</span>in the kitchen</div><div class="hint">🎧 ⏱ 19:36</div></div>
+    <div class="mcq" style="background:var(--lav);border-color:var(--lav2);display:flex;align-items:center;gap:3mm"><span style="font-size:18pt">🧩</span><span style="font-size:9.1pt"><b style="color:var(--night)">Fun fact:</b> The "21 days" idea came from a surgeon's notes about patients <b>getting used to a new face</b> – not about habits at all!</span></div>
+  </div>
+
+  {{FOOT3}}
+</section>
+
+<!-- ================= PAGE 4 ================= -->
+<section class="page">
+  <div class="sec" style="margin-top:3mm;display:flex;justify-content:space-between;align-items:flex-start;gap:4mm">
+    <div>
+      <h2><span class="num">4</span>Number detective 🔍 <span class="tag">new! listening for numbers</span><span class="tag pts">8 points</span></h2>
+      <p class="instr" style="margin-bottom:0">Numbers go fast in English! Listen and write the missing number in each box.</p>
+    </div>
+    <img class="char" src="img/f/16-jack-surprised-left-w.jpg" style="width:22mm;flex:none;margin-top:-3mm">
+  </div>
+  <div class="nums" style="margin-top:2.6mm">
+    <div class="nc"><div class="q"><b>1.</b> In April, Jack went running only ___ times.</div><div class="a"><span class="bx"></span><span class="t">⏱ 0:05</span></div></div>
+    <div class="nc"><div class="q"><b>2.</b> Maltz wrote it took a minimum of about ___ days.</div><div class="a"><span class="bx"></span><span class="t">⏱ 2:30</span></div></div>
+    <div class="nc"><div class="q"><b>3.</b> The UCL study followed ___ people.</div><div class="a"><span class="bx"></span><span class="t">⏱ 3:45</span></div></div>
+    <div class="nc"><div class="q"><b>4.</b> They followed them for ___ weeks.</div><div class="a"><span class="bx"></span><span class="t">⏱ 3:45</span></div></div>
+    <div class="nc"><div class="q"><b>5.</b> On average, a new habit took ___ days.</div><div class="a"><span class="bx"></span><span class="t">⏱ 3:45</span></div></div>
+    <div class="nc"><div class="q"><b>6.</b> For the fastest people, it took ___ days.</div><div class="a"><span class="bx"></span><span class="t">⏱ 3:45</span></div></div>
+    <div class="nc"><div class="q"><b>7.</b> For others, it took up to ___ days!</div><div class="a"><span class="bx"></span><span class="t">⏱ 3:45</span></div></div>
+    <div class="nc"><div class="q"><b>8.</b> About ___ % of what we do every day is repeated in the same situation.</div><div class="a"><span class="bx"></span><span class="t">⏱ 8:09</span></div></div>
+  </div>
+  <div class="bub" style="margin-top:3mm">
+    <img class="char" src="img/f/03-lucy-did-you-know-w.jpg" style="width:20mm;flex:none">
+    <div class="txt"><b>Did you know?</b> In British English, we say <b>"and"</b> in big numbers: 254 = <i>two hundred <b>and</b> fifty-four</i>. Watch the stress, too: thir<b style="color:var(--peach-d)">TEEN</b> (13) vs <b style="color:var(--peach-d)">THIR</b>ty (30). Say your answers out loud!</div>
+  </div>
+
+  <div class="sec">
+    <h2><span class="num">5</span>True or false? <span class="tag">listening</span><span class="tag pts">6 points</span></h2>
+    <p class="instr">Listen and circle <b>T</b> (true) or <b>F</b> (false). The ⏱ times help you find the answer.</p>
+    <table class="tf">
+      <tr><td class="n">1</td><td>Lucy wrote in her journal for 21 days and then stopped.</td><td class="ck"><span class="circ">T</span> <span class="circ">F</span></td><td class="tm">⏱ 0:05</td></tr>
+      <tr><td class="n">2</td><td>Maltz was writing about building new habits.</td><td class="ck"><span class="circ">T</span> <span class="circ">F</span></td><td class="tm">⏱ 2:30</td></tr>
+      <tr><td class="n">3</td><td>In the study, missing one day didn't really affect the habit.</td><td class="ck"><span class="circ">T</span> <span class="circ">F</span></td><td class="tm">⏱ 5:19</td></tr>
+      <tr><td class="n">4</td><td>Wendy Wood says people with amazing self-control are just stronger than others.</td><td class="ck"><span class="circ">T</span> <span class="circ">F</span></td><td class="tm">⏱ 8:09</td></tr>
+      <tr><td class="n">5</td><td>Jack suggests studying English for one hour a day at the start.</td><td class="ck"><span class="circ">T</span> <span class="circ">F</span></td><td class="tm">⏱ 9:14</td></tr>
+      <tr><td class="n">6</td><td>Lucy's rule is: "I can miss one day, but I won't miss two days in a row."</td><td class="ck"><span class="circ">T</span> <span class="circ">F</span></td><td class="tm">⏱ 9:14</td></tr>
+    </table>
+  </div>
+
+  <div class="sec">
+    <div class="card peach" style="display:flex;gap:3mm;align-items:center;font-size:9pt">
+      <span style="font-size:17pt">🌉</span>
+      <div><b style="color:var(--night)">The middle of the bridge:</b> in weeks two and three, you can't see the start anymore – and you can't see the end yet. If it still feels difficult, that's <b>normal</b>. Keep walking!</div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="card white" style="padding:3mm 4.6mm 3.4mm">
+      <b style="color:var(--night)">📏 How long does a habit really take?</b> <span class="small">(no points – check your answers to Exercise 4 here after you listen!)</span>
+      <div style="position:relative;height:18mm;margin:2.4mm 6mm 0"><div style="position:absolute;left:-2mm;right:-2mm;top:9mm;height:3mm;border-radius:2mm;background:linear-gradient(90deg,var(--sage) 0%,var(--lav2) 35%,var(--peach) 100%)"></div><div style="position:absolute;left:3%;top:0;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center"><span style="width:11mm;height:5.4mm;border:1.3px solid var(--night);border-radius:1.4mm;background:#fff"></span><span style="width:1.3px;height:3.6mm;background:var(--night)"></span></div><div style="position:absolute;left:3%;top:13.2mm;transform:translateX(-50%);font-size:7.6pt;font-weight:600;color:var(--sage-d);white-space:nowrap">fastest</div><div style="position:absolute;left:17%;top:0;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center"><span style="width:11mm;height:5.4mm;border:1.3px solid var(--night);border-radius:1.4mm;background:#fff"></span><span style="width:1.3px;height:3.6mm;background:var(--night)"></span></div><div style="position:absolute;left:17%;top:13.2mm;transform:translateX(-50%);font-size:7.6pt;font-weight:600;color:#C0392B;white-space:nowrap">❌ the myth</div><div style="position:absolute;left:37%;top:0;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center"><span style="width:11mm;height:5.4mm;border:1.3px solid var(--night);border-radius:1.4mm;background:#fff"></span><span style="width:1.3px;height:3.6mm;background:var(--night)"></span></div><div style="position:absolute;left:37%;top:13.2mm;transform:translateX(-50%);font-size:7.6pt;font-weight:600;color:var(--mauve-d);white-space:nowrap">average</div><div style="position:absolute;left:97%;top:0;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center"><span style="width:11mm;height:5.4mm;border:1.3px solid var(--night);border-radius:1.4mm;background:#fff"></span><span style="width:1.3px;height:3.6mm;background:var(--night)"></span></div><div style="position:absolute;left:97%;top:13.2mm;transform:translateX(-50%);font-size:7.6pt;font-weight:600;color:var(--peach-d);white-space:nowrap">slowest</div></div>
+      <div class="small" style="margin-top:1.4mm">Write the numbers from Exercise 4 on the line: <b>fastest · the myth · average · slowest</b>. Where would <b>your</b> English habit be? Draw a ⭐!</div>
+    </div>
+  </div>
+
+  {{FOOT4}}
+</section>
+
+<!-- ================= PAGE 5 ================= -->
+<section class="page">
+  <div class="sec" style="margin-top:3mm;display:flex;justify-content:space-between;align-items:flex-start;gap:4mm">
+    <div>
+      <h2><span class="num">6</span>"How's the Spanish going?" <span class="tag">listening</span><span class="tag pts">10 points</span></h2>
+      <p class="instr" style="margin-bottom:0">Listen to the two friends at ⏱ 11:43. Write <b>one word</b> in each gap (1–8). Then answer A and B. The phrase breakdown at ⏱ 12:54 can help.</p>
+    </div>
+    <img class="char" src="img/f/20-jack-glasses-laptop-w.jpg" style="width:25mm;flex:none;margin-top:-3mm">
+  </div>
+
+  <div class="chat" style="margin-top:2.4mm;gap:1.1mm">
+    <div class="msg l"><div class="ava"><img src="img/f/11-lucy-asking-right-lav.jpg"></div><div class="b"><span class="who">LUCY</span>So, how's the Spanish going? You were so excited about it in January.</div></div>
+    <div class="msg j"><div class="ava"><img src="img/f/15-jack-shrug-left-lav.jpg"></div><div class="b"><span class="who">JACK</span>Don't ask. I kept it <span class="gap">1</span> for about three weeks, and then I fell <span class="gap">2</span>. And once I'd missed a few days, I just gave up.</div></div>
+    <div class="msg l"><div class="ava"><img src="img/f/10-lucy-listening-right-lav.jpg"></div><div class="b"><span class="who">LUCY</span>Oh, that's such a <span class="gap">3</span>. You were doing so well.</div></div>
+    <div class="msg j"><div class="ava"><img src="img/f/13-jack-talking-left-lav.jpg"></div><div class="b"><span class="who">JACK</span>I know. I was really getting <span class="gap">4</span> it. But then work got busy, and it just slipped my <span class="gap">5</span>.</div></div>
+    <div class="msg l"><div class="ava"><img src="img/f/09-lucy-talking-right-lav.jpg"></div><div class="b"><span class="who">LUCY</span>Happens to everyone. Why don't you start again, but smaller? Like ten minutes a day.</div></div>
+    <div class="msg j"><div class="ava"><img src="img/f/16-jack-surprised-left-lav.jpg"></div><div class="b"><span class="who">JACK</span>Ten minutes? That doesn't sound like enough.</div></div>
+    <div class="msg l"><div class="ava"><img src="img/f/11-lucy-asking-right-lav.jpg"></div><div class="b"><span class="who">LUCY</span>It's better than <span class="gap">6</span> minutes. And you could do it on the bus. You take the bus every day anyway.</div></div>
+    <div class="msg j"><div class="ava"><img src="img/f/14-jack-listening-left-lav.jpg"></div><div class="b"><span class="who">JACK</span>That's actually a good idea. I could make it part of my <span class="gap">7</span>.</div></div>
+    <div class="msg l"><div class="ava"><img src="img/f/09-lucy-talking-right-lav.jpg"></div><div class="b"><span class="who">LUCY</span>Exactly. And if you miss a day, don't beat yourself up about it. Just carry on the next day.</div></div>
+    <div class="msg j"><div class="ava"><img src="img/f/13-jack-talking-left-lav.jpg"></div><div class="b"><span class="who">JACK</span>Okay. I'll give it another <span class="gap">8</span>. Ten minutes, on the bus, starting Monday.</div></div>
+    <div class="msg l"><div class="ava"><img src="img/f/12-lucy-laughing-right-lav.jpg"></div><div class="b"><span class="who">LUCY</span>Why not tomorrow?</div></div>
+    <div class="msg j"><div class="ava"><img src="img/f/15-jack-shrug-left-lav.jpg"></div><div class="b"><span class="who">JACK</span>Fine. Tomorrow. 😅</div></div>
+  </div>
+
+  <div class="grid2" style="margin-top:2.8mm;gap:3mm">
+    <div class="card" style="padding:2.4mm 4mm"><b style="color:var(--night)">A.</b> Which phrase means <b>"don't criticise yourself too much"</b>? Copy it:<div class="lines"></div></div>
+    <div class="card" style="padding:2.4mm 4mm"><b style="color:var(--night)">B.</b> Lucy connects the new habit to an <b>old</b> one. Which old habit?<div class="lines"></div></div>
+  </div>
+  <div class="small" style="margin-top:1.8mm;text-align:center">🎭 <b>Shadow it!</b> Pause after each line and copy Jack's rhythm out loud (Lucy's idea at ⏱ 19:03).</div>
+
+  {{FOOT5}}
+</section>
+
+<!-- ================= PAGE 6 ================= -->
+<section class="page">
+  <div class="sec" style="margin-top:3mm;display:flex;justify-content:space-between;align-items:flex-start;gap:4mm">
+    <div>
+      <h2><span class="num">7</span>Habit words that go together <span class="tag">collocations + idioms</span><span class="tag pts">6 points</span></h2>
+      <p class="instr" style="margin-bottom:0">Complete each sentence with a word from the box. Change the form if you need to. 🎧 Help at ⏱ 16:15</p>
+    </div>
+    <img class="char" src="img/f/21-jack-eating-sandwich-w.jpg" style="width:23mm;flex:none;margin-top:-3mm">
+  </div>
+  <div class="chips" style="margin:1.6mm 0 2mm 10.8mm"><span>break</span><span>creature</span><span>die</span><span>get into</span><span>kick</span><span>make</span></div>
+  <table class="coll" style="margin-left:2mm">
+    <tr><td>1. I'm trying to <span class="blank"></span> the habit of checking my phone in bed.</td></tr>
+    <tr><td>2. I've <span class="blank"></span> the habit of reading before bed. I love it!</td></tr>
+    <tr><td>3. I want to <span class="blank"></span> this a habit, so I'll do it every morning.</td></tr>
+    <tr><td>4. My dad has had the same breakfast for thirty years. He's a real <span class="blank"></span> of habit.</td></tr>
+    <tr><td>5. I still check my work emails on holiday. Old habits <span class="blank"></span> hard!</td></tr>
+    <tr><td>6. She drank five coffees a day, but last year she finally <span class="blank"></span> the habit. <span class="small">(= stopped a bad habit)</span></td></tr>
+  </table>
+
+  <div class="sec">
+    <h2><span class="num">8</span>Used to · be used to · get used to <span class="tag">new! grammar</span><span class="tag pts">4 points</span></h2>
+    <p class="instr">Maltz's patients needed time to <b>get used to</b> their new face. Three similar phrases – three different meanings!</p>
+    <div class="rule">
+      <div style="background:var(--sage)"><b class="h" style="color:var(--sage-d)">used to + verb</b>a past habit that has <b>stopped</b><br><i>"I used to run every day."</i></div>
+      <div style="background:var(--lav)"><b class="h" style="color:var(--mauve-d)">be used to + -ing / noun</b>it's <b>normal</b> for you now<br><i>"I'm used to getting up early."</i></div>
+      <div style="background:var(--peach-l)"><b class="h" style="color:var(--peach-d)">get used to + -ing / noun</b>it's <b>becoming</b> normal<br><i>"You'll get used to it!"</i></div>
+    </div>
+    <div class="card white" style="margin-top:2.6mm;font-size:9.3pt;line-height:2.05">
+      1. When Lucy started, she <span class="blank"></span> write a whole page. Now she writes three lines.<br>
+      2. After an operation, the patients needed time to <span class="blank l"></span> their new face.<br>
+      3. I'm a morning person, so I <span class="blank l"></span> waking up early. It's easy for me.<br>
+      4. Running is hard at first, but your body will <span class="blank l"></span> it.
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="bub">
+      <img class="char" src="img/f/02-jack-lightbulb-idea-w.jpg" style="width:20mm;flex:none">
+      <div class="txt"><b>Jack's tip:</b> After <b>be used to</b> and <b>get used to</b>, the verb needs <b>-ing</b>: <i>"I'm used to wak<b>ing</b> up early"</i> – not <i>"I'm used to wake up"</i>. It's one of the most common learner mistakes!</div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="card teal" style="padding:2.8mm 4.6mm">
+      <b style="color:var(--night)">🪞 Now talk about you!</b> <span class="small">(no points)</span> Finish the sentences – then say them out loud.
+      <div style="font-size:9.3pt;line-height:2.2;margin-top:1mm">
+        When I was a child, I <b>used to</b> <span class="blank l"></span>.<br>
+        Now I'<b>m used to</b> <span class="blank l"></span>.<br>
+        I'm still <b>getting used to</b> <span class="blank l"></span>.
+      </div>
+    </div>
+  </div>
+
+  {{FOOT6}}
+</section>
+
+<!-- ================= PAGE 7 ================= -->
+<section class="page">
+  <div class="sec" style="margin-top:3mm;display:flex;justify-content:space-between;align-items:flex-end;gap:4mm">
+    <div>
+      <h2><span class="num">9</span>Good setup or bad setup? <span class="tag">think</span><span class="tag pts">8 points</span></h2>
+      <p class="instr" style="margin-bottom:0">Wendy Wood says habits depend on <b>context</b>, not willpower. Does each setup help a good habit 🌱 or a bad habit 🌵? 🎧 Check at ⏱ 8:09</p>
+    </div>
+    <img class="char" src="img/f/27-lucy-morning-stretch-w.jpg" style="width:22mm;flex:none">
+  </div>
+  <div class="grid3" style="grid-template-columns:repeat(4,1fr);margin-top:2.4mm;gap:2.4mm">
+    <div class="sit"><div class="e">👟🚪</div><div class="t"><b>1.</b> Your running shoes are by the front door.</div><div class="ch"><span><span class="box sm"></span>🌱</span><span><span class="box sm"></span>🌵</span></div></div>
+    <div class="sit"><div class="e">📱🛏️</div><div class="t"><b>2.</b> Your phone is next to your bed.</div><div class="ch"><span><span class="box sm"></span>🌱</span><span><span class="box sm"></span>🌵</span></div></div>
+    <div class="sit"><div class="e">📖🛌</div><div class="t"><b>3.</b> Your English book is on your pillow.</div><div class="ch"><span><span class="box sm"></span>🌱</span><span><span class="box sm"></span>🌵</span></div></div>
+    <div class="sit"><div class="e">🍪💻</div><div class="t"><b>4.</b> A big box of biscuits is on your desk.</div><div class="ch"><span><span class="box sm"></span>🌱</span><span><span class="box sm"></span>🌵</span></div></div>
+    <div class="sit"><div class="e">☕🎧</div><div class="t"><b>5.</b> You play a podcast every time you make coffee.</div><div class="ch"><span><span class="box sm"></span>🌱</span><span><span class="box sm"></span>🌵</span></div></div>
+    <div class="sit"><div class="e">🎸📦</div><div class="t"><b>6.</b> Your guitar is in a box under the bed.</div><div class="ch"><span><span class="box sm"></span>🌱</span><span><span class="box sm"></span>🌵</span></div></div>
+    <div class="sit"><div class="e">💧🖥️</div><div class="t"><b>7.</b> A full water bottle is on your desk.</div><div class="ch"><span><span class="box sm"></span>🌱</span><span><span class="box sm"></span>🌵</span></div></div>
+    <div class="sit"><div class="e">🔔📚</div><div class="t"><b>8.</b> Notifications are on while you study.</div><div class="ch"><span><span class="box sm"></span>🌱</span><span><span class="box sm"></span>🌵</span></div></div>
+  </div>
+  <div class="small" style="margin:2mm 0 0 1mm">💡 <b>Make good habits easy</b> (put them where you can see them) and <b>bad habits hard</b> (put them away). It's less about being strong – and more about being clever!</div>
+
+  <div class="sec">
+    <h2><span class="num">10</span>Say it better <span class="tag">common mistakes</span><span class="tag pts">10 points</span></h2>
+    <p class="instr">These sentences sound unnatural. Write a more natural version (2 points each). ⏱ 17:00</p>
+    <table style="font-size:9.4pt">
+      <tr><td style="width:49%;padding:1.7mm 0">😐 1. "I want to do this every day as a habit."</td><td>😊 <span class="blank l"></span></td></tr>
+      <tr><td style="padding:1.7mm 0">😐 2. "I forgot to study, it went out of my head."</td><td>😊 <span class="blank l"></span></td></tr>
+      <tr><td style="padding:1.7mm 0">😐 3. "I stopped, I will start again."</td><td>😊 <span class="blank l"></span></td></tr>
+      <tr><td style="padding:1.7mm 0">😐 4. "Don't be angry with yourself so much."</td><td>😊 <span class="blank l"></span></td></tr>
+      <tr><td style="padding:1.7mm 0">😐 5. "I didn't do it many days, I am behind now."</td><td>😊 <span class="blank l"></span></td></tr>
+    </table>
+    <div class="bub" style="margin-top:2.6mm">
+      <img class="char" src="img/f/01-lucy-thumbs-up-w.jpg" style="width:19mm;flex:none">
+      <div class="txt"><b>Lucy's tip – sound modern:</b> When you do something every day without missing, say <b>"I'm on a streak!"</b> 🔥 <i>"Four days of journaling – I'm on a streak!"</i></div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><span class="num">💭</span>Change the story <span class="tag fun">be kind · no points</span></h2>
+    <p class="instr">"The problem is never the missed day. It's the <b>story we tell ourselves</b> about it." Rewrite each thought in a kinder way.</p>
+    <div class="grid3" style="gap:2.6mm">
+      <div class="sit"><div class="t" style="min-height:0">😣 <i>"I missed one day. That's it, I've failed."</i></div><div style="font-size:8.6pt;color:var(--sage-d)">😊 <b>"I missed one day. That's normal – I'll start again tomorrow."</b></div></div>
+      <div class="sit"><div class="t" style="min-height:0">😣 <i>"I'll start again next Monday."</i></div><div style="font-size:8.6pt;color:var(--sage-d)">😊</div><div class="lines" style="height:5mm"></div></div>
+      <div class="sit"><div class="t" style="min-height:0">😣 <i>"Ten minutes is useless."</i></div><div style="font-size:8.6pt;color:var(--sage-d)">😊</div><div class="lines" style="height:5mm"></div></div>
+    </div>
+  </div>
+
+  {{FOOT7}}
+</section>
+
+<!-- ================= PAGE 8 ================= -->
+<section class="page">
+  <div class="sec" style="margin-top:3mm;display:flex;justify-content:space-between;align-items:flex-start;gap:4mm">
+    <div>
+      <h2><span class="num">11</span>Clue word search + secret message <span class="tag">new! puzzle</span><span class="tag pts">10 points</span></h2>
+      <p class="instr" style="margin-bottom:0"><b>Step 1:</b> Read each clue and write the missing word (1 point each). <b>Step 2:</b> Find all 10 words in the grid. They go → ↓ ↘ and ↗.</p>
+    </div>
+    <img class="char" src="img/f/04-jack-thinking-w.jpg" style="width:21mm;flex:none;margin-top:-3mm">
+  </div>
+  <div style="display:grid;grid-template-columns:1.1fr .9fr;gap:4mm;margin-top:2.4mm;align-items:center">
+    <div class="card white clues" style="padding:2.6mm 3.4mm">
+      <div><span class="n">1</span><span>Brushing your teeth is a__________ – you don't think about it.</span></div>
+      <div><span class="n">2</span><span>"I drove home on a__________. I don't remember the journey!"</span></div>
+      <div><span class="n">3</span><span>Being c__________ is more important than studying for hours.</span></div>
+      <div><span class="n">4</span><span>Habits depend on c__________: the place, the time, what you did before.</span></div>
+      <div><span class="n">5</span><span>Habits are not mostly about w__________.</span></div>
+      <div><span class="n">6</span><span>"21 days" is a m__________ – many people believe it, but it isn't true.</span></div>
+      <div><span class="n">7</span><span>Four days in a row – Lucy's on a s__________!</span></div>
+      <div><span class="n">8</span><span>Listen, then do the worksheet. Make it part of your r__________.</span></div>
+      <div><span class="n">9</span><span>Lucy writes three lines in her j__________ every morning.</span></div>
+      <div><span class="n">10</span><span>Weeks two and three are like the middle of a b__________.</span></div>
+    </div>
+    <div><table class="ws"><tr><td>W</td><td>A</td><td>U</td><td>T</td><td>O</td><td>P</td><td>I</td><td>L</td><td>O</td><td>T</td></tr><tr><td>I</td><td>A</td><td>S</td><td>T</td><td>R</td><td>E</td><td>A</td><td>K</td><td>N</td><td>T</td></tr><tr><td>L</td><td>H</td><td>U</td><td>E</td><td>G</td><td>N</td><td>R</td><td>E</td><td>A</td><td>E</td></tr><tr><td>L</td><td>S</td><td>S</td><td>T</td><td>R</td><td>D</td><td>T</td><td>O</td><td>N</td><td>E</td></tr><tr><td>P</td><td>S</td><td>M</td><td>U</td><td>O</td><td>S</td><td>N</td><td>I</td><td>T</td><td>G</td></tr><tr><td>O</td><td>R</td><td>O</td><td>Y</td><td>I</td><td>M</td><td>T</td><td>O</td><td>W</td><td>B</td></tr><tr><td>W</td><td>J</td><td>A</td><td>S</td><td>T</td><td>U</td><td>A</td><td>C</td><td>K</td><td>O</td></tr><tr><td>E</td><td>V</td><td>N</td><td>E</td><td>O</td><td>H</td><td>R</td><td>T</td><td>N</td><td>I</td></tr><tr><td>R</td><td>O</td><td>B</td><td>R</td><td>I</td><td>D</td><td>G</td><td>E</td><td>I</td><td>G</td></tr><tr><td>C</td><td>O</td><td>N</td><td>T</td><td>E</td><td>X</td><td>T</td><td>H</td><td>T</td><td>C</td></tr></table></div>
+  </div>
+  <div class="card sage" style="margin-top:3mm">
+    <b style="color:var(--night)">🤫 Step 3 – the secret message</b> <span class="small">(no points)</span> Now write the letters you <b>didn't</b> use, row by row, from left to right. They make Lucy's favourite sentence from the episode!
+    <div class="msgrow" style="margin-top:2.4mm"><span></span><span></span><span></span><i></i><span></span><span></span><span></span><span></span><span></span><i></i><span></span><span></span><span></span><span></span><span></span><span></span><i></i><span></span><span></span><span></span><span></span><i></i><span></span><span></span><span></span><span></span><i></i><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+    <div class="small" style="margin-top:1.8mm">What does it mean? Write it in your own words: <span class="blank l"></span></div>
+  </div>
+
+  <div class="sec">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:4mm">
+      <div>
+        <h2><span class="num">12</span>The story of the orange shoes <span class="tag">listening</span><span class="tag pts">6 points</span></h2>
+        <p class="instr" style="margin-bottom:0">Put the events in the right order. Write 1–6 in the boxes. ⏱ 0:05 and 19:36</p>
+      </div>
+      <img class="char" src="img/f/26-jack-sleepy-morning-w.jpg" style="width:19mm;flex:none">
+    </div>
+    <div class="story" style="margin-top:2mm">
+      <div class="ev"><span class="box"></span><span class="e">🌙</span><span>One night, Jack put the shoes by the front door.</span></div>
+      <div class="ev"><span class="box"></span><span class="e">🛍️</span><span>In April, Jack bought bright orange running shoes.</span></div>
+      <div class="ev"><span class="box"></span><span class="e">🐕</span><span>A dog walker overtook him!</span></div>
+      <div class="ev"><span class="box"></span><span class="e">🩴</span><span>For months, he wore them as slippers in the kitchen.</span></div>
+      <div class="ev"><span class="box"></span><span class="e">🌅</span><span>In the morning, he saw them first and ran for ten minutes.</span></div>
+      <div class="ev"><span class="box"></span><span class="e">🏃</span><span>He went running only three times.</span></div>
+    </div>
+  </div>
+
+  {{FOOT8}}
+</section>
+
+<!-- ================= PAGE 9 ================= -->
+<section class="page">
+  <div class="sec" style="margin-top:3mm;display:flex;justify-content:space-between;align-items:flex-end;gap:4mm">
+    <div>
+      <h2><span class="num">13</span>Your turn: your habit story <span class="tag">writing</span><span class="tag pts">10 points</span></h2>
+      <p class="instr" style="margin-bottom:0">Use today's phrases. 2 points for each good sentence.</p>
+    </div>
+    <img class="char" src="img/f/05-lucy-writing-w.jpg" style="width:20mm;flex:none">
+  </div>
+  <div class="grid2" style="margin-top:2.4mm;gap:3mm;align-items:stretch">
+    <div class="card" style="padding:2.6mm 4mm">
+      <b style="color:var(--night);font-size:9.2pt">A. A habit I started and stopped</b>
+      <div class="small" style="margin-top:1mm">① I started… ② I kept it up for… but then… <i>(fell behind / slipped my mind)</i> ③ Next time, I'm going to…</div>
+      <div class="lines"></div><div class="lines"></div><div class="lines"></div>
+    </div>
+    <div class="card peach" style="padding:2.6mm 4mm">
+      <b style="color:var(--night);font-size:9.2pt">B. Habit stacking 🔗</b>
+      <div class="small" style="margin-top:1mm">Connect a <b>new</b> English habit to an <b>old</b> one. Write two sentences.</div>
+      <div style="font-size:9pt;margin-top:2mm;line-height:2.15">After I <span class="blank" style="min-width:20mm"></span>, I will <span class="blank" style="min-width:24mm"></span>.<br>After I <span class="blank" style="min-width:20mm"></span>, I will <span class="blank" style="min-width:24mm"></span>.</div>
+      <div class="small" style="margin-top:.6mm"><i>e.g. After I make my coffee, I will listen to an English podcast.</i></div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><span class="num">🌱</span>Make your own path <span class="tag fun">your 14-day mission</span></h2>
+    <p class="instr">Every step makes the path across the park a little clearer. Colour a stone each day you do your tiny habit.</p>
+    <div class="grass">
+      <div style="font-size:9pt;color:var(--night)"><b>My tiny English habit:</b> After I <span class="blank" style="min-width:34mm"></span>, I will <span class="blank" style="min-width:48mm"></span>.</div>
+      <div class="path">
+        <div class="stone">1</div><div class="stone">2</div><div class="stone">3</div><div class="stone">4</div><div class="stone">5</div><div class="stone">6</div><div class="stone">7</div>
+        <div class="stone">8</div><div class="stone">9</div><div class="stone">10</div><div class="stone">11</div><div class="stone">12</div><div class="stone">13</div><div class="stone" style="background:var(--peach);border-color:#E99A7C;color:var(--night)">14 🎉</div>
+      </div>
+      <div style="font-size:8.4pt;margin-top:3.6mm;color:var(--sage-d)"><b>Missed a day?</b> That's normal – the grass doesn't grow back overnight! Just follow Lucy's rule: <b>never miss two days in a row.</b> And remember: 66 days is the real goal. 💪</div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="pocket">
+      <span class="sc">✂️ Cut out and keep in your pocket</span>
+      <div class="pc">
+        <div><b style="color:var(--sage-d)">🚀 START</b>I want to make this a habit.<br>I'm getting into the habit of…</div>
+        <div><b style="color:var(--peach-d)">😅 OOPS</b>It completely slipped my mind.<br>I've fallen behind.</div>
+        <div><b style="color:var(--mauve-d)">🔁 AGAIN</b>I'll give it another go.<br>I'm getting back on track.</div>
+        <div><b style="color:var(--teal-d)">💜 BE KIND</b>Don't beat yourself up.<br>Go easy on yourself.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><span class="num">✓</span>Can you do it now?</h2>
+    <table class="cando" style="margin-top:1.4mm">
+      <tr><th style="text-align:left">I can…</th><th>Not yet</th><th>Almost</th><th>Yes!</th></tr>
+      <tr><td>explain why "21 days" is a myth.</td><td class="f">😟</td><td class="f">🙂</td><td class="f">😄</td></tr>
+      <tr><td>talk about a habit I started and stopped.</td><td class="f">😟</td><td class="f">🙂</td><td class="f">😄</td></tr>
+      <tr><td>use used to, be used to and get used to correctly.</td><td class="f">😟</td><td class="f">🙂</td><td class="f">😄</td></tr>
+      <tr><td>make a plan: "After I…, I will…"</td><td class="f">😟</td><td class="f">🙂</td><td class="f">😄</td></tr>
+    </table>
+  </div>
+
+  <div class="sec">
+    <div class="bub">
+      <img class="char" src="img/f/08-jack-waving-w.jpg" style="width:20mm;flex:none">
+      <div class="txt"><b>Share it with us!</b> Finish this sentence in the comments: <b>"After I…, I will…"</b> And do you have your own "orange running shoes" – something you bought for a habit that never happened? 👟💜</div>
+    </div>
+  </div>
+
+  {{FOOT9}}
+</section>
+
+<!-- ================= PAGE 10 (KEY) ================= -->
+<section class="page key">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-top:2mm">
+    <h2><span class="num">✓</span>Answer key</h2>
+    <span class="small">Count your points and write your score on page 1!</span>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:2mm;margin-top:2.6mm">
+    <div class="k"><h3>0 · Warm-up &amp; predict</h3><p>Your own answers – most people stop after 2–3 weeks or one missed day. · Predict: <b>guitar</b> 🎸 isn't in the episode.</p></div>
+    <div class="k"><h3>1 · Key words · 2 · The big idea</h3><p>1 e · 2 c · 3 i · 4 g · 5 d · 6 a · 7 h · 8 j · 9 b · 10 f<br>Big idea: c (2 points)</p></div>
+    <div class="k"><h3>3 · Know it or hear it?</h3><p>1 b · 2 c · 3 a · 4 a · 5 c · 6 b · 7 a · 8 c · 9 a · 10 b</p></div>
+    <div class="k"><h3>4 · Number detective</h3><p>1 three (3) · 2 21 · 3 96 · 4 12 · 5 66 · 6 18 · 7 254 · 8 43</p></div>
+    <div class="k"><h3>5 · True or false?</h3><p>1 T · 2 F (getting used to a new face) · 3 T · 4 F (they organise their lives so good things are easy) · 5 F (five words or ten minutes) · 6 T</p></div>
+    <div class="k"><h3>6 · "How's the Spanish going?"</h3><p>1 up · 2 behind · 3 shame · 4 into · 5 mind · 6 zero · 7 routine · 8 go · A "Don't beat yourself up about it." · B taking the bus every day</p></div>
+    <div class="k"><h3>7 · Habit words that go together</h3><p>1 break · 2 got into · 3 make · 4 creature · 5 die · 6 kicked</p></div>
+    <div class="k"><h3>8 · Used to · be used to · get used to</h3><p>1 used to · 2 get used to · 3 am used to ('m used to) · 4 get used to</p></div>
+    <div class="k"><h3>9 · Good setup or bad setup?</h3><p>🌱 good: 1, 3, 5, 7 · 🌵 bad: 2, 4, 6, 8</p></div>
+    <div class="k"><h3>10 · Say it better (2 points each)</h3><p>1 I want to make this a habit. · 2 It completely slipped my mind. · 3 I'm going to give it another go. / I'm getting back on track. · 4 Don't beat yourself up about it. / Go easy on yourself. · 5 I've fallen behind. / I've got a bit behind.</p></div>
+    <div class="k" style="display:grid;grid-template-columns:1fr auto;gap:2mm;align-items:center"><div><h3>11 · Word search</h3><p>1 automatic · 2 autopilot · 3 consistent · 4 context · 5 willpower · 6 myth · 7 streak · 8 routine · 9 journal · 10 bridge<br><b>Secret:</b> The grass doesn't grow back overnight. (= one missed day doesn't erase your progress)</p></div><table class="wsk"><tr><td class="on">W</td><td class="on">A</td><td class="on">U</td><td class="on">T</td><td class="on">O</td><td class="on">P</td><td class="on">I</td><td class="on">L</td><td class="on">O</td><td class="on">T</td></tr><tr><td class="on">I</td><td class="on">A</td><td class="on">S</td><td class="on">T</td><td class="on">R</td><td class="on">E</td><td class="on">A</td><td class="on">K</td><td class="on">N</td><td class="">T</td></tr><tr><td class="on">L</td><td class="">H</td><td class="on">U</td><td class="">E</td><td class="">G</td><td class="on">N</td><td class="">R</td><td class="on">E</td><td class="">A</td><td class="on">E</td></tr><tr><td class="on">L</td><td class="">S</td><td class="">S</td><td class="on">T</td><td class="on">R</td><td class="">D</td><td class="on">T</td><td class="">O</td><td class="on">N</td><td class="">E</td></tr><tr><td class="on">P</td><td class="">S</td><td class="on">M</td><td class="on">U</td><td class="on">O</td><td class="on">S</td><td class="">N</td><td class="on">I</td><td class="">T</td><td class="">G</td></tr><tr><td class="on">O</td><td class="">R</td><td class="on">O</td><td class="on">Y</td><td class="on">I</td><td class="on">M</td><td class="on">T</td><td class="">O</td><td class="">W</td><td class="">B</td></tr><tr><td class="on">W</td><td class="on">J</td><td class="">A</td><td class="on">S</td><td class="on">T</td><td class="on">U</td><td class="on">A</td><td class="">C</td><td class="">K</td><td class="">O</td></tr><tr><td class="on">E</td><td class="">V</td><td class="on">N</td><td class="">E</td><td class="on">O</td><td class="on">H</td><td class="">R</td><td class="on">T</td><td class="">N</td><td class="">I</td></tr><tr><td class="on">R</td><td class="on">O</td><td class="on">B</td><td class="on">R</td><td class="on">I</td><td class="on">D</td><td class="on">G</td><td class="on">E</td><td class="on">I</td><td class="">G</td></tr><tr><td class="on">C</td><td class="on">O</td><td class="on">N</td><td class="on">T</td><td class="on">E</td><td class="on">X</td><td class="on">T</td><td class="">H</td><td class="">T</td><td class="on">C</td></tr></table></div>
+    <div class="k"><h3>12 · The orange shoes · 13 · Your habit story</h3><p>1 🛍️ bought · 2 🏃 three times · 3 🩴 slippers · 4 🌙 by the door · 5 🌅 ten minutes · 6 🐕 dog walker<br>13: your own answers! e.g. "I kept it up for two weeks, but then it slipped my mind." · "After I brush my teeth, I will learn five words." 2 points per good sentence.</p></div>
+  </div>
+  <div class="bands">
+    <div><b>90–100 🏆</b>Creature of (good) habit!</div>
+    <div><b>70–89 🔥</b>On a streak</div>
+    <div><b>50–69 🛤️</b>Back on track</div>
+    <div><b>0–49 🌉</b>Middle of the bridge – keep going!</div>
+  </div>
+  <div style="display:grid;grid-template-columns:auto 1fr auto;gap:4mm;align-items:center;margin-top:2.6mm;background:var(--night);border-radius:5mm;padding:3.2mm 4.6mm;color:#F8E3C4">
+    <img src="img/qr.png" style="width:24mm;height:24mm;border-radius:2mm;background:#fff;padding:1mm">
+    <div style="font-size:8.8pt;line-height:1.5"><b style="font-size:11pt;color:var(--peach)">Enjoyed this worksheet? 🎉</b><br>Scan to subscribe to <b>Daily Speak English</b> – new episodes with Jack and Lucy every week. Make it a habit!<br>More free worksheets: <b style="color:#fff">dailyspeakenglish.github.io/worksheets</b></div>
+    <img class="char" src="img/f/29-duo-high-five-night.jpg" style="width:37mm">
+  </div>
+
+  {{FOOT10}}
+</section>
+
+</body>
+</html>
