@@ -50,6 +50,8 @@ Rules that came from the user's feedback:
 - Use **varied** images of Jack and Lucy – avoid using the same image twice on one page.
 - Tips come from the characters in speech bubbles ("Jack's tip", "Lucy's tip", "Did you know?").
 - Keep instructions short and simple (B1).
+- Two-choice judgement tasks (good/bad, safe/tricky…) must use **opposite colours and shapes**: green ✓ chip vs red ✗ chip (`.pick.good` / `.pick.bad` in `build-a-habit`). Never two similar emoji (🌱/🌵 looked the same in print).
+- **Word search:** always build it with `python3 _source/tools/wordsearch.py _source/<slug>/ws_spec.json`. The tool guarantees: words never cross, each word appears exactly once (all 8 directions), only → ↓ ↘ ↗, max 4 diagonals, and the leftover letters spell the secret message. Use clues with letter slots (`wordsearch.slots`) instead of a word list, and the capsule answer key (`wordsearch.key_svg`) – never a key that only shades cells.
 
 ## 5. Design system
 
