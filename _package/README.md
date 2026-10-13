@@ -4,7 +4,7 @@ Templates the user confirmed. Use them word for word and change only what's mark
 
 ## Thumbnail prompt (Nano Banana Pro) – confirmed template
 
-Attach the usual Jack & Lucy reference image. Change only: wall colour (+hex), each host's pose/expression,
+Attach the usual Jack & Lucy reference image. Keep the small line under the headline short (3–5 words). Change only: wall colour (+hex), each host's pose/expression,
 headline lines 1–2 (+hex), the small line under the headline, and the colour-balance line.
 Lucy is always on the far LEFT, Jack on the far RIGHT. One host acts out the topic; the other looks
 straight at the viewer. Don't repeat a wall colour from the last 3 videos (Daylight used cobalt blue #2445D8;
@@ -27,8 +27,8 @@ Headline, centred in that open space, in a heavy, bold, rounded sans-serif font,
 Line 1: "[LINE 1]" in cream-white (#FFF6E3)
 Line 2: "[LINE 2]" in [ACCENT] ([HEX])
 Both lines have a thick very dark navy (#0A1A4A) outline and a soft drop shadow, which makes them pop strongly off the wall.
-Beneath them, smaller, in bold cream-white sans-serif: "[SMALL LINE]"
-Every word and number is spelled exactly as written, each line on a single line.
+Beneath them, on its own single line, the subtitle "[SMALL LINE]" in the same heavy, bold, rounded sans-serif, in cream-white (#FFF6E3), with the same thick very dark navy (#0A1A4A) outline and soft drop shadow as the headline. The subtitle must be easy to read even when the thumbnail is shown small on a phone: its capital letters are about one third as tall as the headline letters (never tiny), its letters are thick, and the line is about as wide as Line 1. It sits close under Line 2, centred, with nothing behind it but the plain wall.
+Every word and number in the headline and subtitle is spelled exactly as written, each line on a single line.
 
 Top-left corner: a small rounded sunshine-yellow pill containing "B1–B2" in bold very dark navy capitals. Directly to the right of it, in the same row, a small rounded white tag containing a simple paper-sheet icon with a folded corner and a small red label reading "PDF", followed by the words "FREE WORKSHEET" in bold very dark navy capitals. In the top-right corner, a small cream circle containing a simple minimal microphone icon. On the desk at the far left, a single small green potted plant. The bottom-right corner is simply plain desk and wall.
 
