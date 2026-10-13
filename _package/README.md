@@ -48,6 +48,6 @@ Colour balance: about 60% [COLOUR], 30% [ACCENT], 10% cream. Crisp, sharp, very 
 9. ✨ SAY IT BETTER – ❌ … → ✅ … (all pairs from the script)
 10. 🎯 THIS WEEK – the homework from the script
 11. 🎧 Natural B1–B2 English conversation with Jack and Lucy: real phrases, clear speech, no textbook dialogues.
-12. ▶️ WATCH NEXT: [previous episode link] / 📂 FULL PLAYLIST: [playlist link]
+12. 📂 FULL PODCAST PLAYLIST: https://www.youtube.com/playlist?list=PLbTuZD5sEAyZGy5BFvq3WDjuqEL5KZ4yl (no "watch next" line – the end screen's "Best for viewer" does that job)
 13. 🔔 Subscribe for a new English podcast episode every week.
 14. 5 hashtags: #EnglishPodcast #LearnEnglish #EnglishListeningPractice + 2 topic tags
