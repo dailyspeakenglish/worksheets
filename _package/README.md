@@ -8,7 +8,7 @@ Attach the usual Jack & Lucy reference image. Keep the small line under the head
 headline lines 1–2 (+hex), the small line under the headline, and the colour-balance line.
 Lucy is always on the far LEFT, Jack on the far RIGHT. One host acts out the topic; the other looks
 straight at the viewer. Don't repeat a wall colour from the last 3 videos (Build a Habit: raspberry #E0306F / green #5DBB2E / sky blue #1E9BEA;
-Remember Names: indigo #3730C9 / tomato red #F0473E / plum #8E2DA8; Time Flies: tangerine #FF7A1A / cobalt #2445D8 / ocean teal #00809D).
+Remember Names: indigo #3730C9 / tomato red #F0473E / plum #8E2DA8; Time Flies: forest green #1E7A4C / cobalt #2445D8 / ocean teal #00809D).
 
 ```
 Use the attached image only as the reference for Jack and Lucy: keep their faces, hairstyles and headphones exactly the same as in that image. Everything else — clothes, colours, poses, hands, expressions, text and layout — follows the description below, not the reference image.
