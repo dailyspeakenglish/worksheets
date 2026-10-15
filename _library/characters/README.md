@@ -1,6 +1,7 @@
 # Jack & Lucy image library
 
-Character images for worksheets (Nano Banana Pro, flat vector style, plain white background, 2048×2048).
+Character images for worksheets (Nano Banana Pro / Google Flow, flat vector style, plain white background, 2048×2048).
+73 images (01–75; 42 and 49 still missing – see `characters.json` → `missing`).
 `characters.json` has the same list in machine-readable form.
 
 **Dialogue rule:** Lucy images marked `right` face the right side, Jack images marked `left` face the left side,
@@ -43,6 +44,44 @@ so in a chat-style dialogue Lucy sits on the left and Jack on the right, looking
 | 33 | Jack | blue-scarf-good-morning | front | Greetings, mornings, winter, bus stop |
 | 34 | Lucy | shy-but-brave | front | Shyness, confidence, first tries |
 | 35 | Jack | reading-card | front | Kindness, messages, emotional stories |
+| 36 | Lucy | surprised-right | right | Dialogue – Lucy surprised, "Oh!" |
+| 37 | Lucy | thinking-right | right | Dialogue – Lucy thinking what to say |
+| 38 | Lucy | explaining-right | right | Dialogue – Lucy explaining / counting tips |
+| 39 | Lucy | caring-right | right | Dialogue – Lucy sympathetic, "Oh no, poor you!" |
+| 40 | Lucy | excited-right | right | Dialogue – Lucy excited, celebrating |
+| 41 | Jack | laughing-left | left | Dialogue – Jack laughing |
+| 43 | Jack | explaining-left | left | Dialogue – Jack explaining / counting tips |
+| 44 | Jack | embarrassed-left | left | Dialogue – Jack embarrassed, "Oops, sorry!" |
+| 45 | Jack | agreeing-left | left | Dialogue – Jack agreeing, thumbs up (almost front) |
+| 46 | Lucy | magnifying-glass | front | Detective tasks, listening for details, numbers |
+| 47 | Jack | pointing-right | front | Pointing at a tip box on his right |
+| 48 | Lucy | holding-blank-card | front | Holding a blank lavender card (put text over it) |
+| 50 | Lucy | puzzle-piece | front | Puzzles: crossword, word search |
+| 51 | Jack | stopwatch | front | Time, ⏱ timestamps, speed tasks |
+| 52 | Lucy | phone-comment | front | Share in the comments, messages |
+| 53 | Jack | listen-carefully | front | Listening tasks, "Listen carefully!" |
+| 54 | Lucy | waving | front | Hello / goodbye, share with us |
+| 55 | Jack | thumbs-up | front | Tip box, encouragement |
+| 56 | Lucy | cooking | front | Food, cooking, recipes |
+| 57 | Jack | exercise | front | Sport, running, health – white towel: use on white only (-w) |
+| 58 | Lucy | autumn-walk | front | Autumn, walking, seasons, coffee |
+| 59 | Jack | phone | front | Phones, screen time, social media |
+| 60 | Lucy | bedtime | front | Sleep, night, rest – white pillow: use on white only (-w) |
+| 61 | Jack | shopping | front | Shopping, money, buying things |
+| 62 | Lucy | birthday-cake | front | Birthdays, parties, celebrations |
+| 63 | Jack | at-work | front | Work, office, colleagues |
+| 64 | Lucy | plant | front | Growth, nature, habits, patience |
+| 65 | Jack | hiking | front | Outdoors, travel, adventure, maps |
+| 66 | Duo | podcast | front | Cover, about the show, microphones |
+| 67 | Duo | chatting | front | Conversation, dialogue sections |
+| 68 | Duo | coffee | front | Friendship, catching up, café |
+| 69 | Duo | thumbs-up | front | Well done, can-do, answer key |
+| 70 | Duo | surprised | front | Fun facts, surprising research |
+| 71 | Lucy | embarrassed | front | Mistakes, embarrassing moments, laughing at yourself |
+| 72 | Jack | confused | front | Confusing things, "I didn't get it" |
+| 73 | Lucy | calm | front | Calm, stress, breathing, wellbeing |
+| 74 | Jack | certificate | front | Achievement, exams, learning goals |
+| 75 | Lucy | a-bit-sad | front | Gentle sad / bittersweet moments, empathy |
 
 **Tip:** when making new images, attach one of these library images as the reference so the flat style stays the same.
 

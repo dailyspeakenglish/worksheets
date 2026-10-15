@@ -1,321 +1,674 @@
 {
- "style": "flat vector, plain white background, 2048x2048",
- "missing": [],
- "items": [
-  {
-   "id": 1,
-   "file": "01-lucy-thumbs-up.jpg",
-   "who": "lucy",
-   "pose": "thumbs-up",
-   "facing": "front",
-   "use": "Tip box, encouragement",
-   "background": "white"
-  },
-  {
-   "id": 2,
-   "file": "02-jack-lightbulb-idea.jpg",
-   "who": "jack",
-   "pose": "lightbulb-idea",
-   "facing": "front",
-   "use": "Quick tip, grammar corner",
-   "background": "white"
-  },
-  {
-   "id": 3,
-   "file": "03-lucy-did-you-know.jpg",
-   "who": "lucy",
-   "pose": "did-you-know",
-   "facing": "front",
-   "use": "Fun fact box",
-   "background": "white"
-  },
-  {
-   "id": 4,
-   "file": "04-jack-thinking.jpg",
-   "who": "jack",
-   "pose": "thinking",
-   "facing": "front",
-   "use": "Quiz / think about it",
-   "background": "white"
-  },
-  {
-   "id": 5,
-   "file": "05-lucy-writing.jpg",
-   "who": "lucy",
-   "pose": "writing",
-   "facing": "front",
-   "use": "Writing task, your turn",
-   "background": "white"
-  },
-  {
-   "id": 6,
-   "file": "06-jack-listening.jpg",
-   "who": "jack",
-   "pose": "listening",
-   "facing": "front",
-   "use": "Listening exercise",
-   "background": "white"
-  },
-  {
-   "id": 7,
-   "file": "07-lucy-great-job.jpg",
-   "who": "lucy",
-   "pose": "great-job",
-   "facing": "front",
-   "use": "Score, answer key, well done",
-   "background": "white"
-  },
-  {
-   "id": 8,
-   "file": "08-jack-waving.jpg",
-   "who": "jack",
-   "pose": "waving",
-   "facing": "front",
-   "use": "Share with us, goodbye",
-   "background": "white"
-  },
-  {
-   "id": 9,
-   "file": "09-lucy-talking-right.jpg",
-   "who": "lucy",
-   "pose": "talking-right",
-   "facing": "right",
-   "use": "Dialogue – Lucy speaking",
-   "background": "white"
-  },
-  {
-   "id": 10,
-   "file": "10-lucy-listening-right.jpg",
-   "who": "lucy",
-   "pose": "listening-right",
-   "facing": "right",
-   "use": "Dialogue – Lucy listening",
-   "background": "white"
-  },
-  {
-   "id": 11,
-   "file": "11-lucy-asking-right.jpg",
-   "who": "lucy",
-   "pose": "asking-right",
-   "facing": "right",
-   "use": "Dialogue – Lucy asking",
-   "background": "white"
-  },
-  {
-   "id": 12,
-   "file": "12-lucy-laughing-right.jpg",
-   "who": "lucy",
-   "pose": "laughing-right",
-   "facing": "right",
-   "use": "Dialogue – Lucy laughing",
-   "background": "white"
-  },
-  {
-   "id": 13,
-   "file": "13-jack-talking-left.jpg",
-   "who": "jack",
-   "pose": "talking-left",
-   "facing": "left",
-   "use": "Dialogue – Jack speaking",
-   "background": "white"
-  },
-  {
-   "id": 14,
-   "file": "14-jack-listening-left.jpg",
-   "who": "jack",
-   "pose": "listening-left",
-   "facing": "left",
-   "use": "Dialogue – Jack listening",
-   "background": "white"
-  },
-  {
-   "id": 15,
-   "file": "15-jack-shrug-left.jpg",
-   "who": "jack",
-   "pose": "shrug-left",
-   "facing": "left",
-   "use": "Dialogue – Jack answering, 'who knows?'",
-   "background": "white"
-  },
-  {
-   "id": 16,
-   "file": "16-jack-surprised-left.jpg",
-   "who": "jack",
-   "pose": "surprised-left",
-   "facing": "left",
-   "use": "Dialogue – Jack surprised",
-   "background": "white"
-  },
-  {
-   "id": 17,
-   "file": "17-lucy-winter-tea.jpg",
-   "who": "lucy",
-   "pose": "winter-tea",
-   "facing": "front",
-   "use": "Winter, cold weather, hot drinks",
-   "background": "white"
-  },
-  {
-   "id": 18,
-   "file": "18-jack-winter-cold.jpg",
-   "who": "jack",
-   "pose": "winter-cold",
-   "facing": "front",
-   "use": "Winter, cold weather",
-   "background": "white"
-  },
-  {
-   "id": 19,
-   "file": "19-lucy-glasses-book.jpg",
-   "who": "lucy",
-   "pose": "glasses-book",
-   "facing": "front",
-   "use": "Reading, studying",
-   "background": "white"
-  },
-  {
-   "id": 20,
-   "file": "20-jack-glasses-laptop.jpg",
-   "who": "jack",
-   "pose": "glasses-laptop",
-   "facing": "front",
-   "use": "Technology, online, work",
-   "background": "white"
-  },
-  {
-   "id": 21,
-   "file": "21-jack-eating-sandwich.jpg",
-   "who": "jack",
-   "pose": "eating-sandwich",
-   "facing": "front",
-   "use": "Food, eating, lunch",
-   "background": "white"
-  },
-  {
-   "id": 22,
-   "file": "22-lucy-eating-apple.jpg",
-   "who": "lucy",
-   "pose": "eating-apple",
-   "facing": "front",
-   "use": "Healthy food, snacks",
-   "background": "white"
-  },
-  {
-   "id": 23,
-   "file": "23-jack-hot-chocolate.jpg",
-   "who": "jack",
-   "pose": "hot-chocolate",
-   "facing": "front",
-   "use": "Cosy, comfort, winter drinks",
-   "background": "white"
-  },
-  {
-   "id": 24,
-   "file": "24-lucy-summer-hat.jpg",
-   "who": "lucy",
-   "pose": "summer-hat",
-   "facing": "front",
-   "use": "Summer, sun, holidays",
-   "background": "white"
-  },
-  {
-   "id": 25,
-   "file": "25-jack-rain-umbrella.jpg",
-   "who": "jack",
-   "pose": "rain-umbrella",
-   "facing": "front",
-   "use": "Rain, weather",
-   "background": "white"
-  },
-  {
-   "id": 26,
-   "file": "26-jack-sleepy-morning.jpg",
-   "who": "jack",
-   "pose": "sleepy-morning",
-   "facing": "front",
-   "use": "Sleep, mornings, tiredness",
-   "background": "white"
-  },
-  {
-   "id": 27,
-   "file": "27-lucy-morning-stretch.jpg",
-   "who": "lucy",
-   "pose": "morning-stretch",
-   "facing": "front",
-   "use": "Morning routine, energy, exercise",
-   "background": "white"
-  },
-  {
-   "id": 28,
-   "file": "28-lucy-travel.jpg",
-   "who": "lucy",
-   "pose": "travel",
-   "facing": "front",
-   "use": "Travel, airports, holidays",
-   "background": "white"
-  },
-  {
-   "id": 29,
-   "file": "29-duo-high-five.jpg",
-   "who": "duo",
-   "pose": "high-five",
-   "facing": "front",
-   "use": "Answer key, celebration",
-   "background": "white"
-  },
-  {
-   "id": 30,
-   "file": "30-duo-waving.jpg",
-   "who": "duo",
-   "pose": "waving",
-   "facing": "front",
-   "use": "Cover, goodbye, end page",
-   "background": "white"
-  },
-  {
-   "id": 31,
-   "file": "31-duo-quiz.jpg",
-   "who": "duo",
-   "pose": "quiz",
-   "facing": "front",
-   "use": "Quiz section, questions",
-   "background": "white"
-  },
-  {
-   "id": 32,
-   "file": "32-lucy-coffee-chat-right.jpg",
-   "who": "lucy",
-   "pose": "coffee-chat-right",
-   "facing": "right",
-   "use": "Dialogue – Lucy chatting with a coffee (café scenes)",
-   "background": "white"
-  },
-  {
-   "id": 33,
-   "file": "33-jack-blue-scarf-good-morning.jpg",
-   "who": "jack",
-   "pose": "blue-scarf-good-morning",
-   "facing": "front",
-   "use": "Greetings, mornings, winter, bus stop",
-   "background": "white"
-  },
-  {
-   "id": 34,
-   "file": "34-lucy-shy-but-brave.jpg",
-   "who": "lucy",
-   "pose": "shy-but-brave",
-   "facing": "front",
-   "use": "Shyness, confidence, first tries",
-   "background": "white"
-  },
-  {
-   "id": 35,
-   "file": "35-jack-reading-card.jpg",
-   "who": "jack",
-   "pose": "reading-card",
-   "facing": "front",
-   "use": "Kindness, messages, emotional stories",
-   "background": "white"
-  }
- ]
+  "style": "flat vector, plain white background, 2048x2048",
+  "missing": [
+    {
+      "id": 42,
+      "file": "42-jack-thinking-left.jpg",
+      "note": "generated with a ghost Lucy in the image – regenerate with a Jack-only reference"
+    },
+    {
+      "id": 49,
+      "file": "49-jack-trophy.jpg",
+      "note": "generated with a ghost Lucy in the image – regenerate with a Jack-only reference"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "file": "01-lucy-thumbs-up.jpg",
+      "who": "lucy",
+      "pose": "thumbs-up",
+      "facing": "front",
+      "use": "Tip box, encouragement",
+      "background": "white"
+    },
+    {
+      "id": 2,
+      "file": "02-jack-lightbulb-idea.jpg",
+      "who": "jack",
+      "pose": "lightbulb-idea",
+      "facing": "front",
+      "use": "Quick tip, grammar corner",
+      "background": "white"
+    },
+    {
+      "id": 3,
+      "file": "03-lucy-did-you-know.jpg",
+      "who": "lucy",
+      "pose": "did-you-know",
+      "facing": "front",
+      "use": "Fun fact box",
+      "background": "white"
+    },
+    {
+      "id": 4,
+      "file": "04-jack-thinking.jpg",
+      "who": "jack",
+      "pose": "thinking",
+      "facing": "front",
+      "use": "Quiz / think about it",
+      "background": "white"
+    },
+    {
+      "id": 5,
+      "file": "05-lucy-writing.jpg",
+      "who": "lucy",
+      "pose": "writing",
+      "facing": "front",
+      "use": "Writing task, your turn",
+      "background": "white"
+    },
+    {
+      "id": 6,
+      "file": "06-jack-listening.jpg",
+      "who": "jack",
+      "pose": "listening",
+      "facing": "front",
+      "use": "Listening exercise",
+      "background": "white"
+    },
+    {
+      "id": 7,
+      "file": "07-lucy-great-job.jpg",
+      "who": "lucy",
+      "pose": "great-job",
+      "facing": "front",
+      "use": "Score, answer key, well done",
+      "background": "white"
+    },
+    {
+      "id": 8,
+      "file": "08-jack-waving.jpg",
+      "who": "jack",
+      "pose": "waving",
+      "facing": "front",
+      "use": "Share with us, goodbye",
+      "background": "white"
+    },
+    {
+      "id": 9,
+      "file": "09-lucy-talking-right.jpg",
+      "who": "lucy",
+      "pose": "talking-right",
+      "facing": "right",
+      "use": "Dialogue – Lucy speaking",
+      "background": "white"
+    },
+    {
+      "id": 10,
+      "file": "10-lucy-listening-right.jpg",
+      "who": "lucy",
+      "pose": "listening-right",
+      "facing": "right",
+      "use": "Dialogue – Lucy listening",
+      "background": "white"
+    },
+    {
+      "id": 11,
+      "file": "11-lucy-asking-right.jpg",
+      "who": "lucy",
+      "pose": "asking-right",
+      "facing": "right",
+      "use": "Dialogue – Lucy asking",
+      "background": "white"
+    },
+    {
+      "id": 12,
+      "file": "12-lucy-laughing-right.jpg",
+      "who": "lucy",
+      "pose": "laughing-right",
+      "facing": "right",
+      "use": "Dialogue – Lucy laughing",
+      "background": "white"
+    },
+    {
+      "id": 13,
+      "file": "13-jack-talking-left.jpg",
+      "who": "jack",
+      "pose": "talking-left",
+      "facing": "left",
+      "use": "Dialogue – Jack speaking",
+      "background": "white"
+    },
+    {
+      "id": 14,
+      "file": "14-jack-listening-left.jpg",
+      "who": "jack",
+      "pose": "listening-left",
+      "facing": "left",
+      "use": "Dialogue – Jack listening",
+      "background": "white"
+    },
+    {
+      "id": 15,
+      "file": "15-jack-shrug-left.jpg",
+      "who": "jack",
+      "pose": "shrug-left",
+      "facing": "left",
+      "use": "Dialogue – Jack answering, 'who knows?'",
+      "background": "white"
+    },
+    {
+      "id": 16,
+      "file": "16-jack-surprised-left.jpg",
+      "who": "jack",
+      "pose": "surprised-left",
+      "facing": "left",
+      "use": "Dialogue – Jack surprised",
+      "background": "white"
+    },
+    {
+      "id": 17,
+      "file": "17-lucy-winter-tea.jpg",
+      "who": "lucy",
+      "pose": "winter-tea",
+      "facing": "front",
+      "use": "Winter, cold weather, hot drinks",
+      "background": "white"
+    },
+    {
+      "id": 18,
+      "file": "18-jack-winter-cold.jpg",
+      "who": "jack",
+      "pose": "winter-cold",
+      "facing": "front",
+      "use": "Winter, cold weather",
+      "background": "white"
+    },
+    {
+      "id": 19,
+      "file": "19-lucy-glasses-book.jpg",
+      "who": "lucy",
+      "pose": "glasses-book",
+      "facing": "front",
+      "use": "Reading, studying",
+      "background": "white"
+    },
+    {
+      "id": 20,
+      "file": "20-jack-glasses-laptop.jpg",
+      "who": "jack",
+      "pose": "glasses-laptop",
+      "facing": "front",
+      "use": "Technology, online, work",
+      "background": "white"
+    },
+    {
+      "id": 21,
+      "file": "21-jack-eating-sandwich.jpg",
+      "who": "jack",
+      "pose": "eating-sandwich",
+      "facing": "front",
+      "use": "Food, eating, lunch",
+      "background": "white"
+    },
+    {
+      "id": 22,
+      "file": "22-lucy-eating-apple.jpg",
+      "who": "lucy",
+      "pose": "eating-apple",
+      "facing": "front",
+      "use": "Healthy food, snacks",
+      "background": "white"
+    },
+    {
+      "id": 23,
+      "file": "23-jack-hot-chocolate.jpg",
+      "who": "jack",
+      "pose": "hot-chocolate",
+      "facing": "front",
+      "use": "Cosy, comfort, winter drinks",
+      "background": "white"
+    },
+    {
+      "id": 24,
+      "file": "24-lucy-summer-hat.jpg",
+      "who": "lucy",
+      "pose": "summer-hat",
+      "facing": "front",
+      "use": "Summer, sun, holidays",
+      "background": "white"
+    },
+    {
+      "id": 25,
+      "file": "25-jack-rain-umbrella.jpg",
+      "who": "jack",
+      "pose": "rain-umbrella",
+      "facing": "front",
+      "use": "Rain, weather",
+      "background": "white"
+    },
+    {
+      "id": 26,
+      "file": "26-jack-sleepy-morning.jpg",
+      "who": "jack",
+      "pose": "sleepy-morning",
+      "facing": "front",
+      "use": "Sleep, mornings, tiredness",
+      "background": "white"
+    },
+    {
+      "id": 27,
+      "file": "27-lucy-morning-stretch.jpg",
+      "who": "lucy",
+      "pose": "morning-stretch",
+      "facing": "front",
+      "use": "Morning routine, energy, exercise",
+      "background": "white"
+    },
+    {
+      "id": 28,
+      "file": "28-lucy-travel.jpg",
+      "who": "lucy",
+      "pose": "travel",
+      "facing": "front",
+      "use": "Travel, airports, holidays",
+      "background": "white"
+    },
+    {
+      "id": 29,
+      "file": "29-duo-high-five.jpg",
+      "who": "duo",
+      "pose": "high-five",
+      "facing": "front",
+      "use": "Answer key, celebration",
+      "background": "white"
+    },
+    {
+      "id": 30,
+      "file": "30-duo-waving.jpg",
+      "who": "duo",
+      "pose": "waving",
+      "facing": "front",
+      "use": "Cover, goodbye, end page",
+      "background": "white"
+    },
+    {
+      "id": 31,
+      "file": "31-duo-quiz.jpg",
+      "who": "duo",
+      "pose": "quiz",
+      "facing": "front",
+      "use": "Quiz section, questions",
+      "background": "white"
+    },
+    {
+      "id": 32,
+      "file": "32-lucy-coffee-chat-right.jpg",
+      "who": "lucy",
+      "pose": "coffee-chat-right",
+      "facing": "right",
+      "use": "Dialogue – Lucy chatting with a coffee (café scenes)",
+      "background": "white"
+    },
+    {
+      "id": 33,
+      "file": "33-jack-blue-scarf-good-morning.jpg",
+      "who": "jack",
+      "pose": "blue-scarf-good-morning",
+      "facing": "front",
+      "use": "Greetings, mornings, winter, bus stop",
+      "background": "white"
+    },
+    {
+      "id": 34,
+      "file": "34-lucy-shy-but-brave.jpg",
+      "who": "lucy",
+      "pose": "shy-but-brave",
+      "facing": "front",
+      "use": "Shyness, confidence, first tries",
+      "background": "white"
+    },
+    {
+      "id": 35,
+      "file": "35-jack-reading-card.jpg",
+      "who": "jack",
+      "pose": "reading-card",
+      "facing": "front",
+      "use": "Kindness, messages, emotional stories",
+      "background": "white"
+    },
+    {
+      "id": 36,
+      "file": "36-lucy-surprised-right.jpg",
+      "who": "lucy",
+      "pose": "surprised-right",
+      "facing": "right",
+      "use": "Dialogue – Lucy surprised, \"Oh!\"",
+      "background": "white"
+    },
+    {
+      "id": 37,
+      "file": "37-lucy-thinking-right.jpg",
+      "who": "lucy",
+      "pose": "thinking-right",
+      "facing": "right",
+      "use": "Dialogue – Lucy thinking what to say",
+      "background": "white"
+    },
+    {
+      "id": 38,
+      "file": "38-lucy-explaining-right.jpg",
+      "who": "lucy",
+      "pose": "explaining-right",
+      "facing": "right",
+      "use": "Dialogue – Lucy explaining / counting tips",
+      "background": "white"
+    },
+    {
+      "id": 39,
+      "file": "39-lucy-caring-right.jpg",
+      "who": "lucy",
+      "pose": "caring-right",
+      "facing": "right",
+      "use": "Dialogue – Lucy sympathetic, \"Oh no, poor you!\"",
+      "background": "white"
+    },
+    {
+      "id": 40,
+      "file": "40-lucy-excited-right.jpg",
+      "who": "lucy",
+      "pose": "excited-right",
+      "facing": "right",
+      "use": "Dialogue – Lucy excited, celebrating",
+      "background": "white"
+    },
+    {
+      "id": 41,
+      "file": "41-jack-laughing-left.jpg",
+      "who": "jack",
+      "pose": "laughing-left",
+      "facing": "left",
+      "use": "Dialogue – Jack laughing",
+      "background": "white"
+    },
+    {
+      "id": 43,
+      "file": "43-jack-explaining-left.jpg",
+      "who": "jack",
+      "pose": "explaining-left",
+      "facing": "left",
+      "use": "Dialogue – Jack explaining / counting tips",
+      "background": "white"
+    },
+    {
+      "id": 44,
+      "file": "44-jack-embarrassed-left.jpg",
+      "who": "jack",
+      "pose": "embarrassed-left",
+      "facing": "left",
+      "use": "Dialogue – Jack embarrassed, \"Oops, sorry!\"",
+      "background": "white"
+    },
+    {
+      "id": 45,
+      "file": "45-jack-agreeing-left.jpg",
+      "who": "jack",
+      "pose": "agreeing-left",
+      "facing": "left",
+      "use": "Dialogue – Jack agreeing, thumbs up (almost front)",
+      "background": "white"
+    },
+    {
+      "id": 46,
+      "file": "46-lucy-magnifying-glass.jpg",
+      "who": "lucy",
+      "pose": "magnifying-glass",
+      "facing": "front",
+      "use": "Detective tasks, listening for details, numbers",
+      "background": "white"
+    },
+    {
+      "id": 47,
+      "file": "47-jack-pointing-right.jpg",
+      "who": "jack",
+      "pose": "pointing-right",
+      "facing": "front",
+      "use": "Pointing at a tip box on his right",
+      "background": "white"
+    },
+    {
+      "id": 48,
+      "file": "48-lucy-holding-blank-card.jpg",
+      "who": "lucy",
+      "pose": "holding-blank-card",
+      "facing": "front",
+      "use": "Holding a blank lavender card (put text over it)",
+      "background": "white"
+    },
+    {
+      "id": 50,
+      "file": "50-lucy-puzzle-piece.jpg",
+      "who": "lucy",
+      "pose": "puzzle-piece",
+      "facing": "front",
+      "use": "Puzzles: crossword, word search",
+      "background": "white"
+    },
+    {
+      "id": 51,
+      "file": "51-jack-stopwatch.jpg",
+      "who": "jack",
+      "pose": "stopwatch",
+      "facing": "front",
+      "use": "Time, ⏱ timestamps, speed tasks",
+      "background": "white"
+    },
+    {
+      "id": 52,
+      "file": "52-lucy-phone-comment.jpg",
+      "who": "lucy",
+      "pose": "phone-comment",
+      "facing": "front",
+      "use": "Share in the comments, messages",
+      "background": "white"
+    },
+    {
+      "id": 53,
+      "file": "53-jack-listen-carefully.jpg",
+      "who": "jack",
+      "pose": "listen-carefully",
+      "facing": "front",
+      "use": "Listening tasks, \"Listen carefully!\"",
+      "background": "white"
+    },
+    {
+      "id": 54,
+      "file": "54-lucy-waving.jpg",
+      "who": "lucy",
+      "pose": "waving",
+      "facing": "front",
+      "use": "Hello / goodbye, share with us",
+      "background": "white"
+    },
+    {
+      "id": 55,
+      "file": "55-jack-thumbs-up.jpg",
+      "who": "jack",
+      "pose": "thumbs-up",
+      "facing": "front",
+      "use": "Tip box, encouragement",
+      "background": "white"
+    },
+    {
+      "id": 56,
+      "file": "56-lucy-cooking.jpg",
+      "who": "lucy",
+      "pose": "cooking",
+      "facing": "front",
+      "use": "Food, cooking, recipes",
+      "background": "white"
+    },
+    {
+      "id": 57,
+      "file": "57-jack-exercise.jpg",
+      "who": "jack",
+      "pose": "exercise",
+      "facing": "front",
+      "use": "Sport, running, health – white towel: use on white only (-w)",
+      "background": "white"
+    },
+    {
+      "id": 58,
+      "file": "58-lucy-autumn-walk.jpg",
+      "who": "lucy",
+      "pose": "autumn-walk",
+      "facing": "front",
+      "use": "Autumn, walking, seasons, coffee",
+      "background": "white"
+    },
+    {
+      "id": 59,
+      "file": "59-jack-phone.jpg",
+      "who": "jack",
+      "pose": "phone",
+      "facing": "front",
+      "use": "Phones, screen time, social media",
+      "background": "white"
+    },
+    {
+      "id": 60,
+      "file": "60-lucy-bedtime.jpg",
+      "who": "lucy",
+      "pose": "bedtime",
+      "facing": "front",
+      "use": "Sleep, night, rest – white pillow: use on white only (-w)",
+      "background": "white"
+    },
+    {
+      "id": 61,
+      "file": "61-jack-shopping.jpg",
+      "who": "jack",
+      "pose": "shopping",
+      "facing": "front",
+      "use": "Shopping, money, buying things",
+      "background": "white"
+    },
+    {
+      "id": 62,
+      "file": "62-lucy-birthday-cake.jpg",
+      "who": "lucy",
+      "pose": "birthday-cake",
+      "facing": "front",
+      "use": "Birthdays, parties, celebrations",
+      "background": "white"
+    },
+    {
+      "id": 63,
+      "file": "63-jack-at-work.jpg",
+      "who": "jack",
+      "pose": "at-work",
+      "facing": "front",
+      "use": "Work, office, colleagues",
+      "background": "white"
+    },
+    {
+      "id": 64,
+      "file": "64-lucy-plant.jpg",
+      "who": "lucy",
+      "pose": "plant",
+      "facing": "front",
+      "use": "Growth, nature, habits, patience",
+      "background": "white"
+    },
+    {
+      "id": 65,
+      "file": "65-jack-hiking.jpg",
+      "who": "jack",
+      "pose": "hiking",
+      "facing": "front",
+      "use": "Outdoors, travel, adventure, maps",
+      "background": "white"
+    },
+    {
+      "id": 66,
+      "file": "66-duo-podcast.jpg",
+      "who": "duo",
+      "pose": "podcast",
+      "facing": "front",
+      "use": "Cover, about the show, microphones",
+      "background": "white"
+    },
+    {
+      "id": 67,
+      "file": "67-duo-chatting.jpg",
+      "who": "duo",
+      "pose": "chatting",
+      "facing": "front",
+      "use": "Conversation, dialogue sections",
+      "background": "white"
+    },
+    {
+      "id": 68,
+      "file": "68-duo-coffee.jpg",
+      "who": "duo",
+      "pose": "coffee",
+      "facing": "front",
+      "use": "Friendship, catching up, café",
+      "background": "white"
+    },
+    {
+      "id": 69,
+      "file": "69-duo-thumbs-up.jpg",
+      "who": "duo",
+      "pose": "thumbs-up",
+      "facing": "front",
+      "use": "Well done, can-do, answer key",
+      "background": "white"
+    },
+    {
+      "id": 70,
+      "file": "70-duo-surprised.jpg",
+      "who": "duo",
+      "pose": "surprised",
+      "facing": "front",
+      "use": "Fun facts, surprising research",
+      "background": "white"
+    },
+    {
+      "id": 71,
+      "file": "71-lucy-embarrassed.jpg",
+      "who": "lucy",
+      "pose": "embarrassed",
+      "facing": "front",
+      "use": "Mistakes, embarrassing moments, laughing at yourself",
+      "background": "white"
+    },
+    {
+      "id": 72,
+      "file": "72-jack-confused.jpg",
+      "who": "jack",
+      "pose": "confused",
+      "facing": "front",
+      "use": "Confusing things, \"I didn't get it\"",
+      "background": "white"
+    },
+    {
+      "id": 73,
+      "file": "73-lucy-calm.jpg",
+      "who": "lucy",
+      "pose": "calm",
+      "facing": "front",
+      "use": "Calm, stress, breathing, wellbeing",
+      "background": "white"
+    },
+    {
+      "id": 74,
+      "file": "74-jack-certificate.jpg",
+      "who": "jack",
+      "pose": "certificate",
+      "facing": "front",
+      "use": "Achievement, exams, learning goals",
+      "background": "white"
+    },
+    {
+      "id": 75,
+      "file": "75-lucy-a-bit-sad.jpg",
+      "who": "lucy",
+      "pose": "a-bit-sad",
+      "facing": "front",
+      "use": "Gentle sad / bittersweet moments, empathy",
+      "background": "white"
+    }
+  ]
 }

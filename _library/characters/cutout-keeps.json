@@ -8,5 +8,7 @@
   "11-lucy-asking-right.jpg": "--keep 1262,836",
   "15-jack-shrug-left.jpg": "--keep 966,763",
   "23-jack-hot-chocolate.jpg": "--keep 1011,1289",
-  "30-duo-waving.jpg": "--keep 1407,830 --min-area 2000"
+  "30-duo-waving.jpg": "--keep 1407,830 --min-area 2000",
+  "44-jack-embarrassed-left.jpg": "--keep 959,825",
+  "51-jack-stopwatch.jpg": "--keep 1028,807"
 }
