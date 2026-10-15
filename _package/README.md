@@ -10,6 +10,10 @@ Lucy is always on the far LEFT, Jack on the far RIGHT. One host acts out the top
 straight at the viewer. This is the default, not a hard rule: when the topic suits it, both hosts can
 act together (e.g. Why We Laugh: Jack laughing, Lucy winking with a playful finger gun as if she told the joke).
 Never pair a sad or emotional pose with the other host grinning at the viewer; match both hosts to the mood. Don't repeat a wall colour from the last 3 videos (Remember Names: indigo #3730C9 / tomato red #F0473E / plum #8E2DA8;
+For tricky poses (gestures, winks, two hosts interacting), Google's Nano Banana Pro tips help: add a short intent paragraph
+after the first paragraph (what moment the image shows), describe the exact hand shape, which hand and where it points,
+which eye winks, and add a "Most important, in this order: …" line before the colour-balance line. Give short
+follow-up edit prompts for the likely failures instead of regenerating (Why We Laugh package is the example).
 Time Flies: forest green #1E7A4C / cobalt #2445D8 / ocean teal #00809D; Why We Laugh: electric violet #6C3BF0 / turquoise #14B8B0 / fuchsia #C81E9E).
 Never use an orange or near-orange wall: Lucy's sweater is orange and must stand out. Props must be clearly recognisable and never the same colour as the wall.
 
