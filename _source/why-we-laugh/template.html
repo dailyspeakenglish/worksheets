@@ -1,0 +1,719 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Daily Speak English – Why We Laugh Worksheet</title>
+<style>
+@page { size: A4; margin: 0; }
+:root{
+  --night:#1B2147; --night2:#2F3A6B; --mauve:#6E5D8C; --mauve-d:#4E3F6B; --lav:#F1EDF8; --lav2:#DED5EE;
+  --peach:#F2AE94; --peach-l:#FDEDE5; --peach-d:#A9532F; --sage:#D7E7DD; --sage-d:#2F5E50; --teal-l:#E3F0F3; --teal-d:#2C6577;
+  --cream:#FCF6EE; --ink:#22263F; --muted:#61647E; --line:#E3DCEC;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font-family:'Poppins','Noto Color Emoji',sans-serif;color:var(--ink);font-size:10.3pt;line-height:1.45;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.page{width:210mm;height:297mm;position:relative;overflow:hidden;padding:12mm 14mm 18mm;background:#fff;page-break-after:always}
+.page:last-child{page-break-after:auto}
+.page::before{content:"";position:absolute;inset:0 0 auto 0;height:4.5mm;background:linear-gradient(90deg,var(--night) 0 34%,var(--mauve) 34% 62%,var(--peach) 62% 84%,#B9D3C4 84% 100%)}
+.footer{position:absolute;left:14mm;right:14mm;bottom:7mm;display:flex;justify-content:space-between;align-items:center;font-size:7.5pt;color:var(--muted);border-top:1px solid var(--line);padding-top:2.2mm}
+.footer a{color:var(--night);text-decoration:none;font-weight:600}
+.footer>span{white-space:nowrap}
+.arr{display:inline-block;width:1.05em;height:1.05em;vertical-align:-.15em}
+.brand{display:flex;align-items:center;gap:2.2mm;font-weight:700;color:var(--night);font-size:8.8pt;letter-spacing:.3pt}
+.brand img{width:7mm;height:7mm;border-radius:50%}
+.footer .brand img{width:5mm;height:5mm}
+.footer .brand{font-size:7.5pt;letter-spacing:0}
+h1{font-size:25pt;line-height:1.06;margin:0;color:var(--night);font-weight:800;letter-spacing:-.3pt}
+h2{font-size:13pt;margin:0;color:var(--night);font-weight:700;display:flex;align-items:center;gap:2.4mm}
+h2 .num{display:inline-flex;align-items:center;justify-content:center;width:8.4mm;height:8.4mm;border-radius:50%;background:var(--mauve);color:#fff;font-size:10.5pt;flex:none}
+.sec{margin-top:5.6mm}
+.instr{font-size:9.2pt;color:var(--muted);margin:1.1mm 0 2.6mm 10.8mm}
+.tag{display:inline-block;font-size:7.4pt;font-weight:600;padding:.5mm 2.4mm;border-radius:10mm;background:var(--lav);color:var(--mauve-d);margin-left:1.2mm;vertical-align:middle}
+.tag.pts{background:var(--peach-l);color:var(--peach-d)}
+.tag.fun{background:var(--sage);color:var(--sage-d)}
+.card{background:var(--lav);border-radius:4mm;padding:3.6mm 4.6mm;border:1px solid var(--lav2)}
+.card.peach{background:var(--peach-l);border-color:#F6D3C3}
+.card.sage{background:var(--sage);border-color:#BFD7C8}
+.card.teal{background:var(--teal-l);border-color:#C6DFE6}
+.card.white{background:#fff;border:1.3px solid var(--line)}
+.blank{display:inline-block;border-bottom:1.3px solid var(--night);min-width:24mm;height:4.6mm;vertical-align:bottom}
+.blank.s{min-width:13mm}.blank.l{min-width:58mm}.blank.xl{min-width:100%}
+.box{display:inline-flex;width:6.2mm;height:6.2mm;border:1.4px solid var(--night);border-radius:1.4mm;vertical-align:middle;flex:none;background:#fff}
+.box.sm{width:5mm;height:5mm;border-radius:1.1mm}
+table{border-collapse:collapse;width:100%}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:4mm}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:3mm}
+.pill{display:inline-block;background:var(--night);color:#F8E3C4;font-weight:700;border-radius:10mm;padding:.6mm 3mm;font-size:8.8pt}
+.pill.p{background:var(--peach);color:var(--night)}
+.small{font-size:8.4pt;color:var(--muted)}
+.lines{height:7mm;border-bottom:1px dashed #C9BFD9}
+.char{display:block;object-fit:contain}
+.bub{display:flex;gap:3mm;align-items:center}
+.bub .txt{background:#fff;border:1.4px solid var(--line);border-radius:4mm;padding:2.4mm 3.6mm;font-size:9.1pt;flex:1}
+.bub .txt b{color:var(--night)}
+.ava{width:17mm;height:17mm;border-radius:50%;background:var(--lav);overflow:hidden;flex:none;border:2px solid #fff;box-shadow:0 0 0 1.4px var(--lav2)}
+.ava img{width:100%;height:130%;object-fit:cover;object-position:50% 4%}
+.mc{display:grid;grid-template-columns:1fr 1fr;gap:2.4mm 4.6mm}
+.mcq{background:#fff;border:1.2px solid var(--line);border-radius:3mm;padding:2.4mm 3.4mm}
+.mcq .qq{font-weight:600;color:var(--night);font-size:9.5pt;margin-bottom:1.1mm}
+.opt{display:flex;gap:2mm;align-items:center;font-size:9.2pt;margin:.6mm 0}
+.opt .c{width:4.6mm;height:4.6mm;border-radius:50%;border:1.3px solid var(--night);display:inline-flex;align-items:center;justify-content:center;font-size:7pt;font-weight:700;color:var(--night);flex:none}
+.hint{font-size:7.5pt;color:var(--peach-d);font-weight:600;margin-top:.6mm}
+.tf td{padding:1.45mm 2mm;border-bottom:1px solid #EEE8F4;font-size:9.4pt;vertical-align:middle}
+.tf th{font-size:7.8pt;color:var(--muted);font-weight:600;text-align:center;padding-bottom:1.2mm}
+.tf td.n{width:6mm;font-weight:700;color:var(--mauve)}
+.tf td.ck{width:17mm;text-align:center;white-space:nowrap}
+.tf td.tm{width:15mm;font-size:7.6pt;color:var(--peach-d);font-weight:600;text-align:right}
+.circ{display:inline-flex;width:6mm;height:6mm;border-radius:50%;border:1.3px solid var(--night);align-items:center;justify-content:center;font-weight:700;font-size:8pt;color:var(--night)}
+.match td{padding:1.35mm 1.6mm;font-size:9.3pt;vertical-align:middle}
+.match .ans{width:9mm}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:3mm}
+.step{background:#fff;border:1.3px solid var(--line);border-radius:3.4mm;padding:2.6mm 3.2mm}
+.step .h{font-weight:700;color:var(--night);font-size:9.4pt}
+.step .s{font-size:8.4pt;color:var(--muted);line-height:1.4}
+/* chat */
+.chat{display:flex;flex-direction:column;gap:1.5mm}
+.msg{display:flex;align-items:flex-end;gap:2.6mm}
+.msg.j{flex-direction:row-reverse}
+.msg .ava{width:13mm;height:13mm}
+.msg .b{max-width:132mm;border-radius:4.5mm;padding:1.6mm 3.6mm;font-size:9.4pt;line-height:1.5}
+.msg.l .b{background:var(--peach-l);border:1.2px solid #F4D2C2;border-bottom-left-radius:1mm}
+.msg.j .b{background:var(--lav);border:1.2px solid var(--lav2);border-bottom-right-radius:1mm}
+.msg .who{display:block;font-size:7pt;font-weight:700;letter-spacing:.4pt;margin-bottom:.1mm}
+.msg.l .who{color:var(--peach-d)} .msg.j .who{color:var(--mauve-d)}
+.gap{display:inline-block;min-width:21mm;border-bottom:1.3px solid var(--night);text-align:left;font-size:7.4pt;font-weight:700;color:var(--mauve);line-height:1.1;padding-left:.6mm}
+/* conversation map */
+.bank{display:grid;grid-template-columns:1fr 1fr;gap:1.4mm 4mm;font-size:9.1pt}
+.bank div{display:flex;gap:2mm;align-items:baseline}
+.bank b{color:var(--mauve);width:4mm;flex:none}
+.map{display:grid;grid-template-columns:1fr 7mm 1fr 7mm 1fr;align-items:stretch;margin-top:3mm}
+.col{border-radius:4mm;padding:3mm;text-align:center}
+.col .h{font-weight:800;font-size:10.5pt;letter-spacing:.4pt}
+.col .s{font-size:7.8pt;margin-bottom:2mm}
+.col .slots{display:flex;justify-content:center;gap:2mm}
+.col.c1{background:var(--sage);color:var(--sage-d)} .col.c2{background:var(--lav);color:var(--mauve-d)} .col.c3{background:var(--peach-l);color:var(--peach-d)}
+.arrow{display:flex;align-items:center;justify-content:center;font-size:15pt;color:var(--mauve);font-weight:700}
+/* situation cards */
+.sit{background:#fff;border:1.3px solid var(--line);border-radius:3.4mm;padding:2.4mm 3mm;display:flex;flex-direction:column;gap:1.4mm}
+.sit .e{font-size:17pt;line-height:1.1}
+.sit .t{font-size:8.8pt;color:var(--ink);min-height:12.5mm}
+.sit .ch{display:flex;gap:3mm;font-size:8pt;font-weight:600;color:var(--night);align-items:center}
+.sit .ch span{display:flex;gap:1.2mm;align-items:center}
+.key h3{margin:0 0 1mm;font-size:9.6pt;color:var(--night)}
+.key p{margin:0;font-size:8.5pt;line-height:1.48}
+.key .k{background:var(--cream);border-radius:3mm;padding:2.6mm 3.4mm;border:1px solid #EFE2D0}
+.chips{display:flex;flex-wrap:wrap;gap:1.8mm}
+.chips span{background:var(--lav);border:1px solid var(--lav2);color:var(--mauve-d);border-radius:10mm;padding:.5mm 3mm;font-size:8.8pt;font-weight:600}
+.chal th{background:var(--night);color:#F8E3C4;font-size:8.2pt;font-weight:600;padding:1.8mm 1.4mm;text-align:left}
+.chal th:first-child{border-radius:3mm 0 0 0}.chal th:last-child{border-radius:0 3mm 0 0;text-align:center}
+.chal td{border:1px solid #E6DFEE;height:8.6mm;font-size:8.5pt;padding:0 2mm;vertical-align:middle}
+.chal td.d{font-weight:700;color:var(--night);background:var(--lav);width:13mm;text-align:center}
+.chal td.f{text-align:center;font-size:10pt;letter-spacing:2mm;width:27mm}
+.cando td{padding:1.6mm 1.6mm;border-bottom:1px solid #EEE8F4;font-size:9pt}
+.cando td.f{text-align:center;width:12mm;font-size:11pt}
+.cando th{font-size:7.6pt;color:var(--muted);font-weight:600;text-align:center}
+.pocket{border:1.6px dashed var(--mauve);border-radius:4mm;padding:3mm 4mm;position:relative;background:#fff}
+.pocket .sc{position:absolute;top:-3.4mm;left:6mm;background:#fff;padding:0 1.4mm;font-size:9pt;color:var(--mauve)}
+.pocket .pc{display:grid;grid-template-columns:repeat(4,1fr);gap:2.4mm;font-size:7.9pt;line-height:1.35}
+.pocket .pc div b{display:block;font-size:8.2pt;margin-bottom:.6mm}
+.story{display:grid;grid-template-columns:1fr 1fr;gap:2.4mm 4mm}
+.story .ev{display:flex;gap:2.6mm;align-items:center;background:#fff;border:1.3px solid var(--line);border-radius:3mm;padding:2.2mm 3mm;font-size:9pt}
+.story .ev .e{font-size:15pt;flex:none}
+.story .ev .l{font-weight:800;color:var(--mauve);flex:none;width:4mm}
+/* ---- new in build-a-habit ---- */
+.pick{display:inline-flex;align-items:center;gap:1.2mm;padding:.5mm 2.2mm .5mm 1mm;border-radius:10mm;font-size:7.8pt;font-weight:700;white-space:nowrap}
+.pick.good{background:#DDF1E3;color:#1E7B45;border:1.2px solid #8FCBA3}
+.pick.bad{background:#FBE1DE;color:#C0392B;border:1.2px solid #EDA59D}
+.pick .box{width:4.2mm;height:4.2mm;border-radius:1mm;border-width:1.2px}
+.ic{width:3mm;height:3mm;flex:none;vertical-align:-.45mm;display:inline-block}
+.pick.good .box{border-color:#1E7B45}.pick.bad .box{border-color:#C0392B}
+.slots{display:inline-flex;gap:.55mm;vertical-align:-.5mm;margin:0 .5mm}
+.slots .sl{display:inline-block;width:2.45mm;height:3.4mm;border-bottom:1.1px solid var(--night)}
+.slots .sl1{display:inline-block;width:2.45mm;height:3.4mm;line-height:3.4mm;text-align:center;font-size:8.4pt;color:var(--mauve);border-bottom:1.1px solid var(--mauve)}
+.msgrow{display:flex;flex-wrap:wrap;gap:2.4mm 3.6mm;justify-content:center}
+.mw{display:inline-flex;gap:.8mm;align-items:flex-end}
+.mb{display:inline-block;width:4.4mm;height:5.8mm;border-bottom:1.4px solid var(--night)}
+.ap{font-weight:800;font-size:11pt;line-height:1;color:var(--night)}
+.nums{display:grid;grid-template-columns:repeat(4,1fr);gap:2.4mm}
+.nums .nc{background:#fff;border:1.3px solid var(--line);border-radius:3.4mm;padding:2.2mm 2.6mm;display:flex;flex-direction:column;gap:1.2mm}
+.nums .nc .q{font-size:8.5pt;line-height:1.36;min-height:12mm}
+.nums .nc .a{display:flex;align-items:center;justify-content:space-between}
+.nums .nc .bx{width:16mm;height:7.4mm;border:1.4px solid var(--night);border-radius:1.6mm;background:var(--lav)}
+.nums .nc .t{font-size:7.3pt;color:var(--peach-d);font-weight:600}
+.conf{display:grid;grid-template-columns:repeat(3,auto);justify-content:space-between;gap:1.6mm 3mm;font-size:9pt}
+.conf div{display:flex;gap:2mm;align-items:center}
+.coll td{padding:1.5mm 1mm;font-size:9.3pt;line-height:1.5}
+.rule{display:grid;grid-template-columns:repeat(3,1fr);gap:2.4mm}
+.rule div{border-radius:3mm;padding:2.2mm 2.8mm;font-size:8.4pt;line-height:1.4}
+.rule b.h{display:block;font-size:9.4pt;margin-bottom:.6mm}
+.ws{border-collapse:separate;border-spacing:.7mm;margin:0 auto}
+.ws td{width:6.3mm;height:6.3mm;text-align:center;font-weight:700;font-size:9.4pt;color:var(--night);background:#fff;border-radius:1.6mm;border:1px solid var(--lav2)}
+.clues{font-size:8.6pt;line-height:1.38;display:flex;flex-direction:column;gap:1.25mm}
+.clues div{display:flex;gap:1.6mm;align-items:baseline}
+.clues .n{font-weight:800;color:var(--mauve);width:4.4mm;flex:none}
+.wsk{border-collapse:separate;border-spacing:.35mm}
+.wsk td{width:3.4mm;height:3.4mm;font-size:5.4pt;text-align:center;font-weight:600;color:#B9AEC9;border-radius:.6mm;background:#fff}
+.wsk td.on{background:var(--peach);color:var(--night)}
+.path{display:grid;grid-template-columns:repeat(7,1fr);gap:2.2mm 2mm;margin-top:2mm}
+.stone{height:11mm;border-radius:50%;background:#EDE7F6;border:1.4px solid var(--lav2);display:flex;align-items:center;justify-content:center;font-size:8pt;font-weight:700;color:var(--mauve-d);position:relative}
+.path .stone:nth-child(even){transform:translateY(1.6mm)}
+.grass{background:linear-gradient(180deg,#EAF3EC,#D7E7DD);border-radius:4mm;padding:3mm 4mm 4.4mm;border:1px solid #BFD7C8}
+.react table td{padding:1.35mm 1.4mm;font-size:9.1pt;vertical-align:middle;border-bottom:1px solid #EEE8F4}
+.bands{display:grid;grid-template-columns:repeat(4,1fr);gap:2mm;margin-top:2.4mm}
+.bands div{background:var(--lav);border-radius:3mm;padding:1.6mm 2.2mm;font-size:7.8pt;line-height:1.33;text-align:center}
+.bands b{display:block;color:var(--night);font-size:8.4pt}
+
+/* ---- new in time-flies ---- */
+.graphs{display:grid;grid-template-columns:repeat(3,1fr);gap:2.6mm}
+.graph{background:#fff;border:1.3px solid var(--line);border-radius:3.4mm;padding:2mm 2.4mm;text-align:center}
+.graph .gl{display:inline-flex;width:6mm;height:6mm;border-radius:50%;border:1.3px solid var(--night);align-items:center;justify-content:center;font-weight:800;color:var(--night);font-size:9pt;margin-bottom:1mm}
+.gq{display:grid;grid-template-columns:1fr auto;gap:1.4mm 3mm;font-size:9.2pt;align-items:center}
+.gq .bx{display:inline-block;width:10mm;height:6.4mm;border:1.4px solid var(--night);border-radius:1.4mm;background:var(--lav)}
+.clock{display:inline-flex;align-items:center;gap:1.2mm;padding:.5mm 2.2mm .5mm 1mm;border-radius:10mm;font-size:7.6pt;font-weight:700;white-space:nowrap}
+.clock.now{background:var(--night);color:#F8E3C4}
+.clock.back{background:#FBE1D6;color:var(--peach-d);border:1.2px solid #EBB49C}
+.clock .box{width:4.2mm;height:4.2mm;border-radius:1mm;border-width:1.2px}
+.clock.now .box{border-color:#F8E3C4;background:transparent}
+.sorter{display:grid;grid-template-columns:1fr 1fr;gap:3mm;margin-top:2.4mm}
+.sorter .col{border-radius:4mm;padding:2.6mm 3mm;text-align:center}
+.sorter .col .h{font-weight:800;font-size:11pt;letter-spacing:.4pt}
+.sorter .col .s{font-size:7.8pt;margin-bottom:2mm}
+.sorter .slots{display:flex;justify-content:center;gap:2mm}
+.sorter .fast{background:#FDE3D6;color:#B5401C;border:1.3px solid #F2B39A}
+.sorter .slow{background:#DCEFF3;color:#1F5F70;border:1.3px solid #A9D3DD}
+.timeline{display:grid;grid-template-columns:repeat(3,1fr);gap:2.4mm}
+.timeline div{border-radius:3mm;padding:2.2mm 2.8mm;font-size:8.4pt;line-height:1.4}
+.timeline b.h{display:block;font-size:10pt;margin-bottom:.4mm}
+.cw{border-collapse:separate;border-spacing:.7mm;margin:0 auto;width:auto;table-layout:fixed}
+.cw td{width:var(--cell);min-width:var(--cell);max-width:var(--cell);height:var(--cell);padding:0;position:relative;box-sizing:border-box}
+.cw td.o{background:#fff;border:1.4px solid var(--night);border-radius:1.2mm}
+.cw td.x{border:none;background:transparent}
+.cw .cn{position:absolute;top:.15mm;left:.45mm;font-size:5.4pt;font-weight:700;color:var(--mauve);line-height:1}
+.cw .cl{display:flex;height:100%;align-items:center;justify-content:center;font-weight:700;font-size:8.6pt;color:var(--night)}
+.cwk{border-spacing:.35mm}
+.cwk td.o{border-width:.9px;border-radius:.6mm}
+.cwk .cn{font-size:3.6pt;top:.1mm;left:.25mm}
+.cwk .cl{font-size:6.2pt}
+.cclues{font-size:8.5pt;line-height:1.36}
+.cclues h4{margin:0 0 1mm;font-size:9.4pt;color:var(--night)}
+.cclues .card > div{display:flex;gap:1.6mm;align-items:baseline;margin-bottom:1mm}
+.cclues .n{font-weight:800;color:var(--mauve);width:4.4mm;flex:none}
+.cclues .len{color:var(--muted);font-size:7.6pt}
+.slips{display:grid;grid-template-columns:repeat(4,1fr);gap:2.2mm}
+.slip{border:1.4px dashed var(--mauve);border-radius:2.6mm;padding:1.8mm 2.2mm;background:#FFFCF6;font-size:7.8pt;color:var(--mauve-d);min-height:15mm;display:flex;flex-direction:column;justify-content:space-between}
+.predict-chips span{font-size:8.2pt}
+.slip .ln{border-bottom:1px solid #D9CCE6;height:4.2mm}
+
+/* ---- new in why-we-laugh ---- */
+.meter{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-radius:4mm;overflow:hidden;border:1.3px solid var(--lav2)}
+.meter .z{padding:2.4mm 2.6mm;text-align:center;min-height:30mm;display:flex;flex-direction:column;gap:1.6mm;align-items:center}
+.meter .z .h{font-weight:800;font-size:10pt}
+.meter .z .s{font-size:7.6pt;line-height:1.3}
+.meter .z .slots{display:flex;gap:2mm}
+.meter .z1{background:#EAF3EC;color:var(--sage-d)}
+.meter .z2{background:#FDEDE5;color:var(--peach-d)}
+.meter .z3{background:#F6DCDC;color:#A33B3B}
+.meterbar{height:3mm;border-radius:2mm;background:linear-gradient(90deg,#B9D3C4,#F2AE94,#E07B7B);margin:1.4mm 0 .6mm}
+.nums2{display:grid;grid-template-columns:1fr auto;gap:1.2mm 3mm;font-size:9.2pt;align-items:center}
+.nums2 .bx{display:inline-block;width:8mm;height:6.4mm;border:1.4px solid var(--night);border-radius:1.4mm;background:var(--lav)}
+.mix{display:grid;grid-template-columns:1fr 1fr;gap:2mm 3mm;font-size:9.2pt}
+.mix div{background:#fff;border:1.2px solid var(--line);border-radius:2.6mm;padding:1.8mm 3mm;line-height:1.5}
+.mix .w{display:inline-flex;gap:1.6mm;margin-left:1mm}
+.mix .w span{border:1.2px solid var(--night);border-radius:10mm;padding:0 2.4mm;font-weight:600;font-size:8.6pt}
+.tone{display:inline-flex;align-items:center;gap:1.2mm;padding:.5mm 2.2mm .5mm 1mm;border-radius:10mm;font-size:7.6pt;font-weight:700;white-space:nowrap}
+.tone.sin{background:#DDF1E3;color:#1E7B45;border:1.2px solid #8FCBA3}
+.tone.sar{background:#EDE3FA;color:#5B3A99;border:1.2px solid #B9A3E0}
+.tone .box{width:4.2mm;height:4.2mm;border-radius:1mm;border-width:1.2px}
+.tone.sin .box{border-color:#1E7B45}.tone.sar .box{border-color:#5B3A99}
+.sar .sit .t{min-height:0}
+.log th{background:var(--night);color:#F8E3C4;font-size:8.2pt;font-weight:600;padding:1.8mm 2mm;text-align:left}
+.log th:first-child{border-radius:3mm 0 0 0}.log th:last-child{border-radius:0 3mm 0 0;text-align:center}
+.log td{border:1px solid #E6DFEE;height:7mm;font-size:8.4pt;padding:0 2mm;vertical-align:middle}
+.log td.d{font-weight:700;color:var(--night);background:var(--lav);width:12mm;text-align:center}
+.log td.c{text-align:center;width:34mm;font-size:8pt;color:var(--muted)}
+</style>
+</head>
+<body>
+
+<!-- ================= PAGE 1 ================= -->
+<section class="page">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-top:1mm">
+    <div class="brand"><img src="img/logo.jpg">DAILY SPEAK ENGLISH · PODCAST WORKSHEET</div>
+    <div><span class="pill">B1–B2</span> <span class="pill p">⏱ 50 min</span></div>
+  </div>
+  <div style="display:grid;grid-template-columns:1.12fr .88fr;gap:4mm;margin-top:5mm;align-items:center">
+    <div>
+      <div class="small" style="font-weight:700;color:var(--mauve);letter-spacing:.7pt">LISTEN · LEARN · SPEAK</div>
+      <h1>Why We Laugh (It's Not Because of Jokes)</h1>
+      <p style="margin:2.4mm 0 0;font-size:9.6pt;color:var(--muted)">What really makes us laugh, what laughing does to your body, how to spot sarcasm – lots of funny English – and the story of a very confident pigeon.</p>
+      <div style="margin-top:4mm;display:grid;grid-template-columns:auto 1fr;gap:1.6mm 3mm;font-size:9.3pt;align-items:end">
+        <b style="color:var(--night)">Name:</b><span class="blank xl"></span>
+        <b style="color:var(--night)">Date:</b><span class="blank xl"></span>
+        <b style="color:var(--night)">My score:</b><span><span class="blank s"></span> / 100 ⭐</span>
+      </div>
+    </div>
+    <div style="background:var(--lav);border-radius:6mm;height:60mm;position:relative;overflow:hidden;border:1px solid var(--lav2)">
+      <div style="position:absolute;z-index:2;top:3.4mm;left:4mm;background:#fff;border-radius:4mm;padding:1mm 3mm;font-size:8.6pt;font-weight:700;color:var(--night);box-shadow:0 1px 0 var(--lav2)">Ha ha! 😂</div>
+      <img class="char" src="img/f/66-duo-podcast-lav.jpg" style="position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:66mm">
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><span class="num">★</span>How to use this worksheet</h2>
+    <div class="steps" style="margin-top:2.4mm">
+      <div class="step"><div class="h">1 · Before you listen 🧠</div><div class="s">Do the warm-up and learn the key words. Questions with 🧠 can be answered before listening.</div></div>
+      <div class="step"><div class="h">2 · While you listen 🎧</div><div class="s">Answer the 🎧 questions. The ⏱ times show where to find each part of the video.</div></div>
+      <div class="step"><div class="h">3 · After you listen 💬</div><div class="s">Spot the sarcasm, solve the word search and share your funniest English moment!</div></div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><span class="num">0</span>Warm-up: My laugh check <span class="tag fun">fun · no points</span></h2>
+    <p class="instr">Think about yesterday. Where did you laugh the most? Tick all that are true.</p>
+    <div style="display:grid;grid-template-columns:1.3fr .7fr;gap:4mm;align-items:stretch">
+      <div class="card white" style="display:flex;flex-direction:column;gap:2mm;justify-content:center">
+        <div class="conf" style="grid-template-columns:1fr 1fr;justify-content:stretch">
+          <div><span class="box sm"></span>👫 with friends</div>
+          <div><span class="box sm"></span>🏠 with my family</div>
+          <div><span class="box sm"></span>📱 watching videos alone</div>
+          <div><span class="box sm"></span>💼 at work or school</div>
+          <div><span class="box sm"></span>💬 reading messages</div>
+          <div><span class="box sm"></span>🙈 at my own mistake</div>
+        </div>
+        <div style="border-top:1px dashed var(--lav2);padding-top:2mm;font-size:8.9pt"><b style="color:var(--night)">Guess!</b> A scientist listened to people laughing in cafés and shops. How many laughs came after something like a <b>joke</b>?</div>
+        <div style="display:flex;gap:4mm;font-size:8.9pt;flex-wrap:wrap"><span><span class="circ">a</span> about 70%</span><span><span class="circ">b</span> about 40%</span><span><span class="circ">c</span> only 10–20%</span></div>
+        <div class="hint">🎧 Check your guess at ⏱ 0:05</div>
+      </div>
+      <div class="card peach" style="display:flex;flex-direction:column;align-items:center;gap:1.4mm;padding:2.6mm 3mm 0;justify-content:space-between">
+        <div style="background:#fff;border-radius:4mm;padding:2mm 2.8mm;font-size:8.5pt;border:1.2px solid #F4D2C2;line-height:1.4"><b style="color:var(--night)">Jack:</b> "With my brother, we laugh at almost nothing. A stranger would think we were mad!" 😆</div>
+        <img class="char" src="img/f/41-jack-laughing-left-peach.jpg" style="width:30mm">
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><span class="num">💬</span>Let's talk</h2>
+    <p class="instr">Say your answers out loud – or write them in your notebook.</p>
+    <div class="grid2" style="gap:3mm">
+      <div class="card teal"><b>1.</b> Who makes you laugh the most? Why?</div>
+      <div class="card teal"><b>2.</b> What was the last thing that made you really laugh?</div>
+      <div class="card teal"><b>3.</b> Do you understand jokes in English? What's hard about them?</div>
+      <div class="card teal"><b>4.</b> Have you ever made a funny mistake in another language?</div>
+    </div>
+  </div>
+  {{FOOT1}}
+</section>
+
+<!-- ================= PAGE 2 ================= -->
+<section class="page">
+  <div class="sec" style="margin-top:3mm">
+    <h2><span class="num">1</span>Key words <span class="tag">vocabulary</span><span class="tag pts">10 points</span></h2>
+    <p class="instr">Match each word or phrase (1–10) to its meaning (a–j). Write the letter in the box. 🧠 Check in the Word Tour at ⏱ 14:16</p>
+    <div class="grid2" style="gap:5mm;align-items:start">
+      <table class="match">
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--night)">1.</b> contagious</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--night)">2.</b> to giggle</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--night)">3.</b> to chuckle</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--night)">4.</b> to be in stitches</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--night)">5.</b> to keep a straight face</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--night)">6.</b> hilarious</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--night)">7.</b> to burst out laughing</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--night)">8.</b> to pull someone's leg</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--night)">9.</b> to get (a joke)</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--night)">10.</b> a sitcom</td></tr>
+      </table>
+      <div class="card" style="font-size:9.1pt;line-height:1.62">
+        <b>a)</b> to understand a joke<br>
+        <b>b)</b> spreading easily from one person to another<br>
+        <b>c)</b> to laugh quietly, usually to yourself<br>
+        <b>d)</b> extremely funny<br>
+        <b>e)</b> to suddenly start laughing loudly<br>
+        <b>f)</b> to joke by telling someone something that isn't true<br>
+        <b>g)</b> to laugh in a light, high, often silly way<br>
+        <b>h)</b> a funny TV series about the same characters in everyday situations<br>
+        <b>i)</b> to laugh so much that it almost hurts<br>
+        <b>j)</b> to not laugh or smile, even when something is funny
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="bub">
+      <img class="char" src="img/f/38-lucy-explaining-right-w.jpg" style="width:24mm;flex:none">
+      <div class="txt"><b>Pronunciation corner 🔊</b> hi-<b style="color:var(--peach-d)">LAIR</b>-ee-us · con-<b style="color:var(--peach-d)">TA</b>-gious · <b style="color:var(--peach-d)">SAR</b>-casm · <b style="color:var(--peach-d)">SIT</b>-com · <b style="color:var(--peach-d)">CHUCK</b>-le. And the "gh" in <b>laugh</b> sounds like <b>f</b>: /lɑːf/. Say it out loud: <i>"That was absolutely hilarious!"</i></div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><span class="num">2</span>First listen: the big idea <span class="tag">listening</span><span class="tag pts">2 points</span></h2>
+    <p class="instr">Watch the whole episode once without stopping. Which sentence is the <b>main message</b>? 🎧</p>
+    <div class="card white">
+      <div class="opt" style="font-size:9.6pt;margin:1.2mm 0"><span class="c">a</span>Most laughter comes after jokes, so you need to learn clever jokes in English.</div>
+      <div class="opt" style="font-size:9.6pt;margin:1.2mm 0"><span class="c">b</span>Most laughter isn't about jokes – it's a friendly signal we share with other people.</div>
+      <div class="opt" style="font-size:9.6pt;margin:1.2mm 0"><span class="c">c</span>Laughing is bad for your body, so it's better to keep a straight face.</div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="bub">
+      <div class="ava" style="width:22mm;height:22mm"><img src="img/f/53-jack-listen-carefully-lav.jpg" style="height:140%"></div>
+      <div class="txt"><b>Jack's tip:</b> First listen = the <b>big picture</b>. Don't stop the video and don't worry about every word. Second listen = the <b>details</b>. That's when you answer the 🎧 questions.</div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="card sage">
+      <b style="color:var(--night)">🔮 Predict before you listen!</b> <span class="small">(no points)</span> Seven of these words are in the episode. One is <b>not</b>. Circle the one you think you <b>won't</b> hear – then check while you listen.
+      <div class="chips predict-chips" style="margin-top:2mm;justify-content:center;gap:1.4mm"><span>shopping centres</span><span>cuff</span><span>sitcom</span><span>waiter</span><span>banana</span><span>intern</span><span>sock</span><span>pigeon</span></div>
+    </div>
+  </div>
+  {{FOOT2}}
+</section>
+
+<!-- ================= PAGE 3 ================= -->
+<section class="page">
+  <div class="sec" style="margin-top:3mm;display:flex;justify-content:space-between;align-items:flex-start;gap:4mm">
+    <div>
+      <h2><span class="num">3</span>Know it or hear it? <span class="tag">quiz + listening</span><span class="tag pts">10 points</span></h2>
+      <p class="instr" style="margin-bottom:0">Circle a, b or c. Questions 🧠 1–5: you can probably answer them <b>before</b> you listen. Questions 🎧 6–10: listen to find the answer.</p>
+    </div>
+    <img class="char" src="img/f/31-duo-quiz-w.jpg" style="width:36mm;flex:none;margin-top:-2mm">
+  </div>
+  <div class="small" style="margin:2.4mm 0 1.6mm 10.8mm;font-weight:700;color:var(--sage-d)">🧠 YOU MIGHT ALREADY KNOW</div>
+  <div class="mc">
+    <div class="mcq"><div class="qq">1. "Hilarious" means…</div><div class="opt"><span class="c">a</span>a little bit funny</div><div class="opt"><span class="c">b</span>extremely funny</div><div class="opt"><span class="c">c</span>not funny at all</div><div class="hint">🧠 Look at Exercise 1</div></div>
+    <div class="mcq"><div class="qq">2. You didn't understand a joke. The most natural reply is…</div><div class="opt"><span class="c">a</span>"Sorry, I didn't get it."</div><div class="opt"><span class="c">b</span>"Sorry, I didn't take it."</div><div class="opt"><span class="c">c</span>"Sorry, I don't joke."</div><div class="hint">🧠 Look at Exercise 1</div></div>
+    <div class="mcq"><div class="qq">3. "The party was really ______ – we danced all night!"</div><div class="opt"><span class="c">a</span>funny</div><div class="opt"><span class="c">b</span>fun</div><div class="opt"><span class="c">c</span>funnily</div><div class="hint">🧠 Tricky – think about it!</div></div>
+    <div class="mcq"><div class="qq">4. Something "contagious"…</div><div class="opt"><span class="c">a</span>spreads from person to person</div><div class="opt"><span class="c">b</span>is very loud</div><div class="opt"><span class="c">c</span>happens very rarely</div><div class="hint">🧠 Look at Exercise 1</div></div>
+    <div class="mcq"><div class="qq">5. "Please don't laugh ______ me!"</div><div class="opt"><span class="c">a</span>to</div><div class="opt"><span class="c">b</span>on</div><div class="opt"><span class="c">c</span>at</div><div class="hint">🧠 Grammar you know</div></div>
+    <div class="mcq" style="background:var(--sage);border-color:#BFD7C8;display:flex;align-items:center;gap:3mm"><span style="font-size:18pt">🎉</span><span style="font-size:9.1pt"><b style="color:var(--night)">How many did you know?</b><br>Now press play and test your ears!</span></div>
+  </div>
+  <div class="small" style="margin:3.4mm 0 1.6mm 10.8mm;font-weight:700;color:var(--peach-d)">🎧 LISTEN AND FIND OUT</div>
+  <div class="mc">
+    <div class="mcq"><div class="qq">6. Which sentence made people laugh in Provine's research?</div><div class="opt"><span class="c">a</span>"See you later."</div><div class="opt"><span class="c">b</span>"Here's a funny joke."</div><div class="opt"><span class="c">c</span>"Please laugh now."</div><div class="hint">🎧 ⏱ 0:05</div></div>
+    <div class="mcq"><div class="qq">7. In a conversation, who laughs more?</div><div class="opt"><span class="c">a</span>the person who is listening</div><div class="opt"><span class="c">b</span>the person who is speaking</div><div class="opt"><span class="c">c</span>they both laugh the same</div><div class="hint">🎧 ⏱ 2:17</div></div>
+    <div class="mcq"><div class="qq">8. Lucy wanted fish in a French restaurant. What did she ask for?</div><div class="opt"><span class="c">a</span>chicken</div><div class="opt"><span class="c">b</span>the bill</div><div class="opt"><span class="c">c</span>poison</div><div class="hint">🎧 ⏱ 6:57</div></div>
+    <div class="mcq"><div class="qq">9. What was the ringtone on the boss's phone?</div><div class="opt"><span class="c">a</span>a dog barking</div><div class="opt"><span class="c">b</span>a duck quacking</div><div class="opt"><span class="c">c</span>a bell ringing</div><div class="hint">🎧 ⏱ 11:59</div></div>
+    <div class="mcq"><div class="qq">10. Diego said the pigeon had a question about…</div><div class="opt"><span class="c">a</span>the past simple</div><div class="opt"><span class="c">b</span>the weather</div><div class="opt"><span class="c">c</span>the present perfect</div><div class="hint">🎧 ⏱ 18:47</div></div>
+    <div class="mcq" style="background:var(--lav);border-color:var(--lav2);display:flex;align-items:center;gap:3mm"><span style="font-size:18pt">🧩</span><span style="font-size:9.1pt"><b style="color:var(--night)">Fun fact:</b> We usually laugh at the <b>end</b> of a phrase – like a full stop or a comma. Laughter fits into language!</span></div>
+  </div>
+  {{FOOT3}}
+</section>
+
+<!-- ================= PAGE 4 ================= -->
+<section class="page">
+  <div class="sec" style="margin-top:3mm">
+    <h2><span class="num">4</span>True or false? <span class="tag">listening</span><span class="tag pts">6 points</span></h2>
+    <p class="instr">Listen and circle <b>T</b> (true) or <b>F</b> (false). The ⏱ times help you find the answer.</p>
+    <table class="tf">
+      <tr><td class="n">1</td><td>Provine and his students listened to people laughing in shopping centres and cafés.</td><td class="ck"><span class="circ">T</span> <span class="circ">F</span></td><td class="tm">⏱ 0:05</td></tr>
+      <tr><td class="n">2</td><td>We usually laugh in the middle of a sentence.</td><td class="ck"><span class="circ">T</span> <span class="circ">F</span></td><td class="tm">⏱ 2:17</td></tr>
+      <tr><td class="n">3</td><td>When you hear someone laughing, it's hard not to laugh too.</td><td class="ck"><span class="circ">T</span> <span class="circ">F</span></td><td class="tm">⏱ 4:25</td></tr>
+      <tr><td class="n">4</td><td>Deep laughing is hard physical work for your body.</td><td class="ck"><span class="circ">T</span> <span class="circ">F</span></td><td class="tm">⏱ 5:32</td></tr>
+      <tr><td class="n">5</td><td>In Robin Dunbar's study, people watched the comedy videos alone.</td><td class="ck"><span class="circ">T</span> <span class="circ">F</span></td><td class="tm">⏱ 5:32</td></tr>
+      <tr><td class="n">6</td><td>After Lucy's mistake, the French waiter was unfriendly all evening.</td><td class="ck"><span class="circ">T</span> <span class="circ">F</span></td><td class="tm">⏱ 6:57</td></tr>
+    </table>
+  </div>
+
+  <div class="sec">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:4mm">
+      <div>
+        <h2><span class="num">5</span>Laughter by numbers 🔍 <span class="tag">listening</span><span class="tag pts">5 points</span></h2>
+        <p class="instr" style="margin-bottom:0">Match each number (a–e) to the right fact. Write the letter in the box. ⏱ 0:05 · 2:17 · 4:25 · 5:32</p>
+      </div>
+      <img class="char" src="img/f/46-lucy-magnifying-glass-w.jpg" style="width:20mm;flex:none">
+    </div>
+    <div class="chips" style="margin:2mm 0 2mm 10.8mm"><span>a) 10–20%</span><span>b) about 50%</span><span>c) 30 times</span><span>d) 15 minutes</span><span>e) 10%</span></div>
+    <div class="card white nums2" style="padding:2.4mm 4mm">
+      <span><b>1.</b> how much more the <b>speaker</b> laughs than the listener</span><span class="bx"></span>
+      <span><b>2.</b> how much your pain threshold went up after laughing</span><span class="bx"></span>
+      <span><b>3.</b> how many laughs came after something like a joke</span><span class="bx"></span>
+      <span><b>4.</b> how long people watched comedy together in Dunbar's study</span><span class="bx"></span>
+      <span><b>5.</b> how much more people laughed with others than alone</span><span class="bx"></span>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:4mm">
+      <div>
+        <h2><span class="num">6</span>Funny mix-ups 🐟 <span class="tag">new! pronunciation</span><span class="tag pts">4 points</span></h2>
+        <p class="instr" style="margin-bottom:0">Lucy asked for <b>poison</b> instead of <b>poisson</b> (fish)! Circle the word each speaker <b>meant</b>. Then say both words out loud – can you hear the difference?</p>
+      </div>
+      <img class="char" src="img/f/71-lucy-embarrassed-w.jpg" style="width:20mm;flex:none">
+    </div>
+    <div class="mix" style="margin-top:2.2mm">
+      <div><b>1.</b> "Can I have the ______ soup, please?" <span class="w"><span>kitchen</span><span>chicken</span></span></div>
+      <div><b>2.</b> "I'm so ______ – I haven't eaten all day!" <span class="w"><span>hungry</span><span>angry</span></span></div>
+      <div><b>3.</b> "For ______, I'd like chocolate cake." <span class="w"><span>desert</span><span>dessert</span></span></div>
+      <div><b>4.</b> "Can I borrow a ______? I need to write this down." <span class="w"><span>pan</span><span>pen</span></span></div>
+    </div>
+  </div>
+  <div class="sec">
+    <div class="card peach" style="display:flex;gap:3mm;align-items:center;font-size:9pt">
+      <span style="font-size:17pt">🧪</span>
+      <div><b style="color:var(--night)">Laughter glue:</b> real, deep laughing is hard work for your body. It seems to release <b>endorphins</b> – natural chemicals in your brain that help you feel good and reduce pain. And they may help people feel <b>closer</b> to each other!</div>
+    </div>
+  </div>
+  {{FOOT4}}
+</section>
+
+<!-- ================= PAGE 5 ================= -->
+<section class="page">
+  <div class="sec" style="margin-top:3mm;display:flex;justify-content:space-between;align-items:flex-start;gap:4mm">
+    <div>
+      <h2><span class="num">7</span>"You had to be there!" <span class="tag">listening</span><span class="tag pts">10 points</span></h2>
+      <p class="instr" style="margin-bottom:0">Two friends talk about something that happened at work. Listen at ⏱ 11:59 and write <b>one word</b> in each gap (1–8). Then answer A and B. The breakdown at ⏱ 13:18 can help.</p>
+    </div>
+    <img class="char" src="img/f/63-jack-at-work-w.jpg" style="width:22mm;flex:none;margin-top:-3mm">
+  </div>
+  <div class="chat" style="margin-top:2.6mm;gap:1.3mm">
+    <div class="msg l"><div class="ava"><img src="img/f/09-lucy-talking-right-lav.jpg"></div><div class="b"><span class="who">LUCY</span>You look very <span class="gap">1</span> today. What happened?</div></div>
+    <div class="msg j"><div class="ava"><img src="img/f/43-jack-explaining-left-lav.jpg"></div><div class="b"><span class="who">JACK</span>Oh, I have to tell you. Yesterday, in our big meeting, my boss was giving a really serious presentation about money.</div></div>
+    <div class="msg l"><div class="ava"><img src="img/f/37-lucy-thinking-right-lav.jpg"></div><div class="b"><span class="who">LUCY</span>Okay…</div></div>
+    <div class="msg j"><div class="ava"><img src="img/f/13-jack-talking-left-lav.jpg"></div><div class="b"><span class="who">JACK</span>And halfway through, his phone started ringing really loudly. And his ringtone was a <span class="gap">2</span>. Just a duck, quacking.</div></div>
+    <div class="msg l"><div class="ava"><img src="img/f/36-lucy-surprised-right-lav.jpg"></div><div class="b"><span class="who">LUCY</span>No <span class="gap">3</span>! What did everyone do?</div></div>
+    <div class="msg j"><div class="ava"><img src="img/f/44-jack-embarrassed-left-lav.jpg"></div><div class="b"><span class="who">JACK</span>At first, total silence. Everyone was trying to keep a straight <span class="gap">4</span>. And then the new intern started <span class="gap">5</span>, and that was it. The whole room burst out laughing.</div></div>
+    <div class="msg l"><div class="ava"><img src="img/f/11-lucy-asking-right-lav.jpg"></div><div class="b"><span class="who">LUCY</span>Even your boss?</div></div>
+    <div class="msg j"><div class="ava"><img src="img/f/41-jack-laughing-left-lav.jpg"></div><div class="b"><span class="who">JACK</span>He was in <span class="gap">6</span>. He couldn't finish his sentence for about two minutes. Honestly, I haven't laughed like that for ages.</div></div>
+    <div class="msg l"><div class="ava"><img src="img/f/12-lucy-laughing-right-lav.jpg"></div><div class="b"><span class="who">LUCY</span>That's hilarious. I'm <span class="gap">7</span> up just imagining it.</div></div>
+    <div class="msg j"><div class="ava"><img src="img/f/16-jack-surprised-left-lav.jpg"></div><div class="b"><span class="who">JACK</span>You had to be <span class="gap">8</span>, really. But it was the best meeting we've ever had.</div></div>
+  </div>
+  <div class="grid2" style="margin-top:2.8mm;gap:3mm">
+    <div class="card" style="padding:2.4mm 4mm"><b style="color:var(--night)">A.</b> What do we say when a story is <b>funnier in real life</b> than when you tell it?<div class="lines"></div></div>
+    <div class="card" style="padding:2.4mm 4mm"><b style="color:var(--night)">B.</b> Find the phrase that means <b>"suddenly started laughing loudly"</b>:<div class="lines"></div></div>
+  </div>
+  <div class="small" style="margin-top:2mm;text-align:center">🎭 <b>Say it out loud!</b> Play both parts – then tell the story again with a funny moment from <b>your</b> life.</div>
+  {{FOOT5}}
+</section>
+
+<!-- ================= PAGE 6 ================= -->
+<section class="page">
+  <div class="sec" style="margin-top:3mm;display:flex;justify-content:space-between;align-items:flex-start;gap:4mm">
+    <div>
+      <h2><span class="num">8</span>The laugh-o-meter 📈 <span class="tag">new! word scale</span><span class="tag pts">6 points</span></h2>
+      <p class="instr" style="margin-bottom:0">How big is each laugh? Put the six expressions (a–f) in the right part of the meter. ⏱ 14:16</p>
+    </div>
+    <img class="char" src="img/f/40-lucy-excited-right-w.jpg" style="width:20mm;flex:none;margin-top:-3mm">
+  </div>
+  <div class="chips" style="margin:2.4mm 0 0;justify-content:center"><span>a) to chuckle</span><span>b) to be in stitches</span><span>c) to burst out laughing</span><span>d) to giggle</span><span>e) to nearly die laughing</span><span>f) to crack up</span></div>
+  <div class="meterbar"></div>
+  <div class="meter">
+    <div class="z z1"><span class="h">🤭 QUIET</span><span class="s">a small, soft laugh – maybe one you're trying to hide</span><span class="slots"><span class="box"></span><span class="box"></span></span></div>
+    <div class="z z2"><span class="h">😆 SUDDEN &amp; LOUD</span><span class="s">you start laughing a lot, all at once</span><span class="slots"><span class="box"></span><span class="box"></span></span></div>
+    <div class="z z3"><span class="h">🤣 CAN'T STOP!</span><span class="s">you laugh so much that it hurts</span><span class="slots"><span class="box"></span><span class="box"></span></span></div>
+  </div>
+  <div class="bub" style="margin-top:2.6mm">
+    <img class="char" src="img/f/07-lucy-great-job-w.jpg" style="width:18mm;flex:none">
+    <div class="txt"><b>Lucy's tip:</b> <b>Giggle</b> is often a silly or nervous laugh – children giggle. <b>Chuckle</b> is warm and quiet – you chuckle when you read a funny message. Using the right word makes your stories come alive!</div>
+  </div>
+
+  <div class="sec">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:4mm">
+      <div>
+        <h2><span class="num">9</span>Sincere or sarcastic? 😏 <span class="tag">new! listening for meaning</span><span class="tag pts">6 points</span></h2>
+        <p class="instr" style="margin-bottom:0">Read the situation. Does the person <b>mean it</b> (sincere), or mean the <b>opposite</b> (sarcastic)? Tick one. ⏱ 10:31</p>
+      </div>
+      <img class="char" src="img/f/72-jack-confused-w.jpg" style="width:20mm;flex:none">
+    </div>
+    <div class="grid2 sar" style="margin-top:2.2mm;gap:2.2mm"><div class="sit"><div class="t"><b>1.</b> 🌧️ It's pouring with rain. Your friend says:<br><b style="color:var(--night)">“Lovely weather today!”</b></div><div class="ch" style="gap:2mm"><span class="tone sin"><span class="box"></span>😊 SINCERE</span><span class="tone sar"><span class="box"></span>😏 SARCASTIC</span></div></div><div class="sit"><div class="t"><b>2.</b> 🚗 Your friend has just passed her driving test. You say:<br><b style="color:var(--night)">“Well done! I'm so proud of you!”</b></div><div class="ch" style="gap:2mm"><span class="tone sin"><span class="box"></span>😊 SINCERE</span><span class="tone sar"><span class="box"></span>😏 SARCASTIC</span></div></div><div class="sit"><div class="t"><b>3.</b> 🥪 Your colleague drops his whole lunch on the floor. He says:<br><b style="color:var(--night)">“Well, that went well.”</b></div><div class="ch" style="gap:2mm"><span class="tone sin"><span class="box"></span>😊 SINCERE</span><span class="tone sar"><span class="box"></span>😏 SARCASTIC</span></div></div><div class="sit"><div class="t"><b>4.</b> 📰 Your colleague is relaxing with a coffee and a newspaper. Someone says:<br><b style="color:var(--night)">“Wow, you look really busy!”</b></div><div class="ch" style="gap:2mm"><span class="tone sin"><span class="box"></span>😊 SINCERE</span><span class="tone sar"><span class="box"></span>😏 SARCASTIC</span></div></div><div class="sit"><div class="t"><b>5.</b> ☀️ The sun is shining and it's warm. Your neighbour says:<br><b style="color:var(--night)">“Lovely weather today!”</b></div><div class="ch" style="gap:2mm"><span class="tone sin"><span class="box"></span>😊 SINCERE</span><span class="tone sar"><span class="box"></span>😏 SARCASTIC</span></div></div><div class="sit"><div class="t"><b>6.</b> 🍝 Your friend cooks you a delicious dinner. You say:<br><b style="color:var(--night)">“This is amazing – thank you!”</b></div><div class="ch" style="gap:2mm"><span class="tone sin"><span class="box"></span>😊 SINCERE</span><span class="tone sar"><span class="box"></span>😏 SARCASTIC</span></div></div></div>
+    <div class="bub" style="margin-top:2.4mm">
+      <img class="char" src="img/f/25-jack-rain-umbrella-w.jpg" style="width:17mm;flex:none">
+      <div class="txt" style="font-size:8.5pt"><b>How to spot sarcasm:</b> the words don't match the situation · the voice is slower, flatter or a bit exaggerated · there's often a tiny smile or a pause. Not sure? Just smile and say, <i>"You're joking, right?"</i> And be careful with sarcasm in <b>messages</b> – nobody can hear your voice!</div>
+    </div>
+  </div>
+  {{FOOT6}}
+</section>
+
+<!-- ================= PAGE 7 ================= -->
+<section class="page">
+  <div class="sec" style="margin-top:3mm;display:flex;justify-content:space-between;align-items:flex-start;gap:4mm">
+    <div>
+      <h2><span class="num">10</span>fun · funny · laugh at · laugh with <span class="tag">common mistakes</span><span class="tag pts">6 points</span></h2>
+      <p class="instr" style="margin-bottom:0">Complete each sentence with <b>fun</b>, <b>funny</b>, <b>at</b> or <b>with</b>.</p>
+    </div>
+    <img class="char" src="img/f/62-lucy-birthday-cake-w.jpg" style="width:20mm;flex:none;margin-top:-3mm">
+  </div>
+  <div class="grid2" style="gap:2.4mm;margin-top:2.2mm">
+    <div class="card sage" style="font-size:8.6pt"><b style="color:var(--sage-d);font-size:9.6pt">fun 🎉</b> = enjoyable, a good time<br><i>"The party was really fun." · "We had lots of fun."</i></div>
+    <div class="card peach" style="font-size:8.6pt"><b style="color:var(--peach-d);font-size:9.6pt">funny 😂</b> = it makes you laugh (or: strange)<br><i>"He's so funny!" · "This milk smells funny."</i></div>
+  </div>
+  <div class="card white" style="margin-top:2.4mm;font-size:9.3pt;line-height:2.05">
+    1. The party was really <span class="blank"></span> – we danced all night.<br>
+    2. My brother is so <span class="blank"></span> – he always makes me laugh.<br>
+    3. This soup tastes a bit <span class="blank"></span>. Is it OK?<br>
+    4. We had lots of <span class="blank"></span> at the beach yesterday.<br>
+    5. It isn't kind to laugh <span class="blank s"></span> people when they make mistakes.<br>
+    6. Don't worry – we're laughing <span class="blank s"></span> you, not at you!
+  </div>
+
+  <div class="sec">
+    <h2><span class="num">11</span>Say it better <span class="tag">common mistakes</span><span class="tag pts">10 points</span></h2>
+    <p class="instr">These sentences sound unnatural. Write a more natural version (2 points each). ⏱ 16:48</p>
+    <table style="font-size:9.4pt">
+      <tr><td style="width:49%;padding:1.7mm 0">😐 1. "Are you making joke?"</td><td>😊 <span class="blank l"></span></td></tr>
+      <tr><td style="padding:1.7mm 0">😐 2. "I died from laughing."</td><td>😊 <span class="blank l"></span></td></tr>
+      <tr><td style="padding:1.7mm 0">😐 3. "I didn't understand the joke."</td><td>😊 <span class="blank l"></span></td></tr>
+      <tr><td style="padding:1.7mm 0">😐 4. "It was very very funny."</td><td>😊 <span class="blank l"></span></td></tr>
+      <tr><td style="padding:1.7mm 0">😐 5. "Are you serious? I don't believe!" <span class="small">(your friend tells you something hard to believe)</span></td><td>😊 <span class="blank l"></span></td></tr>
+    </table>
+    <div class="bub" style="margin-top:2.4mm">
+      <img class="char" src="img/f/69-duo-thumbs-up-w.jpg" style="width:26mm;flex:none">
+      <div class="txt"><b>Remember:</b> if you laugh <b>at</b> someone, you make fun of them – that can hurt. If you laugh <b>with</b> someone, you laugh together and everyone enjoys it. Small word, big difference! 💜</div>
+    </div>
+  </div>
+  <div class="sec">
+    <div class="bub">
+      <img class="char" src="img/f/52-lucy-phone-comment-w.jpg" style="width:19mm;flex:none">
+      <div class="txt"><b>Share it with us!</b> Tell us in the comments about your <b>funniest moment while learning English</b> – a funny mistake, like Lucy's French poison. We'll read them all (and probably laugh – <b>with</b> you!). 💜</div>
+    </div>
+  </div>
+  {{FOOT7}}
+</section>
+
+<!-- ================= PAGE 8 ================= -->
+<section class="page">
+  <div class="sec" style="margin-top:3mm;display:flex;justify-content:space-between;align-items:flex-start;gap:4mm">
+    <div>
+      <h2><span class="num">12</span>Clue word search + secret message <span class="tag">puzzle</span><span class="tag pts">11 points</span></h2>
+      <p class="instr" style="margin-bottom:0"><b>Step 1:</b> Complete each clue – the first letter and the number of letters are given (1 point each). <b>Step 2:</b> Find the 11 words in the grid. They go → ↓ ↘ or ↗ and never cross each other.</p>
+    </div>
+    <img class="char" src="img/f/50-lucy-puzzle-piece-w.jpg" style="width:20mm;flex:none;margin-top:-3mm">
+  </div>
+  <div style="display:grid;grid-template-columns:1fr auto;gap:3.4mm;margin-top:2.2mm;align-items:center">
+    <div class="card white clues" style="padding:2.4mm 3.2mm">
+      <div><span class="n">1</span><span>Laughter is <span class="slots"><b class="sl1">c</b><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span></span>: it spreads from person to person.</span></div>
+      <div><span class="n">2</span><span>Extremely funny: “That video was <span class="slots"><b class="sl1">h</b><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span></span>!”</span></div>
+      <div><span class="n">3</span><span>Jack's boss was in <span class="slots"><b class="sl1">s</b><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span></span> – he couldn't stop laughing.</span></div>
+      <div><span class="n">4</span><span>Older people often <span class="slots"><b class="sl1">c</b><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span></span> – a quiet, warm laugh.</span></div>
+      <div><span class="n">5</span><span>“Lovely weather!” when it's pouring with rain is <span class="slots"><b class="sl1">s</b><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span></span>.</span></div>
+      <div><span class="n">6</span><span>Children often <span class="slots"><b class="sl1">g</b><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span></span> at the back of the classroom.</span></div>
+      <div><span class="n">7</span><span>A funny TV series about the same people at home or at work: a <span class="slots"><b class="sl1">s</b><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span></span>.</span></div>
+      <div><span class="n">8</span><span>A <span class="slots"><b class="sl1">p</b><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span></span> flew into Lucy's classroom and walked across her papers.</span></div>
+      <div><span class="n">9</span><span>In France, Lucy asked the waiter for <span class="slots"><b class="sl1">p</b><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span></span> instead of fish!</span></div>
+      <div><span class="n">10</span><span>In the meeting, the boss's phone <span class="slots"><b class="sl1">r</b><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span></span> played really loudly.</span></div>
+      <div><span class="n">11</span><span>Quack, quack! The ringtone was a <span class="slots"><b class="sl1">d</b><span class="sl"></span><span class="sl"></span><span class="sl"></span></span>.</span></div>
+    </div>
+    <div><table class="ws"><tr><td>Y</td><td>R</td><td>P</td><td>C</td><td>H</td><td>U</td><td>C</td><td>K</td><td>L</td><td>E</td><td>S</td></tr><tr><td>P</td><td>I</td><td>O</td><td>S</td><td>I</td><td>T</td><td>C</td><td>O</td><td>M</td><td>U</td><td>O</td></tr><tr><td>I</td><td>N</td><td>I</td><td>U</td><td>D</td><td>O</td><td>N</td><td>T</td><td>O</td><td>H</td><td>N</td></tr><tr><td>G</td><td>G</td><td>S</td><td>E</td><td>E</td><td>D</td><td>M</td><td>I</td><td>T</td><td>I</td><td>S</td></tr><tr><td>E</td><td>T</td><td>O</td><td>O</td><td>B</td><td>S</td><td>G</td><td>E</td><td>A</td><td>L</td><td>T</td></tr><tr><td>O</td><td>O</td><td>N</td><td>C</td><td>A</td><td>A</td><td>O</td><td>M</td><td>E</td><td>A</td><td>I</td></tr><tr><td>N</td><td>N</td><td>E</td><td>C</td><td>T</td><td>D</td><td>I</td><td>L</td><td>A</td><td>R</td><td>T</td></tr><tr><td>N</td><td>E</td><td>R</td><td>N</td><td>Y</td><td>D</td><td>G</td><td>O</td><td>U</td><td>I</td><td>C</td></tr><tr><td>J</td><td>A</td><td>O</td><td>U</td><td>S</td><td>G</td><td>U</td><td>T</td><td>N</td><td>O</td><td>H</td></tr><tr><td>S</td><td>C</td><td>E</td><td>E</td><td>I</td><td>D</td><td>T</td><td>C</td><td>O</td><td>U</td><td>E</td></tr><tr><td>B</td><td>E</td><td>T</td><td>G</td><td>H</td><td>E</td><td>R</td><td>E</td><td>K</td><td>S</td><td>S</td></tr></table></div>
+  </div>
+  <div class="card sage" style="margin-top:2.6mm;padding:2.6mm 4mm">
+    <b style="color:var(--night)">🤫 Step 3 – the secret message</b> <span class="small">(no points)</span> Cross out the 11 words. Then write the letters that are left, row by row, from left to right. It's Jack's advice from the end of the episode!
+    <div class="msgrow" style="margin-top:2.6mm"><span class="mw"><span class="mb"></span><span class="mb"></span><span class="mb"></span></span><span class="mw"><span class="mb"></span><span class="mb"></span><span class="mb"></span><span class="ap">'</span><span class="mb"></span></span><span class="mw"><span class="mb"></span><span class="mb"></span><span class="mb"></span><span class="mb"></span></span><span class="mw"><span class="mb"></span><span class="mb"></span></span><span class="mw"><span class="mb"></span><span class="mb"></span></span><span class="mw"><span class="mb"></span></span><span class="mw"><span class="mb"></span><span class="mb"></span><span class="mb"></span><span class="mb"></span><span class="mb"></span><span class="mb"></span><span class="mb"></span><span class="mb"></span><span class="ap">.</span></span><span class="mw"><span class="mb"></span><span class="mb"></span><span class="mb"></span></span><span class="mw"><span class="mb"></span><span class="mb"></span><span class="mb"></span><span class="mb"></span></span><span class="mw"><span class="mb"></span><span class="mb"></span><span class="mb"></span><span class="mb"></span></span><span class="mw"><span class="mb"></span><span class="mb"></span></span><span class="mw"><span class="mb"></span><span class="mb"></span></span><span class="mw"><span class="mb"></span><span class="mb"></span><span class="mb"></span><span class="mb"></span><span class="mb"></span><span class="ap">.</span></span></div>
+  </div>
+
+  <div class="sec">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:4mm">
+      <div>
+        <h2><span class="num">13</span>The pigeon story 🐦 <span class="tag">listening</span><span class="tag pts">6 points</span></h2>
+        <p class="instr" style="margin-bottom:0">Listen at ⏱ 18:47. Put the events in the right order. Write 1–6 in the boxes.</p>
+      </div>
+      <img class="char" src="img/f/19-lucy-glasses-book-w.jpg" style="width:18mm;flex:none">
+    </div>
+    <div class="story" style="margin-top:2mm">
+      <div class="ev"><span class="box"></span><span class="e">🐦</span><span>A pigeon flew in and walked across Lucy's papers.</span></div>
+      <div class="ev"><span class="box"></span><span class="e">💌</span><span>On the last day, Diego gave Lucy a card with a pigeon wearing glasses.</span></div>
+      <div class="ev"><span class="box"></span><span class="e">🤫</span><span>Lucy had a quiet evening class, and Diego was very shy.</span></div>
+      <div class="ev"><span class="box"></span><span class="e">😂</span><span>The whole class exploded with laughter.</span></div>
+      <div class="ev"><span class="box"></span><span class="e">🪟</span><span>One warm evening, Lucy opened the window.</span></div>
+      <div class="ev"><span class="box"></span><span class="e">💬</span><span>Diego said, "I think he has a question about the present perfect."</span></div>
+    </div>
+    <div class="card teal" style="margin-top:2.4mm;padding:2.4mm 4mm"><b style="color:var(--night)">Think about it 💭</b> <span class="small">(no points)</span> How was the class different after that night? Why?<div class="lines"></div></div>
+  </div>
+  {{FOOT8}}
+</section>
+
+<!-- ================= PAGE 9 ================= -->
+<section class="page">
+  <div class="sec" style="margin-top:3mm;display:flex;justify-content:space-between;align-items:flex-end;gap:4mm">
+    <div>
+      <h2><span class="num">14</span>Your turn <span class="tag">writing</span><span class="tag pts">8 points</span></h2>
+      <p class="instr" style="margin-bottom:0">2 points for each good sentence.</p>
+    </div>
+    <img class="char" src="img/f/05-lucy-writing-w.jpg" style="width:18mm;flex:none">
+  </div>
+  <div class="grid2" style="margin-top:2.2mm;gap:3mm;align-items:stretch">
+    <div class="card" style="padding:2.6mm 4mm">
+      <b style="color:var(--night);font-size:9.2pt">A. My funniest English moment 😂</b>
+      <div class="small" style="margin-top:1mm">Write two sentences. Use <b>burst out laughing</b>, <b>in stitches</b> or <b>couldn't keep a straight face</b>. <i>e.g. "I asked for a 'pan' instead of a 'pen', and the whole class burst out laughing."</i></div>
+      <div class="lines"></div><div class="lines"></div>
+    </div>
+    <div class="card peach" style="padding:2.6mm 4mm">
+      <b style="color:var(--night);font-size:9.2pt">B. One situation, two replies 😊 😏</b>
+      <div class="small" style="margin-top:1mm">Your friend arrives <b>one hour late</b>. Write one <b>sincere</b> reply and one friendly <b>sarcastic</b> reply. <i>e.g. "Oh, you're right on time!"</i></div>
+      <div class="lines"></div><div class="lines"></div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><span class="num">📓</span>My laugh log <span class="tag fun">your 7-day mission</span></h2>
+    <p class="instr">Jack's challenge: notice when you laugh – and why. Was it a <b>joke</b> 🃏 or just a <b>moment</b> ✨?</p>
+    <table class="log">
+      <tr><th>Day</th><th>What made me laugh?</th><th>Who was I with?</th><th>Joke 🃏 or moment ✨?</th></tr>
+      <tr><td class="d">1</td><td></td><td></td><td class="c">🃏 · ✨</td></tr>
+      <tr><td class="d">2</td><td></td><td></td><td class="c">🃏 · ✨</td></tr>
+      <tr><td class="d">3</td><td></td><td></td><td class="c">🃏 · ✨</td></tr>
+      <tr><td class="d">4</td><td></td><td></td><td class="c">🃏 · ✨</td></tr>
+      <tr><td class="d">5</td><td></td><td></td><td class="c">🃏 · ✨</td></tr>
+      <tr><td class="d">6</td><td></td><td></td><td class="c">🃏 · ✨</td></tr>
+      <tr><td class="d">7</td><td></td><td></td><td class="c">🃏 · ✨</td></tr>
+    </table>
+  </div>
+
+  <div class="sec">
+    <div class="pocket">
+      <span class="sc">✂️ Cut out and keep in your pocket</span>
+      <div class="pc">
+        <div><b style="color:var(--teal-d)">🙉 DIDN'T GET IT</b>Sorry, I didn't get that.<br>Can you explain?<br>You're joking, right?</div>
+        <div><b style="color:var(--peach-d)">😂 REACT</b>That's hilarious!<br>I'm cracking up!<br>We were in stitches.</div>
+        <div><b style="color:#5B3A99">😏 IRONY</b>"Lovely weather!" <span style="color:var(--muted)">(in the rain)</span><br>"Well, that went well."</div>
+        <div><b style="color:var(--sage-d)">💜 BE KIND</b>I was only joking!<br>Laugh <span style="font-weight:700">with</span> people, not <span style="font-weight:700">at</span> them.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><span class="num">✓</span>Can you do it now?</h2>
+    <table class="cando" style="margin-top:1.4mm">
+      <tr><th style="text-align:left">I can…</th><th>Not yet</th><th>Almost</th><th>Yes!</th></tr>
+      <tr><td>explain why most laughter isn't about jokes.</td><td class="f">😟</td><td class="f">🙂</td><td class="f">😄</td></tr>
+      <tr><td>describe different laughs: giggle, chuckle, in stitches…</td><td class="f">😟</td><td class="f">🙂</td><td class="f">😄</td></tr>
+      <tr><td>tell when someone is being sarcastic.</td><td class="f">😟</td><td class="f">🙂</td><td class="f">😄</td></tr>
+      <tr><td>say politely when I didn't get a joke.</td><td class="f">😟</td><td class="f">🙂</td><td class="f">😄</td></tr>
+    </table>
+  </div>
+
+  {{FOOT9}}
+</section>
+
+<!-- ================= PAGE 10 (KEY) ================= -->
+<section class="page key">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-top:2mm">
+    <h2><span class="num">✓</span>Answer key</h2>
+    <span class="small">Count your points and write your score on page 1!</span>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:2mm;margin-top:2.6mm">
+    <div class="k"><h3>0 · Warm-up &amp; predict</h3><p>Guess: c – only about 10–20% of laughs came after anything like a joke. · Predict: <b>banana</b> 🍌 isn't in the episode.</p></div>
+    <div class="k"><h3>1 · Key words · 2 · The big idea</h3><p>1 b · 2 g · 3 c · 4 i · 5 j · 6 d · 7 e · 8 f · 9 a · 10 h<br>Big idea: b (2 points)</p></div>
+    <div class="k"><h3>3 · Know it or hear it?</h3><p>1 b · 2 a · 3 b · 4 a · 5 c · 6 a · 7 b · 8 c · 9 b · 10 c</p></div>
+    <div class="k"><h3>4 · True or false?</h3><p>1 T · 2 F (at the end of a phrase, like punctuation) · 3 T · 4 T · 5 F (with other people) · 6 F (he was the friendliest waiter ever)</p></div>
+    <div class="k"><h3>5 · Laughter by numbers</h3><p>1 b · 2 e · 3 a · 4 d · 5 c</p></div>
+    <div class="k"><h3>6 · Funny mix-ups</h3><p>1 chicken · 2 hungry · 3 dessert · 4 pen</p></div>
+    <div class="k"><h3>7 · "You had to be there!"</h3><p>1 cheerful · 2 duck · 3 way · 4 face · 5 giggling · 6 stitches · 7 cracking · 8 there · A "You had to be there." · B "burst out laughing"</p></div>
+    <div class="k"><h3>8 · The laugh-o-meter</h3><p>🤭 QUIET: a, d · 😆 SUDDEN &amp; LOUD: c, f · 🤣 CAN'T STOP: b, e</p></div>
+    <div class="k"><h3>9 · Sincere or sarcastic?</h3><p>1 sarcastic · 2 sincere · 3 sarcastic · 4 sarcastic · 5 sincere · 6 sincere</p></div>
+    <div class="k"><h3>10 · fun · funny · at · with</h3><p>1 fun · 2 funny · 3 funny · 4 fun · 5 at · 6 with</p></div>
+    <div class="k"><h3>11 · Say it better (2 points each)</h3><p>1 Are you joking? / You're kidding! · 2 I nearly died laughing. / I was in stitches. · 3 I didn't get it. · 4 It was absolutely hilarious. / I couldn't stop laughing. · 5 You're kidding! / Are you pulling my leg?</p></div>
+    <div class="k" style="display:grid;grid-template-columns:1fr auto;gap:2.4mm;align-items:center"><div><h3>12 · Word search (1 point per word)</h3><p>1 contagious · 2 hilarious · 3 stitches · 4 chuckle · 5 sarcasm · 6 giggle · 7 sitcom · 8 pigeon · 9 poison · 10 ringtone · 11 duck<br><b>Secret:</b> You don't need to be a comedian. You just need to be there.</p></div><svg viewBox="0 0 110 110" style="width:38mm;height:38mm;font-family:Poppins,sans-serif;display:block"><rect width="110" height="110" rx="3" fill="#fff"/><line x1="15.0" y1="95.0" x2="105.0" y2="5.0" stroke="#F2AE94" stroke-width="8.2" stroke-linecap="round" opacity=".85"/><line x1="95.0" y1="25.0" x2="95.0" y2="105.0" stroke="#9ECBB4" stroke-width="8.2" stroke-linecap="round" opacity=".85"/><line x1="105.0" y1="35.0" x2="105.0" y2="105.0" stroke="#B9A9DA" stroke-width="8.2" stroke-linecap="round" opacity=".85"/><line x1="15.0" y1="5.0" x2="15.0" y2="75.0" stroke="#9CCAD6" stroke-width="8.2" stroke-linecap="round" opacity=".85"/><line x1="35.0" y1="5.0" x2="95.0" y2="5.0" stroke="#F5CF7A" stroke-width="8.2" stroke-linecap="round" opacity=".85"/><line x1="5.0" y1="95.0" x2="65.0" y2="35.0" stroke="#F2AE94" stroke-width="8.2" stroke-linecap="round" opacity=".85"/><line x1="35.0" y1="105.0" x2="85.0" y2="55.0" stroke="#9ECBB4" stroke-width="8.2" stroke-linecap="round" opacity=".85"/><line x1="35.0" y1="15.0" x2="85.0" y2="15.0" stroke="#B9A9DA" stroke-width="8.2" stroke-linecap="round" opacity=".85"/><line x1="5.0" y1="15.0" x2="5.0" y2="65.0" stroke="#9CCAD6" stroke-width="8.2" stroke-linecap="round" opacity=".85"/><line x1="25.0" y1="5.0" x2="25.0" y2="55.0" stroke="#F5CF7A" stroke-width="8.2" stroke-linecap="round" opacity=".85"/><line x1="55.0" y1="75.0" x2="85.0" y2="105.0" stroke="#F2AE94" stroke-width="8.2" stroke-linecap="round" opacity=".85"/><text x="5.0" y="7.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">Y</text><text x="15.0" y="7.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">R</text><text x="25.0" y="7.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">P</text><text x="35.0" y="7.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">C</text><text x="45.0" y="7.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">H</text><text x="55.0" y="7.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">U</text><text x="65.0" y="7.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">C</text><text x="75.0" y="7.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">K</text><text x="85.0" y="7.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">L</text><text x="95.0" y="7.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">E</text><text x="105.0" y="7.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">S</text><text x="5.0" y="17.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">P</text><text x="15.0" y="17.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">I</text><text x="25.0" y="17.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">O</text><text x="35.0" y="17.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">S</text><text x="45.0" y="17.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">I</text><text x="55.0" y="17.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">T</text><text x="65.0" y="17.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">C</text><text x="75.0" y="17.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">O</text><text x="85.0" y="17.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">M</text><text x="95.0" y="17.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">U</text><text x="105.0" y="17.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">O</text><text x="5.0" y="27.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">I</text><text x="15.0" y="27.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">N</text><text x="25.0" y="27.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">I</text><text x="35.0" y="27.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">U</text><text x="45.0" y="27.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">D</text><text x="55.0" y="27.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">O</text><text x="65.0" y="27.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">N</text><text x="75.0" y="27.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">T</text><text x="85.0" y="27.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">O</text><text x="95.0" y="27.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">H</text><text x="105.0" y="27.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">N</text><text x="5.0" y="37.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">G</text><text x="15.0" y="37.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">G</text><text x="25.0" y="37.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">S</text><text x="35.0" y="37.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">E</text><text x="45.0" y="37.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">E</text><text x="55.0" y="37.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">D</text><text x="65.0" y="37.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">M</text><text x="75.0" y="37.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">I</text><text x="85.0" y="37.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">T</text><text x="95.0" y="37.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">I</text><text x="105.0" y="37.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">S</text><text x="5.0" y="47.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">E</text><text x="15.0" y="47.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">T</text><text x="25.0" y="47.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">O</text><text x="35.0" y="47.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">O</text><text x="45.0" y="47.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">B</text><text x="55.0" y="47.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">S</text><text x="65.0" y="47.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">G</text><text x="75.0" y="47.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">E</text><text x="85.0" y="47.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">A</text><text x="95.0" y="47.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">L</text><text x="105.0" y="47.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">T</text><text x="5.0" y="57.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">O</text><text x="15.0" y="57.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">O</text><text x="25.0" y="57.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">N</text><text x="35.0" y="57.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">C</text><text x="45.0" y="57.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">A</text><text x="55.0" y="57.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">A</text><text x="65.0" y="57.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">O</text><text x="75.0" y="57.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">M</text><text x="85.0" y="57.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">E</text><text x="95.0" y="57.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">A</text><text x="105.0" y="57.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">I</text><text x="5.0" y="67.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">N</text><text x="15.0" y="67.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">N</text><text x="25.0" y="67.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">E</text><text x="35.0" y="67.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">C</text><text x="45.0" y="67.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">T</text><text x="55.0" y="67.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">D</text><text x="65.0" y="67.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">I</text><text x="75.0" y="67.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">L</text><text x="85.0" y="67.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">A</text><text x="95.0" y="67.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">R</text><text x="105.0" y="67.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">T</text><text x="5.0" y="77.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">N</text><text x="15.0" y="77.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">E</text><text x="25.0" y="77.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">R</text><text x="35.0" y="77.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">N</text><text x="45.0" y="77.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">Y</text><text x="55.0" y="77.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">D</text><text x="65.0" y="77.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">G</text><text x="75.0" y="77.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">O</text><text x="85.0" y="77.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">U</text><text x="95.0" y="77.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">I</text><text x="105.0" y="77.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">C</text><text x="5.0" y="87.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">J</text><text x="15.0" y="87.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">A</text><text x="25.0" y="87.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">O</text><text x="35.0" y="87.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">U</text><text x="45.0" y="87.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">S</text><text x="55.0" y="87.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">G</text><text x="65.0" y="87.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">U</text><text x="75.0" y="87.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">T</text><text x="85.0" y="87.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">N</text><text x="95.0" y="87.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">O</text><text x="105.0" y="87.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">H</text><text x="5.0" y="97.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">S</text><text x="15.0" y="97.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">C</text><text x="25.0" y="97.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">E</text><text x="35.0" y="97.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">E</text><text x="45.0" y="97.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">I</text><text x="55.0" y="97.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">D</text><text x="65.0" y="97.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">T</text><text x="75.0" y="97.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">C</text><text x="85.0" y="97.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">O</text><text x="95.0" y="97.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">U</text><text x="105.0" y="97.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">E</text><text x="5.0" y="107.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">B</text><text x="15.0" y="107.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">E</text><text x="25.0" y="107.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">T</text><text x="35.0" y="107.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">G</text><text x="45.0" y="107.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">H</text><text x="55.0" y="107.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">E</text><text x="65.0" y="107.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">R</text><text x="75.0" y="107.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">E</text><text x="85.0" y="107.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">K</text><text x="95.0" y="107.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">S</text><text x="105.0" y="107.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">S</text></svg></div>
+    <div class="k"><h3>13 · The pigeon story · 14 · Your turn</h3><p>1 🤫 quiet class · 2 🪟 window · 3 🐦 pigeon · 4 💬 present perfect · 5 😂 laughter · 6 💌 the card<br><i>Think about it:</i> laughing together made them a group – they stayed to chat and had coffee together.<br>14: your own answers – 2 points per good sentence.</p></div>
+    <div class="k"><h3>Your score</h3><p>90–100 🏆 <b>Comedy star!</b> · 70–89 🤣 <b>In stitches</b> · 50–69 😆 <b>Cracking up</b> · 0–49 🤭 <b>Giggling – listen again!</b></p></div>
+  </div>
+  <div style="display:grid;grid-template-columns:auto 1fr auto;gap:4mm;align-items:center;margin-top:2.6mm;background:var(--night);border-radius:5mm;padding:3.2mm 4.6mm;color:#F8E3C4">
+    <img src="img/qr.png" style="width:24mm;height:24mm;border-radius:2mm;background:#fff;padding:1mm">
+    <div style="font-size:8.8pt;line-height:1.5"><b style="font-size:11pt;color:var(--peach)">Enjoyed this worksheet? 🎉</b><br>Scan to subscribe to <b>Daily Speak English</b> – new episodes with Jack and Lucy every week. Come and laugh with us!<br>More free worksheets: <b style="color:#fff">dailyspeakenglish.github.io/worksheets</b></div>
+    <img class="char" src="img/f/29-duo-high-five-night.jpg" style="width:37mm">
+  </div>
+  {{FOOT10}}
+</section>
+
+</body>
+</html>
