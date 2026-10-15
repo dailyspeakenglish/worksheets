@@ -20,8 +20,8 @@ Read this whole file before starting. The best current example is `_source/talk-
 1. The episode script (`.txt`, JACK:/LUCY: lines).
 2. The NoteGPT audio length and chapter list.
 
-**Video timestamps** (for the ⏱ hints): the video plays the audio at 0.95 speed after a 5-second intro, so
-`video time = NoteGPT time ÷ 0.95 + 5 s`, rounded **down** to the second. Example: NoteGPT 12:44 → 13:29.
+**Video timestamps** (for the ⏱ hints): the audio plays at normal 1× speed after a 5-second intro (from Podcast 59 on), so
+`video time = NoteGPT time + 5 s`. Example: NoteGPT 12:44 → 12:49. (Podcasts 54–58 used 0.95 speed: NoteGPT ÷ 0.95 + 5 s.)
 Use the start of the matching chapter for each ⏱ hint.
 
 ## 3. Research (every worksheet)

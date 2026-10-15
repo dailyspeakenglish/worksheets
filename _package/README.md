@@ -9,10 +9,8 @@ headline lines 1–2 (+hex), the small line under the headline, and the colour-b
 Lucy is always on the far LEFT, Jack on the far RIGHT. One host acts out the topic; the other looks
 straight at the viewer. This is the default, not a hard rule: when the topic suits it, both hosts can
 act together (e.g. Why We Laugh: Jack laughing, Lucy winking with a playful finger gun as if she told the joke).
-Never pair a sad or emotional pose with the other host grinning at the viewer; match both hosts to the mood. Don't repeat a wall colour from the last 3 videos (Remember Names: indigo #3730C9 / tomato red #F0473E / plum #8E2DA8;
-Keep to the confirmed template word for word, even for tricky poses. Extra paragraphs (intent, priority lists,
-sparkles, motion lines) made the icons, B1–B2 pill and heads come out the wrong size, so the user asked to keep the old style.
-Time Flies: forest green #1E7A4C / cobalt #2445D8 / ocean teal #00809D; Why We Laugh: electric violet #6C3BF0 / turquoise #14B8B0 / fuchsia #C81E9E).
+Never pair a sad or emotional pose with the other host grinning at the viewer; match both hosts to the mood. Don't repeat a wall colour from the last 3 videos (Time Flies: forest green #1E7A4C / cobalt #2445D8 / ocean teal #00809D;
+Why We Laugh: electric violet #6C3BF0 / turquoise #14B8B0 / fuchsia #C81E9E; Messy Room: sky blue #1E9BEA / grass green #4DB848 / raspberry #E0306F).
 Never use an orange or near-orange wall: Lucy's sweater is orange and must stand out. Props must be clearly recognisable and never the same colour as the wall.
 
 ```
@@ -47,7 +45,7 @@ Colour balance: about 60% [COLOUR], 30% [ACCENT], 10% cream. Crisp, sharp, very 
 3. 💬 Before you listen: finish this sentence in the comments: "…" 👇
 4. 📩 THIS EPISODE CAME FROM YOUR MESSAGE: "listener question from the script"
 5. 📄 FREE PDF WORKSHEET (answer key included): link
-6. ⏱️ CHAPTERS – converted times (NoteGPT ÷ 0.95 + 5 s), sentence case, Google-search phrases, ~10 chapters
+6. ⏱️ CHAPTERS – converted times (NoteGPT + 5 s; since Podcast 59 the audio runs at normal 1× speed), sentence case, Google-search phrases, ~10 chapters
 7. What we get into: – 8–9 emoji bullets with concrete moments from the episode
 8. 📚 WORD TOUR – words · … then 🗣️ Idioms: …
 9. ✨ SAY IT BETTER – ❌ … → ✅ … (all pairs from the script)
