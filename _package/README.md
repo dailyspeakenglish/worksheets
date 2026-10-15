@@ -7,7 +7,9 @@ Templates the user confirmed. Use them word for word and change only what's mark
 Attach the usual Jack & Lucy reference image. Keep the small line under the headline short (3–5 words). Change only: wall colour (+hex), each host's pose/expression,
 headline lines 1–2 (+hex), the small line under the headline, and the colour-balance line.
 Lucy is always on the far LEFT, Jack on the far RIGHT. One host acts out the topic; the other looks
-straight at the viewer. Don't repeat a wall colour from the last 3 videos (Remember Names: indigo #3730C9 / tomato red #F0473E / plum #8E2DA8;
+straight at the viewer. This is the default, not a hard rule: when the topic suits it, both hosts can
+act together (e.g. Why We Laugh: Jack laughing, Lucy winking with a playful finger gun as if she told the joke).
+Never pair a sad or emotional pose with the other host grinning at the viewer; match both hosts to the mood. Don't repeat a wall colour from the last 3 videos (Remember Names: indigo #3730C9 / tomato red #F0473E / plum #8E2DA8;
 Time Flies: forest green #1E7A4C / cobalt #2445D8 / ocean teal #00809D; Why We Laugh: electric violet #6C3BF0 / turquoise #14B8B0 / fuchsia #C81E9E).
 Never use an orange or near-orange wall: Lucy's sweater is orange and must stand out. Props must be clearly recognisable and never the same colour as the wall.
 
