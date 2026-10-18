@@ -128,3 +128,4 @@ git add -A && git commit && git push origin HEAD:main
 - T/F circles need `white-space:nowrap` and ~17 mm width.
 - Long chat dialogues overflow page bottoms – keep bubbles compact (`.msg .b` padding ~1.6 mm).
 - Transparent PNGs get embedded once per use and make the PDF huge – always use the flattened JPEGs.
+- Many emoji (embedded as bitmap glyphs) push the PDF towards 2 MB. Copy `build_pdf.py` from the newest worksheet (from talk-to-yourself on): it runs a lossless `qpdf` squeeze (~5 % smaller) after rendering.
