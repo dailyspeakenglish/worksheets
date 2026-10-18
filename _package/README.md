@@ -9,8 +9,8 @@ headline lines 1–2 (+hex), the small line under the headline, and the colour-b
 Lucy is always on the far LEFT, Jack on the far RIGHT. One host acts out the topic; the other looks
 straight at the viewer. This is the default, not a hard rule: when the topic suits it, both hosts can
 act together (e.g. Why We Laugh: Jack laughing, Lucy winking with a playful finger gun as if she told the joke).
-Never pair a sad or emotional pose with the other host grinning at the viewer; match both hosts to the mood. Don't repeat a wall colour from the last 3 videos (Time Flies: forest green #1E7A4C / cobalt #2445D8 / ocean teal #00809D;
-Why We Laugh: electric violet #6C3BF0 / turquoise #14B8B0 / fuchsia #C81E9E; Messy Room: sky blue #1E9BEA / grass green #4DB848 / raspberry #E0306F).
+Never pair a sad or emotional pose with the other host grinning at the viewer; match both hosts to the mood. Don't repeat a wall colour from the last 3 videos (Why We Laugh: electric violet #6C3BF0 / turquoise #14B8B0 / fuchsia #C81E9E;
+Messy Room: sky blue #1E9BEA / grass green #4DB848 / raspberry #E0306F; Talk to Yourself: indigo #3730C9 / plum #8E2DA8 / navy #1F2E7A).
 Never use an orange or near-orange wall: Lucy's sweater is orange and must stand out. Props must be clearly recognisable and never the same colour as the wall.
 
 ```
