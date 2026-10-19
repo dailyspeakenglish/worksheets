@@ -1,0 +1,871 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Daily Speak English – Remember More Worksheet</title>
+<style>
+@page { size: A4; margin: 0; }
+:root{
+  --night:#1B2147; --night2:#2F3A6B; --mauve:#6E5D8C; --mauve-d:#4E3F6B; --lav:#F1EDF8; --lav2:#DED5EE;
+  --peach:#F2AE94; --peach-l:#FDEDE5; --peach-d:#A9532F; --sage:#D7E7DD; --sage-d:#2F5E50; --teal-l:#E3F0F3; --teal-d:#2C6577;
+  --cream:#FCF6EE; --ink:#22263F; --muted:#61647E; --line:#E3DCEC;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font-family:'Poppins','Noto Color Emoji',sans-serif;color:var(--ink);font-size:10.3pt;line-height:1.45;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.page{width:210mm;height:297mm;position:relative;overflow:hidden;padding:12mm 14mm 18mm;background:#fff;page-break-after:always}
+.page:last-child{page-break-after:auto}
+.page::before{content:"";position:absolute;inset:0 0 auto 0;height:4.5mm;background:linear-gradient(90deg,var(--night) 0 34%,var(--mauve) 34% 62%,var(--peach) 62% 84%,#B9D3C4 84% 100%)}
+.footer{position:absolute;left:14mm;right:14mm;bottom:7mm;display:flex;justify-content:space-between;align-items:center;font-size:7.5pt;color:var(--muted);border-top:1px solid var(--line);padding-top:2.2mm}
+.footer a{color:var(--night);text-decoration:none;font-weight:600}
+.footer>span{white-space:nowrap}
+.arr{display:inline-block;width:1.05em;height:1.05em;vertical-align:-.15em}
+.brand{display:flex;align-items:center;gap:2.2mm;font-weight:700;color:var(--night);font-size:8.8pt;letter-spacing:.3pt}
+.brand img{width:7mm;height:7mm;border-radius:50%}
+.footer .brand img{width:5mm;height:5mm}
+.footer .brand{font-size:7.5pt;letter-spacing:0}
+h1{font-size:25pt;line-height:1.06;margin:0;color:var(--night);font-weight:800;letter-spacing:-.3pt}
+h2{font-size:13pt;margin:0;color:var(--night);font-weight:700;display:flex;align-items:center;gap:2.4mm}
+h2 .num{display:inline-flex;align-items:center;justify-content:center;width:8.4mm;height:8.4mm;border-radius:50%;background:var(--mauve);color:#fff;font-size:10.5pt;flex:none}
+.sec{margin-top:5.6mm}
+.instr{font-size:9.2pt;color:var(--muted);margin:1.1mm 0 2.6mm 10.8mm}
+.tag{display:inline-block;font-size:7.4pt;font-weight:600;padding:.5mm 2.4mm;border-radius:10mm;background:var(--lav);color:var(--mauve-d);margin-left:1.2mm;vertical-align:middle}
+.tag.pts{background:var(--peach-l);color:var(--peach-d)}
+.tag.fun{background:var(--sage);color:var(--sage-d)}
+.card{background:var(--lav);border-radius:4mm;padding:3.6mm 4.6mm;border:1px solid var(--lav2)}
+.card.peach{background:var(--peach-l);border-color:#F6D3C3}
+.card.sage{background:var(--sage);border-color:#BFD7C8}
+.card.teal{background:var(--teal-l);border-color:#C6DFE6}
+.card.white{background:#fff;border:1.3px solid var(--line)}
+.blank{display:inline-block;border-bottom:1.3px solid var(--night);min-width:24mm;height:4.6mm;vertical-align:bottom}
+.blank.s{min-width:13mm}.blank.l{min-width:58mm}.blank.xl{min-width:100%}
+.box{display:inline-flex;width:6.2mm;height:6.2mm;border:1.4px solid var(--night);border-radius:1.4mm;vertical-align:middle;flex:none;background:#fff}
+.box.sm{width:5mm;height:5mm;border-radius:1.1mm}
+table{border-collapse:collapse;width:100%}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:4mm}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:3mm}
+.pill{display:inline-block;background:var(--night);color:#F8E3C4;font-weight:700;border-radius:10mm;padding:.6mm 3mm;font-size:8.8pt}
+.pill.p{background:var(--peach);color:var(--night)}
+.small{font-size:8.4pt;color:var(--muted)}
+.lines{height:7mm;border-bottom:1px dashed #C9BFD9}
+.char{display:block;object-fit:contain}
+.bub{display:flex;gap:3mm;align-items:center}
+.bub .txt{background:#fff;border:1.4px solid var(--line);border-radius:4mm;padding:2.4mm 3.6mm;font-size:9.1pt;flex:1}
+.bub .txt b{color:var(--night)}
+.ava{width:17mm;height:17mm;border-radius:50%;background:var(--lav);overflow:hidden;flex:none;border:2px solid #fff;box-shadow:0 0 0 1.4px var(--lav2)}
+.ava img{width:100%;height:130%;object-fit:cover;object-position:50% 4%}
+.mc{display:grid;grid-template-columns:1fr 1fr;gap:2.4mm 4.6mm}
+.mcq{background:#fff;border:1.2px solid var(--line);border-radius:3mm;padding:2.4mm 3.4mm}
+.mcq .qq{font-weight:600;color:var(--night);font-size:9.5pt;margin-bottom:1.1mm}
+.opt{display:flex;gap:2mm;align-items:center;font-size:9.2pt;margin:.6mm 0}
+.opt .c{width:4.6mm;height:4.6mm;border-radius:50%;border:1.3px solid var(--night);display:inline-flex;align-items:center;justify-content:center;font-size:7pt;font-weight:700;color:var(--night);flex:none}
+.hint{font-size:7.5pt;color:var(--peach-d);font-weight:600;margin-top:.6mm}
+.tf td{padding:1.45mm 2mm;border-bottom:1px solid #EEE8F4;font-size:9.4pt;vertical-align:middle}
+.tf th{font-size:7.8pt;color:var(--muted);font-weight:600;text-align:center;padding-bottom:1.2mm}
+.tf td.n{width:6mm;font-weight:700;color:var(--mauve)}
+.tf td.ck{width:17mm;text-align:center;white-space:nowrap}
+.tf td.tm{width:15mm;font-size:7.6pt;color:var(--peach-d);font-weight:600;text-align:right}
+.circ{display:inline-flex;width:6mm;height:6mm;border-radius:50%;border:1.3px solid var(--night);align-items:center;justify-content:center;font-weight:700;font-size:8pt;color:var(--night)}
+.match td{padding:1.35mm 1.6mm;font-size:9.3pt;vertical-align:middle}
+.match .ans{width:9mm}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:3mm}
+.step{background:#fff;border:1.3px solid var(--line);border-radius:3.4mm;padding:2.6mm 3.2mm}
+.step .h{font-weight:700;color:var(--night);font-size:9.4pt}
+.step .s{font-size:8.4pt;color:var(--muted);line-height:1.4}
+/* chat */
+.chat{display:flex;flex-direction:column;gap:1.5mm}
+.msg{display:flex;align-items:flex-end;gap:2.6mm}
+.msg.j{flex-direction:row-reverse}
+.msg .ava{width:13mm;height:13mm}
+.msg .b{max-width:132mm;border-radius:4.5mm;padding:1.6mm 3.6mm;font-size:9.4pt;line-height:1.5}
+.msg.l .b{background:var(--peach-l);border:1.2px solid #F4D2C2;border-bottom-left-radius:1mm}
+.msg.j .b{background:var(--lav);border:1.2px solid var(--lav2);border-bottom-right-radius:1mm}
+.msg .who{display:block;font-size:7pt;font-weight:700;letter-spacing:.4pt;margin-bottom:.1mm}
+.msg.l .who{color:var(--peach-d)} .msg.j .who{color:var(--mauve-d)}
+.gap{display:inline-block;min-width:21mm;border-bottom:1.3px solid var(--night);text-align:left;font-size:7.4pt;font-weight:700;color:var(--mauve);line-height:1.1;padding-left:.6mm}
+/* conversation map */
+.bank{display:grid;grid-template-columns:1fr 1fr;gap:1.4mm 4mm;font-size:9.1pt}
+.bank div{display:flex;gap:2mm;align-items:baseline}
+.bank b{color:var(--mauve);width:4mm;flex:none}
+.map{display:grid;grid-template-columns:1fr 7mm 1fr 7mm 1fr;align-items:stretch;margin-top:3mm}
+.col{border-radius:4mm;padding:3mm;text-align:center}
+.col .h{font-weight:800;font-size:10.5pt;letter-spacing:.4pt}
+.col .s{font-size:7.8pt;margin-bottom:2mm}
+.col .slots{display:flex;justify-content:center;gap:2mm}
+.col.c1{background:var(--sage);color:var(--sage-d)} .col.c2{background:var(--lav);color:var(--mauve-d)} .col.c3{background:var(--peach-l);color:var(--peach-d)}
+.arrow{display:flex;align-items:center;justify-content:center;font-size:15pt;color:var(--mauve);font-weight:700}
+/* situation cards */
+.sit{background:#fff;border:1.3px solid var(--line);border-radius:3.4mm;padding:2.4mm 3mm;display:flex;flex-direction:column;gap:1.4mm}
+.sit .e{font-size:17pt;line-height:1.1}
+.sit .t{font-size:8.8pt;color:var(--ink);min-height:12.5mm}
+.sit .ch{display:flex;gap:3mm;font-size:8pt;font-weight:600;color:var(--night);align-items:center}
+.sit .ch span{display:flex;gap:1.2mm;align-items:center}
+.key h3{margin:0 0 1mm;font-size:9.6pt;color:var(--night)}
+.key p{margin:0;font-size:8.5pt;line-height:1.48}
+.key .k{background:var(--cream);border-radius:3mm;padding:2.6mm 3.4mm;border:1px solid #EFE2D0}
+.chips{display:flex;flex-wrap:wrap;gap:1.8mm}
+.chips span{background:var(--lav);border:1px solid var(--lav2);color:var(--mauve-d);border-radius:10mm;padding:.5mm 3mm;font-size:8.8pt;font-weight:600}
+.chal th{background:var(--night);color:#F8E3C4;font-size:8.2pt;font-weight:600;padding:1.8mm 1.4mm;text-align:left}
+.chal th:first-child{border-radius:3mm 0 0 0}.chal th:last-child{border-radius:0 3mm 0 0;text-align:center}
+.chal td{border:1px solid #E6DFEE;height:8.6mm;font-size:8.5pt;padding:0 2mm;vertical-align:middle}
+.chal td.d{font-weight:700;color:var(--night);background:var(--lav);width:13mm;text-align:center}
+.chal td.f{text-align:center;font-size:10pt;letter-spacing:2mm;width:27mm}
+.cando td{padding:1.6mm 1.6mm;border-bottom:1px solid #EEE8F4;font-size:9pt}
+.cando td.f{text-align:center;width:12mm;font-size:11pt}
+.cando th{font-size:7.6pt;color:var(--muted);font-weight:600;text-align:center}
+.pocket{border:1.6px dashed var(--mauve);border-radius:4mm;padding:3mm 4mm;position:relative;background:#fff}
+.pocket .sc{position:absolute;top:-3.4mm;left:6mm;background:#fff;padding:0 1.4mm;font-size:9pt;color:var(--mauve)}
+.pocket .pc{display:grid;grid-template-columns:repeat(4,1fr);gap:2.4mm;font-size:7.9pt;line-height:1.35}
+.pocket .pc div b{display:block;font-size:8.2pt;margin-bottom:.6mm}
+.story{display:grid;grid-template-columns:1fr 1fr;gap:2.4mm 4mm}
+.story .ev{display:flex;gap:2.6mm;align-items:center;background:#fff;border:1.3px solid var(--line);border-radius:3mm;padding:2.2mm 3mm;font-size:9pt}
+.story .ev .e{font-size:15pt;flex:none}
+.story .ev .l{font-weight:800;color:var(--mauve);flex:none;width:4mm}
+/* ---- new in build-a-habit ---- */
+.pick{display:inline-flex;align-items:center;gap:1.2mm;padding:.5mm 2.2mm .5mm 1mm;border-radius:10mm;font-size:7.8pt;font-weight:700;white-space:nowrap}
+.pick.good{background:#DDF1E3;color:#1E7B45;border:1.2px solid #8FCBA3}
+.pick.bad{background:#FBE1DE;color:#C0392B;border:1.2px solid #EDA59D}
+.pick .box{width:4.2mm;height:4.2mm;border-radius:1mm;border-width:1.2px}
+.ic{width:3mm;height:3mm;flex:none;vertical-align:-.45mm;display:inline-block}
+.pick.good .box{border-color:#1E7B45}.pick.bad .box{border-color:#C0392B}
+.slots{display:inline-flex;gap:.55mm;vertical-align:-.5mm;margin:0 .5mm}
+.slots .sl{display:inline-block;width:2.45mm;height:3.4mm;border-bottom:1.1px solid var(--night)}
+.slots .sl1{display:inline-block;width:2.45mm;height:3.4mm;line-height:3.4mm;text-align:center;font-size:8.4pt;color:var(--mauve);border-bottom:1.1px solid var(--mauve)}
+.msgrow{display:flex;flex-wrap:wrap;gap:2.4mm 3.6mm;justify-content:center}
+.mw{display:inline-flex;gap:.8mm;align-items:flex-end}
+.mb{display:inline-block;width:4.4mm;height:5.8mm;border-bottom:1.4px solid var(--night)}
+.ap{font-weight:800;font-size:11pt;line-height:1;color:var(--night)}
+.nums{display:grid;grid-template-columns:repeat(4,1fr);gap:2.4mm}
+.nums .nc{background:#fff;border:1.3px solid var(--line);border-radius:3.4mm;padding:2.2mm 2.6mm;display:flex;flex-direction:column;gap:1.2mm}
+.nums .nc .q{font-size:8.5pt;line-height:1.36;min-height:12mm}
+.nums .nc .a{display:flex;align-items:center;justify-content:space-between}
+.nums .nc .bx{width:16mm;height:7.4mm;border:1.4px solid var(--night);border-radius:1.6mm;background:var(--lav)}
+.nums .nc .t{font-size:7.3pt;color:var(--peach-d);font-weight:600}
+.conf{display:grid;grid-template-columns:repeat(3,auto);justify-content:space-between;gap:1.6mm 3mm;font-size:9pt}
+.conf div{display:flex;gap:2mm;align-items:center}
+.coll td{padding:1.5mm 1mm;font-size:9.3pt;line-height:1.5}
+.rule{display:grid;grid-template-columns:repeat(3,1fr);gap:2.4mm}
+.rule div{border-radius:3mm;padding:2.2mm 2.8mm;font-size:8.4pt;line-height:1.4}
+.rule b.h{display:block;font-size:9.4pt;margin-bottom:.6mm}
+.ws{border-collapse:separate;border-spacing:.7mm;margin:0 auto}
+.ws td{width:6.3mm;height:6.3mm;text-align:center;font-weight:700;font-size:9.4pt;color:var(--night);background:#fff;border-radius:1.6mm;border:1px solid var(--lav2)}
+.clues{font-size:8.6pt;line-height:1.38;display:flex;flex-direction:column;gap:1.25mm}
+.clues div{display:flex;gap:1.6mm;align-items:baseline}
+.clues .n{font-weight:800;color:var(--mauve);width:4.4mm;flex:none}
+.wsk{border-collapse:separate;border-spacing:.35mm}
+.wsk td{width:3.4mm;height:3.4mm;font-size:5.4pt;text-align:center;font-weight:600;color:#B9AEC9;border-radius:.6mm;background:#fff}
+.wsk td.on{background:var(--peach);color:var(--night)}
+.path{display:grid;grid-template-columns:repeat(7,1fr);gap:2.2mm 2mm;margin-top:2mm}
+.stone{height:11mm;border-radius:50%;background:#EDE7F6;border:1.4px solid var(--lav2);display:flex;align-items:center;justify-content:center;font-size:8pt;font-weight:700;color:var(--mauve-d);position:relative}
+.path .stone:nth-child(even){transform:translateY(1.6mm)}
+.grass{background:linear-gradient(180deg,#EAF3EC,#D7E7DD);border-radius:4mm;padding:3mm 4mm 4.4mm;border:1px solid #BFD7C8}
+.react table td{padding:1.35mm 1.4mm;font-size:9.1pt;vertical-align:middle;border-bottom:1px solid #EEE8F4}
+.bands{display:grid;grid-template-columns:repeat(4,1fr);gap:2mm;margin-top:2.4mm}
+.bands div{background:var(--lav);border-radius:3mm;padding:1.6mm 2.2mm;font-size:7.8pt;line-height:1.33;text-align:center}
+.bands b{display:block;color:var(--night);font-size:8.4pt}
+
+/* ---- new in time-flies ---- */
+.graphs{display:grid;grid-template-columns:repeat(3,1fr);gap:2.6mm}
+.graph{background:#fff;border:1.3px solid var(--line);border-radius:3.4mm;padding:2mm 2.4mm;text-align:center}
+.graph .gl{display:inline-flex;width:6mm;height:6mm;border-radius:50%;border:1.3px solid var(--night);align-items:center;justify-content:center;font-weight:800;color:var(--night);font-size:9pt;margin-bottom:1mm}
+.gq{display:grid;grid-template-columns:1fr auto;gap:1.4mm 3mm;font-size:9.2pt;align-items:center}
+.gq .bx{display:inline-block;width:10mm;height:6.4mm;border:1.4px solid var(--night);border-radius:1.4mm;background:var(--lav)}
+.clock{display:inline-flex;align-items:center;gap:1.2mm;padding:.5mm 2.2mm .5mm 1mm;border-radius:10mm;font-size:7.6pt;font-weight:700;white-space:nowrap}
+.clock.now{background:var(--night);color:#F8E3C4}
+.clock.back{background:#FBE1D6;color:var(--peach-d);border:1.2px solid #EBB49C}
+.clock .box{width:4.2mm;height:4.2mm;border-radius:1mm;border-width:1.2px}
+.clock.now .box{border-color:#F8E3C4;background:transparent}
+.sorter{display:grid;grid-template-columns:1fr 1fr;gap:3mm;margin-top:2.4mm}
+.sorter .col{border-radius:4mm;padding:2.6mm 3mm;text-align:center}
+.sorter .col .h{font-weight:800;font-size:11pt;letter-spacing:.4pt}
+.sorter .col .s{font-size:7.8pt;margin-bottom:2mm}
+.sorter .slots{display:flex;justify-content:center;gap:2mm}
+.sorter .fast{background:#FDE3D6;color:#B5401C;border:1.3px solid #F2B39A}
+.sorter .slow{background:#DCEFF3;color:#1F5F70;border:1.3px solid #A9D3DD}
+.timeline{display:grid;grid-template-columns:repeat(3,1fr);gap:2.4mm}
+.timeline div{border-radius:3mm;padding:2.2mm 2.8mm;font-size:8.4pt;line-height:1.4}
+.timeline b.h{display:block;font-size:10pt;margin-bottom:.4mm}
+.cw{border-collapse:separate;border-spacing:.7mm;margin:0 auto;width:auto;table-layout:fixed}
+.cw td{width:var(--cell);min-width:var(--cell);max-width:var(--cell);height:var(--cell);padding:0;position:relative;box-sizing:border-box}
+.cw td.o{background:#fff;border:1.4px solid var(--night);border-radius:1.2mm}
+.cw td.x{border:none;background:transparent}
+.cw .cn{position:absolute;top:.15mm;left:.45mm;font-size:5.4pt;font-weight:700;color:var(--mauve);line-height:1}
+.cw .cl{display:flex;height:100%;align-items:center;justify-content:center;font-weight:700;font-size:8.6pt;color:var(--night)}
+.cwk{border-spacing:.35mm}
+.cwk td.o{border-width:.9px;border-radius:.6mm}
+.cwk .cn{font-size:3.6pt;top:.1mm;left:.25mm}
+.cwk .cl{font-size:6.2pt}
+.cclues{font-size:8.5pt;line-height:1.36}
+.cclues h4{margin:0 0 1mm;font-size:9.4pt;color:var(--night)}
+.cclues .card > div{display:flex;gap:1.6mm;align-items:baseline;margin-bottom:1mm}
+.cclues .n{font-weight:800;color:var(--mauve);width:4.4mm;flex:none}
+.cclues .len{color:var(--muted);font-size:7.6pt}
+.slips{display:grid;grid-template-columns:repeat(4,1fr);gap:2.2mm}
+.slip{border:1.4px dashed var(--mauve);border-radius:2.6mm;padding:1.8mm 2.2mm;background:#FFFCF6;font-size:7.8pt;color:var(--mauve-d);min-height:15mm;display:flex;flex-direction:column;justify-content:space-between}
+.predict-chips span{font-size:8.2pt}
+.slip .ln{border-bottom:1px solid #D9CCE6;height:4.2mm}
+
+/* ---- new in why-we-laugh ---- */
+.meter{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-radius:4mm;overflow:hidden;border:1.3px solid var(--lav2)}
+.meter .z{padding:2.4mm 2.6mm;text-align:center;min-height:30mm;display:flex;flex-direction:column;gap:1.6mm;align-items:center}
+.meter .z .h{font-weight:800;font-size:10pt}
+.meter .z .s{font-size:7.6pt;line-height:1.3}
+.meter .z .slots{display:flex;gap:2mm}
+.meter .z1{background:#EAF3EC;color:var(--sage-d)}
+.meter .z2{background:#FDEDE5;color:var(--peach-d)}
+.meter .z3{background:#F6DCDC;color:#A33B3B}
+.meterbar{height:3mm;border-radius:2mm;background:linear-gradient(90deg,#B9D3C4,#F2AE94,#E07B7B);margin:1.4mm 0 .6mm}
+.nums2{display:grid;grid-template-columns:1fr auto;gap:1.2mm 3mm;font-size:9.2pt;align-items:center}
+.nums2 .bx{display:inline-block;width:8mm;height:6.4mm;border:1.4px solid var(--night);border-radius:1.4mm;background:var(--lav)}
+.mix{display:grid;grid-template-columns:1fr 1fr;gap:2mm 3mm;font-size:9.2pt}
+.mix div{background:#fff;border:1.2px solid var(--line);border-radius:2.6mm;padding:1.8mm 3mm;line-height:1.5}
+.mix .w{display:inline-flex;gap:1.6mm;margin-left:1mm}
+.mix .w span{border:1.2px solid var(--night);border-radius:10mm;padding:0 2.4mm;font-weight:600;font-size:8.6pt}
+.tone{display:inline-flex;align-items:center;gap:1.2mm;padding:.5mm 2.2mm .5mm 1mm;border-radius:10mm;font-size:7.6pt;font-weight:700;white-space:nowrap}
+.tone.sin{background:#DDF1E3;color:#1E7B45;border:1.2px solid #8FCBA3}
+.tone.sar{background:#EDE3FA;color:#5B3A99;border:1.2px solid #B9A3E0}
+.tone .box{width:4.2mm;height:4.2mm;border-radius:1mm;border-width:1.2px}
+.tone.sin .box{border-color:#1E7B45}.tone.sar .box{border-color:#5B3A99}
+.sar .sit .t{min-height:0}
+.log th{background:var(--night);color:#F8E3C4;font-size:8.2pt;font-weight:600;padding:1.8mm 2mm;text-align:left}
+.log th:first-child{border-radius:3mm 0 0 0}.log th:last-child{border-radius:0 3mm 0 0;text-align:center}
+.log td{border:1px solid #E6DFEE;height:7mm;font-size:8.4pt;padding:0 2mm;vertical-align:middle}
+.log td.d{font-weight:700;color:var(--night);background:var(--lav);width:12mm;text-align:center}
+.log td.c{text-align:center;width:34mm;font-size:8pt;color:var(--muted)}
+
+/* ---- new in messy-room ---- */
+.claim{display:inline-flex;align-items:center;gap:1.2mm;padding:.5mm 2.2mm .5mm 1mm;border-radius:10mm;font-size:7.6pt;font-weight:700;white-space:nowrap}
+.claim.fair{background:#DDF1E3;color:#1E7B45;border:1.2px solid #8FCBA3}
+.claim.strong{background:#FBE1DE;color:#C0392B;border:1.2px solid #EDA59D}
+.claim .box{width:4.2mm;height:4.2mm;border-radius:1mm;border-width:1.2px}
+.claim.fair .box{border-color:#1E7B45}.claim.strong .box{border-color:#C0392B}
+.sort{border-collapse:separate;border-spacing:0 1.1mm;width:100%}
+.sort th{font-size:8.3pt;font-weight:800;padding:1.4mm 1mm;text-align:center}
+.sort th.it{text-align:left;color:var(--night);padding-left:1mm}
+.sort th.keep{background:#DDF1E3;color:#1E7B45;border-radius:2.4mm 0 0 2.4mm}
+.sort th.give{background:#DCEFF3;color:#1F5F70}
+.sort th.out{background:#FBE1DE;color:#C0392B;border-radius:0 2.4mm 2.4mm 0}
+.sort td{font-size:8.9pt;padding:.9mm 1mm;border-bottom:1px dashed var(--line)}
+.sort td.c{text-align:center;width:27mm}
+.sort td.k .box{border-color:#1E7B45}.sort td.g .box{border-color:#1F5F70}.sort td.o .box{border-color:#C0392B}
+.studies{display:grid;grid-template-columns:repeat(3,1fr);gap:2.4mm}
+.studies div{border-radius:3mm;padding:2mm 3mm;font-size:8.3pt;line-height:1.35;color:var(--ink)}
+.studies .h{display:block;font-size:9.3pt;margin-bottom:.3mm}
+.puts{display:grid;grid-template-columns:repeat(3,1fr);gap:2.4mm;margin-top:1.6mm}
+.puts div{border-radius:3mm;padding:2mm 3mm;font-size:8.5pt;line-height:1.38;text-align:center}
+.puts .e{display:block;font-size:15pt;line-height:1.2}
+.puts b{display:block;color:var(--night);font-size:9.3pt}
+.chat.wide .msg .b{max-width:154mm;padding:1.4mm 3.6mm}
+.claim.calm{background:#DCEFF3;color:#1F5F70;border:1.2px solid #9CCAD6}.claim.calm .box{border-color:#1F5F70}
+.claim.mess{background:#FDE3D3;color:#B9542B;border:1.2px solid #F2B796}.claim.mess .box{border-color:#B9542B}
+.tm2{display:grid;grid-template-columns:1fr auto auto;gap:1.4mm;align-items:center;font-size:8.6pt;padding:.8mm 0;white-space:nowrap;border-bottom:1px dashed var(--line)}
+.wf .blank{min-width:19mm}
+.wf{display:grid;grid-template-columns:1fr 1fr;gap:1.8mm 5mm;font-size:9.1pt}
+.keycols{display:grid;grid-template-columns:1fr 1fr;gap:2mm;margin-top:2.6mm;align-items:start}
+.keycols>div{display:flex;flex-direction:column;gap:2mm}
+.week td{height:6.4mm}
+.week td.a{width:50mm;font-weight:600;color:var(--night)}
+
+/* ---- new in talk-to-yourself ---- */
+.claim.chal{background:#DDF1E3;color:#1E7B45;border:1.2px solid #8FCBA3}.claim.chal .box{border-color:#1E7B45}
+.claim.thr{background:#FBE1DE;color:#C0392B;border:1.2px solid #EDA59D}.claim.thr .box{border-color:#C0392B}
+.ways{display:grid;grid-template-columns:1fr 1.5fr;gap:2.4mm 5mm;align-items:start}
+.ways .ex{font-size:8.8pt;line-height:1.5}
+.ways .ex div{margin-bottom:1.1mm}
+.friend td{padding:1.8mm 1mm;font-size:9.2pt;vertical-align:bottom}
+.friend td.i{width:52%;color:#C0392B}
+.pep{display:grid;grid-template-columns:.8fr 1.1fr 1fr 1.25fr;gap:1.6mm 2.4mm;margin-top:1.6mm}
+.pep>div{border-radius:3mm;padding:1.8mm 2.6mm;font-size:9.4pt;color:var(--night)}
+.pep .lb{display:block;font-size:6.8pt;font-weight:800;letter-spacing:.3pt;margin-bottom:.4mm}
+.pep .me{background:none;padding:2.4mm 1mm 0}
+.ws td{width:7mm;height:7mm;font-size:10.2pt}
+.clues{font-size:8.8pt;gap:1.7mm}
+.hero2{background:var(--lav);border-radius:6mm;height:55mm;position:relative;overflow:hidden;border:1px solid var(--lav2)}
+
+/* ---- new in being-bored ---- */
+.claim.ed{background:#DCEFF3;color:#1F5F70;border:1.2px solid #9CCAD6}.claim.ed .box{border-color:#1F5F70}
+.claim.ing{background:#FDE3D3;color:#B9542B;border:1.2px solid #F2B796}.claim.ing .box{border-color:#B9542B}
+.claim.ok{background:#DDF1E3;color:#1E7B45;border:1.2px solid #8FCBA3}.claim.ok .box{border-color:#1E7B45}
+.claim.no{background:#FBE1DE;color:#C0392B;border:1.2px solid #EDA59D}.claim.no .box{border-color:#C0392B}
+.edrule{display:grid;grid-template-columns:1fr 1fr;gap:2.4mm;margin:1.6mm 0 2mm}
+.edrule div{border-radius:3mm;padding:1.6mm 3mm;font-size:8.6pt;line-height:1.4}
+
+/* ---- new in kindness ---- */
+.ws td{width:6.9mm;height:6.9mm;font-size:10pt}
+.scale{position:relative;height:14mm;margin:1mm 3mm 0}
+.scale .end{position:absolute;top:0;font-size:7.4pt;font-weight:700;color:var(--muted)}
+.scale .bar{position:absolute;left:0;right:0;top:5mm;height:2.4mm;border-radius:2mm;background:linear-gradient(90deg,#F6C9C2,#F3EFF8 50%,#BFE3CD)}
+.scale .tk{position:absolute;top:8.4mm;transform:translateX(-50%);font-size:7pt;color:var(--muted);font-weight:600}
+.scale .mk{position:absolute;top:0;transform:translateX(-50%);text-align:center;font-size:7.2pt;font-weight:700;white-space:nowrap}
+.scale .mk span{display:block;width:0;height:0;margin:0 auto;border-left:1.6mm solid transparent;border-right:1.6mm solid transparent;border-top:2.2mm solid currentColor}
+.claim.un{background:#DCEFF3;color:#1F5F70;border:1.2px solid #9CCAD6}.claim.un .box{border-color:#1F5F70}
+.claim.ov{background:#FDE3D3;color:#B9542B;border:1.2px solid #F2B796}.claim.ov .box{border-color:#B9542B}
+.phr{display:grid;grid-template-columns:1.05fr .95fr;gap:4mm;align-items:start}
+
+/* ---- new in remember-more ---- */
+.claim.rec{background:#FDE3D3;color:#B9542B;border:1.2px solid #F2B796}.claim.rec .box{border-color:#B9542B}
+.claim.cal{background:#DDF1E3;color:#1E7B45;border:1.2px solid #8FCBA3}.claim.cal .box{border-color:#1E7B45}
+.chart{display:flex;justify-content:center;gap:14mm;align-items:flex-end;height:29mm;padding:0 2mm;border-bottom:1.4px solid var(--night)}
+.chart .grp{display:flex;flex-direction:column;align-items:center}
+.chart .pair{display:flex;gap:3mm;align-items:flex-end}
+.chart .bar{width:14mm;border-radius:2mm 2mm 0 0;display:flex;align-items:flex-start;justify-content:center;font-weight:800;font-size:9pt;padding-top:1mm;box-sizing:border-box}
+.chart .bar.r{background:#F7C9AE;color:#9A4320}.chart .bar.c{background:#A9DDBE;color:#1E6B3E}
+.chart-l{display:flex;justify-content:center;gap:14mm;font-size:8.4pt;font-weight:700;color:var(--night);margin-top:1mm}
+.chart-l div{width:31mm;text-align:center}
+.legend{display:flex;flex-direction:column;justify-content:center;gap:2.4mm;font-size:8.6pt}
+.legend span{display:inline-flex;align-items:center;gap:1.2mm}
+.legend i{display:inline-block;width:3.4mm;height:3.4mm;border-radius:.8mm}
+.flow{display:grid;grid-template-columns:repeat(5,1fr);gap:1.6mm;align-items:stretch}
+.flow div{border-radius:3mm;padding:1.8mm 2mm;font-size:8pt;line-height:1.35;text-align:center;position:relative}
+.flow div b{display:block;font-size:13pt;line-height:1.2}
+.tracker td.w{width:28mm}.tracker td.k{width:17mm;text-align:center}
+.tracker th{text-align:center}
+</style>
+</head>
+<body>
+
+<!-- ================= PAGE 1 ================= -->
+<section class="page">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-top:1mm">
+    <div class="brand"><img src="img/logo.jpg">DAILY SPEAK ENGLISH · PODCAST WORKSHEET</div>
+    <div><span class="pill">B1–B2</span> <span class="pill p">⏱ 50 min</span></div>
+  </div>
+  <div style="display:grid;grid-template-columns:1.12fr .88fr;gap:4mm;margin-top:4mm;align-items:center">
+    <div>
+      <div class="small" style="font-weight:700;color:var(--mauve);letter-spacing:.7pt">LISTEN · LEARN · SPEAK</div>
+      <h1>Why We Forget Things and How to Remember More</h1>
+      <p style="margin:2.4mm 0 0;font-size:9.6pt;color:var(--muted)">Why doorways make us forget, how fast new words disappear, the study trick that beats reading again and again, natural English for remembering and forgetting – and Rafael's winners' box.</p>
+      <div style="margin-top:4mm;display:grid;grid-template-columns:auto 1fr;gap:1.6mm 3mm;font-size:9.3pt;align-items:end">
+        <b style="color:var(--night)">Name:</b><span class="blank xl"></span>
+        <b style="color:var(--night)">Date:</b><span class="blank xl"></span>
+        <b style="color:var(--night)">My score:</b><span><span class="blank s"></span> / 100 ⭐</span>
+      </div>
+    </div>
+    <div class="hero2">
+      <div style="position:absolute;z-index:2;top:3.4mm;left:3.4mm;background:#fff;border-radius:4mm;padding:1mm 3mm;font-size:8.6pt;font-weight:700;color:var(--night);box-shadow:0 1px 0 var(--lav2)">"Why did I come into the kitchen?!" 🚪</div>
+      <img class="char" src="img/f/12-lucy-laughing-right-lav.jpg" style="position:absolute;bottom:0;left:3mm;width:34mm">
+      <img class="char" src="img/f/72-jack-confused-lav.jpg" style="position:absolute;bottom:0;right:1mm;width:38mm">
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><span class="num">★</span>How to use this worksheet</h2>
+    <div class="steps" style="margin-top:2.4mm">
+      <div class="step"><div class="h">1 · Before you listen 🧠</div><div class="s">Do the warm-up and learn the key words. Questions with 🧠 can be answered before listening.</div></div>
+      <div class="step"><div class="h">2 · While you listen 🎧</div><div class="s">Answer the 🎧 questions. The ⏱ times show where to find each part of the video.</div></div>
+      <div class="step"><div class="h">3 · Tomorrow 📅</div><div class="s">Lucy's tip: do the crossword and the brain dump <b>tomorrow</b> – forget a little first, then recall!</div></div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><span class="num">0</span>Warm-up: My memory check <span class="tag fun">fun · no points</span></h2>
+    <p class="instr">Be honest! Tick everything that is true for you. 😄</p>
+    <div style="display:grid;grid-template-columns:1.42fr .58fr;gap:4mm;align-items:stretch">
+      <div class="card white" style="display:flex;flex-direction:column;gap:1.8mm;justify-content:center;padding:2.6mm 3.6mm">
+        <div class="conf" style="grid-template-columns:1fr 1fr;justify-content:stretch;font-size:8.7pt">
+          <div><span class="box sm"></span>🚪 I forget why I'm in a room</div>
+          <div><span class="box sm"></span>🔑 I often lose my keys</div>
+          <div><span class="box sm"></span>👅 I often can't find a word</div>
+          <div><span class="box sm"></span>📖 I study by re-reading</div>
+          <div><span class="box sm"></span>🃏 I use flashcards</div>
+          <div><span class="box sm"></span>🎂 I remember birthdays</div>
+        </div>
+        <div style="font-size:9pt"><b style="color:var(--night)">My memory score:</b> <span class="blank s"></span> / 6</div>
+        <div style="border-top:1px dashed var(--lav2);padding-top:2mm;font-size:8.9pt"><b style="color:var(--night)">Guess!</b> Students read a text four times – or read it once and tried to recall it three times. A week later, who remembered more?</div>
+        <div style="display:flex;gap:3.4mm;font-size:8.7pt;white-space:nowrap"><span><span class="circ">a</span> the readers</span><span><span class="circ">b</span> the recallers</span><span><span class="circ">c</span> no difference</span></div>
+        <div class="hint">🎧 Check your guess at ⏱ 8:40</div>
+      </div>
+      <div class="card peach" style="display:flex;flex-direction:column;align-items:center;gap:1.4mm;padding:2.6mm 3mm 0;justify-content:space-between">
+        <div style="background:#fff;border-radius:4mm;padding:1.8mm 2.4mm;font-size:8.1pt;border:1.2px solid #F4D2C2;line-height:1.36"><b style="color:var(--night)">Lucy:</b> "Highlighters in every colour – and very little left a week later!" 🖍️</div>
+        <img class="char" src="img/f/19-lucy-glasses-book-peach.jpg" style="width:28mm">
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><span class="num">💬</span>Let's talk</h2>
+    <p class="instr">Say your answers out loud – or write them in your notebook.</p>
+    <div class="grid2" style="gap:2.4mm">
+      <div class="card teal" style="padding:2.2mm 3.6mm"><b>1.</b> What do you often forget? Keys, names, birthdays?</div>
+      <div class="card teal" style="padding:2.2mm 3.6mm"><b>2.</b> How do you usually learn new English words?</div>
+      <div class="card teal" style="padding:2.2mm 3.6mm"><b>3.</b> Who in your family has a really good memory?</div>
+      <div class="card teal" style="padding:2.2mm 3.6mm"><b>4.</b> What did you learn by heart at school?</div>
+    </div>
+  </div>
+  {{FOOT1}}
+</section>
+
+<!-- ================= PAGE 2 ================= -->
+<section class="page">
+  <div class="sec" style="margin-top:3mm">
+    <h2><span class="num">1</span>Key words <span class="tag">vocabulary</span><span class="tag pts">10 points</span></h2>
+    <p class="instr">Match each word or phrase (1–10) to its meaning (a–j). Write the letter in the box. 🧠 Then check at ⏱ 15:10 and ⏱ 16:10</p>
+    <div class="grid2" style="gap:5mm;align-items:start">
+      <table class="match">
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--night)">1.</b> to recall</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--night)">2.</b> forgetful</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--night)">3.</b> to slip your mind</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--night)">4.</b> to jog someone's memory</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--night)">5.</b> to brush up on</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--night)">6.</b> on the tip of my tongue</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--night)">7.</b> a boundary</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--night)">8.</b> to remind someone</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--night)">9.</b> spaced repetition</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--night)">10.</b> to stick (in your memory)</td></tr>
+      </table>
+      <div class="card" style="font-size:9pt;line-height:1.55">
+        <b>a)</b> to study something again, because you've forgotten some of it<br>
+        <b>b)</b> a line between two areas, like a border<br>
+        <b>c)</b> to bring something back into your mind, with some effort<br>
+        <b>d)</b> to stay in your memory<br>
+        <b>e)</b> you almost remember a word, but you can't quite say it<br>
+        <b>f)</b> often forgetting things<br>
+        <b>g)</b> to help someone remember with a small clue<br>
+        <b>h)</b> looking at things again over several days, just before you forget<br>
+        <b>i)</b> to be forgotten by accident – usually something you needed to do<br>
+        <b>j)</b> to tell someone about something, so they don't forget it
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="bub">
+      <img class="char" src="img/f/03-lucy-did-you-know-w.jpg" style="width:20mm;flex:none">
+      <div class="txt"><b>Pronunciation corner 🔊</b> re-<b style="color:var(--peach-d)">CALL</b> · for-<b style="color:var(--peach-d)">GET</b>-ful · re-<b style="color:var(--peach-d)">MIND</b> · <b style="color:var(--peach-d)">BOUN</b>-da-ry · <span style="white-space:nowrap">sieve (/sɪv/ – like "give")</span>. Fun fact: the <b>t</b> in <b>often</b> is usually silent: /ˈɒfn/. Say it: <i>"It's on the tip of my tongue!"</i></div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><span class="num">2</span>First listen: the big idea <span class="tag">listening</span><span class="tag pts">2 points</span></h2>
+    <p class="instr">Watch the whole episode once without stopping. Which sentence is the <b>main message</b>? 🎧</p>
+    <div class="card white">
+      <div class="opt" style="font-size:9.6pt;margin:1.2mm 0"><span class="c">a</span>If you forget new words quickly, something is wrong with your memory.</div>
+      <div class="opt" style="font-size:9.6pt;margin:1.2mm 0"><span class="c">b</span>The best way to learn is to read your notes again and again.</div>
+      <div class="opt" style="font-size:9.6pt;margin:1.2mm 0"><span class="c">c</span>Forgetting is normal – but testing yourself a little, again and again over several days, helps words stick.</div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="bub">
+      <div class="ava" style="width:22mm;height:22mm"><img src="img/f/06-jack-listening-lav.jpg" style="height:140%"></div>
+      <div class="txt"><b>Jack's tip:</b> First listen = the <b>big picture</b>. Don't stop the video and don't worry about every word. Second listen = the <b>details</b>. That's when you answer the 🎧 questions.</div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="card sage">
+      <b style="color:var(--night)">🔮 Predict before you listen!</b> <span class="small">(no points)</span> Seven of these words are in the episode. One is <b>not</b>. Circle the one you think you <b>won't</b> hear – then check while you listen.
+      <div class="chips predict-chips" style="margin-top:2mm;justify-content:center;gap:1.4mm"><span>scissors</span><span>parcel</span><span>fridge</span><span>elephant</span><span>sieve</span><span>flashcards</span><span>camera</span><span>soup</span></div>
+    </div>
+  </div>
+  {{FOOT2}}
+</section>
+
+<!-- ================= PAGE 3 ================= -->
+<section class="page">
+  <div class="sec" style="margin-top:3mm;display:flex;justify-content:space-between;align-items:flex-start;gap:4mm">
+    <div>
+      <h2><span class="num">3</span>Know it or hear it? <span class="tag">quiz + listening</span><span class="tag pts">10 points</span></h2>
+      <p class="instr" style="margin-bottom:0">Circle a, b or c. Questions 🧠 1–5: you can probably answer them <b>before</b> you listen. Questions 🎧 6–10: listen to find the answer.</p>
+    </div>
+    <img class="char" src="img/f/31-duo-quiz-w.jpg" style="width:36mm;flex:none;margin-top:-2mm">
+  </div>
+  <div class="small" style="margin:2.4mm 0 1.6mm 10.8mm;font-weight:700;color:var(--sage-d)">🧠 YOU MIGHT ALREADY KNOW</div>
+  <div class="mc">
+    <div class="mcq"><div class="qq">1. "Can you ______ me to call my mum?"</div><div class="opt"><span class="c">a</span>remember</div><div class="opt"><span class="c">b</span>remind</div><div class="opt"><span class="c">c</span>memory</div><div class="hint">🧠 Tricky – think about it!</div></div>
+    <div class="mcq"><div class="qq">2. "Oh no! I ______ my keys at home."</div><div class="opt"><span class="c">a</span>left</div><div class="opt"><span class="c">b</span>forgot</div><div class="opt"><span class="c">c</span>lost</div><div class="hint">🧠 Tricky – think about it!</div></div>
+    <div class="mcq"><div class="qq">3. "Sorry I didn't call. It completely ______ my mind."</div><div class="opt"><span class="c">a</span>fell</div><div class="opt"><span class="c">b</span>ran</div><div class="opt"><span class="c">c</span>slipped</div><div class="hint">🧠 Look at Exercise 1</div></div>
+    <div class="mcq"><div class="qq">4. "I've got a memory like a sieve." My memory is…</div><div class="opt"><span class="c">a</span>excellent</div><div class="opt"><span class="c">b</span>all about cooking</div><div class="opt"><span class="c">c</span>very bad</div><div class="hint">🧠 Imagine it!</div></div>
+    <div class="mcq"><div class="qq">5. If you learn something "by heart", you…</div><div class="opt"><span class="c">a</span>learn it quickly and forget it</div><div class="opt"><span class="c">b</span>know it so well you can say it without looking</div><div class="opt"><span class="c">c</span>learn it with love</div><div class="hint">🧠 Everyday English</div></div>
+    <div class="mcq" style="background:var(--sage);border-color:#BFD7C8;display:flex;align-items:center;gap:3mm"><span style="font-size:18pt">🎉</span><span style="font-size:9.1pt"><b style="color:var(--night)">How many did you know?</b><br>Now press play and test your ears!</span></div>
+  </div>
+  <div class="small" style="margin:3.4mm 0 1.6mm 10.8mm;font-weight:700;color:var(--peach-d)">🎧 LISTEN AND FIND OUT</div>
+  <div class="mc">
+    <div class="mcq"><div class="qq">6. What did Jack need from the kitchen?</div><div class="opt"><span class="c">a</span>the scissors</div><div class="opt"><span class="c">b</span>a knife</div><div class="opt"><span class="c">c</span>some tape</div><div class="hint">🎧 ⏱ 0:05</div></div>
+    <div class="mcq"><div class="qq">7. In Radvansky's first experiments, people…</div><div class="opt"><span class="c">a</span>cooked in a real kitchen</div><div class="opt"><span class="c">b</span>read short stories</div><div class="opt"><span class="c">c</span>played a computer game</div><div class="hint">🎧 ⏱ 3:04</div></div>
+    <div class="mcq"><div class="qq">8. What did Ebbinghaus learn to test his memory?</div><div class="opt"><span class="c">a</span>real English words</div><div class="opt"><span class="c">b</span>nonsense syllables</div><div class="opt"><span class="c">c</span>long numbers</div><div class="hint">🎧 ⏱ 6:01</div></div>
+    <div class="mcq"><div class="qq">9. The 2015 study in Amsterdam found that the forgetting curve…</div><div class="opt"><span class="c">a</span>had disappeared</div><div class="opt"><span class="c">b</span>was very close to the original</div><div class="opt"><span class="c">c</span>went up every day</div><div class="hint">🎧 ⏱ 6:01</div></div>
+    <div class="mcq"><div class="qq">10. What did Rafael's sister call the box?</div><div class="opt"><span class="c">a</span>the lucky box</div><div class="opt"><span class="c">b</span>the English box</div><div class="opt"><span class="c">c</span>the winners' box</div><div class="hint">🎧 ⏱ 21:20</div></div>
+    <div class="mcq" style="background:var(--lav);border-color:var(--lav2);display:flex;align-items:center;gap:3mm"><span style="font-size:18pt">✂️</span><span style="font-size:9.1pt"><b style="color:var(--night)">Fun fact:</b> Jack's third trip to the kitchen worked – he said <i>"scissors, scissors, scissors"</i> out loud all the way there!</span></div>
+  </div>
+  {{FOOT3}}
+</section>
+
+<!-- ================= PAGE 4 ================= -->
+<section class="page">
+  <div class="sec" style="margin-top:3mm">
+    <h2><span class="num">4</span>True or false? <span class="tag">listening</span><span class="tag pts">6 points</span></h2>
+    <p class="instr">Listen and circle <b>T</b> (true) or <b>F</b> (false). The ⏱ times help you find the answer.</p>
+    <table class="tf">
+      <tr><td class="n">1</td><td>Jack walked into the kitchen three times in ten minutes.</td><td class="ck"><span class="circ">T</span> <span class="circ">F</span></td><td class="tm">⏱ 0:05</td></tr>
+      <tr><td class="n">2</td><td>In the real rooms, people could see the objects inside the boxes.</td><td class="ck"><span class="circ">T</span> <span class="circ">F</span></td><td class="tm">⏱ 3:04</td></tr>
+      <tr><td class="n">3</td><td>Most forgetting happens in the first hours and days.</td><td class="ck"><span class="circ">T</span> <span class="circ">F</span></td><td class="tm">⏱ 6:01</td></tr>
+      <tr><td class="n">4</td><td>Ebbinghaus tested hundreds of people in his experiment.</td><td class="ck"><span class="circ">T</span> <span class="circ">F</span></td><td class="tm">⏱ 6:01</td></tr>
+      <tr><td class="n">5</td><td>Sleep is proven to be the reason for the small jump at 24 hours.</td><td class="ck"><span class="circ">T</span> <span class="circ">F</span></td><td class="tm">⏱ 6:01</td></tr>
+      <tr><td class="n">6</td><td>The students who read the text four times felt the most confident.</td><td class="ck"><span class="circ">T</span> <span class="circ">F</span></td><td class="tm">⏱ 8:40</td></tr>
+    </table>
+  </div>
+
+  <div class="sec">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:4mm">
+      <div>
+        <h2><span class="num">5</span>Three memory studies 🔍 <span class="tag">listening</span><span class="tag pts">6 points</span></h2>
+        <p class="instr" style="margin-bottom:0">Which study is each sentence about? Write <b>A</b>, <b>B</b> or <b>C</b>. ⏱ 3:04 · 6:01 · 8:40</p>
+      </div>
+      <img class="char" src="img/f/46-lucy-magnifying-glass-w.jpg" style="width:16mm;flex:none;margin-top:-4mm">
+    </div>
+    <div class="studies" style="margin-top:2mm">
+      <div style="background:var(--peach-l)"><b class="h" style="color:var(--peach-d)">A · Doorways 🚪</b>2011 · Gabriel Radvansky, University of Notre Dame</div>
+      <div style="background:var(--lav)"><b class="h" style="color:var(--mauve-d)">B · The forgetting curve 📉</b>1880s · Ebbinghaus – and again in 2015, in Amsterdam</div>
+      <div style="background:var(--sage)"><b class="h" style="color:var(--sage-d)">C · Testing yourself 📝</b>2006 · Roediger &amp; Karpicke, Washington Univ. in St. Louis</div>
+    </div>
+    <table class="tf" style="margin-top:1.6mm">
+      <tr><td class="n">1</td><td>Students read a science text four times – or once, and then recalled it three times.</td><td class="ck"><span class="box"></span></td></tr>
+      <tr><td class="n">2</td><td>People carried objects they couldn't see through virtual rooms.</td><td class="ck"><span class="box"></span></td></tr>
+      <tr><td class="n">3</td><td>One person learned lists of invented words like "dax" and "bok".</td><td class="ck"><span class="box"></span></td></tr>
+      <tr><td class="n">4</td><td>Your brain thinks: "That scene is finished – a new scene is starting."</td><td class="ck"><span class="box"></span></td></tr>
+      <tr><td class="n">5</td><td>After a week, the result completely flipped.</td><td class="ck"><span class="box"></span></td></tr>
+      <tr><td class="n">6</td><td>At around 24 hours, the curve went up a little.</td><td class="ck"><span class="box"></span></td></tr>
+    </table>
+  </div>
+
+  <div class="sec">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:4mm">
+      <div>
+        <h2><span class="num">6</span>Read it or recall it? <span class="tag">new! read the chart</span><span class="tag pts">6 points</span></h2>
+        <p class="instr" style="margin-bottom:0"><b>A.</b> Listen at ⏱ 8:40 and complete the chart (1 point each). <b>B.</b> Is each one recognising or recalling? (1 point each)</p>
+      </div>
+      <img class="char" src="img/f/74-jack-certificate-w.jpg" style="width:15mm;flex:none;margin-top:-4mm">
+    </div>
+    <div class="card white" style="margin-top:1.8mm;padding:2.2mm 4mm 1.8mm;display:grid;grid-template-columns:auto 1fr;gap:8mm;align-items:center">
+      <div><div class="chart"><div class="grp"><div class="pair"><div class="bar r" style="height:27.4mm">83%</div><div class="bar c" style="height:23.4mm">71%</div></div></div><div class="grp"><div class="pair"><div class="bar r" style="height:13.2mm"><span style="display:inline-block;width:8mm;border-bottom:1.3px solid currentColor;height:4mm"></span>%</div><div class="bar c" style="height:20.1mm"><span style="display:inline-block;width:8mm;border-bottom:1.3px solid currentColor;height:4mm"></span>%</div></div></div></div><div class="chart-l"><div>⏱ 5 minutes later</div><div>📅 1 week later</div></div></div>
+      <div class="legend"><span><i style="background:#F7C9AE"></i>📖 read the text 4 times</span><span><i style="background:#A9DDBE"></i>🧠 read it once, then recalled it 3 times</span><span class="small" style="color:var(--muted)">Write the two missing numbers for "1 week later".</span></div>
+    </div>
+    <div style="margin-top:1.6mm">
+      <div class="tm2" style="grid-template-columns:1fr 31mm 27mm"><span>1. 📖 You read your word list again, and it all looks familiar.</span><span class="claim rec"><span class="box"></span>👀 recognising</span><span class="claim cal"><span class="box"></span>🧠 recalling</span></div>
+      <div class="tm2" style="grid-template-columns:1fr 31mm 27mm"><span>2. 🙈 You cover the English side of your list and say the words.</span><span class="claim rec"><span class="box"></span>👀 recognising</span><span class="claim cal"><span class="box"></span>🧠 recalling</span></div>
+      <div class="tm2" style="grid-template-columns:1fr 31mm 27mm"><span>3. 🗣️ You explain a new word to a friend without looking.</span><span class="claim rec"><span class="box"></span>👀 recognising</span><span class="claim cal"><span class="box"></span>🧠 recalling</span></div>
+      <div class="tm2" style="grid-template-columns:1fr 31mm 27mm"><span>4. 👀 You see “cosy” in a text and think, “Oh yes, I know that one!”</span><span class="claim rec"><span class="box"></span>👀 recognising</span><span class="claim cal"><span class="box"></span>🧠 recalling</span></div>
+    </div>
+  </div>
+  {{FOOT4}}
+</section>
+
+<!-- ================= PAGE 5 ================= -->
+<section class="page">
+  <div class="sec" style="margin-top:3mm;display:flex;justify-content:space-between;align-items:flex-start;gap:4mm">
+    <div>
+      <h2><span class="num">7</span>"It's on the tip of my tongue!" <span class="tag">listening</span><span class="tag pts">10 points</span></h2>
+      <p class="instr" style="margin-bottom:0">Two friends are talking about a restaurant – but Lucy can't remember its name. Listen at ⏱ 14:21 and write <b>one word</b> in each gap (1–8). Then answer A and B. The breakdown at ⏱ 15:10 can help.</p>
+    </div>
+    <img class="char" src="img/f/68-duo-coffee-w.jpg" style="width:28mm;flex:none;margin-top:-3mm">
+  </div>
+  <div class="chat wide" style="margin-top:2.4mm;gap:1.2mm">
+    <div class="msg j"><div class="ava"><img src="img/f/13-jack-talking-left-lav.jpg"></div><div class="b"><span class="who">JACK</span>You know, we should go back to that restaurant we went to last <span class="gap">1</span>. The one with the amazing soup.</div></div>
+    <div class="msg l"><div class="ava"><img src="img/f/37-lucy-thinking-right-lav.jpg"></div><div class="b"><span class="who">LUCY</span>Yes! What was it <span class="gap">2</span> again? It's on the tip of my <span class="gap">3</span>.</div></div>
+    <div class="msg j"><div class="ava"><img src="img/f/43-jack-explaining-left-lav.jpg"></div><div class="b"><span class="who">JACK</span>It was something <span class="gap">4</span>. Bella… something?</div></div>
+    <div class="msg l"><div class="ava"><img src="img/f/09-lucy-talking-right-lav.jpg"></div><div class="b"><span class="who">LUCY</span>No, that's not it. Hang on, give me a <span class="gap">5</span>. It started with an M.</div></div>
+    <div class="msg j"><div class="ava"><img src="img/f/14-jack-listening-left-lav.jpg"></div><div class="b"><span class="who">JACK</span>Does “the place near the <span class="gap">6</span>” help? Maybe that'll jog your memory.</div></div>
+    <div class="msg l"><div class="ava"><img src="img/f/40-lucy-excited-right-lav.jpg"></div><div class="b"><span class="who">LUCY</span>Marco's! It was Marco's. I knew it would come <span class="gap">7</span> to me.</div></div>
+    <div class="msg j"><div class="ava"><img src="img/f/41-jack-laughing-left-lav.jpg"></div><div class="b"><span class="who">JACK</span>Finally. Well, don't forget to book a table this time. Last time, it completely slipped your mind.</div></div>
+    <div class="msg l"><div class="ava"><img src="img/f/12-lucy-laughing-right-lav.jpg"></div><div class="b"><span class="who">LUCY</span>That was one time! Okay, <span class="gap">8</span> me tomorrow, and I'll do it straight away.</div></div>
+  </div>
+  <div class="grid2" style="margin-top:2.6mm;gap:3mm">
+    <div class="card" style="padding:2.2mm 4mm;font-size:9.2pt"><b style="color:var(--night)">A.</b> The restaurant is called <span class="blank" style="min-width:24mm"></span>.</div>
+    <div class="card" style="padding:2.2mm 4mm;font-size:9.2pt"><b style="color:var(--night)">B.</b> This time, Lucy must <span class="blank" style="min-width:16mm"></span> a table.</div>
+  </div>
+
+  <div class="sec" style="margin-top:4mm">
+    <h2><span class="num">8</span>Phrases to steal <span class="tag">expressions</span><span class="tag pts">4 points</span></h2>
+    <p class="instr">Match each phrase from the chat (1–4) to its meaning (a–d). ⏱ 15:10</p>
+    <div class="grid2" style="gap:4mm;align-items:start">
+      <table class="match" style="font-size:9.2pt">
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--night)">1.</b> "What was it called again?"</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--night)">2.</b> "Hang on, give me a second."</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--night)">3.</b> "Maybe that'll jog your memory."</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--night)">4.</b> "I knew it would come back to me."</td></tr>
+      </table>
+      <div class="card" style="font-size:8.9pt;line-height:1.62">
+        <b>a)</b> Please wait a moment.<br>
+        <b>b)</b> I was sure I'd remember it again.<br>
+        <b>c)</b> I knew this before, but I've forgotten.<br>
+        <b>d)</b> That might help you remember.
+      </div>
+    </div>
+  </div>
+  <div class="sec">
+    <div class="card sage" style="padding:2.4mm 4mm">
+      <b style="color:var(--night);font-size:9.6pt">🗣️ Word on the tip of your tongue? Describe it!</b> <span class="small">(no points) Don't stop talking – the other person will often say the word for you.</span>
+      <div class="chips" style="margin-top:1.6mm;gap:1.4mm"><span>It's a thing you use to…</span><span>It's a kind of…</span><span>It's like a…, but…</span><span>It's the opposite of…</span></div>
+      <div style="font-size:9pt;margin-top:1.6mm">Describe one without saying the word – ✂️ scissors · 🥣 a sieve · 🐘 an elephant:</div>
+      <div class="lines"></div>
+    </div>
+  </div>
+  {{FOOT5}}
+</section>
+
+<!-- ================= PAGE 6 ================= -->
+<section class="page">
+  <div class="sec" style="margin-top:3mm;display:flex;justify-content:space-between;align-items:flex-start;gap:4mm">
+    <div>
+      <h2><span class="num">9</span>Memory phrases <span class="tag">idioms</span><span class="tag pts">6 points</span></h2>
+      <p class="instr" style="margin-bottom:0">Complete each sentence with a word from the box. ⏱ 16:10 · 19:14</p>
+    </div>
+    <img class="char" src="img/f/15-jack-shrug-left-w.jpg" style="width:17mm;flex:none;margin-top:-3mm">
+  </div>
+  <div class="chips" style="margin:1.6mm 0 2mm 10.8mm"><span>forgetful</span><span>heart</span><span>jog</span><span>slipped</span><span>stick</span><span>up</span></div>
+  <table class="coll" style="margin-left:2mm">
+    <tr><td>1. 📚 I learned all the irregular verbs by <span class="blank s"></span> at school.</td></tr>
+    <tr><td>2. ✈️ I need to brush <span class="blank s"></span> on my English before my trip.</td></tr>
+    <tr><td>3. 👴 My grandad is getting a bit <span class="blank s"></span> – but he's still very funny.</td></tr>
+    <tr><td>4. 🔁 I read the words again and again, but they don't <span class="blank s"></span>.</td></tr>
+    <tr><td>5. 📞 Sorry I didn't call you – it completely <span class="blank s"></span> my mind.</td></tr>
+    <tr><td>6. 📷 Maybe this old photo will <span class="blank s"></span> your memory.</td></tr>
+  </table>
+  <div class="bub" style="margin-top:2.2mm">
+    <img class="char" src="img/f/02-jack-lightbulb-idea-w.jpg" style="width:17mm;flex:none">
+    <div class="txt"><b>Jack's tip:</b> <b>"It slipped my mind"</b> is a polite way to say <i>"I forgot"</i> – it sounds like it wasn't really your fault! 😉 And <b>"jog"</b> normally means to run slowly – so you give your memory a little push to start running. 🏃</div>
+  </div>
+
+  <div class="sec">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:4mm">
+      <div>
+        <h2><span class="num">10</span>Remember to… or remember -ing? <span class="tag">new! grammar</span><span class="tag pts">6 points</span></h2>
+        <p class="instr" style="margin-bottom:0">Tick the right form.</p>
+      </div>
+      <img class="char" src="img/f/54-lucy-waving-w.jpg" style="width:15mm;flex:none;margin-top:-4mm">
+    </div>
+    <div class="edrule">
+      <div style="background:#DCEFF3"><b style="color:#1F5F70">📝 remember / forget + to do</b> = a job you need to do. <i>"Remember to call Mum!"</i></div>
+      <div style="background:#FDE3D3"><b style="color:#B9542B">📸 remember / forget + -ing</b> = a memory of the past. <i>"I remember meeting her."</i></div>
+    </div>
+    <div class="grid2" style="gap:2.2mm"><div class="sit"><div class="t" style="min-height:0"><b>1.</b> Please remember ______ a table for Saturday! 🍝</div><div class="ch" style="gap:2mm"><span class="claim ed"><span class="box"></span>📝 to book</span><span class="claim ing"><span class="box"></span>📸 booking</span></div></div><div class="sit"><div class="t" style="min-height:0"><b>2.</b> I remember ______ Rafael for the first time. 🤝</div><div class="ch" style="gap:2mm"><span class="claim ed"><span class="box"></span>📝 to meet</span><span class="claim ing"><span class="box"></span>📸 meeting</span></div></div><div class="sit"><div class="t" style="min-height:0"><b>3.</b> Don't forget ______ yourself tomorrow! 🃏</div><div class="ch" style="gap:2mm"><span class="claim ed"><span class="box"></span>📝 to test</span><span class="claim ing"><span class="box"></span>📸 testing</span></div></div><div class="sit"><div class="t" style="min-height:0"><b>4.</b> I'll never forget ______ the winners' box. 🏆</div><div class="ch" style="gap:2mm"><span class="claim ed"><span class="box"></span>📝 to see</span><span class="claim ing"><span class="box"></span>📸 seeing</span></div></div><div class="sit"><div class="t" style="min-height:0"><b>5.</b> Did you remember ______ your keys? 🔑</div><div class="ch" style="gap:2mm"><span class="claim ed"><span class="box"></span>📝 to take</span><span class="claim ing"><span class="box"></span>📸 taking</span></div></div><div class="sit"><div class="t" style="min-height:0"><b>6.</b> I remember ______ “go, went, gone” at school. 🏫</div><div class="ch" style="gap:2mm"><span class="claim ed"><span class="box"></span>📝 to learn</span><span class="claim ing"><span class="box"></span>📸 learning</span></div></div></div>
+  </div>
+  <div class="sec">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:4mm">
+      <div>
+        <h2><span class="num">💡</span>Six ways to remember more <span class="tag fun">match · no points</span></h2>
+        <p class="instr" style="margin-bottom:0">Match each tip (1–6) to an example (a–f). Then tick the two you'll try this week! ⏱ 11:41</p>
+      </div>
+      <img class="char" src="img/f/55-jack-thumbs-up-w.jpg" style="width:15mm;flex:none;margin-top:-4mm">
+    </div>
+    <div class="phr" style="margin-top:2mm;grid-template-columns:.62fr 1.38fr">
+      <table class="match" style="font-size:9pt">
+        <tr><td class="ans"><span class="box sm"></span></td><td><b style="color:var(--night)">1.</b> 🙈 Test yourself</td></tr>
+        <tr><td class="ans"><span class="box sm"></span></td><td><b style="color:var(--night)">2.</b> 📅 Space it out</td></tr>
+        <tr><td class="ans"><span class="box sm"></span></td><td><b style="color:var(--night)">3.</b> 💛 Make it personal</td></tr>
+        <tr><td class="ans"><span class="box sm"></span></td><td><b style="color:var(--night)">4.</b> 🗣️ Say it out loud</td></tr>
+        <tr><td class="ans"><span class="box sm"></span></td><td><b style="color:var(--night)">5.</b> 🧑‍🏫 Teach someone</td></tr>
+        <tr><td class="ans"><span class="box sm"></span></td><td><b style="color:var(--night)">6.</b> 😴 Sleep well</td></tr>
+      </table>
+      <div class="card" style="font-size:8.9pt;line-height:1.72">
+        <b>a)</b> "The cosiest place in my home is the chair by my window."<br>
+        <b>b)</b> Explain what you learned to a friend – or an imaginary student.<br>
+        <b>c)</b> Cover the English side of your list and try to say the words.<br>
+        <b>d)</b> Go to bed on time before an exam – don't study until 3 a.m.<br>
+        <b>e)</b> Look at a word today, tomorrow, in three days and next week.<br>
+        <b>f)</b> "Scissors, scissors, scissors…" all the way to the kitchen.
+      </div>
+    </div>
+  </div>
+  {{FOOT6}}
+</section>
+
+<!-- ================= PAGE 7 ================= -->
+<section class="page">
+  <div class="sec" style="margin-top:3mm">
+    <h2><span class="num">11</span>Say it better <span class="tag">common mistakes</span><span class="tag pts">10 points</span></h2>
+    <p class="instr">These sentences sound unnatural. Write a more natural version (2 points each). ⏱ 19:14</p>
+    <table style="font-size:9.4pt">
+      <tr><td style="width:49%;padding:1.7mm 0">😐 1. "Can you remember me to call my mum?"</td><td>😊 <span class="blank l"></span></td></tr>
+      <tr><td style="padding:1.7mm 0">😐 2. "I forgot my keys at home."</td><td>😊 <span class="blank l"></span></td></tr>
+      <tr><td style="padding:1.7mm 0">😐 3. "I don't remember of that day."</td><td>😊 <span class="blank l"></span></td></tr>
+      <tr><td style="padding:1.7mm 0">😐 4. "I memorise the words but after I forget."</td><td>😊 <span class="blank l"></span></td></tr>
+      <tr><td style="padding:1.7mm 0">😐 5. "Do you remember when we have gone to the beach?"</td><td>😊 <span class="blank l"></span></td></tr>
+    </table>
+    <div class="bub" style="margin-top:2.4mm">
+      <img class="char" src="img/f/07-lucy-great-job-w.jpg" style="width:18mm;flex:none">
+      <div class="txt"><b>Lucy's tip:</b> You <b>remember</b> something yourself. Someone else <b>reminds</b> you. 🔔 And when you say <i>where</i>, use <b>leave</b>: <i>"I left my keys at home."</i></div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:4mm">
+      <div>
+        <h2><span class="num">🧠</span>Brain dump! <span class="tag fun">recall · no points</span></h2>
+        <p class="instr" style="margin-bottom:0">Do this <b>tomorrow</b>. Close the worksheet and the video. Set a timer for <b>two minutes</b> and write <b>everything</b> you remember from the episode – words, numbers, names, stories. Then check. Every gap is a word to practise!</p>
+      </div>
+      <img class="char" src="img/f/63-jack-at-work-w.jpg" style="width:17mm;flex:none;margin-top:-3mm">
+    </div>
+    <div class="card white" style="margin-top:2mm;padding:1mm 4mm 2.2mm"><div class="lines"></div><div class="lines"></div><div class="lines"></div><div class="lines"></div></div>
+  </div>
+
+  <div class="sec">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:4mm">
+      <div>
+        <h2><span class="num">🏆</span>Make your own winners' box <span class="tag fun">try it · no points</span></h2>
+        <p class="instr" style="margin-bottom:0">Rafael's system – recall practice and spaced repetition, invented at a dinner table! ⏱ 21:20</p>
+      </div>
+      <img class="char" src="img/f/48-lucy-holding-blank-card-w.jpg" style="width:16mm;flex:none;margin-top:-3mm">
+    </div>
+    <div class="flow" style="margin-top:2mm">
+      <div style="background:var(--lav)"><b>🃏</b>Write 10 new words on small cards: English on one side, your language on the other.</div>
+      <div style="background:var(--peach-l)"><b>👧</b>Someone picks a card at random and reads your language.</div>
+      <div style="background:var(--teal-l)"><b>🗣️</b>Say the English word – and make a sentence with it.</div>
+      <div style="background:#FBE1DE"><b>🔁</b>Wrong? The card goes back in the pile. Try again tomorrow!</div>
+      <div style="background:#DDF1E3"><b>🏆</b>Right three days in a row? Into the winners' box!</div>
+    </div>
+    <div style="font-size:9pt;margin-top:2mm"><b style="color:var(--night)">Who could test me?</b> <span class="blank" style="min-width:52mm"></span> &nbsp; <b style="color:var(--night)">My first 3 words:</b> <span class="blank" style="min-width:58mm"></span></div>
+  </div>
+  <div class="sec">
+    <div class="card teal" style="padding:2.6mm 4mm">
+      <b style="color:var(--night);font-size:9.6pt">🧑‍🏫 Teach it!</b> <span class="small">(no points)</span>
+      <div style="font-size:9pt;margin-top:1mm">Lucy's third tip: when you explain something, you have to recall it and organise it. Explain <b>the forgetting curve</b> to an imaginary student in two sentences – without looking!</div>
+      <div class="lines"></div><div class="lines"></div>
+    </div>
+  </div>
+  {{FOOT7}}
+</section>
+
+<!-- ================= PAGE 8 ================= -->
+<section class="page">
+  <div class="sec" style="margin-top:3mm;display:flex;justify-content:space-between;align-items:flex-start;gap:4mm">
+    <div>
+      <h2><span class="num">12</span>Memory crossword 🧩 <span class="tag">puzzle</span><span class="tag pts">10 points</span></h2>
+      <p class="instr" style="margin-bottom:0">Read the clues and write the words in the grid (1 point each). The number in brackets is the number of letters. Letters that cross help you!</p>
+    </div>
+    <img class="char" src="img/f/50-lucy-puzzle-piece-w.jpg" style="width:19mm;flex:none;margin-top:-3mm">
+  </div>
+  <div style="margin-top:2.6mm"><table class="cw" style="--cell:7.4mm"><tr><td class="o"><span class="cn">1</span></td><td class="o"></td><td class="o"></td><td class="o"></td><td class="o"></td><td class="x"></td><td class="x"></td><td class="x"></td><td class="x"></td><td class="o"><span class="cn">2</span></td><td class="x"></td><td class="x"></td><td class="x"></td><td class="x"></td></tr><tr><td class="o"></td><td class="x"></td><td class="x"></td><td class="x"></td><td class="x"></td><td class="o"><span class="cn">3</span></td><td class="x"></td><td class="o"><span class="cn">4</span></td><td class="o"></td><td class="o"></td><td class="o"></td><td class="o"></td><td class="o"></td><td class="o"></td></tr><tr><td class="o"></td><td class="x"></td><td class="x"></td><td class="x"></td><td class="x"></td><td class="o"></td><td class="x"></td><td class="x"></td><td class="x"></td><td class="o"></td><td class="x"></td><td class="x"></td><td class="x"></td><td class="x"></td></tr><tr><td class="o"></td><td class="x"></td><td class="x"></td><td class="o"><span class="cn">5</span></td><td class="x"></td><td class="o"></td><td class="x"></td><td class="o"><span class="cn">6</span></td><td class="o"></td><td class="o"></td><td class="o"></td><td class="o"></td><td class="o"></td><td class="x"></td></tr><tr><td class="o"></td><td class="x"></td><td class="x"></td><td class="o"></td><td class="x"></td><td class="o"></td><td class="x"></td><td class="x"></td><td class="x"></td><td class="o"></td><td class="x"></td><td class="x"></td><td class="x"></td><td class="x"></td></tr><tr><td class="o"></td><td class="x"></td><td class="x"></td><td class="o"><span class="cn">7</span></td><td class="o"></td><td class="o"></td><td class="o"></td><td class="o"></td><td class="o"></td><td class="o"></td><td class="o"></td><td class="x"></td><td class="x"></td><td class="x"></td></tr><tr><td class="o"></td><td class="x"></td><td class="x"></td><td class="o"></td><td class="x"></td><td class="x"></td><td class="x"></td><td class="x"></td><td class="x"></td><td class="o"></td><td class="x"></td><td class="x"></td><td class="x"></td><td class="x"></td></tr><tr><td class="o"><span class="cn">8</span></td><td class="o"></td><td class="o"></td><td class="o"></td><td class="x"></td><td class="x"></td><td class="x"></td><td class="x"></td><td class="o"><span class="cn">9</span></td><td class="o"></td><td class="o"></td><td class="o"></td><td class="o"></td><td class="o"></td></tr></table></div>
+  <div class="grid2 cclues" style="margin-top:2.6mm;gap:4mm">
+    <div class="card white" style="padding:2.4mm 3.4mm"><h4>➡️ Across</h4><div><span class="n">1</span><span>A bad memory: “I've got a memory like a ___.” <span class="len">(5)</span></span></div><div><span class="n">4</span><span>Walking through a ___ can make you forget what you wanted. <span class="len">(7)</span></span></div><div><span class="n">6</span><span>Rafael's little ___ tested him every evening after dinner. <span class="len">(6)</span></span></div><div><span class="n">7</span><span>A great memory: “She's got a memory like an ___.” <span class="len">(8)</span></span></div><div><span class="n">8</span><span>The restaurant near the bridge had amazing ___. <span class="len">(4)</span></span></div><div><span class="n">9</span><span>To bring something back into your mind: to ___. <span class="len">(6)</span></span></div></div>
+    <div class="card white" style="padding:2.4mm 3.4mm"><h4>⬇️ Down</h4><div><span class="n">1</span><span>Jack needed the ___ to open a parcel. <span class="len">(8)</span></span></div><div><span class="n">2</span><span>Ebbinghaus learned lists of ___ syllables, like “dax” and “bok”. <span class="len">(8)</span></span></div><div><span class="n">3</span><span>The forgetting ___ drops very fast at the beginning. <span class="len">(5)</span></span></div><div><span class="n">5</span><span>A good night's ___ might help your memory. <span class="len">(5)</span></span></div></div>
+  </div>
+
+  <div class="sec">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:4mm">
+      <div>
+        <h2><span class="num">13</span>Rafael and the winners' box 🏆 <span class="tag">listening</span><span class="tag pts">6 points</span></h2>
+        <p class="instr" style="margin-bottom:0">Listen at ⏱ 21:20. Put the events in the right order. Write 1–6 in the boxes.</p>
+      </div>
+      <img class="char" src="img/f/38-lucy-explaining-right-w.jpg" style="width:16mm;flex:none;margin-top:-3mm">
+    </div>
+    <div class="story" style="margin-top:2mm">
+      <div class="ev"><span class="box"></span><span class="e">👧</span><span>Every evening, his little sister tested him with the cards.</span></div>
+      <div class="ev"><span class="box"></span><span class="e">😩</span><span>Rafael studied a lot, but he forgot almost everything.</span></div>
+      <div class="ev"><span class="box"></span><span class="e">🏆</span><span>After a year, the box had 1,000+ cards – and he got the job!</span></div>
+      <div class="ev"><span class="box"></span><span class="e">📉</span><span>Lucy told him about the forgetting curve and testing yourself.</span></div>
+      <div class="ev"><span class="box"></span><span class="e">✅</span><span>Cards he got right three days in a row went into a special box.</span></div>
+      <div class="ev"><span class="box"></span><span class="e">🃏</span><span>He started writing ten new words on small cards every evening.</span></div>
+    </div>
+    <div class="card teal" style="margin-top:2.4mm;padding:2.4mm 4mm"><b style="color:var(--night)">Think about it 💭</b> <span class="small">(no points)</span> Why did Rafael's sister start learning English too?<div class="lines"></div></div>
+  </div>
+  {{FOOT8}}
+</section>
+
+<!-- ================= PAGE 9 ================= -->
+<section class="page">
+  <div class="sec" style="margin-top:3mm;display:flex;justify-content:space-between;align-items:flex-start;gap:4mm">
+    <div>
+      <h2><span class="num">14</span>Your turn <span class="tag">writing</span><span class="tag pts">8 points</span></h2>
+      <p class="instr" style="margin-bottom:0">2 points for each good sentence.</p>
+    </div>
+    <img class="char" src="img/f/05-lucy-writing-w.jpg" style="width:17mm;flex:none;margin-top:-3mm">
+  </div>
+  <div class="grid2" style="margin-top:2.2mm;gap:3mm;align-items:stretch">
+    <div class="card" style="padding:2.6mm 4mm">
+      <b style="color:var(--night);font-size:9.2pt">A. It slipped my mind! 🙈</b>
+      <div class="small" style="margin-top:1mm">Write about something you forgot – or a word on the tip of your tongue. <i>e.g. "Last week my friend's birthday completely slipped my mind."</i></div>
+      <div class="lines"></div><div class="lines"></div>
+    </div>
+    <div class="card peach" style="padding:2.6mm 4mm">
+      <b style="color:var(--night);font-size:9.2pt">B. Make it personal 💛</b>
+      <div class="small" style="margin-top:1mm">Use two of today's words in sentences about <b>your</b> life. <i>e.g. "I need to brush up on my English before my job interview."</i></div>
+      <div class="lines"></div><div class="lines"></div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:4mm">
+      <div>
+        <h2><span class="num">⏱</span>My five-word challenge <span class="tag fun">this week's mission</span></h2>
+        <p class="instr" style="margin-bottom:0">Choose five new words today. Make one sentence about your life for each. Then <b>recall</b> them without looking – tomorrow, in three days and next week!</p>
+      </div>
+      <img class="char" src="img/f/35-jack-reading-card-w.jpg" style="width:16mm;flex:none">
+    </div>
+    <table class="log week tracker" style="margin-top:2mm">
+      <tr><th>#</th><th>New word</th><th>My sentence (about my life!)</th><th>Tomorrow</th><th>In 3 days</th><th>Next week</th></tr>
+      <tr><td class="d">1</td><td class="w"></td><td></td><td class="k"><span class="box sm"></span></td><td class="k"><span class="box sm"></span></td><td class="k"><span class="box sm"></span></td></tr>
+      <tr><td class="d">2</td><td class="w"></td><td></td><td class="k"><span class="box sm"></span></td><td class="k"><span class="box sm"></span></td><td class="k"><span class="box sm"></span></td></tr>
+      <tr><td class="d">3</td><td class="w"></td><td></td><td class="k"><span class="box sm"></span></td><td class="k"><span class="box sm"></span></td><td class="k"><span class="box sm"></span></td></tr>
+      <tr><td class="d">4</td><td class="w"></td><td></td><td class="k"><span class="box sm"></span></td><td class="k"><span class="box sm"></span></td><td class="k"><span class="box sm"></span></td></tr>
+      <tr><td class="d">5</td><td class="w"></td><td></td><td class="k"><span class="box sm"></span></td><td class="k"><span class="box sm"></span></td><td class="k"><span class="box sm"></span></td></tr>
+    </table>
+  </div>
+
+  <div class="sec">
+    <div class="pocket">
+      <span class="sc">✂️ Cut out and keep in your pocket</span>
+      <div class="pc">
+        <div><b style="color:var(--peach-d)">🙈 I FORGOT</b>It slipped my mind.<br>It's on the tip of my tongue.<br>What was it called again?</div>
+        <div><b style="color:var(--sage-d)">💡 I REMEMBER!</b>It came back to me.<br>That jogs my memory!<br>I know it by heart.</div>
+        <div><b style="color:var(--mauve-d)">🔔 REMIND</b>Can you remind me to…?<br>Remember to call Mum!<br>I left my keys at home.</div>
+        <div><b style="color:#C0392B">🧠 STUDY SMART</b>Test yourself.<br>Space it out.<br>Make it personal.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><span class="num">✓</span>Can you do it now?</h2>
+    <table class="cando" style="margin-top:1.4mm">
+      <tr><th style="text-align:left">I can…</th><th>Not yet</th><th>Almost</th><th>Yes!</th></tr>
+      <tr><td>explain why doorways can make us forget.</td><td class="f">😟</td><td class="f">🙂</td><td class="f">😄</td></tr>
+      <tr><td>explain why testing myself works better than reading again.</td><td class="f">😟</td><td class="f">🙂</td><td class="f">😄</td></tr>
+      <tr><td>use remember, remind, forget and leave correctly.</td><td class="f">😟</td><td class="f">🙂</td><td class="f">😄</td></tr>
+      <tr><td>say "It slipped my mind" and "It's on the tip of my tongue".</td><td class="f">😟</td><td class="f">🙂</td><td class="f">😄</td></tr>
+    </table>
+  </div>
+
+  <div class="sec">
+    <div class="bub">
+      <img class="char" src="img/f/52-lucy-phone-comment-w.jpg" style="width:19mm;flex:none">
+      <div class="txt"><b>Share it with us!</b> Tell us in the comments one thing that recently <b>slipped your mind</b>, or a word that's been <b>on the tip of your tongue</b>. Or share your favourite memory trick – we'd love to try it! 🧠</div>
+    </div>
+  </div>
+  {{FOOT9}}
+</section>
+
+<!-- ================= PAGE 10 (KEY) ================= -->
+<section class="page key">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-top:2mm">
+    <h2><span class="num">✓</span>Answer key</h2>
+    <span class="small">Count your points and write your score on page 1!</span>
+  </div>
+  <div class="keycols">
+   <div>
+    <div class="k"><h3>0 · Warm-up &amp; predict</h3><p>Guess: b – after a week, the recallers remembered about 61%, the readers about 40%. · Predict: <b>camera</b> 📷 isn't in the episode.</p></div>
+    <div class="k"><h3>1 · Key words · 2 · The big idea</h3><p>1 c · 2 f · 3 i · 4 g · 5 a · 6 e · 7 b · 8 j · 9 h · 10 d<br>Big idea: c (2 points)</p></div>
+    <div class="k"><h3>3 · Know it or hear it?</h3><p>1 b · 2 a · 3 c · 4 c · 5 b · 6 a · 7 c · 8 b · 9 b · 10 c</p></div>
+    <div class="k"><h3>4 · True or false?</h3><p>1 T · 2 F (the objects were hidden) · 3 T · 4 F (he only tested himself) · 5 F (it's a possibility, not a proven answer) · 6 T</p></div>
+    <div class="k"><h3>5 · Three studies · 6 · Read it or recall it?</h3><p>5: 1 C · 2 A · 3 B · 4 A · 5 C · 6 B<br>6A: one week later – read 40% · recall 61%<br>6B: 1 recognising · 2 recalling · 3 recalling · 4 recognising</p></div>
+    <div class="k"><h3>7 · "It's on the tip of my tongue!"</h3><p>1 summer · 2 called · 3 tongue · 4 Italian · 5 second · 6 bridge · 7 back · 8 remind · A Marco's · B book</p></div>
+    <div class="k"><h3>8 · Phrases to steal</h3><p>1 c · 2 a · 3 d · 4 b</p></div>
+   </div>
+   <div>
+    <div class="k"><h3>9 · Memory phrases · 10 · Remember to / -ing</h3><p>9: 1 heart · 2 up · 3 forgetful · 4 stick · 5 slipped · 6 jog<br>10: 1 to book · 2 meeting · 3 to test · 4 seeing · 5 to take · 6 learning</p></div>
+    <div class="k"><h3>11 · Say it better (2 points each)</h3><p>1 Can you remind me to call my mum? · 2 I left my keys at home. / I forgot my keys. · 3 I don't remember that day. · 4 I learn the words, but then I forget them. / …but they don't stick. · 5 Do you remember when we went to the beach?</p></div>
+    <div class="k" style="display:grid;grid-template-columns:1fr auto;gap:2.4mm;align-items:center"><div><h3>12 · Crossword</h3><p><b>Across:</b> 1 sieve · 4 doorway · 6 sister · 7 elephant · 8 soup · 9 recall<br><b>Down:</b> 1 scissors · 2 nonsense · 3 curve · 5 sleep</p></div><table class="cw cwk" style="--cell:3.0mm"><tr><td class="o"><span class="cn">1</span><span class="cl">S</span></td><td class="o"><span class="cl">I</span></td><td class="o"><span class="cl">E</span></td><td class="o"><span class="cl">V</span></td><td class="o"><span class="cl">E</span></td><td class="x"></td><td class="x"></td><td class="x"></td><td class="x"></td><td class="o"><span class="cn">2</span><span class="cl">N</span></td><td class="x"></td><td class="x"></td><td class="x"></td><td class="x"></td></tr><tr><td class="o"><span class="cl">C</span></td><td class="x"></td><td class="x"></td><td class="x"></td><td class="x"></td><td class="o"><span class="cn">3</span><span class="cl">C</span></td><td class="x"></td><td class="o"><span class="cn">4</span><span class="cl">D</span></td><td class="o"><span class="cl">O</span></td><td class="o"><span class="cl">O</span></td><td class="o"><span class="cl">R</span></td><td class="o"><span class="cl">W</span></td><td class="o"><span class="cl">A</span></td><td class="o"><span class="cl">Y</span></td></tr><tr><td class="o"><span class="cl">I</span></td><td class="x"></td><td class="x"></td><td class="x"></td><td class="x"></td><td class="o"><span class="cl">U</span></td><td class="x"></td><td class="x"></td><td class="x"></td><td class="o"><span class="cl">N</span></td><td class="x"></td><td class="x"></td><td class="x"></td><td class="x"></td></tr><tr><td class="o"><span class="cl">S</span></td><td class="x"></td><td class="x"></td><td class="o"><span class="cn">5</span><span class="cl">S</span></td><td class="x"></td><td class="o"><span class="cl">R</span></td><td class="x"></td><td class="o"><span class="cn">6</span><span class="cl">S</span></td><td class="o"><span class="cl">I</span></td><td class="o"><span class="cl">S</span></td><td class="o"><span class="cl">T</span></td><td class="o"><span class="cl">E</span></td><td class="o"><span class="cl">R</span></td><td class="x"></td></tr><tr><td class="o"><span class="cl">S</span></td><td class="x"></td><td class="x"></td><td class="o"><span class="cl">L</span></td><td class="x"></td><td class="o"><span class="cl">V</span></td><td class="x"></td><td class="x"></td><td class="x"></td><td class="o"><span class="cl">E</span></td><td class="x"></td><td class="x"></td><td class="x"></td><td class="x"></td></tr><tr><td class="o"><span class="cl">O</span></td><td class="x"></td><td class="x"></td><td class="o"><span class="cn">7</span><span class="cl">E</span></td><td class="o"><span class="cl">L</span></td><td class="o"><span class="cl">E</span></td><td class="o"><span class="cl">P</span></td><td class="o"><span class="cl">H</span></td><td class="o"><span class="cl">A</span></td><td class="o"><span class="cl">N</span></td><td class="o"><span class="cl">T</span></td><td class="x"></td><td class="x"></td><td class="x"></td></tr><tr><td class="o"><span class="cl">R</span></td><td class="x"></td><td class="x"></td><td class="o"><span class="cl">E</span></td><td class="x"></td><td class="x"></td><td class="x"></td><td class="x"></td><td class="x"></td><td class="o"><span class="cl">S</span></td><td class="x"></td><td class="x"></td><td class="x"></td><td class="x"></td></tr><tr><td class="o"><span class="cn">8</span><span class="cl">S</span></td><td class="o"><span class="cl">O</span></td><td class="o"><span class="cl">U</span></td><td class="o"><span class="cl">P</span></td><td class="x"></td><td class="x"></td><td class="x"></td><td class="x"></td><td class="o"><span class="cn">9</span><span class="cl">R</span></td><td class="o"><span class="cl">E</span></td><td class="o"><span class="cl">C</span></td><td class="o"><span class="cl">A</span></td><td class="o"><span class="cl">L</span></td><td class="o"><span class="cl">L</span></td></tr></table></div>
+    <div class="k"><h3>13 · Rafael's story · 14 · Your turn</h3><p>1 😩 forgot everything · 2 📉 the forgetting curve · 3 🃏 ten cards every evening · 4 👧 sister tested him · 5 ✅ right three days in a row · 6 🏆 1,000+ cards and the job<br><i>Think about it:</i> she heard all the words every night.<br><i>Six ways:</i> 1 c · 2 e · 3 a · 4 f · 5 b · 6 d<br>14: your own answers – 2 points per good sentence.</p></div>
+    <div class="k"><h3>Your score</h3><p>90–100 🏆 <b>Winners' box!</b> · 70–89 🐘 <b>A memory like an elephant</b> · 50–69 👅 <b>On the tip of your tongue</b> · 0–49 🥣 <b>A memory like a sieve – try again tomorrow!</b></p></div>
+   </div>
+  </div>
+  <div style="display:grid;grid-template-columns:auto 1fr auto;gap:4mm;align-items:center;margin-top:2.6mm;background:var(--night);border-radius:5mm;padding:3.2mm 4.6mm;color:#F8E3C4">
+    <img src="img/qr.png" style="width:24mm;height:24mm;border-radius:2mm;background:#fff;padding:1mm">
+    <div style="font-size:8.8pt;line-height:1.5"><b style="font-size:11pt;color:var(--peach)">Enjoyed this worksheet? 🎉</b><br>Scan to subscribe to <b>Daily Speak English</b> – new episodes with Jack and Lucy every week. And remember: forgetting isn't failing – it's just your brain asking you to come back and try again! 💜<br>More free worksheets: <b style="color:#fff">dailyspeakenglish.github.io/worksheets</b></div>
+    <img class="char" src="img/f/69-duo-thumbs-up-night.jpg" style="width:40mm">
+  </div>
+  {{FOOT10}}
+</section>
+
+</body>
+</html>

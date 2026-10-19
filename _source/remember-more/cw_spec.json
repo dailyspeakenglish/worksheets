@@ -1,0 +1,13 @@
+{"max_cols": 14, "max_rows": 12, "seed": 1,
+ "words": [
+  ["SCISSORS", "Jack needed the ___ to open a parcel."],
+  ["DOORWAY", "Walking through a ___ can make you forget what you wanted."],
+  ["NONSENSE", "Ebbinghaus learned lists of ___ syllables, like “dax” and “bok”."],
+  ["ELEPHANT", "A great memory: “She's got a memory like an ___.”"],
+  ["RECALL", "To bring something back into your mind: to ___."],
+  ["SISTER", "Rafael's little ___ tested him every evening after dinner."],
+  ["CURVE", "The forgetting ___ drops very fast at the beginning."],
+  ["SLEEP", "A good night's ___ might help your memory."],
+  ["SIEVE", "A bad memory: “I've got a memory like a ___.”"],
+  ["SOUP", "The restaurant near the bridge had amazing ___."]
+ ]}
