@@ -1,0 +1,894 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Daily Speak English – Reading Books Worksheet</title>
+<style>
+@page { size: A4; margin: 0; }
+:root{
+  --night:#1B2147; --night2:#2F3A6B; --mauve:#6E5D8C; --mauve-d:#4E3F6B; --lav:#F1EDF8; --lav2:#DED5EE;
+  --peach:#F2AE94; --peach-l:#FDEDE5; --peach-d:#A9532F; --sage:#D7E7DD; --sage-d:#2F5E50; --teal-l:#E3F0F3; --teal-d:#2C6577;
+  --cream:#FCF6EE; --ink:#22263F; --muted:#61647E; --line:#E3DCEC;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font-family:'Poppins','Noto Color Emoji',sans-serif;color:var(--ink);font-size:10.3pt;line-height:1.45;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.page{width:210mm;height:297mm;position:relative;overflow:hidden;padding:12mm 14mm 18mm;background:#fff;page-break-after:always}
+.page:last-child{page-break-after:auto}
+.page::before{content:"";position:absolute;inset:0 0 auto 0;height:4.5mm;background:linear-gradient(90deg,var(--night) 0 34%,var(--mauve) 34% 62%,var(--peach) 62% 84%,#B9D3C4 84% 100%)}
+.footer{position:absolute;left:14mm;right:14mm;bottom:7mm;display:flex;justify-content:space-between;align-items:center;font-size:7.5pt;color:var(--muted);border-top:1px solid var(--line);padding-top:2.2mm}
+.footer a{color:var(--night);text-decoration:none;font-weight:600}
+.footer>span{white-space:nowrap}
+.arr{display:inline-block;width:1.05em;height:1.05em;vertical-align:-.15em}
+.brand{display:flex;align-items:center;gap:2.2mm;font-weight:700;color:var(--night);font-size:8.8pt;letter-spacing:.3pt}
+.brand img{width:7mm;height:7mm;border-radius:50%}
+.footer .brand img{width:5mm;height:5mm}
+.footer .brand{font-size:7.5pt;letter-spacing:0}
+h1{font-size:25pt;line-height:1.06;margin:0;color:var(--night);font-weight:800;letter-spacing:-.3pt}
+h2{font-size:13pt;margin:0;color:var(--night);font-weight:700;display:flex;align-items:center;gap:2.4mm}
+h2 .num{display:inline-flex;align-items:center;justify-content:center;width:8.4mm;height:8.4mm;border-radius:50%;background:var(--mauve);color:#fff;font-size:10.5pt;flex:none}
+.sec{margin-top:5.6mm}
+.instr{font-size:9.2pt;color:var(--muted);margin:1.1mm 0 2.6mm 10.8mm}
+.tag{display:inline-block;font-size:7.4pt;font-weight:600;padding:.5mm 2.4mm;border-radius:10mm;background:var(--lav);color:var(--mauve-d);margin-left:1.2mm;vertical-align:middle}
+.tag.pts{background:var(--peach-l);color:var(--peach-d)}
+.tag.fun{background:var(--sage);color:var(--sage-d)}
+.card{background:var(--lav);border-radius:4mm;padding:3.6mm 4.6mm;border:1px solid var(--lav2)}
+.card.peach{background:var(--peach-l);border-color:#F6D3C3}
+.card.sage{background:var(--sage);border-color:#BFD7C8}
+.card.teal{background:var(--teal-l);border-color:#C6DFE6}
+.card.white{background:#fff;border:1.3px solid var(--line)}
+.blank{display:inline-block;border-bottom:1.3px solid var(--night);min-width:24mm;height:4.6mm;vertical-align:bottom}
+.blank.s{min-width:13mm}.blank.l{min-width:58mm}.blank.xl{min-width:100%}
+.box{display:inline-flex;width:6.2mm;height:6.2mm;border:1.4px solid var(--night);border-radius:1.4mm;vertical-align:middle;flex:none;background:#fff}
+.box.sm{width:5mm;height:5mm;border-radius:1.1mm}
+table{border-collapse:collapse;width:100%}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:4mm}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:3mm}
+.pill{display:inline-block;background:var(--night);color:#F8E3C4;font-weight:700;border-radius:10mm;padding:.6mm 3mm;font-size:8.8pt}
+.pill.p{background:var(--peach);color:var(--night)}
+.small{font-size:8.4pt;color:var(--muted)}
+.lines{height:7mm;border-bottom:1px dashed #C9BFD9}
+.char{display:block;object-fit:contain}
+.bub{display:flex;gap:3mm;align-items:center}
+.bub .txt{background:#fff;border:1.4px solid var(--line);border-radius:4mm;padding:2.4mm 3.6mm;font-size:9.1pt;flex:1}
+.bub .txt b{color:var(--night)}
+.ava{width:17mm;height:17mm;border-radius:50%;background:var(--lav);overflow:hidden;flex:none;border:2px solid #fff;box-shadow:0 0 0 1.4px var(--lav2)}
+.ava img{width:100%;height:130%;object-fit:cover;object-position:50% 4%}
+.mc{display:grid;grid-template-columns:1fr 1fr;gap:2.4mm 4.6mm}
+.mcq{background:#fff;border:1.2px solid var(--line);border-radius:3mm;padding:2.4mm 3.4mm}
+.mcq .qq{font-weight:600;color:var(--night);font-size:9.5pt;margin-bottom:1.1mm}
+.opt{display:flex;gap:2mm;align-items:center;font-size:9.2pt;margin:.6mm 0}
+.opt .c{width:4.6mm;height:4.6mm;border-radius:50%;border:1.3px solid var(--night);display:inline-flex;align-items:center;justify-content:center;font-size:7pt;font-weight:700;color:var(--night);flex:none}
+.hint{font-size:7.5pt;color:var(--peach-d);font-weight:600;margin-top:.6mm}
+.tf td{padding:1.45mm 2mm;border-bottom:1px solid #EEE8F4;font-size:9.4pt;vertical-align:middle}
+.tf th{font-size:7.8pt;color:var(--muted);font-weight:600;text-align:center;padding-bottom:1.2mm}
+.tf td.n{width:6mm;font-weight:700;color:var(--mauve)}
+.tf td.ck{width:17mm;text-align:center;white-space:nowrap}
+.tf td.tm{width:15mm;font-size:7.6pt;color:var(--peach-d);font-weight:600;text-align:right}
+.circ{display:inline-flex;width:6mm;height:6mm;border-radius:50%;border:1.3px solid var(--night);align-items:center;justify-content:center;font-weight:700;font-size:8pt;color:var(--night)}
+.match td{padding:1.35mm 1.6mm;font-size:9.3pt;vertical-align:middle}
+.match .ans{width:9mm}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:3mm}
+.step{background:#fff;border:1.3px solid var(--line);border-radius:3.4mm;padding:2.6mm 3.2mm}
+.step .h{font-weight:700;color:var(--night);font-size:9.4pt}
+.step .s{font-size:8.4pt;color:var(--muted);line-height:1.4}
+/* chat */
+.chat{display:flex;flex-direction:column;gap:1.5mm}
+.msg{display:flex;align-items:flex-end;gap:2.6mm}
+.msg.j{flex-direction:row-reverse}
+.msg .ava{width:13mm;height:13mm}
+.msg .b{max-width:132mm;border-radius:4.5mm;padding:1.6mm 3.6mm;font-size:9.4pt;line-height:1.5}
+.msg.l .b{background:var(--peach-l);border:1.2px solid #F4D2C2;border-bottom-left-radius:1mm}
+.msg.j .b{background:var(--lav);border:1.2px solid var(--lav2);border-bottom-right-radius:1mm}
+.msg .who{display:block;font-size:7pt;font-weight:700;letter-spacing:.4pt;margin-bottom:.1mm}
+.msg.l .who{color:var(--peach-d)} .msg.j .who{color:var(--mauve-d)}
+.gap{display:inline-block;min-width:21mm;border-bottom:1.3px solid var(--night);text-align:left;font-size:7.4pt;font-weight:700;color:var(--mauve);line-height:1.1;padding-left:.6mm}
+/* conversation map */
+.bank{display:grid;grid-template-columns:1fr 1fr;gap:1.4mm 4mm;font-size:9.1pt}
+.bank div{display:flex;gap:2mm;align-items:baseline}
+.bank b{color:var(--mauve);width:4mm;flex:none}
+.map{display:grid;grid-template-columns:1fr 7mm 1fr 7mm 1fr;align-items:stretch;margin-top:3mm}
+.col{border-radius:4mm;padding:3mm;text-align:center}
+.col .h{font-weight:800;font-size:10.5pt;letter-spacing:.4pt}
+.col .s{font-size:7.8pt;margin-bottom:2mm}
+.col .slots{display:flex;justify-content:center;gap:2mm}
+.col.c1{background:var(--sage);color:var(--sage-d)} .col.c2{background:var(--lav);color:var(--mauve-d)} .col.c3{background:var(--peach-l);color:var(--peach-d)}
+.arrow{display:flex;align-items:center;justify-content:center;font-size:15pt;color:var(--mauve);font-weight:700}
+/* situation cards */
+.sit{background:#fff;border:1.3px solid var(--line);border-radius:3.4mm;padding:2.4mm 3mm;display:flex;flex-direction:column;gap:1.4mm}
+.sit .e{font-size:17pt;line-height:1.1}
+.sit .t{font-size:8.8pt;color:var(--ink);min-height:12.5mm}
+.sit .ch{display:flex;gap:3mm;font-size:8pt;font-weight:600;color:var(--night);align-items:center}
+.sit .ch span{display:flex;gap:1.2mm;align-items:center}
+.key h3{margin:0 0 1mm;font-size:9.6pt;color:var(--night)}
+.key p{margin:0;font-size:8.5pt;line-height:1.48}
+.key .k{background:var(--cream);border-radius:3mm;padding:2.6mm 3.4mm;border:1px solid #EFE2D0}
+.chips{display:flex;flex-wrap:wrap;gap:1.8mm}
+.chips span{background:var(--lav);border:1px solid var(--lav2);color:var(--mauve-d);border-radius:10mm;padding:.5mm 3mm;font-size:8.8pt;font-weight:600}
+.chal th{background:var(--night);color:#F8E3C4;font-size:8.2pt;font-weight:600;padding:1.8mm 1.4mm;text-align:left}
+.chal th:first-child{border-radius:3mm 0 0 0}.chal th:last-child{border-radius:0 3mm 0 0;text-align:center}
+.chal td{border:1px solid #E6DFEE;height:8.6mm;font-size:8.5pt;padding:0 2mm;vertical-align:middle}
+.chal td.d{font-weight:700;color:var(--night);background:var(--lav);width:13mm;text-align:center}
+.chal td.f{text-align:center;font-size:10pt;letter-spacing:2mm;width:27mm}
+.cando td{padding:1.6mm 1.6mm;border-bottom:1px solid #EEE8F4;font-size:9pt}
+.cando td.f{text-align:center;width:12mm;font-size:11pt}
+.cando th{font-size:7.6pt;color:var(--muted);font-weight:600;text-align:center}
+.pocket{border:1.6px dashed var(--mauve);border-radius:4mm;padding:3mm 4mm;position:relative;background:#fff}
+.pocket .sc{position:absolute;top:-3.4mm;left:6mm;background:#fff;padding:0 1.4mm;font-size:9pt;color:var(--mauve)}
+.pocket .pc{display:grid;grid-template-columns:repeat(4,1fr);gap:2.4mm;font-size:7.9pt;line-height:1.35}
+.pocket .pc div b{display:block;font-size:8.2pt;margin-bottom:.6mm}
+.story{display:grid;grid-template-columns:1fr 1fr;gap:2.4mm 4mm}
+.story .ev{display:flex;gap:2.6mm;align-items:center;background:#fff;border:1.3px solid var(--line);border-radius:3mm;padding:2.2mm 3mm;font-size:9pt}
+.story .ev .e{font-size:15pt;flex:none}
+.story .ev .l{font-weight:800;color:var(--mauve);flex:none;width:4mm}
+/* ---- new in build-a-habit ---- */
+.pick{display:inline-flex;align-items:center;gap:1.2mm;padding:.5mm 2.2mm .5mm 1mm;border-radius:10mm;font-size:7.8pt;font-weight:700;white-space:nowrap}
+.pick.good{background:#DDF1E3;color:#1E7B45;border:1.2px solid #8FCBA3}
+.pick.bad{background:#FBE1DE;color:#C0392B;border:1.2px solid #EDA59D}
+.pick .box{width:4.2mm;height:4.2mm;border-radius:1mm;border-width:1.2px}
+.ic{width:3mm;height:3mm;flex:none;vertical-align:-.45mm;display:inline-block}
+.pick.good .box{border-color:#1E7B45}.pick.bad .box{border-color:#C0392B}
+.slots{display:inline-flex;gap:.55mm;vertical-align:-.5mm;margin:0 .5mm}
+.slots .sl{display:inline-block;width:2.45mm;height:3.4mm;border-bottom:1.1px solid var(--night)}
+.slots .sl1{display:inline-block;width:2.45mm;height:3.4mm;line-height:3.4mm;text-align:center;font-size:8.4pt;color:var(--mauve);border-bottom:1.1px solid var(--mauve)}
+.msgrow{display:flex;flex-wrap:wrap;gap:2.4mm 3.6mm;justify-content:center}
+.mw{display:inline-flex;gap:.8mm;align-items:flex-end}
+.mb{display:inline-block;width:4.4mm;height:5.8mm;border-bottom:1.4px solid var(--night)}
+.ap{font-weight:800;font-size:11pt;line-height:1;color:var(--night)}
+.nums{display:grid;grid-template-columns:repeat(4,1fr);gap:2.4mm}
+.nums .nc{background:#fff;border:1.3px solid var(--line);border-radius:3.4mm;padding:2.2mm 2.6mm;display:flex;flex-direction:column;gap:1.2mm}
+.nums .nc .q{font-size:8.5pt;line-height:1.36;min-height:12mm}
+.nums .nc .a{display:flex;align-items:center;justify-content:space-between}
+.nums .nc .bx{width:16mm;height:7.4mm;border:1.4px solid var(--night);border-radius:1.6mm;background:var(--lav)}
+.nums .nc .t{font-size:7.3pt;color:var(--peach-d);font-weight:600}
+.conf{display:grid;grid-template-columns:repeat(3,auto);justify-content:space-between;gap:1.6mm 3mm;font-size:9pt}
+.conf div{display:flex;gap:2mm;align-items:center}
+.coll td{padding:1.5mm 1mm;font-size:9.3pt;line-height:1.5}
+.rule{display:grid;grid-template-columns:repeat(3,1fr);gap:2.4mm}
+.rule div{border-radius:3mm;padding:2.2mm 2.8mm;font-size:8.4pt;line-height:1.4}
+.rule b.h{display:block;font-size:9.4pt;margin-bottom:.6mm}
+.ws{border-collapse:separate;border-spacing:.7mm;margin:0 auto}
+.ws td{width:6.3mm;height:6.3mm;text-align:center;font-weight:700;font-size:9.4pt;color:var(--night);background:#fff;border-radius:1.6mm;border:1px solid var(--lav2)}
+.clues{font-size:8.6pt;line-height:1.38;display:flex;flex-direction:column;gap:1.25mm}
+.clues div{display:flex;gap:1.6mm;align-items:baseline}
+.clues .n{font-weight:800;color:var(--mauve);width:4.4mm;flex:none}
+.wsk{border-collapse:separate;border-spacing:.35mm}
+.wsk td{width:3.4mm;height:3.4mm;font-size:5.4pt;text-align:center;font-weight:600;color:#B9AEC9;border-radius:.6mm;background:#fff}
+.wsk td.on{background:var(--peach);color:var(--night)}
+.path{display:grid;grid-template-columns:repeat(7,1fr);gap:2.2mm 2mm;margin-top:2mm}
+.stone{height:11mm;border-radius:50%;background:#EDE7F6;border:1.4px solid var(--lav2);display:flex;align-items:center;justify-content:center;font-size:8pt;font-weight:700;color:var(--mauve-d);position:relative}
+.path .stone:nth-child(even){transform:translateY(1.6mm)}
+.grass{background:linear-gradient(180deg,#EAF3EC,#D7E7DD);border-radius:4mm;padding:3mm 4mm 4.4mm;border:1px solid #BFD7C8}
+.react table td{padding:1.35mm 1.4mm;font-size:9.1pt;vertical-align:middle;border-bottom:1px solid #EEE8F4}
+.bands{display:grid;grid-template-columns:repeat(4,1fr);gap:2mm;margin-top:2.4mm}
+.bands div{background:var(--lav);border-radius:3mm;padding:1.6mm 2.2mm;font-size:7.8pt;line-height:1.33;text-align:center}
+.bands b{display:block;color:var(--night);font-size:8.4pt}
+
+/* ---- new in time-flies ---- */
+.graphs{display:grid;grid-template-columns:repeat(3,1fr);gap:2.6mm}
+.graph{background:#fff;border:1.3px solid var(--line);border-radius:3.4mm;padding:2mm 2.4mm;text-align:center}
+.graph .gl{display:inline-flex;width:6mm;height:6mm;border-radius:50%;border:1.3px solid var(--night);align-items:center;justify-content:center;font-weight:800;color:var(--night);font-size:9pt;margin-bottom:1mm}
+.gq{display:grid;grid-template-columns:1fr auto;gap:1.4mm 3mm;font-size:9.2pt;align-items:center}
+.gq .bx{display:inline-block;width:10mm;height:6.4mm;border:1.4px solid var(--night);border-radius:1.4mm;background:var(--lav)}
+.clock{display:inline-flex;align-items:center;gap:1.2mm;padding:.5mm 2.2mm .5mm 1mm;border-radius:10mm;font-size:7.6pt;font-weight:700;white-space:nowrap}
+.clock.now{background:var(--night);color:#F8E3C4}
+.clock.back{background:#FBE1D6;color:var(--peach-d);border:1.2px solid #EBB49C}
+.clock .box{width:4.2mm;height:4.2mm;border-radius:1mm;border-width:1.2px}
+.clock.now .box{border-color:#F8E3C4;background:transparent}
+.sorter{display:grid;grid-template-columns:1fr 1fr;gap:3mm;margin-top:2.4mm}
+.sorter .col{border-radius:4mm;padding:2.6mm 3mm;text-align:center}
+.sorter .col .h{font-weight:800;font-size:11pt;letter-spacing:.4pt}
+.sorter .col .s{font-size:7.8pt;margin-bottom:2mm}
+.sorter .slots{display:flex;justify-content:center;gap:2mm}
+.sorter .fast{background:#FDE3D6;color:#B5401C;border:1.3px solid #F2B39A}
+.sorter .slow{background:#DCEFF3;color:#1F5F70;border:1.3px solid #A9D3DD}
+.timeline{display:grid;grid-template-columns:repeat(3,1fr);gap:2.4mm}
+.timeline div{border-radius:3mm;padding:2.2mm 2.8mm;font-size:8.4pt;line-height:1.4}
+.timeline b.h{display:block;font-size:10pt;margin-bottom:.4mm}
+.cw{border-collapse:separate;border-spacing:.7mm;margin:0 auto;width:auto;table-layout:fixed}
+.cw td{width:var(--cell);min-width:var(--cell);max-width:var(--cell);height:var(--cell);padding:0;position:relative;box-sizing:border-box}
+.cw td.o{background:#fff;border:1.4px solid var(--night);border-radius:1.2mm}
+.cw td.x{border:none;background:transparent}
+.cw .cn{position:absolute;top:.15mm;left:.45mm;font-size:5.4pt;font-weight:700;color:var(--mauve);line-height:1}
+.cw .cl{display:flex;height:100%;align-items:center;justify-content:center;font-weight:700;font-size:8.6pt;color:var(--night)}
+.cwk{border-spacing:.35mm}
+.cwk td.o{border-width:.9px;border-radius:.6mm}
+.cwk .cn{font-size:3.6pt;top:.1mm;left:.25mm}
+.cwk .cl{font-size:6.2pt}
+.cclues{font-size:8.5pt;line-height:1.36}
+.cclues h4{margin:0 0 1mm;font-size:9.4pt;color:var(--night)}
+.cclues .card > div{display:flex;gap:1.6mm;align-items:baseline;margin-bottom:1mm}
+.cclues .n{font-weight:800;color:var(--mauve);width:4.4mm;flex:none}
+.cclues .len{color:var(--muted);font-size:7.6pt}
+.slips{display:grid;grid-template-columns:repeat(4,1fr);gap:2.2mm}
+.slip{border:1.4px dashed var(--mauve);border-radius:2.6mm;padding:1.8mm 2.2mm;background:#FFFCF6;font-size:7.8pt;color:var(--mauve-d);min-height:15mm;display:flex;flex-direction:column;justify-content:space-between}
+.predict-chips span{font-size:8.2pt}
+.slip .ln{border-bottom:1px solid #D9CCE6;height:4.2mm}
+
+/* ---- new in why-we-laugh ---- */
+.meter{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-radius:4mm;overflow:hidden;border:1.3px solid var(--lav2)}
+.meter .z{padding:2.4mm 2.6mm;text-align:center;min-height:30mm;display:flex;flex-direction:column;gap:1.6mm;align-items:center}
+.meter .z .h{font-weight:800;font-size:10pt}
+.meter .z .s{font-size:7.6pt;line-height:1.3}
+.meter .z .slots{display:flex;gap:2mm}
+.meter .z1{background:#EAF3EC;color:var(--sage-d)}
+.meter .z2{background:#FDEDE5;color:var(--peach-d)}
+.meter .z3{background:#F6DCDC;color:#A33B3B}
+.meterbar{height:3mm;border-radius:2mm;background:linear-gradient(90deg,#B9D3C4,#F2AE94,#E07B7B);margin:1.4mm 0 .6mm}
+.nums2{display:grid;grid-template-columns:1fr auto;gap:1.2mm 3mm;font-size:9.2pt;align-items:center}
+.nums2 .bx{display:inline-block;width:8mm;height:6.4mm;border:1.4px solid var(--night);border-radius:1.4mm;background:var(--lav)}
+.mix{display:grid;grid-template-columns:1fr 1fr;gap:2mm 3mm;font-size:9.2pt}
+.mix div{background:#fff;border:1.2px solid var(--line);border-radius:2.6mm;padding:1.8mm 3mm;line-height:1.5}
+.mix .w{display:inline-flex;gap:1.6mm;margin-left:1mm}
+.mix .w span{border:1.2px solid var(--night);border-radius:10mm;padding:0 2.4mm;font-weight:600;font-size:8.6pt}
+.tone{display:inline-flex;align-items:center;gap:1.2mm;padding:.5mm 2.2mm .5mm 1mm;border-radius:10mm;font-size:7.6pt;font-weight:700;white-space:nowrap}
+.tone.sin{background:#DDF1E3;color:#1E7B45;border:1.2px solid #8FCBA3}
+.tone.sar{background:#EDE3FA;color:#5B3A99;border:1.2px solid #B9A3E0}
+.tone .box{width:4.2mm;height:4.2mm;border-radius:1mm;border-width:1.2px}
+.tone.sin .box{border-color:#1E7B45}.tone.sar .box{border-color:#5B3A99}
+.sar .sit .t{min-height:0}
+.log th{background:var(--night);color:#F8E3C4;font-size:8.2pt;font-weight:600;padding:1.8mm 2mm;text-align:left}
+.log th:first-child{border-radius:3mm 0 0 0}.log th:last-child{border-radius:0 3mm 0 0;text-align:center}
+.log td{border:1px solid #E6DFEE;height:7mm;font-size:8.4pt;padding:0 2mm;vertical-align:middle}
+.log td.d{font-weight:700;color:var(--night);background:var(--lav);width:12mm;text-align:center}
+.log td.c{text-align:center;width:34mm;font-size:8pt;color:var(--muted)}
+
+/* ---- new in messy-room ---- */
+.claim{display:inline-flex;align-items:center;gap:1.2mm;padding:.5mm 2.2mm .5mm 1mm;border-radius:10mm;font-size:7.6pt;font-weight:700;white-space:nowrap}
+.claim.fair{background:#DDF1E3;color:#1E7B45;border:1.2px solid #8FCBA3}
+.claim.strong{background:#FBE1DE;color:#C0392B;border:1.2px solid #EDA59D}
+.claim .box{width:4.2mm;height:4.2mm;border-radius:1mm;border-width:1.2px}
+.claim.fair .box{border-color:#1E7B45}.claim.strong .box{border-color:#C0392B}
+.sort{border-collapse:separate;border-spacing:0 1.1mm;width:100%}
+.sort th{font-size:8.3pt;font-weight:800;padding:1.4mm 1mm;text-align:center}
+.sort th.it{text-align:left;color:var(--night);padding-left:1mm}
+.sort th.keep{background:#DDF1E3;color:#1E7B45;border-radius:2.4mm 0 0 2.4mm}
+.sort th.give{background:#DCEFF3;color:#1F5F70}
+.sort th.out{background:#FBE1DE;color:#C0392B;border-radius:0 2.4mm 2.4mm 0}
+.sort td{font-size:8.9pt;padding:.9mm 1mm;border-bottom:1px dashed var(--line)}
+.sort td.c{text-align:center;width:27mm}
+.sort td.k .box{border-color:#1E7B45}.sort td.g .box{border-color:#1F5F70}.sort td.o .box{border-color:#C0392B}
+.studies{display:grid;grid-template-columns:repeat(3,1fr);gap:2.4mm}
+.studies div{border-radius:3mm;padding:2mm 3mm;font-size:8.3pt;line-height:1.35;color:var(--ink)}
+.studies .h{display:block;font-size:9.3pt;margin-bottom:.3mm}
+.puts{display:grid;grid-template-columns:repeat(3,1fr);gap:2.4mm;margin-top:1.6mm}
+.puts div{border-radius:3mm;padding:2mm 3mm;font-size:8.5pt;line-height:1.38;text-align:center}
+.puts .e{display:block;font-size:15pt;line-height:1.2}
+.puts b{display:block;color:var(--night);font-size:9.3pt}
+.chat.wide .msg .b{max-width:154mm;padding:1.4mm 3.6mm}
+.claim.calm{background:#DCEFF3;color:#1F5F70;border:1.2px solid #9CCAD6}.claim.calm .box{border-color:#1F5F70}
+.claim.mess{background:#FDE3D3;color:#B9542B;border:1.2px solid #F2B796}.claim.mess .box{border-color:#B9542B}
+.tm2{display:grid;grid-template-columns:1fr auto auto;gap:1.4mm;align-items:center;font-size:8.6pt;padding:.8mm 0;white-space:nowrap;border-bottom:1px dashed var(--line)}
+.wf .blank{min-width:19mm}
+.wf{display:grid;grid-template-columns:1fr 1fr;gap:1.8mm 5mm;font-size:9.1pt}
+.keycols{display:grid;grid-template-columns:1fr 1fr;gap:2mm;margin-top:2.6mm;align-items:start}
+.keycols>div{display:flex;flex-direction:column;gap:2mm}
+.week td{height:6.4mm}
+.week td.a{width:50mm;font-weight:600;color:var(--night)}
+
+/* ---- new in talk-to-yourself ---- */
+.claim.chal{background:#DDF1E3;color:#1E7B45;border:1.2px solid #8FCBA3}.claim.chal .box{border-color:#1E7B45}
+.claim.thr{background:#FBE1DE;color:#C0392B;border:1.2px solid #EDA59D}.claim.thr .box{border-color:#C0392B}
+.ways{display:grid;grid-template-columns:1fr 1.5fr;gap:2.4mm 5mm;align-items:start}
+.ways .ex{font-size:8.8pt;line-height:1.5}
+.ways .ex div{margin-bottom:1.1mm}
+.friend td{padding:1.8mm 1mm;font-size:9.2pt;vertical-align:bottom}
+.friend td.i{width:52%;color:#C0392B}
+.pep{display:grid;grid-template-columns:.8fr 1.1fr 1fr 1.25fr;gap:1.6mm 2.4mm;margin-top:1.6mm}
+.pep>div{border-radius:3mm;padding:1.8mm 2.6mm;font-size:9.4pt;color:var(--night)}
+.pep .lb{display:block;font-size:6.8pt;font-weight:800;letter-spacing:.3pt;margin-bottom:.4mm}
+.pep .me{background:none;padding:2.4mm 1mm 0}
+.ws td{width:7mm;height:7mm;font-size:10.2pt}
+.clues{font-size:8.8pt;gap:1.7mm}
+.hero2{background:var(--lav);border-radius:6mm;height:55mm;position:relative;overflow:hidden;border:1px solid var(--lav2)}
+
+/* ---- new in being-bored ---- */
+.claim.ed{background:#DCEFF3;color:#1F5F70;border:1.2px solid #9CCAD6}.claim.ed .box{border-color:#1F5F70}
+.claim.ing{background:#FDE3D3;color:#B9542B;border:1.2px solid #F2B796}.claim.ing .box{border-color:#B9542B}
+.claim.ok{background:#DDF1E3;color:#1E7B45;border:1.2px solid #8FCBA3}.claim.ok .box{border-color:#1E7B45}
+.claim.no{background:#FBE1DE;color:#C0392B;border:1.2px solid #EDA59D}.claim.no .box{border-color:#C0392B}
+.edrule{display:grid;grid-template-columns:1fr 1fr;gap:2.4mm;margin:1.6mm 0 2mm}
+.edrule div{border-radius:3mm;padding:1.6mm 3mm;font-size:8.6pt;line-height:1.4}
+
+/* ---- new in kindness ---- */
+.ws td{width:6.9mm;height:6.9mm;font-size:10pt}
+.scale{position:relative;height:14mm;margin:1mm 3mm 0}
+.scale .end{position:absolute;top:0;font-size:7.4pt;font-weight:700;color:var(--muted)}
+.scale .bar{position:absolute;left:0;right:0;top:5mm;height:2.4mm;border-radius:2mm;background:linear-gradient(90deg,#F6C9C2,#F3EFF8 50%,#BFE3CD)}
+.scale .tk{position:absolute;top:8.4mm;transform:translateX(-50%);font-size:7pt;color:var(--muted);font-weight:600}
+.scale .mk{position:absolute;top:0;transform:translateX(-50%);text-align:center;font-size:7.2pt;font-weight:700;white-space:nowrap}
+.scale .mk span{display:block;width:0;height:0;margin:0 auto;border-left:1.6mm solid transparent;border-right:1.6mm solid transparent;border-top:2.2mm solid currentColor}
+.claim.un{background:#DCEFF3;color:#1F5F70;border:1.2px solid #9CCAD6}.claim.un .box{border-color:#1F5F70}
+.claim.ov{background:#FDE3D3;color:#B9542B;border:1.2px solid #F2B796}.claim.ov .box{border-color:#B9542B}
+.phr{display:grid;grid-template-columns:1.05fr .95fr;gap:4mm;align-items:start}
+
+/* ---- new in remember-more ---- */
+.claim.rec{background:#FDE3D3;color:#B9542B;border:1.2px solid #F2B796}.claim.rec .box{border-color:#B9542B}
+.claim.cal{background:#DDF1E3;color:#1E7B45;border:1.2px solid #8FCBA3}.claim.cal .box{border-color:#1E7B45}
+.chart{display:flex;justify-content:center;gap:14mm;align-items:flex-end;height:29mm;padding:0 2mm;border-bottom:1.4px solid var(--night)}
+.chart .grp{display:flex;flex-direction:column;align-items:center}
+.chart .pair{display:flex;gap:3mm;align-items:flex-end}
+.chart .bar{width:14mm;border-radius:2mm 2mm 0 0;display:flex;align-items:flex-start;justify-content:center;font-weight:800;font-size:9pt;padding-top:1mm;box-sizing:border-box}
+.chart .bar.r{background:#F7C9AE;color:#9A4320}.chart .bar.c{background:#A9DDBE;color:#1E6B3E}
+.chart-l{display:flex;justify-content:center;gap:14mm;font-size:8.4pt;font-weight:700;color:var(--night);margin-top:1mm}
+.chart-l div{width:31mm;text-align:center}
+.legend{display:flex;flex-direction:column;justify-content:center;gap:2.4mm;font-size:8.6pt}
+.legend span{display:inline-flex;align-items:center;gap:1.2mm}
+.legend i{display:inline-block;width:3.4mm;height:3.4mm;border-radius:.8mm}
+.flow{display:grid;grid-template-columns:repeat(5,1fr);gap:1.6mm;align-items:stretch}
+.flow div{border-radius:3mm;padding:1.8mm 2mm;font-size:8pt;line-height:1.35;text-align:center;position:relative}
+.flow div b{display:block;font-size:13pt;line-height:1.2}
+.tracker td.w{width:28mm}.tracker td.k{width:17mm;text-align:center}
+.tracker th{text-align:center}
+
+/* ---- new in reading-books ---- */
+.ws td{width:7.2mm;height:7.2mm;font-size:10.4pt}
+.dots{display:flex;flex-wrap:wrap;gap:1mm;margin:1.4mm 0}
+.dots i{display:inline-block;width:2.6mm;height:2.6mm;border-radius:50%;background:#D9D2E6}
+.dots i.u{background:#E8875F}
+.cov{display:grid;grid-template-columns:1fr 1fr;gap:3mm}
+.cov>div{border-radius:3mm;padding:2mm 3mm;font-size:8.6pt;line-height:1.4}
+.story-text{font-family:Georgia,'Times New Roman',serif;font-size:10.4pt;line-height:1.75;color:#2B2440;background:#FFFDF8;border:1px solid #EFE2D0;border-radius:3mm;padding:3mm 5mm}
+.meter{display:flex;gap:2mm;font-size:8.4pt;margin-top:1.6mm}
+.meter span{flex:1;border-radius:2.4mm;padding:1.2mm 2mm;text-align:center;font-weight:700}
+.checks{display:grid;grid-template-columns:1fr 1fr;gap:1.4mm 5mm;font-size:8.9pt}
+.checks div{display:flex;gap:1.8mm;align-items:center}
+</style>
+</head>
+<body>
+
+<!-- ================= PAGE 1 ================= -->
+<section class="page">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-top:1mm">
+    <div class="brand"><img src="img/logo.jpg">DAILY SPEAK ENGLISH · PODCAST WORKSHEET</div>
+    <div><span class="pill">B1–B2</span> <span class="pill p">⏱ 50 min</span></div>
+  </div>
+  <div style="display:grid;grid-template-columns:1.12fr .88fr;gap:4mm;margin-top:4mm;align-items:center">
+    <div>
+      <div class="small" style="font-weight:700;color:var(--mauve);letter-spacing:.7pt">LISTEN · LEARN · SPEAK</div>
+      <h1>Why Reading Books Is So Good for You</h1>
+      <p style="margin:2.4mm 0 0;font-size:9.6pt;color:var(--muted)">A twelve-year study about book readers, paper or screen, the 98% rule for choosing the right book in English, book idioms – and the secret inside Jack's grandfather's book.</p>
+      <div style="margin-top:4mm;display:grid;grid-template-columns:auto 1fr;gap:1.6mm 3mm;font-size:9.3pt;align-items:end">
+        <b style="color:var(--night)">Name:</b><span class="blank xl"></span>
+        <b style="color:var(--night)">Date:</b><span class="blank xl"></span>
+        <b style="color:var(--night)">My score:</b><span><span class="blank s"></span> / 100 ⭐</span>
+      </div>
+    </div>
+    <div class="hero2">
+      <div style="position:absolute;z-index:2;top:3.4mm;left:3.4mm;background:#fff;border-radius:4mm;padding:1mm 3mm;font-size:8.6pt;font-weight:700;color:var(--night);box-shadow:0 1px 0 var(--lav2)">"End of the line, madam!" 🚌</div>
+      <img class="char" src="img/f/19-lucy-glasses-book-lav.jpg" style="position:absolute;bottom:0;left:3mm;width:35mm">
+      <img class="char" src="img/f/16-jack-surprised-left-lav.jpg" style="position:absolute;bottom:0;right:2mm;width:35mm">
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><span class="num">★</span>How to use this worksheet</h2>
+    <div class="steps" style="margin-top:2.4mm">
+      <div class="step"><div class="h">1 · Before you listen 🧠</div><div class="s">Do the warm-up and learn the key words. Questions with 🧠 can be answered before listening.</div></div>
+      <div class="step"><div class="h">2 · While you listen 🎧</div><div class="s">Answer the 🎧 questions. The ⏱ times show where to find each part of the video.</div></div>
+      <div class="step"><div class="h">3 · After you listen 📖</div><div class="s">Try the one-page test, find the secret message – and read one page every day!</div></div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><span class="num">0</span>Warm-up: My reading check <span class="tag fun">fun · no points</span></h2>
+    <p class="instr">Be honest! Tick everything that is true for you. 😊</p>
+    <div style="display:grid;grid-template-columns:1.42fr .58fr;gap:4mm;align-items:stretch">
+      <div class="card white" style="display:flex;flex-direction:column;gap:1.8mm;justify-content:center;padding:2.6mm 3.6mm">
+        <div class="conf" style="grid-template-columns:1fr 1fr;justify-content:stretch;font-size:8.7pt">
+          <div><span class="box sm"></span>📖 I finished a book this year</div>
+          <div><span class="box sm"></span>🛏️ I read before bed</div>
+          <div><span class="box sm"></span>📱 I read more on screens</div>
+          <div><span class="box sm"></span>🚌 I read on buses or trains</div>
+          <div><span class="box sm"></span>📗 I've read a book in English</div>
+          <div><span class="box sm"></span>😴 I often give up after a page</div>
+        </div>
+        <div style="font-size:9pt"><b style="color:var(--night)">My reading score:</b> <span class="blank s"></span> / 6</div>
+        <div style="border-top:1px dashed var(--lav2);padding-top:2mm;font-size:8.9pt"><b style="color:var(--night)">Guess!</b> In a twelve-year study, how much longer did book readers live, on average?</div>
+        <div style="display:flex;gap:3.4mm;font-size:8.7pt;white-space:nowrap"><span><span class="circ">a</span> about two months</span><span><span class="circ">b</span> almost two years</span><span><span class="circ">c</span> about ten years</span></div>
+        <div class="hint">🎧 Check your guess at ⏱ 2:51</div>
+      </div>
+      <div class="card peach" style="display:flex;flex-direction:column;align-items:center;gap:1.4mm;padding:2.6mm 3mm 0;justify-content:space-between">
+        <div style="background:#fff;border-radius:4mm;padding:1.8mm 2.4mm;font-size:8.1pt;border:1.2px solid #F4D2C2;line-height:1.36"><b style="color:var(--night)">Jack:</b> "Grandad's old book sat on my shelf for ten years…" 📕</div>
+        <img class="char" src="img/f/35-jack-reading-card-peach.jpg" style="width:28mm">
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><span class="num">💬</span>Let's talk</h2>
+    <p class="instr">Say your answers out loud – or write them in your notebook.</p>
+    <div class="grid2" style="gap:2.4mm">
+      <div class="card teal" style="padding:2.2mm 3.6mm"><b>1.</b> What was the last book you finished?</div>
+      <div class="card teal" style="padding:2.2mm 3.6mm"><b>2.</b> Which book did you love as a child?</div>
+      <div class="card teal" style="padding:2.2mm 3.6mm"><b>3.</b> Do you prefer paper books or screens? Why?</div>
+      <div class="card teal" style="padding:2.2mm 3.6mm"><b>4.</b> Have you ever missed your stop because of a book?</div>
+    </div>
+  </div>
+  {{FOOT1}}
+</section>
+
+<!-- ================= PAGE 2 ================= -->
+<section class="page">
+  <div class="sec" style="margin-top:3mm">
+    <h2><span class="num">1</span>Key words <span class="tag">vocabulary</span><span class="tag pts">10 points</span></h2>
+    <p class="instr">Match each word or phrase (1–10) to its meaning (a–j). Write the letter in the box. 🧠 Then check at ⏱ 13:43 and ⏱ 14:52</p>
+    <div class="grid2" style="gap:5mm;align-items:start">
+      <table class="match">
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--night)">1.</b> a bookworm</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--night)">2.</b> to skim</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--night)">3.</b> a page-turner</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--night)">4.</b> to get lost in a book</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--night)">5.</b> absorbed</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--night)">6.</b> a graded reader</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--night)">7.</b> a spoiler</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--night)">8.</b> to flick through</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--night)">9.</b> to get into (a book)</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--night)">10.</b> an association</td></tr>
+      </table>
+      <div class="card" style="font-size:9pt;line-height:1.55">
+        <b>a)</b> a book so exciting that you keep turning the pages<br>
+        <b>b)</b> to start enjoying a book<br>
+        <b>c)</b> a person who loves reading and reads a lot<br>
+        <b>d)</b> a link between two things – but not proof<br>
+        <b>e)</b> a book written for language learners at a particular level<br>
+        <b>f)</b> to read very quickly to get the general idea<br>
+        <b>g)</b> to turn the pages quickly without reading carefully<br>
+        <b>h)</b> to be so interested in a book that you forget the world around you<br>
+        <b>i)</b> information that tells you what happens in a story too early<br>
+        <b>j)</b> giving something all your attention
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="bub">
+      <img class="char" src="img/f/03-lucy-did-you-know-w.jpg" style="width:20mm;flex:none">
+      <div class="txt"><b>Pronunciation corner 🔊</b> <b style="color:var(--peach-d)">BOOK</b>-worm · ab-<b style="color:var(--peach-d)">SORBED</b> (/əbˈzɔːbd/) · <b style="color:var(--peach-d)">LI</b>-bra-ry (three syllables – not "libery"!) · <b style="color:var(--peach-d)">CHAP</b>-ter · <b style="color:var(--peach-d)">NOV</b>-el. Say it: <i>"It's a real page-turner – I couldn't put it down!"</i></div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><span class="num">2</span>First listen: the big idea <span class="tag">listening</span><span class="tag pts">2 points</span></h2>
+    <p class="instr">Watch the whole episode once without stopping. Which sentence is the <b>main message</b>? 🎧</p>
+    <div class="card white">
+      <div class="opt" style="font-size:9.6pt;margin:1.2mm 0"><span class="c">a</span>Reading books is a healthy, pleasant habit – and in English, an easy book you enjoy, a little every day, works best.</div>
+      <div class="opt" style="font-size:9.6pt;margin:1.2mm 0"><span class="c">b</span>You should only read difficult novels, with a dictionary next to you.</div>
+      <div class="opt" style="font-size:9.6pt;margin:1.2mm 0"><span class="c">c</span>Reading on paper and reading on screens are always exactly the same.</div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="bub">
+      <div class="ava" style="width:22mm;height:22mm"><img src="img/f/53-jack-listen-carefully-lav.jpg" style="height:140%"></div>
+      <div class="txt"><b>Jack's tip:</b> First listen = the <b>big picture</b>. Don't stop the video and don't worry about every word. Second listen = the <b>details</b>. That's when you answer the 🎧 questions.</div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="card sage">
+      <b style="color:var(--night)">🔮 Predict before you listen!</b> <span class="small">(no points)</span> Seven of these words are in the episode. One is <b>not</b>. Circle the one you think you <b>won't</b> hear – then check while you listen.
+      <div class="chips predict-chips" style="margin-top:2mm;justify-content:center;gap:1.4mm"><span>car park</span><span>detective story</span><span>desert</span><span>bookmark</span><span>sailors</span><span>glasses</span><span>dinosaur</span><span>book club</span></div>
+    </div>
+  </div>
+  {{FOOT2}}
+</section>
+
+<!-- ================= PAGE 3 ================= -->
+<section class="page">
+  <div class="sec" style="margin-top:3mm;display:flex;justify-content:space-between;align-items:flex-start;gap:4mm">
+    <div>
+      <h2><span class="num">3</span>Know it or hear it? <span class="tag">quiz + listening</span><span class="tag pts">10 points</span></h2>
+      <p class="instr" style="margin-bottom:0">Circle a, b or c. Questions 🧠 1–5: you can probably answer them <b>before</b> you listen. Questions 🎧 6–10: listen to find the answer.</p>
+    </div>
+    <img class="char" src="img/f/31-duo-quiz-w.jpg" style="width:36mm;flex:none;margin-top:-2mm">
+  </div>
+  <div class="small" style="margin:2.4mm 0 1.6mm 10.8mm;font-weight:700;color:var(--sage-d)">🧠 YOU MIGHT ALREADY KNOW</div>
+  <div class="mc">
+    <div class="mcq"><div class="qq">1. "I ______ this book from the library."</div><div class="opt"><span class="c">a</span>lent</div><div class="opt"><span class="c">b</span>borrowed</div><div class="opt"><span class="c">c</span>gave</div><div class="hint">🧠 Tricky – think about it!</div></div>
+    <div class="mcq"><div class="qq">2. "I've been reading this book ______ two weeks."</div><div class="opt"><span class="c">a</span>since</div><div class="opt"><span class="c">b</span>from</div><div class="opt"><span class="c">c</span>for</div><div class="hint">🧠 Grammar you know</div></div>
+    <div class="mcq"><div class="qq">3. "Have you read the new book ______ Jane Smith?"</div><div class="opt"><span class="c">a</span>of</div><div class="opt"><span class="c">b</span>by</div><div class="opt"><span class="c">c</span>from</div><div class="hint">🧠 Grammar you know</div></div>
+    <div class="mcq"><div class="qq">4. "It's a real page-turner." The book is…</div><div class="opt"><span class="c">a</span>very exciting</div><div class="opt"><span class="c">b</span>long and boring</div><div class="opt"><span class="c">c</span>full of pictures</div><div class="hint">🧠 Look at Exercise 1</div></div>
+    <div class="mcq"><div class="qq">5. "No spoilers!" means…</div><div class="opt"><span class="c">a</span>Don't damage the book!</div><div class="opt"><span class="c">b</span>Don't read it too fast!</div><div class="opt"><span class="c">c</span>Don't tell me what happens!</div><div class="hint">🧠 Look at Exercise 1</div></div>
+    <div class="mcq" style="background:var(--sage);border-color:#BFD7C8;display:flex;align-items:center;gap:3mm"><span style="font-size:18pt">🎉</span><span style="font-size:9.1pt"><b style="color:var(--night)">How many did you know?</b><br>Now press play and test your ears!</span></div>
+  </div>
+  <div class="small" style="margin:3.4mm 0 1.6mm 10.8mm;font-weight:700;color:var(--peach-d)">🎧 LISTEN AND FIND OUT</div>
+  <div class="mc">
+    <div class="mcq"><div class="qq">6. How far past her stop did Lucy go?</div><div class="opt"><span class="c">a</span>about ten minutes</div><div class="opt"><span class="c">b</span>about forty minutes</div><div class="opt"><span class="c">c</span>about two hours</div><div class="hint">🎧 ⏱ 0:05</div></div>
+    <div class="mcq"><div class="qq">7. How old was Jack when his grandfather gave him the book?</div><div class="opt"><span class="c">a</span>fifteen</div><div class="opt"><span class="c">b</span>twelve</div><div class="opt"><span class="c">c</span>twenty-two</div><div class="hint">🎧 ⏱ 1:13</div></div>
+    <div class="mcq"><div class="qq">8. People who read more than 3.5 hours a week were ___ less likely to die.</div><div class="opt"><span class="c">a</span>3%</div><div class="opt"><span class="c">b</span>17%</div><div class="opt"><span class="c">c</span>23%</div><div class="hint">🎧 ⏱ 2:51</div></div>
+    <div class="mcq"><div class="qq">9. Paper was clearly better than screens for…</div><div class="opt"><span class="c">a</span>stories and novels</div><div class="opt"><span class="c">b</span>texts you read to learn</div><div class="opt"><span class="c">c</span>short messages</div><div class="hint">🎧 ⏱ 5:25</div></div>
+    <div class="mcq"><div class="qq">10. What did Jack find in the middle of Grandad's book?</div><div class="opt"><span class="c">a</span>an old photo</div><div class="opt"><span class="c">b</span>a leather bookmark</div><div class="opt"><span class="c">c</span>some money</div><div class="hint">🎧 ⏱ 20:30</div></div>
+    <div class="mcq" style="background:var(--lav);border-color:var(--lav2);display:flex;align-items:center;gap:3mm"><span style="font-size:18pt">👓</span><span style="font-size:9.1pt"><b style="color:var(--night)">Fun fact:</b> Lucy's dad avoided reading for years – then he found out he just needed reading glasses!</span></div>
+  </div>
+  {{FOOT3}}
+</section>
+
+<!-- ================= PAGE 4 ================= -->
+<section class="page">
+  <div class="sec" style="margin-top:3mm">
+    <h2><span class="num">4</span>True or false? <span class="tag">listening</span><span class="tag pts">6 points</span></h2>
+    <p class="instr">Listen and circle <b>T</b> (true) or <b>F</b> (false). The ⏱ times help you find the answer.</p>
+    <table class="tf">
+      <tr><td class="n">1</td><td>Lucy finished her detective story while she waited for the next bus.</td><td class="ck"><span class="circ">T</span> <span class="circ">F</span></td><td class="tm">⏱ 0:05</td></tr>
+      <tr><td class="n">2</td><td>Jack opened his grandfather's book on his fifteenth birthday.</td><td class="ck"><span class="circ">T</span> <span class="circ">F</span></td><td class="tm">⏱ 1:13</td></tr>
+      <tr><td class="n">3</td><td>Everyone in the Yale study was over the age of fifty.</td><td class="ck"><span class="circ">T</span> <span class="circ">F</span></td><td class="tm">⏱ 2:51</td></tr>
+      <tr><td class="n">4</td><td>Reading newspapers showed the same strong link as reading books.</td><td class="ck"><span class="circ">T</span> <span class="circ">F</span></td><td class="tm">⏱ 2:51</td></tr>
+      <tr><td class="n">5</td><td>The study proves that reading books makes you live longer.</td><td class="ck"><span class="circ">T</span> <span class="circ">F</span></td><td class="tm">⏱ 2:51</td></tr>
+      <tr><td class="n">6</td><td>Over the years, the advantage of paper seemed to grow.</td><td class="ck"><span class="circ">T</span> <span class="circ">F</span></td><td class="tm">⏱ 5:25</td></tr>
+    </table>
+  </div>
+
+  <div class="sec">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:4mm">
+      <div>
+        <h2><span class="num">5</span>Three reading studies 🔍 <span class="tag">listening</span><span class="tag pts">6 points</span></h2>
+        <p class="instr" style="margin-bottom:0">Which study is each sentence about? Write <b>A</b>, <b>B</b> or <b>C</b>. ⏱ 2:51 · 5:25 · 7:38</p>
+      </div>
+      <img class="char" src="img/f/20-jack-glasses-laptop-w.jpg" style="width:16mm;flex:none;margin-top:-4mm">
+    </div>
+    <div class="studies" style="margin-top:2mm">
+      <div style="background:var(--peach-l)"><b class="h" style="color:var(--peach-d)">A · Books and a long life 📚</b>2016 · Bavishi, Slade &amp; Levy, Yale University</div>
+      <div style="background:var(--lav)"><b class="h" style="color:var(--mauve-d)">B · Paper or screen? 📱</b>2018 · a team led by Pablo Delgado, Spain</div>
+      <div style="background:var(--sage)"><b class="h" style="color:var(--sage-d)">C · The 98% rule 🔢</b>Marcella Hu &amp; Paul Nation, New Zealand</div>
+    </div>
+    <table class="tf" style="margin-top:1.6mm">
+      <tr><td class="n">1</td><td>It combined 54 studies with more than 170,000 people.</td><td class="ck"><span class="box"></span></td></tr>
+      <tr><td class="n">2</td><td>More than 3,500 people over fifty were followed for twelve years.</td><td class="ck"><span class="box"></span></td></tr>
+      <tr><td class="n">3</td><td>Learners read the same story with different amounts of unknown words.</td><td class="ck"><span class="box"></span></td></tr>
+      <tr><td class="n">4</td><td>Book readers lived almost two years longer than non-readers.</td><td class="ck"><span class="box"></span></td></tr>
+      <tr><td class="n">5</td><td>One unknown word in every fifty is comfortable for reading on your own.</td><td class="ck"><span class="box"></span></td></tr>
+      <tr><td class="n">6</td><td>The difference was bigger when people read under time pressure.</td><td class="ck"><span class="box"></span></td></tr>
+    </table>
+  </div>
+
+  <div class="sec">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:4mm">
+      <div>
+        <h2><span class="num">6</span>The 98% rule in numbers <span class="tag">new! do the maths</span><span class="tag pts">6 points</span></h2>
+        <p class="instr" style="margin-bottom:0">Listen at ⏱ 7:38 and ⏱ 19:35 – then do a little maths! Write one number in each gap.</p>
+      </div>
+      <img class="char" src="img/f/04-jack-thinking-w.jpg" style="width:15mm;flex:none;margin-top:-4mm">
+    </div>
+    <div class="cov" style="margin-top:1.8mm">
+      <div style="background:#DDF1E3"><b style="color:#1E7B45">😊 98% – just right!</b> One unknown word 🟠 in every <span class="blank s"></span> words. <span class="small">(1)</span><div class="dots"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="u"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>That's about one new word every <span class="blank s"></span> lines. <span class="small">(2)</span></div>
+      <div style="background:#FBE1DE"><b style="color:#C0392B">😓 95% – hard work!</b> One unknown word 🟠 in every <span class="blank s"></span> words. <span class="small">(3)</span><div class="dots"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="u"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>You stop, check the dictionary – and lose the story.</div>
+    </div>
+    <table class="coll" style="margin-top:1.4mm">
+      <tr><td>4. 🔢 A text has 100 words. At 98%, how many words don't you know? <span class="blank s"></span></td></tr>
+      <tr><td>5. 🔢 The same 100 words at 95%: how many unknown words? <span class="blank s"></span></td></tr>
+      <tr><td>6. 📄 One-page test: more than <span class="blank s"></span> or six unknown words on one page = probably too hard for now.</td></tr>
+    </table>
+  </div>
+  {{FOOT4}}
+</section>
+
+<!-- ================= PAGE 5 ================= -->
+<section class="page">
+  <div class="sec" style="margin-top:3mm;display:flex;justify-content:space-between;align-items:flex-start;gap:4mm">
+    <div>
+      <h2><span class="num">7</span>"It's a real page-turner!" <span class="tag">listening</span><span class="tag pts">10 points</span></h2>
+      <p class="instr" style="margin-bottom:0">Jack is in a bookshop, looking for a book to read on holiday. Listen at ⏱ 12:19 and write <b>one word</b> in each gap (1–8). Then answer A and B. The breakdown at ⏱ 13:43 can help.</p>
+    </div>
+    <img class="char" src="img/f/61-jack-shopping-w.jpg" style="width:17mm;flex:none;margin-top:-3mm">
+  </div>
+  <div class="chat wide" style="margin-top:2mm;gap:.4mm">
+    <div class="msg j"><div class="ava"><img src="img/f/13-jack-talking-left-lav.jpg"></div><div class="b"><span class="who">JACK</span>Hi, sorry, could you help me? I'm looking for something to read on <span class="gap">1</span>, but I'm not sure what to choose.</div></div>
+    <div class="msg l"><div class="ava"><img src="img/f/11-lucy-asking-right-lav.jpg"></div><div class="b"><span class="who">LUCY</span>Of course. What kind of books do you usually enjoy?</div></div>
+    <div class="msg j"><div class="ava"><img src="img/f/15-jack-shrug-left-lav.jpg"></div><div class="b"><span class="who">JACK</span>To be honest, I haven't read a book in <span class="gap">2</span>. I used to love adventure stories, though.</div></div>
+    <div class="msg l"><div class="ava"><img src="img/f/38-lucy-explaining-right-lav.jpg"></div><div class="b"><span class="who">LUCY</span>Then you might like this one. It's about two brothers who get lost in the <span class="gap">3</span>. It's a real page-<span class="gap">4</span>. I read it in two days.</div></div>
+    <div class="msg j"><div class="ava"><img src="img/f/16-jack-surprised-left-lav.jpg"></div><div class="b"><span class="who">JACK</span>That sounds great. Is it hard to get <span class="gap">5</span>? I sometimes give up after the first chapter.</div></div>
+    <div class="msg l"><div class="ava"><img src="img/f/09-lucy-talking-right-lav.jpg"></div><div class="b"><span class="who">LUCY</span>Not at all. It grabs you from the very first page. Here, have a <span class="gap">6</span> through.</div></div>
+    <div class="msg j"><div class="ava"><img src="img/f/43-jack-explaining-left-lav.jpg"></div><div class="b"><span class="who">JACK</span>Oh, the first line is really good. Okay, I'm interested. Does it have a happy ending?</div></div>
+    <div class="msg l"><div class="ava"><img src="img/f/12-lucy-laughing-right-lav.jpg"></div><div class="b"><span class="who">LUCY</span>I'm not going to tell you that. No <span class="gap">7</span>.</div></div>
+    <div class="msg j"><div class="ava"><img src="img/f/45-jack-agreeing-left-lav.jpg"></div><div class="b"><span class="who">JACK</span>Fair enough. I'll take it. And if I can't put it <span class="gap">8</span>, I'll come back for another one.</div></div>
+    <div class="msg l"><div class="ava"><img src="img/f/40-lucy-excited-right-lav.jpg"></div><div class="b"><span class="who">LUCY</span>Deal. And if you don't like it, bring it back and tell me why. I want to know.</div></div>
+  </div>
+  <div class="grid2" style="margin-top:2.6mm;gap:3mm">
+    <div class="card" style="padding:2.2mm 4mm;font-size:9.2pt"><b style="color:var(--night)">A.</b> Lucy read the book in <span class="blank" style="min-width:24mm"></span>.</div>
+    <div class="card" style="padding:2.2mm 4mm;font-size:9.2pt"><b style="color:var(--night)">B.</b> The book is about two <span class="blank" style="min-width:24mm"></span>.</div>
+  </div>
+
+  <div class="sec" style="margin-top:4mm">
+    <h2><span class="num">8</span>Phrases to steal <span class="tag">expressions</span><span class="tag pts">4 points</span></h2>
+    <p class="instr">Match each phrase from the chat (1–4) to its meaning (a–d). ⏱ 13:43</p>
+    <div class="grid2" style="gap:4mm;align-items:start">
+      <table class="match" style="font-size:9.2pt">
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--night)">1.</b> "I haven't read a book in ages."</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--night)">2.</b> "It grabs you from the very first page."</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--night)">3.</b> "Fair enough."</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--night)">4.</b> "I can't put it down."</td></tr>
+      </table>
+      <div class="card" style="font-size:8.9pt;line-height:1.62">
+        <b>a)</b> Okay, that's reasonable – I accept that.<br>
+        <b>b)</b> I love it so much that I can't stop reading.<br>
+        <b>c)</b> It's been a very long time since I read a book.<br>
+        <b>d)</b> The story catches your attention immediately.
+      </div>
+    </div>
+  </div>
+  <div class="sec">
+    <div class="card sage" style="padding:2.4mm 4mm">
+      <b style="color:var(--night);font-size:9.6pt">🛍️ Your turn: be the bookseller!</b> <span class="small">(no points) Recommend a book you love to a friend – out loud, in English!</span>
+      <div class="chips" style="margin-top:1.4mm;gap:1.4mm"><span>You might like this one.</span><span>It's about…</span><span>It's a real page-turner.</span><span>No spoilers!</span></div>
+    </div>
+  </div>
+  {{FOOT5}}
+</section>
+
+<!-- ================= PAGE 6 ================= -->
+<section class="page">
+  <div class="sec" style="margin-top:3mm;display:flex;justify-content:space-between;align-items:flex-start;gap:4mm">
+    <div>
+      <h2><span class="num">9</span>Book idioms <span class="tag">idioms</span><span class="tag pts">6 points</span></h2>
+      <p class="instr" style="margin-bottom:0">Complete each sentence with a word from the box. ⏱ 14:52 · 16:52</p>
+    </div>
+    <img class="char" src="img/f/46-lucy-magnifying-glass-w.jpg" style="width:16mm;flex:none;margin-top:-3mm">
+  </div>
+  <div class="chips" style="margin:1.6mm 0 2mm 10.8mm"><span>book</span><span>bookworm</span><span>cover</span><span>lines</span><span>lost</span><span>open</span></div>
+  <table class="coll" style="margin-left:2mm">
+    <tr><td>1. 😐 He looks very serious, but he's really funny. Don't judge a book by its <span class="blank s"></span>.</td></tr>
+    <tr><td>2. 😢 If I'm upset, everyone can see it. I'm an <span class="blank s"></span> book.</td></tr>
+    <tr><td>3. 🤔 She said she was fine, but if you read between the <span class="blank s"></span>, she was worried.</td></tr>
+    <tr><td>4. 📋 My manager follows the rules exactly. She does everything by the <span class="blank s"></span>.</td></tr>
+    <tr><td>5. 🐛 My sister always has a book in her bag. She's a real <span class="blank s"></span>.</td></tr>
+    <tr><td>6. 🍝 I got completely <span class="blank s"></span> in the story and forgot to make dinner!</td></tr>
+  </table>
+  <div class="bub" style="margin-top:2.2mm">
+    <img class="char" src="img/f/02-jack-lightbulb-idea-w.jpg" style="width:17mm;flex:none">
+    <div class="txt"><b>Jack's tip:</b> A <b>worm</b> is a long, thin creature that lives in the ground – so a <b>bookworm</b> is like a little creature that lives inside books! 🐛📚 And <i>"Don't judge a book by its cover"</i> is about people too – just like my grandad's very ordinary-looking book.</div>
+  </div>
+
+  <div class="sec">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:4mm">
+      <div>
+        <h2><span class="num">10</span>Borrow or lend? For or since? <span class="tag">new! word pairs</span><span class="tag pts">6 points</span></h2>
+        <p class="instr" style="margin-bottom:0">Tick the right word. ⏱ 17:49</p>
+      </div>
+      <img class="char" src="img/f/48-lucy-holding-blank-card-w.jpg" style="width:15mm;flex:none;margin-top:-4mm">
+    </div>
+    <div class="edrule">
+      <div style="background:#DCEFF3"><b style="color:#1F5F70">📥 borrow = take</b> (from someone) · <b style="color:#1F5F70">⏳ for</b> + a period: <i>for two weeks</i></div>
+      <div style="background:#FDE3D3"><b style="color:#B9542B">📤 lend = give</b> (to someone): <i>Lend me…</i> ✓ <i>Borrow me…</i> ✗ · <b style="color:#B9542B">📍 since</b> + a start: <i>since Monday</i></div>
+    </div>
+    <div class="grid2" style="gap:2.2mm"><div class="sit"><div class="t" style="min-height:0"><b>1.</b> “Can I ______ your book, please?” 📕</div><div class="ch" style="gap:2mm"><span class="claim ed"><span class="box"></span>📥 borrow</span><span class="claim ing"><span class="box"></span>📤 lend</span></div></div><div class="sit"><div class="t" style="min-height:0"><b>2.</b> “Could you ______ me your book?” 📗</div><div class="ch" style="gap:2mm"><span class="claim ed"><span class="box"></span>📥 borrow</span><span class="claim ing"><span class="box"></span>📤 lend</span></div></div><div class="sit"><div class="t" style="min-height:0"><b>3.</b> “I ______ this novel from the library.” 🏛️</div><div class="ch" style="gap:2mm"><span class="claim ed"><span class="box"></span>📥 borrowed</span><span class="claim ing"><span class="box"></span>📤 lent</span></div></div><div class="sit"><div class="t" style="min-height:0"><b>4.</b> “I've been reading it ______ Monday.” 📅</div><div class="ch" style="gap:2mm"><span class="claim ed"><span class="box"></span>⏳ for</span><span class="claim ing"><span class="box"></span>📍 since</span></div></div><div class="sit"><div class="t" style="min-height:0"><b>5.</b> “She's been a bookworm ______ she was six.” 🐛</div><div class="ch" style="gap:2mm"><span class="claim ed"><span class="box"></span>⏳ for</span><span class="claim ing"><span class="box"></span>📍 since</span></div></div><div class="sit"><div class="t" style="min-height:0"><b>6.</b> “I've had this graded reader ______ two weeks.” 📘</div><div class="ch" style="gap:2mm"><span class="claim ed"><span class="box"></span>⏳ for</span><span class="claim ing"><span class="box"></span>📍 since</span></div></div></div>
+  </div>
+  <div class="sec">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:4mm">
+      <div>
+        <h2><span class="num">📄</span>Paper or screen? It depends! <span class="tag fun">think · no points</span></h2>
+        <p class="instr" style="margin-bottom:0">Paper helps most with texts you read <b>to learn</b>, or <b>in a hurry</b>. ⏱ 5:25</p>
+      </div>
+      <img class="char" src="img/f/59-jack-phone-w.jpg" style="width:14mm;flex:none;margin-top:-3mm">
+    </div>
+    <div style="margin-top:1.6mm">
+      <div class="tm2" style="grid-template-columns:1fr 23mm 31mm;padding:.6mm 0"><span>1. 📚 Studying a textbook for an exam</span><span class="claim ed"><span class="box"></span>📄 paper</span><span class="claim ing"><span class="box"></span>📱 screen is fine</span></div>
+      <div class="tm2" style="grid-template-columns:1fr 23mm 31mm;padding:.6mm 0"><span>2. 🏖️ Reading a novel on holiday</span><span class="claim ed"><span class="box"></span>📄 paper</span><span class="claim ing"><span class="box"></span>📱 screen is fine</span></div>
+      <div class="tm2" style="grid-template-columns:1fr 23mm 31mm;padding:.6mm 0"><span>3. ⏰ Reading an important article in a hurry</span><span class="claim ed"><span class="box"></span>📄 paper</span><span class="claim ing"><span class="box"></span>📱 screen is fine</span></div>
+      <div class="tm2" style="grid-template-columns:1fr 23mm 31mm;padding:.6mm 0"><span>4. 💬 A quick message from a friend</span><span class="claim ed"><span class="box"></span>📄 paper</span><span class="claim ing"><span class="box"></span>📱 screen is fine</span></div>
+      <div class="tm2" style="grid-template-columns:1fr 23mm 31mm;padding:.6mm 0"><span>5. 🔬 Learning new facts from a science text</span><span class="claim ed"><span class="box"></span>📄 paper</span><span class="claim ing"><span class="box"></span>📱 screen is fine</span></div>
+      <div class="tm2" style="grid-template-columns:1fr 23mm 31mm;padding:.6mm 0"><span>6. 😂 A funny short story before bed</span><span class="claim ed"><span class="box"></span>📄 paper</span><span class="claim ing"><span class="box"></span>📱 screen is fine</span></div>
+    </div>
+  </div>
+  {{FOOT6}}
+</section>
+
+<!-- ================= PAGE 7 ================= -->
+<section class="page">
+  <div class="sec" style="margin-top:3mm">
+    <h2><span class="num">11</span>Say it better <span class="tag">common mistakes</span><span class="tag pts">10 points</span></h2>
+    <p class="instr">These sentences sound unnatural. Write a more natural version (2 points each). ⏱ 17:49</p>
+    <table style="font-size:9.4pt">
+      <tr><td style="width:49%;padding:1.7mm 0">😐 1. "I am reading this book since two weeks."</td><td>😊 <span class="blank l"></span></td></tr>
+      <tr><td style="padding:1.7mm 0">😐 2. "I like the history of this book."</td><td>😊 <span class="blank l"></span></td></tr>
+      <tr><td style="padding:1.7mm 0">😐 3. "This book is very interesting for me."</td><td>😊 <span class="blank l"></span></td></tr>
+      <tr><td style="padding:1.7mm 0">😐 4. "Did you read the book of Jane Smith?"</td><td>😊 <span class="blank l"></span></td></tr>
+      <tr><td style="padding:1.7mm 0">😐 5. "I read it in English and I understood nothing."</td><td>😊 <span class="blank l"></span></td></tr>
+    </table>
+    <div class="bub" style="margin-top:2.4mm">
+      <img class="char" src="img/f/07-lucy-great-job-w.jpg" style="width:18mm;flex:none">
+      <div class="txt"><b>Lucy's tip:</b> <b>History</b> is about real events in the past. For a book or a film, say <b>story</b>: <i>"I love the story of this book."</i> And to <b>follow</b> a story means to understand what's happening.</div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:4mm">
+      <div>
+        <h2><span class="num">📄</span>Try the one-page test! <span class="tag fun">read · no points</span></h2>
+        <p class="instr" style="margin-bottom:0">This mini-page has exactly <b>100 words</b>. Read it once and <u>underline</u> every word you don't know. Each unknown word = 1%.</p>
+      </div>
+      <img class="char" src="img/f/34-lucy-shy-but-brave-w.jpg" style="width:15mm;flex:none;margin-top:-3mm">
+    </div>
+    <div class="story-text" style="margin-top:2mm">Lucy opened her book as the bus left the city centre. It was a detective story, and she was close to the end. “Just one more page,” she thought. The bus stopped and started, again and again. People got on and off, but Lucy didn't notice anything. She was completely absorbed in the story. When she finally looked up, the bus was silent and empty. The driver was standing next to her. “End of the line, madam,” he said, smiling. Lucy laughed. She was on the other side of the city, but it didn't matter. She knew who did it!</div>
+    <div style="font-size:9pt;margin-top:1.8mm"><b style="color:var(--night)">Words I didn't know:</b> <span class="blank s"></span> → I know about <span class="blank s"></span> % of the words.</div>
+    <div class="meter"><span style="background:#DDF1E3;color:#1E7B45">0–2 unknown: just right! 😊 Keep reading.</span><span style="background:#FDF1D9;color:#9A6A14">3–5: a bit hard 😐 – try a graded reader.</span><span style="background:#FBE1DE;color:#C0392B">6+: too hard for now 😓 – choose an easier book.</span></div>
+  </div>
+
+  <div class="sec">
+    <div class="card teal" style="padding:2.6mm 4mm">
+      <b style="color:var(--night);font-size:9.6pt">✅ Choosing your next book in English</b> <span class="small">(no points) Tick the ones you'll try!</span>
+      <div class="checks" style="margin-top:1.6mm">
+        <div><span class="box sm"></span>📄 Do the one-page test first.</div>
+        <div><span class="box sm"></span>📘 Try a graded reader at your level.</div>
+        <div><span class="box sm"></span>🔁 Read a book you know in your own language.</div>
+        <div><span class="box sm"></span>💛 Choose something you <b>want</b> to read.</div>
+        <div><span class="box sm"></span>✏️ Underline new words – look up repeats only.</div>
+        <div><span class="box sm"></span>👫 Read with a friend – a tiny book club!</div>
+      </div>
+    </div>
+  </div>
+  <div class="sec">
+    <div class="card white" style="padding:2.6mm 4mm;border:1.6px dashed var(--mauve)">
+      <b style="color:var(--night);font-size:9.6pt">⭐ My mini book review</b> <span class="small">(no points) – about a book you've read, in any language!</span>
+      <div style="display:grid;grid-template-columns:auto 1fr auto 1fr;gap:1.2mm 3mm;align-items:end;font-size:9pt;margin-top:1.4mm">
+        <b style="color:var(--mauve-d)">Title:</b><div class="lines"></div><b style="color:var(--mauve-d)">by</b><div class="lines"></div>
+      </div>
+      <div style="display:grid;grid-template-columns:auto 1fr;gap:1.2mm 3mm;align-items:end;font-size:9pt">
+        <b style="color:var(--mauve-d)">It's about…</b><div class="lines"></div>
+        <b style="color:var(--mauve-d)">I'd recommend it to…</b><div class="lines"></div>
+      </div>
+      <div style="font-size:9pt;margin-top:1.6mm"><b style="color:var(--mauve-d)">My stars:</b> ☆ ☆ ☆ ☆ ☆ &nbsp;·&nbsp; <b style="color:var(--mauve-d)">One word:</b> page-turner · hard to get into · funny · sad · exciting · slow</div>
+    </div>
+  </div>
+  {{FOOT7}}
+</section>
+
+<!-- ================= PAGE 8 ================= -->
+<section class="page">
+  <div class="sec" style="margin-top:3mm;display:flex;justify-content:space-between;align-items:flex-start;gap:4mm">
+    <div>
+      <h2><span class="num">12</span>Clue word search + secret message <span class="tag">puzzle</span><span class="tag pts">10 points</span></h2>
+      <p class="instr" style="margin-bottom:0"><b>Step 1:</b> Complete each clue – the first letter and the number of letters are given (1 point each). <b>Step 2:</b> Find the 10 words in the grid. They go → ↓ ↘ or ↗ and never cross each other.</p>
+    </div>
+    <img class="char" src="img/f/50-lucy-puzzle-piece-w.jpg" style="width:20mm;flex:none;margin-top:-3mm">
+  </div>
+  <div style="display:grid;grid-template-columns:1fr auto;gap:3mm;margin-top:2.2mm;align-items:center">
+    <div class="card white clues" style="padding:2.4mm 3mm">
+      <div><span class="n">1</span><span>A person who loves reading: a <span style="white-space:nowrap"><span class="slots"><b class="sl1">b</b><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span></span>.</span></span></div>
+      <div><span class="n">2</span><span>Grandad hid a leather <span style="white-space:nowrap"><span class="slots"><b class="sl1">b</b><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span></span></span> in the book.</span></div>
+      <div><span class="n">3</span><span>You can borrow books from a <span style="white-space:nowrap"><span class="slots"><b class="sl1">l</b><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span></span>.</span></span></div>
+      <div><span class="n">4</span><span>Jack often gave up after the first <span style="white-space:nowrap"><span class="slots"><b class="sl1">c</b><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span></span>.</span></span></div>
+      <div><span class="n">5</span><span>“Don't tell me the end!” No <span style="white-space:nowrap"><span class="slots"><b class="sl1">s</b><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span></span>s!</span></span></div>
+      <div><span class="n">6</span><span>Grandad's stories: travellers and <span style="white-space:nowrap"><span class="slots"><b class="sl1">s</b><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span></span>.</span></span></div>
+      <div><span class="n">7</span><span>Two brothers get lost in the <span style="white-space:nowrap"><span class="slots"><b class="sl1">d</b><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span></span>.</span></span></div>
+      <div><span class="n">8</span><span>The book sat on a <span style="white-space:nowrap"><span class="slots"><b class="sl1">s</b><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span></span></span> for ten years.</span></div>
+      <div><span class="n">9</span><span>A long story in a book: a <span style="white-space:nowrap"><span class="slots"><b class="sl1">n</b><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span></span>.</span></span></div>
+      <div><span class="n">10</span><span>Lucy missed her stop on the <span style="white-space:nowrap"><span class="slots"><b class="sl1">b</b><span class="sl"></span><span class="sl"></span></span>.</span></span></div>
+    </div>
+    <div><table class="ws"><tr><td>B</td><td>O</td><td>O</td><td>K</td><td>W</td><td>O</td><td>R</td><td>M</td><td>R</td><td>E</td></tr><tr><td>S</td><td>A</td><td>D</td><td>D</td><td>O</td><td>N</td><td>E</td><td>R</td><td>P</td><td>B</td></tr><tr><td>A</td><td>A</td><td>G</td><td>E</td><td>E</td><td>A</td><td>E</td><td>D</td><td>L</td><td>O</td></tr><tr><td>A</td><td>Y</td><td>I</td><td>A</td><td>S</td><td>T</td><td>N</td><td>D</td><td>I</td><td>O</td></tr><tr><td>S</td><td>B</td><td>Y</td><td>L</td><td>P</td><td>E</td><td>O</td><td>U</td><td>B</td><td>K</td></tr><tr><td>H</td><td>U</td><td>W</td><td>A</td><td>O</td><td>I</td><td>R</td><td>L</td><td>R</td><td>M</td></tr><tr><td>E</td><td>S</td><td>H</td><td>L</td><td>N</td><td>R</td><td>E</td><td>T</td><td>A</td><td>A</td></tr><tr><td>L</td><td>C</td><td>V</td><td>E</td><td>R</td><td>B</td><td>S</td><td>E</td><td>R</td><td>R</td></tr><tr><td>F</td><td>S</td><td>P</td><td>O</td><td>I</td><td>L</td><td>E</td><td>R</td><td>Y</td><td>K</td></tr><tr><td>A</td><td>L</td><td>O</td><td>N</td><td>O</td><td>V</td><td>E</td><td>L</td><td>N</td><td>E</td></tr></table></div>
+  </div>
+  <div class="card sage" style="margin-top:2.6mm;padding:2.6mm 4mm">
+    <b style="color:var(--night)">🤫 Step 3 – the secret message</b> <span class="small">(no points)</span> Cross out the 10 words. Then write the letters that are left, row by row, from left to right. It's the note Jack found in his grandfather's book!
+    <div class="msgrow" style="margin-top:2.6mm"><span class="mw"><span class="mb"></span><span class="mb"></span><span class="mb"></span><span class="mb"></span></span><span class="mw"><span class="mb"></span><span class="mb"></span><span class="mb"></span></span><span class="mw"><span class="mb"></span><span class="mb"></span><span class="mb"></span><span class="mb"></span></span><span class="mw"><span class="mb"></span></span><span class="mw"><span class="mb"></span><span class="mb"></span><span class="mb"></span><span class="ap">,</span></span><span class="mw"><span class="mb"></span><span class="mb"></span><span class="mb"></span></span><span class="mw"><span class="mb"></span><span class="mb"></span><span class="mb"></span></span><span class="mw"><span class="mb"></span><span class="mb"></span><span class="mb"></span><span class="mb"></span></span><span class="mw"><span class="mb"></span><span class="mb"></span><span class="mb"></span><span class="mb"></span><span class="mb"></span></span><span class="mw"><span class="mb"></span><span class="mb"></span></span><span class="mw"><span class="mb"></span><span class="mb"></span><span class="mb"></span><span class="mb"></span><span class="mb"></span><span class="ap">.</span></span></div>
+  </div>
+
+  <div class="sec">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:4mm">
+      <div>
+        <h2><span class="num">13</span>Grandad's book 📕 <span class="tag">listening</span><span class="tag pts">6 points</span></h2>
+        <p class="instr" style="margin-bottom:0">Listen at ⏱ 20:30. Put the events in the right order. Write 1–6 in the boxes.</p>
+      </div>
+      <img class="char" src="img/f/33-jack-blue-scarf-good-morning-w.jpg" style="width:16mm;flex:none;margin-top:-3mm">
+    </div>
+    <div class="story" style="margin-top:2mm">
+      <div class="ev"><span class="box"></span><span class="e">📝</span><span>On the first page, there was a note in Grandad's handwriting.</span></div>
+      <div class="ev"><span class="box"></span><span class="e">🎁</span><span>At fifteen, Jack got an old book of short stories from his grandfather.</span></div>
+      <div class="ev"><span class="box"></span><span class="e">🌙</span><span>He read the whole book that night – and now he reads a page every day.</span></div>
+      <div class="ev"><span class="box"></span><span class="e">📦</span><span>Years later, Jack was packing his books to move house.</span></div>
+      <div class="ev"><span class="box"></span><span class="e">🔖</span><span>In the middle, there was a leather bookmark with his name on it.</span></div>
+      <div class="ev"><span class="box"></span><span class="e">📚</span><span>He said, "Thanks, Grandad," and put it on a shelf.</span></div>
+    </div>
+    <div class="card teal" style="margin-top:2.4mm;padding:2.4mm 4mm"><b style="color:var(--night)">Think about it 💭</b> <span class="small">(no points)</span> Grandad said there was "something special" in the book. What do you think it really was?<div class="lines"></div></div>
+  </div>
+  {{FOOT8}}
+</section>
+
+<!-- ================= PAGE 9 ================= -->
+<section class="page">
+  <div class="sec" style="margin-top:3mm;display:flex;justify-content:space-between;align-items:flex-start;gap:4mm">
+    <div>
+      <h2><span class="num">14</span>Your turn <span class="tag">writing</span><span class="tag pts">8 points</span></h2>
+      <p class="instr" style="margin-bottom:0">2 points for each good sentence.</p>
+    </div>
+    <img class="char" src="img/f/05-lucy-writing-w.jpg" style="width:17mm;flex:none;margin-top:-3mm">
+  </div>
+  <div class="grid2" style="margin-top:2.2mm;gap:3mm;align-items:stretch">
+    <div class="card" style="padding:2.6mm 4mm">
+      <b style="color:var(--night);font-size:9.2pt">A. A book I love 📚</b>
+      <div class="small" style="margin-top:1mm">Use <b>page-turner</b>, <b>get lost in</b> or <b>hard to get into</b>. <i>e.g. "I got completely lost in the story – it's a real page-turner."</i></div>
+      <div class="lines"></div><div class="lines"></div>
+    </div>
+    <div class="card peach" style="padding:2.6mm 4mm">
+      <b style="color:var(--night);font-size:9.2pt">B. My reading plan 🗓️</b>
+      <div class="small" style="margin-top:1mm">What will you read in English? When and where? <i>e.g. "I'm going to read ten pages on the bus every morning."</i></div>
+      <div class="lines"></div><div class="lines"></div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:4mm">
+      <div>
+        <h2><span class="num">⏱</span>My one-page-a-day week <span class="tag fun">your 7-day mission</span></h2>
+        <p class="instr" style="margin-bottom:0">Read at least one page of a book in English every day. Want more? Ten minutes!</p>
+      </div>
+      <img class="char" src="img/f/60-lucy-bedtime-w.jpg" style="width:17mm;flex:none">
+    </div>
+    <table class="log week" style="margin-top:2mm">
+      <tr><th>Day</th><th>Pages I read</th><th>One new word I underlined</th><th>Done?</th></tr>
+      <tr><td class="d">1</td><td class="a"></td><td></td><td class="c"><span class="box sm"></span></td></tr>
+      <tr><td class="d">2</td><td class="a"></td><td></td><td class="c"><span class="box sm"></span></td></tr>
+      <tr><td class="d">3</td><td class="a"></td><td></td><td class="c"><span class="box sm"></span></td></tr>
+      <tr><td class="d">4</td><td class="a"></td><td></td><td class="c"><span class="box sm"></span></td></tr>
+      <tr><td class="d">5</td><td class="a"></td><td></td><td class="c"><span class="box sm"></span></td></tr>
+      <tr><td class="d">6</td><td class="a"></td><td></td><td class="c"><span class="box sm"></span></td></tr>
+      <tr><td class="d">7</td><td class="a"></td><td></td><td class="c"><span class="box sm"></span></td></tr>
+    </table>
+    <div class="small" style="margin-top:1.4mm">📖 My book: <span class="blank" style="min-width:70mm"></span> &nbsp; by <span class="blank" style="min-width:45mm"></span></div>
+  </div>
+
+  <div class="sec">
+    <div class="pocket">
+      <span class="sc">✂️ Cut out and keep in your pocket</span>
+      <div class="pc">
+        <div><b style="color:var(--peach-d)">📚 TALK ABOUT BOOKS</b>It's a real page-turner.<br>I couldn't put it down.<br>It's hard to get into.</div>
+        <div><b style="color:var(--mauve-d)">🛍️ IN A BOOKSHOP</b>Could you help me?<br>Have a flick through.<br>No spoilers, please!</div>
+        <div><b style="color:var(--sage-d)">📥 BORROW / FOR</b>Can I borrow your book?<br>Could you lend me…?<br>I've been reading it for…</div>
+        <div><b style="color:#C0392B">🔢 READ SMART</b>the 98% rule<br>the one-page test<br>one page a day</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><span class="num">✓</span>Can you do it now?</h2>
+    <table class="cando" style="margin-top:1.4mm">
+      <tr><th style="text-align:left">I can…</th><th>Not yet</th><th>Almost</th><th>Yes!</th></tr>
+      <tr><td>explain what the twelve-year study found – and why it's a link, not proof.</td><td class="f">😟</td><td class="f">🙂</td><td class="f">😄</td></tr>
+      <tr><td>use the one-page test to choose a book at my level.</td><td class="f">😟</td><td class="f">🙂</td><td class="f">😄</td></tr>
+      <tr><td>use borrow / lend and for / since correctly.</td><td class="f">😟</td><td class="f">🙂</td><td class="f">😄</td></tr>
+      <tr><td>talk about a book: page-turner, get lost in, hard to get into.</td><td class="f">😟</td><td class="f">🙂</td><td class="f">😄</td></tr>
+    </table>
+  </div>
+
+  <div class="sec">
+    <div class="bub">
+      <img class="char" src="img/f/52-lucy-phone-comment-w.jpg" style="width:19mm;flex:none">
+      <div class="txt"><b>Share it with us!</b> Tell us in the comments about a book you love – in English! Is it a <b>page-turner</b>? Did you <b>get lost in it</b>? And have you ever missed your stop because of a book? 🚌📖</div>
+    </div>
+  </div>
+  {{FOOT9}}
+</section>
+
+<!-- ================= PAGE 10 (KEY) ================= -->
+<section class="page key">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-top:2mm">
+    <h2><span class="num">✓</span>Answer key</h2>
+    <span class="small">Count your points and write your score on page 1!</span>
+  </div>
+  <div class="keycols">
+   <div>
+    <div class="k"><h3>0 · Warm-up &amp; predict</h3><p>Guess: b – almost two years longer. · Predict: <b>dinosaur</b> 🦕 isn't in the episode.</p></div>
+    <div class="k"><h3>1 · Key words · 2 · The big idea</h3><p>1 c · 2 f · 3 a · 4 h · 5 j · 6 e · 7 i · 8 g · 9 b · 10 d<br>Big idea: a (2 points)</p></div>
+    <div class="k"><h3>3 · Know it or hear it?</h3><p>1 b · 2 c · 3 b · 4 a · 5 c · 6 b · 7 a · 8 c · 9 b · 10 b</p></div>
+    <div class="k"><h3>4 · True or false?</h3><p>1 T · 2 F (he didn't open it for years) · 3 T · 4 F (it was books that made the difference) · 5 F (it shows a link, not proof) · 6 T</p></div>
+    <div class="k"><h3>5 · Three studies · 6 · The 98% rule</h3><p>5: 1 B · 2 A · 3 C · 4 A · 5 C · 6 B<br>6: 1 fifty · 2 four or five · 3 twenty · 4 two · 5 five · 6 five</p></div>
+    <div class="k"><h3>7 · "It's a real page-turner!"</h3><p>1 holiday · 2 ages · 3 desert · 4 turner · 5 into · 6 flick · 7 spoilers · 8 down · A two days · B brothers</p></div>
+    <div class="k"><h3>8 · Phrases to steal</h3><p>1 c · 2 d · 3 a · 4 b</p></div>
+   </div>
+   <div>
+    <div class="k"><h3>9 · Book idioms · 10 · Borrow or lend?</h3><p>9: 1 cover · 2 open · 3 lines · 4 book · 5 bookworm · 6 lost<br>10: 1 borrow · 2 lend · 3 borrowed · 4 since · 5 since · 6 for</p></div>
+    <div class="k"><h3>11 · Say it better (2 points each)</h3><p>1 I've been reading this book for two weeks. · 2 I like the story of this book. · 3 I find this book really interesting. / This book is really interesting. · 4 Have you read Jane Smith's book? / …the book by Jane Smith? · 5 I read it in English, but I didn't understand much. / I couldn't follow it.</p></div>
+    <div class="k" style="display:grid;grid-template-columns:1fr auto;gap:2.4mm;align-items:center"><div><h3>12 · Word search (1 point per word)</h3><p>1 bookworm · 2 bookmark · 3 library · 4 chapter · 5 spoiler · 6 sailors · 7 desert · 8 shelf · 9 novel · 10 bus<br><b>Secret:</b> Read one page a day, and you will never be alone.</p></div><svg viewBox="0 0 100 100" style="width:34mm;height:34mm;font-family:Poppins,sans-serif;display:block"><rect width="100" height="100" rx="3" fill="#fff"/><line x1="5.0" y1="5.0" x2="75.0" y2="5.0" stroke="#F2AE94" stroke-width="8.2" stroke-linecap="round" opacity=".85"/><line x1="95.0" y1="15.0" x2="95.0" y2="85.0" stroke="#9ECBB4" stroke-width="8.2" stroke-linecap="round" opacity=".85"/><line x1="85.0" y1="25.0" x2="85.0" y2="85.0" stroke="#B9A9DA" stroke-width="8.2" stroke-linecap="round" opacity=".85"/><line x1="15.0" y1="75.0" x2="75.0" y2="15.0" stroke="#9CCAD6" stroke-width="8.2" stroke-linecap="round" opacity=".85"/><line x1="15.0" y1="85.0" x2="75.0" y2="85.0" stroke="#F5CF7A" stroke-width="8.2" stroke-linecap="round" opacity=".85"/><line x1="5.0" y1="15.0" x2="65.0" y2="75.0" stroke="#F2AE94" stroke-width="8.2" stroke-linecap="round" opacity=".85"/><line x1="25.0" y1="15.0" x2="75.0" y2="65.0" stroke="#9ECBB4" stroke-width="8.2" stroke-linecap="round" opacity=".85"/><line x1="5.0" y1="45.0" x2="5.0" y2="85.0" stroke="#B9A9DA" stroke-width="8.2" stroke-linecap="round" opacity=".85"/><line x1="35.0" y1="95.0" x2="75.0" y2="95.0" stroke="#9CCAD6" stroke-width="8.2" stroke-linecap="round" opacity=".85"/><line x1="15.0" y1="45.0" x2="15.0" y2="65.0" stroke="#F5CF7A" stroke-width="8.2" stroke-linecap="round" opacity=".85"/><text x="5.0" y="7.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">B</text><text x="15.0" y="7.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">O</text><text x="25.0" y="7.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">O</text><text x="35.0" y="7.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">K</text><text x="45.0" y="7.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">W</text><text x="55.0" y="7.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">O</text><text x="65.0" y="7.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">R</text><text x="75.0" y="7.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">M</text><text x="85.0" y="7.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">R</text><text x="95.0" y="7.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">E</text><text x="5.0" y="17.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">S</text><text x="15.0" y="17.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">A</text><text x="25.0" y="17.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">D</text><text x="35.0" y="17.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">D</text><text x="45.0" y="17.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">O</text><text x="55.0" y="17.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">N</text><text x="65.0" y="17.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">E</text><text x="75.0" y="17.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">R</text><text x="85.0" y="17.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">P</text><text x="95.0" y="17.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">B</text><text x="5.0" y="27.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">A</text><text x="15.0" y="27.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">A</text><text x="25.0" y="27.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">G</text><text x="35.0" y="27.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">E</text><text x="45.0" y="27.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">E</text><text x="55.0" y="27.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">A</text><text x="65.0" y="27.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">E</text><text x="75.0" y="27.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">D</text><text x="85.0" y="27.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">L</text><text x="95.0" y="27.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">O</text><text x="5.0" y="37.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">A</text><text x="15.0" y="37.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">Y</text><text x="25.0" y="37.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">I</text><text x="35.0" y="37.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">A</text><text x="45.0" y="37.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">S</text><text x="55.0" y="37.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">T</text><text x="65.0" y="37.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">N</text><text x="75.0" y="37.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">D</text><text x="85.0" y="37.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">I</text><text x="95.0" y="37.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">O</text><text x="5.0" y="47.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">S</text><text x="15.0" y="47.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">B</text><text x="25.0" y="47.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">Y</text><text x="35.0" y="47.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">L</text><text x="45.0" y="47.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">P</text><text x="55.0" y="47.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">E</text><text x="65.0" y="47.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">O</text><text x="75.0" y="47.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">U</text><text x="85.0" y="47.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">B</text><text x="95.0" y="47.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">K</text><text x="5.0" y="57.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">H</text><text x="15.0" y="57.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">U</text><text x="25.0" y="57.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">W</text><text x="35.0" y="57.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">A</text><text x="45.0" y="57.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">O</text><text x="55.0" y="57.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">I</text><text x="65.0" y="57.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">R</text><text x="75.0" y="57.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">L</text><text x="85.0" y="57.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">R</text><text x="95.0" y="57.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">M</text><text x="5.0" y="67.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">E</text><text x="15.0" y="67.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">S</text><text x="25.0" y="67.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">H</text><text x="35.0" y="67.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">L</text><text x="45.0" y="67.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">N</text><text x="55.0" y="67.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">R</text><text x="65.0" y="67.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">E</text><text x="75.0" y="67.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">T</text><text x="85.0" y="67.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">A</text><text x="95.0" y="67.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">A</text><text x="5.0" y="77.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">L</text><text x="15.0" y="77.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">C</text><text x="25.0" y="77.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">V</text><text x="35.0" y="77.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">E</text><text x="45.0" y="77.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">R</text><text x="55.0" y="77.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">B</text><text x="65.0" y="77.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">S</text><text x="75.0" y="77.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">E</text><text x="85.0" y="77.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">R</text><text x="95.0" y="77.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">R</text><text x="5.0" y="87.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">F</text><text x="15.0" y="87.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">S</text><text x="25.0" y="87.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">P</text><text x="35.0" y="87.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">O</text><text x="45.0" y="87.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">I</text><text x="55.0" y="87.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">L</text><text x="65.0" y="87.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">E</text><text x="75.0" y="87.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">R</text><text x="85.0" y="87.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">Y</text><text x="95.0" y="87.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">K</text><text x="5.0" y="97.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">A</text><text x="15.0" y="97.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">L</text><text x="25.0" y="97.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">O</text><text x="35.0" y="97.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">N</text><text x="45.0" y="97.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">O</text><text x="55.0" y="97.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">V</text><text x="65.0" y="97.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">E</text><text x="75.0" y="97.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">L</text><text x="85.0" y="97.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">N</text><text x="95.0" y="97.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">E</text></svg></div>
+    <div class="k"><h3>13 · Grandad's book · 14 · Your turn</h3><p>1 🎁 the old book · 2 📚 on a shelf · 3 📦 moving house · 4 📝 the note · 5 🔖 the bookmark · 6 🌙 read it all that night<br><i>Think about it, e.g.:</i> the reading habit he wanted to give Jack.<br><i>Paper or screen?</i> paper: 1, 3, 5 · screen is fine: 2, 4, 6<br>14: your own answers – 2 points per good sentence.</p></div>
+    <div class="k"><h3>Your score</h3><p>90–100 🏆 <b>A real bookworm!</b> · 70–89 📖 <b>A page-turner</b> · 50–69 🔖 <b>One page a day</b> · 0–49 🚌 <b>End of the line – listen again!</b></p></div>
+   </div>
+  </div>
+  <div style="display:grid;grid-template-columns:auto 1fr auto;gap:4mm;align-items:center;margin-top:2.6mm;background:var(--night);border-radius:5mm;padding:3.2mm 4.6mm;color:#F8E3C4">
+    <img src="img/qr.png" style="width:24mm;height:24mm;border-radius:2mm;background:#fff;padding:1mm">
+    <div style="font-size:8.8pt;line-height:1.5"><b style="font-size:11pt;color:var(--peach)">Enjoyed this worksheet? 🎉</b><br>Scan to subscribe to <b>Daily Speak English</b> – new episodes with Jack and Lucy every week. And remember what Jack's grandad said: one page a day, and you'll never be alone. 📖💜<br>More free worksheets: <b style="color:#fff">dailyspeakenglish.github.io/worksheets</b></div>
+    <img class="char" src="img/f/67-duo-chatting-night.jpg" style="width:40mm">
+  </div>
+  {{FOOT10}}
+</section>
+
+</body>
+</html>

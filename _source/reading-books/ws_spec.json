@@ -1,0 +1,18 @@
+{
+ "size": 10,
+ "words": [
+  "BOOKWORM",
+  "BOOKMARK",
+  "LIBRARY",
+  "CHAPTER",
+  "SPOILER",
+  "SAILORS",
+  "DESERT",
+  "SHELF",
+  "NOVEL",
+  "BUS"
+ ],
+ "message": "READ ONE PAGE A DAY, AND YOU WILL NEVER BE ALONE.",
+ "seed": 2,
+ "max_diag": 3
+}
