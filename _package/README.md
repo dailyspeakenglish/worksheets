@@ -39,6 +39,19 @@ Top-left corner: a small rounded sunshine-yellow pill containing "B1–B2" in bo
 Colour balance: about 60% [COLOUR], 30% [ACCENT], 10% cream. Crisp, sharp, very vivid, high-contrast, bright and eye-catching.
 ```
 
+## Title and thumbnail rules (research, Oct 2026)
+
+- No mid-roll ad timings in packages (the user sets them from another source).
+- Titles: the hook (first segment) must work alone in about 45 characters, because search shows the first 40–50 characters
+  and mobile cuts at about 60–70. Keep at least one title short (about 55–70 characters: Hook | English Podcast) and test it
+  against the longer Hook | SEO | SEO form in Test & compare. Question titles work best when viewers already ask that question.
+  No ALL CAPS words in titles (hurts education channels).
+- Thumbnail text: headline 2–4 words, small line 2–3 words; total about 6 words or fewer. The text should add something the
+  title doesn't say, not repeat it.
+- Faces: clear, strong, warm emotion (surprise, joy, curiosity) beats a neutral or soft look; the host who looks at the viewer
+  gets a big, warm smile, not a faint one.
+- Keep the established template wording; change only the marked parts.
+
 ## Test & compare pairs
 
 Every package pairs 3 of the 4 titles with the 3 thumbnails (matching topic), ready for Studio's Test & compare
