@@ -9,8 +9,8 @@ headline lines 1–2 (+hex), the small line under the headline, and the colour-b
 Lucy is always on the far LEFT, Jack on the far RIGHT. One host acts out the topic; the other looks
 straight at the viewer. This is the default, not a hard rule: when the topic suits it, both hosts can
 act together (e.g. Why We Laugh: Jack laughing, Lucy winking with a playful finger gun as if she told the joke).
-Never pair a sad or emotional pose with the other host grinning at the viewer; match both hosts to the mood. Don't repeat a wall colour from the last 3 videos (Kindness: fuchsia #C81E9E / turquoise #14B8B0 / electric violet #6C3BF0;
-Remember More: sky blue #1E9BEA / grass green #4DB848 / raspberry #E0306F; Reading Books: indigo #3730C9 / plum #8E2DA8 / navy #1F2E7A).
+Never pair a sad or emotional pose with the other host grinning at the viewer; match both hosts to the mood. Don't repeat a wall colour from the last 3 videos (Remember More: sky blue #1E9BEA / grass green #4DB848 / raspberry #E0306F;
+Reading Books: indigo #3730C9 / plum #8E2DA8 / navy #1F2E7A; Make Friends: cobalt #2445D8 / ocean teal #00809D / forest green #1E7A4C).
 In headlines, never put double quotes inside a line; use single curly quotes (‘ ’) instead.
 Never use an orange or near-orange wall: Lucy's sweater is orange and must stand out. Props must be clearly recognisable and never the same colour as the wall.
 
@@ -46,7 +46,10 @@ Colour balance: about 60% [COLOUR], 30% [ACCENT], 10% cream. Crisp, sharp, very 
   and mobile cuts at about 60–70. Keep at least one title short (about 55–70 characters: Hook | English Podcast) and test it
   against the longer Hook | SEO | SEO form in Test & compare. Question titles work best when viewers already ask that question.
   No ALL CAPS words in titles (hurts education channels).
-- Thumbnail text: headline 2–4 words, small line 2–3 words; total about 6 words or fewer. The text should add something the
+- Thumbnail text is written for someone who has never seen the channel: they must understand it at a glance AND want to know more
+  (a surprising number, a relatable situation, or a comforting answer to a private worry), always something the video really delivers.
+  The pose and props act out that text (e.g. an hourglass for "200 HOURS TO MAKE A FRIEND").
+- Thumbnail text length: headline 2–4 words, small line 2–3 words; total about 6 words or fewer. The text should add something the
   title doesn't say, not repeat it.
 - Faces: clear, strong, warm emotion (surprise, joy, curiosity) beats a neutral or soft look; the host who looks at the viewer
   gets a big, warm smile, not a faint one.
