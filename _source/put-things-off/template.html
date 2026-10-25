@@ -1,0 +1,920 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Daily Speak English – Put Things Off Worksheet</title>
+<style>
+@page { size: A4; margin: 0; }
+:root{
+  --night:#1B2147; --night2:#2F3A6B; --mauve:#6E5D8C; --mauve-d:#4E3F6B; --lav:#F1EDF8; --lav2:#DED5EE;
+  --peach:#F2AE94; --peach-l:#FDEDE5; --peach-d:#A9532F; --sage:#D7E7DD; --sage-d:#2F5E50; --teal-l:#E3F0F3; --teal-d:#2C6577;
+  --cream:#FCF6EE; --ink:#22263F; --muted:#61647E; --line:#E3DCEC;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font-family:'Poppins','Noto Color Emoji',sans-serif;color:var(--ink);font-size:10.3pt;line-height:1.45;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.page{width:210mm;height:297mm;position:relative;overflow:hidden;padding:12mm 14mm 18mm;background:#fff;page-break-after:always}
+.page:last-child{page-break-after:auto}
+.page::before{content:"";position:absolute;inset:0 0 auto 0;height:4.5mm;background:linear-gradient(90deg,var(--night) 0 34%,var(--mauve) 34% 62%,var(--peach) 62% 84%,#B9D3C4 84% 100%)}
+.footer{position:absolute;left:14mm;right:14mm;bottom:7mm;display:flex;justify-content:space-between;align-items:center;font-size:7.5pt;color:var(--muted);border-top:1px solid var(--line);padding-top:2.2mm}
+.footer a{color:var(--night);text-decoration:none;font-weight:600}
+.footer>span{white-space:nowrap}
+.arr{display:inline-block;width:1.05em;height:1.05em;vertical-align:-.15em}
+.brand{display:flex;align-items:center;gap:2.2mm;font-weight:700;color:var(--night);font-size:8.8pt;letter-spacing:.3pt}
+.brand img{width:7mm;height:7mm;border-radius:50%}
+.footer .brand img{width:5mm;height:5mm}
+.footer .brand{font-size:7.5pt;letter-spacing:0}
+h1{font-size:25pt;line-height:1.06;margin:0;color:var(--night);font-weight:800;letter-spacing:-.3pt}
+h2{font-size:13pt;margin:0;color:var(--night);font-weight:700;display:flex;align-items:center;gap:2.4mm}
+h2 .num{display:inline-flex;align-items:center;justify-content:center;width:8.4mm;height:8.4mm;border-radius:50%;background:var(--mauve);color:#fff;font-size:10.5pt;flex:none}
+.sec{margin-top:5.6mm}
+.instr{font-size:9.2pt;color:var(--muted);margin:1.1mm 0 2.6mm 10.8mm}
+.tag{display:inline-block;font-size:7.4pt;font-weight:600;padding:.5mm 2.4mm;border-radius:10mm;background:var(--lav);color:var(--mauve-d);margin-left:1.2mm;vertical-align:middle}
+.tag.pts{background:var(--peach-l);color:var(--peach-d)}
+.tag.fun{background:var(--sage);color:var(--sage-d)}
+.card{background:var(--lav);border-radius:4mm;padding:3.6mm 4.6mm;border:1px solid var(--lav2)}
+.card.peach{background:var(--peach-l);border-color:#F6D3C3}
+.card.sage{background:var(--sage);border-color:#BFD7C8}
+.card.teal{background:var(--teal-l);border-color:#C6DFE6}
+.card.white{background:#fff;border:1.3px solid var(--line)}
+.blank{display:inline-block;border-bottom:1.3px solid var(--night);min-width:24mm;height:4.6mm;vertical-align:bottom}
+.blank.s{min-width:13mm}.blank.l{min-width:58mm}.blank.xl{min-width:100%}
+.box{display:inline-flex;width:6.2mm;height:6.2mm;border:1.4px solid var(--night);border-radius:1.4mm;vertical-align:middle;flex:none;background:#fff}
+.box.sm{width:5mm;height:5mm;border-radius:1.1mm}
+table{border-collapse:collapse;width:100%}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:4mm}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:3mm}
+.pill{display:inline-block;background:var(--night);color:#F8E3C4;font-weight:700;border-radius:10mm;padding:.6mm 3mm;font-size:8.8pt}
+.pill.p{background:var(--peach);color:var(--night)}
+.small{font-size:8.4pt;color:var(--muted)}
+.lines{height:7mm;border-bottom:1px dashed #C9BFD9}
+.char{display:block;object-fit:contain}
+.bub{display:flex;gap:3mm;align-items:center}
+.bub .txt{background:#fff;border:1.4px solid var(--line);border-radius:4mm;padding:2.4mm 3.6mm;font-size:9.1pt;flex:1}
+.bub .txt b{color:var(--night)}
+.ava{width:17mm;height:17mm;border-radius:50%;background:var(--lav);overflow:hidden;flex:none;border:2px solid #fff;box-shadow:0 0 0 1.4px var(--lav2)}
+.ava img{width:100%;height:130%;object-fit:cover;object-position:50% 4%}
+.mc{display:grid;grid-template-columns:1fr 1fr;gap:2.4mm 4.6mm}
+.mcq{background:#fff;border:1.2px solid var(--line);border-radius:3mm;padding:2.4mm 3.4mm}
+.mcq .qq{font-weight:600;color:var(--night);font-size:9.5pt;margin-bottom:1.1mm}
+.opt{display:flex;gap:2mm;align-items:center;font-size:9.2pt;margin:.6mm 0}
+.opt .c{width:4.6mm;height:4.6mm;border-radius:50%;border:1.3px solid var(--night);display:inline-flex;align-items:center;justify-content:center;font-size:7pt;font-weight:700;color:var(--night);flex:none}
+.hint{font-size:7.5pt;color:var(--peach-d);font-weight:600;margin-top:.6mm}
+.tf td{padding:1.45mm 2mm;border-bottom:1px solid #EEE8F4;font-size:9.4pt;vertical-align:middle}
+.tf th{font-size:7.8pt;color:var(--muted);font-weight:600;text-align:center;padding-bottom:1.2mm}
+.tf td.n{width:6mm;font-weight:700;color:var(--mauve)}
+.tf td.ck{width:17mm;text-align:center;white-space:nowrap}
+.tf td.tm{width:15mm;font-size:7.6pt;color:var(--peach-d);font-weight:600;text-align:right}
+.circ{display:inline-flex;width:6mm;height:6mm;border-radius:50%;border:1.3px solid var(--night);align-items:center;justify-content:center;font-weight:700;font-size:8pt;color:var(--night)}
+.match td{padding:1.35mm 1.6mm;font-size:9.3pt;vertical-align:middle}
+.match .ans{width:9mm}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:3mm}
+.step{background:#fff;border:1.3px solid var(--line);border-radius:3.4mm;padding:2.6mm 3.2mm}
+.step .h{font-weight:700;color:var(--night);font-size:9.4pt}
+.step .s{font-size:8.4pt;color:var(--muted);line-height:1.4}
+/* chat */
+.chat{display:flex;flex-direction:column;gap:1.5mm}
+.msg{display:flex;align-items:flex-end;gap:2.6mm}
+.msg.j{flex-direction:row-reverse}
+.msg .ava{width:13mm;height:13mm}
+.msg .b{max-width:132mm;border-radius:4.5mm;padding:1.6mm 3.6mm;font-size:9.4pt;line-height:1.5}
+.msg.l .b{background:var(--peach-l);border:1.2px solid #F4D2C2;border-bottom-left-radius:1mm}
+.msg.j .b{background:var(--lav);border:1.2px solid var(--lav2);border-bottom-right-radius:1mm}
+.msg .who{display:block;font-size:7pt;font-weight:700;letter-spacing:.4pt;margin-bottom:.1mm}
+.msg.l .who{color:var(--peach-d)} .msg.j .who{color:var(--mauve-d)}
+.gap{display:inline-block;min-width:21mm;border-bottom:1.3px solid var(--night);text-align:left;font-size:7.4pt;font-weight:700;color:var(--mauve);line-height:1.1;padding-left:.6mm}
+/* conversation map */
+.bank{display:grid;grid-template-columns:1fr 1fr;gap:1.4mm 4mm;font-size:9.1pt}
+.bank div{display:flex;gap:2mm;align-items:baseline}
+.bank b{color:var(--mauve);width:4mm;flex:none}
+.map{display:grid;grid-template-columns:1fr 7mm 1fr 7mm 1fr;align-items:stretch;margin-top:3mm}
+.col{border-radius:4mm;padding:3mm;text-align:center}
+.col .h{font-weight:800;font-size:10.5pt;letter-spacing:.4pt}
+.col .s{font-size:7.8pt;margin-bottom:2mm}
+.col .slots{display:flex;justify-content:center;gap:2mm}
+.col.c1{background:var(--sage);color:var(--sage-d)} .col.c2{background:var(--lav);color:var(--mauve-d)} .col.c3{background:var(--peach-l);color:var(--peach-d)}
+.arrow{display:flex;align-items:center;justify-content:center;font-size:15pt;color:var(--mauve);font-weight:700}
+/* situation cards */
+.sit{background:#fff;border:1.3px solid var(--line);border-radius:3.4mm;padding:2.4mm 3mm;display:flex;flex-direction:column;gap:1.4mm}
+.sit .e{font-size:17pt;line-height:1.1}
+.sit .t{font-size:8.8pt;color:var(--ink);min-height:12.5mm}
+.sit .ch{display:flex;gap:3mm;font-size:8pt;font-weight:600;color:var(--night);align-items:center}
+.sit .ch span{display:flex;gap:1.2mm;align-items:center}
+.key h3{margin:0 0 1mm;font-size:9.6pt;color:var(--night)}
+.key p{margin:0;font-size:8.5pt;line-height:1.48}
+.key .k{background:var(--cream);border-radius:3mm;padding:2.6mm 3.4mm;border:1px solid #EFE2D0}
+.chips{display:flex;flex-wrap:wrap;gap:1.8mm}
+.chips span{background:var(--lav);border:1px solid var(--lav2);color:var(--mauve-d);border-radius:10mm;padding:.5mm 3mm;font-size:8.8pt;font-weight:600}
+.chal th{background:var(--night);color:#F8E3C4;font-size:8.2pt;font-weight:600;padding:1.8mm 1.4mm;text-align:left}
+.chal th:first-child{border-radius:3mm 0 0 0}.chal th:last-child{border-radius:0 3mm 0 0;text-align:center}
+.chal td{border:1px solid #E6DFEE;height:8.6mm;font-size:8.5pt;padding:0 2mm;vertical-align:middle}
+.chal td.d{font-weight:700;color:var(--night);background:var(--lav);width:13mm;text-align:center}
+.chal td.f{text-align:center;font-size:10pt;letter-spacing:2mm;width:27mm}
+.cando td{padding:1.6mm 1.6mm;border-bottom:1px solid #EEE8F4;font-size:9pt}
+.cando td.f{text-align:center;width:12mm;font-size:11pt}
+.cando th{font-size:7.6pt;color:var(--muted);font-weight:600;text-align:center}
+.pocket{border:1.6px dashed var(--mauve);border-radius:4mm;padding:3mm 4mm;position:relative;background:#fff}
+.pocket .sc{position:absolute;top:-3.4mm;left:6mm;background:#fff;padding:0 1.4mm;font-size:9pt;color:var(--mauve)}
+.pocket .pc{display:grid;grid-template-columns:repeat(4,1fr);gap:2.4mm;font-size:7.9pt;line-height:1.35}
+.pocket .pc div b{display:block;font-size:8.2pt;margin-bottom:.6mm}
+.story{display:grid;grid-template-columns:1fr 1fr;gap:2.4mm 4mm}
+.story .ev{display:flex;gap:2.6mm;align-items:center;background:#fff;border:1.3px solid var(--line);border-radius:3mm;padding:2.2mm 3mm;font-size:9pt}
+.story .ev .e{font-size:15pt;flex:none}
+.story .ev .l{font-weight:800;color:var(--mauve);flex:none;width:4mm}
+/* ---- new in build-a-habit ---- */
+.pick{display:inline-flex;align-items:center;gap:1.2mm;padding:.5mm 2.2mm .5mm 1mm;border-radius:10mm;font-size:7.8pt;font-weight:700;white-space:nowrap}
+.pick.good{background:#DDF1E3;color:#1E7B45;border:1.2px solid #8FCBA3}
+.pick.bad{background:#FBE1DE;color:#C0392B;border:1.2px solid #EDA59D}
+.pick .box{width:4.2mm;height:4.2mm;border-radius:1mm;border-width:1.2px}
+.ic{width:3mm;height:3mm;flex:none;vertical-align:-.45mm;display:inline-block}
+.pick.good .box{border-color:#1E7B45}.pick.bad .box{border-color:#C0392B}
+.slots{display:inline-flex;gap:.55mm;vertical-align:-.5mm;margin:0 .5mm}
+.slots .sl{display:inline-block;width:2.45mm;height:3.4mm;border-bottom:1.1px solid var(--night)}
+.slots .sl1{display:inline-block;width:2.45mm;height:3.4mm;line-height:3.4mm;text-align:center;font-size:8.4pt;color:var(--mauve);border-bottom:1.1px solid var(--mauve)}
+.msgrow{display:flex;flex-wrap:wrap;gap:2.4mm 3.6mm;justify-content:center}
+.mw{display:inline-flex;gap:.8mm;align-items:flex-end}
+.mb{display:inline-block;width:4.4mm;height:5.8mm;border-bottom:1.4px solid var(--night)}
+.ap{font-weight:800;font-size:11pt;line-height:1;color:var(--night)}
+.nums{display:grid;grid-template-columns:repeat(4,1fr);gap:2.4mm}
+.nums .nc{background:#fff;border:1.3px solid var(--line);border-radius:3.4mm;padding:2.2mm 2.6mm;display:flex;flex-direction:column;gap:1.2mm}
+.nums .nc .q{font-size:8.5pt;line-height:1.36;min-height:12mm}
+.nums .nc .a{display:flex;align-items:center;justify-content:space-between}
+.nums .nc .bx{width:16mm;height:7.4mm;border:1.4px solid var(--night);border-radius:1.6mm;background:var(--lav)}
+.nums .nc .t{font-size:7.3pt;color:var(--peach-d);font-weight:600}
+.conf{display:grid;grid-template-columns:repeat(3,auto);justify-content:space-between;gap:1.6mm 3mm;font-size:9pt}
+.conf div{display:flex;gap:2mm;align-items:center}
+.coll td{padding:1.5mm 1mm;font-size:9.3pt;line-height:1.5}
+.rule{display:grid;grid-template-columns:repeat(3,1fr);gap:2.4mm}
+.rule div{border-radius:3mm;padding:2.2mm 2.8mm;font-size:8.4pt;line-height:1.4}
+.rule b.h{display:block;font-size:9.4pt;margin-bottom:.6mm}
+.ws{border-collapse:separate;border-spacing:.7mm;margin:0 auto}
+.ws td{width:6.3mm;height:6.3mm;text-align:center;font-weight:700;font-size:9.4pt;color:var(--night);background:#fff;border-radius:1.6mm;border:1px solid var(--lav2)}
+.clues{font-size:8.6pt;line-height:1.38;display:flex;flex-direction:column;gap:1.25mm}
+.clues div{display:flex;gap:1.6mm;align-items:baseline}
+.clues .n{font-weight:800;color:var(--mauve);width:4.4mm;flex:none}
+.wsk{border-collapse:separate;border-spacing:.35mm}
+.wsk td{width:3.4mm;height:3.4mm;font-size:5.4pt;text-align:center;font-weight:600;color:#B9AEC9;border-radius:.6mm;background:#fff}
+.wsk td.on{background:var(--peach);color:var(--night)}
+.path{display:grid;grid-template-columns:repeat(7,1fr);gap:2.2mm 2mm;margin-top:2mm}
+.stone{height:11mm;border-radius:50%;background:#EDE7F6;border:1.4px solid var(--lav2);display:flex;align-items:center;justify-content:center;font-size:8pt;font-weight:700;color:var(--mauve-d);position:relative}
+.path .stone:nth-child(even){transform:translateY(1.6mm)}
+.grass{background:linear-gradient(180deg,#EAF3EC,#D7E7DD);border-radius:4mm;padding:3mm 4mm 4.4mm;border:1px solid #BFD7C8}
+.react table td{padding:1.35mm 1.4mm;font-size:9.1pt;vertical-align:middle;border-bottom:1px solid #EEE8F4}
+.bands{display:grid;grid-template-columns:repeat(4,1fr);gap:2mm;margin-top:2.4mm}
+.bands div{background:var(--lav);border-radius:3mm;padding:1.6mm 2.2mm;font-size:7.8pt;line-height:1.33;text-align:center}
+.bands b{display:block;color:var(--night);font-size:8.4pt}
+
+/* ---- new in time-flies ---- */
+.graphs{display:grid;grid-template-columns:repeat(3,1fr);gap:2.6mm}
+.graph{background:#fff;border:1.3px solid var(--line);border-radius:3.4mm;padding:2mm 2.4mm;text-align:center}
+.graph .gl{display:inline-flex;width:6mm;height:6mm;border-radius:50%;border:1.3px solid var(--night);align-items:center;justify-content:center;font-weight:800;color:var(--night);font-size:9pt;margin-bottom:1mm}
+.gq{display:grid;grid-template-columns:1fr auto;gap:1.4mm 3mm;font-size:9.2pt;align-items:center}
+.gq .bx{display:inline-block;width:10mm;height:6.4mm;border:1.4px solid var(--night);border-radius:1.4mm;background:var(--lav)}
+.clock{display:inline-flex;align-items:center;gap:1.2mm;padding:.5mm 2.2mm .5mm 1mm;border-radius:10mm;font-size:7.6pt;font-weight:700;white-space:nowrap}
+.clock.now{background:var(--night);color:#F8E3C4}
+.clock.back{background:#FBE1D6;color:var(--peach-d);border:1.2px solid #EBB49C}
+.clock .box{width:4.2mm;height:4.2mm;border-radius:1mm;border-width:1.2px}
+.clock.now .box{border-color:#F8E3C4;background:transparent}
+.sorter{display:grid;grid-template-columns:1fr 1fr;gap:3mm;margin-top:2.4mm}
+.sorter .col{border-radius:4mm;padding:2.6mm 3mm;text-align:center}
+.sorter .col .h{font-weight:800;font-size:11pt;letter-spacing:.4pt}
+.sorter .col .s{font-size:7.8pt;margin-bottom:2mm}
+.sorter .slots{display:flex;justify-content:center;gap:2mm}
+.sorter .fast{background:#FDE3D6;color:#B5401C;border:1.3px solid #F2B39A}
+.sorter .slow{background:#DCEFF3;color:#1F5F70;border:1.3px solid #A9D3DD}
+.timeline{display:grid;grid-template-columns:repeat(3,1fr);gap:2.4mm}
+.timeline div{border-radius:3mm;padding:2.2mm 2.8mm;font-size:8.4pt;line-height:1.4}
+.timeline b.h{display:block;font-size:10pt;margin-bottom:.4mm}
+.cw{border-collapse:separate;border-spacing:.7mm;margin:0 auto;width:auto;table-layout:fixed}
+.cw td{width:var(--cell);min-width:var(--cell);max-width:var(--cell);height:var(--cell);padding:0;position:relative;box-sizing:border-box}
+.cw td.o{background:#fff;border:1.4px solid var(--night);border-radius:1.2mm}
+.cw td.x{border:none;background:transparent}
+.cw .cn{position:absolute;top:.15mm;left:.45mm;font-size:5.4pt;font-weight:700;color:var(--mauve);line-height:1}
+.cw .cl{display:flex;height:100%;align-items:center;justify-content:center;font-weight:700;font-size:8.6pt;color:var(--night)}
+.cwk{border-spacing:.35mm}
+.cwk td.o{border-width:.9px;border-radius:.6mm}
+.cwk .cn{font-size:3.6pt;top:.1mm;left:.25mm}
+.cwk .cl{font-size:6.2pt}
+.cclues{font-size:8.5pt;line-height:1.36}
+.cclues h4{margin:0 0 1mm;font-size:9.4pt;color:var(--night)}
+.cclues .card > div{display:flex;gap:1.6mm;align-items:baseline;margin-bottom:1mm}
+.cclues .n{font-weight:800;color:var(--mauve);width:4.4mm;flex:none}
+.cclues .len{color:var(--muted);font-size:7.6pt}
+.slips{display:grid;grid-template-columns:repeat(4,1fr);gap:2.2mm}
+.slip{border:1.4px dashed var(--mauve);border-radius:2.6mm;padding:1.8mm 2.2mm;background:#FFFCF6;font-size:7.8pt;color:var(--mauve-d);min-height:15mm;display:flex;flex-direction:column;justify-content:space-between}
+.predict-chips span{font-size:8.2pt}
+.slip .ln{border-bottom:1px solid #D9CCE6;height:4.2mm}
+
+/* ---- new in why-we-laugh ---- */
+.meter{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-radius:4mm;overflow:hidden;border:1.3px solid var(--lav2)}
+.meter .z{padding:2.4mm 2.6mm;text-align:center;min-height:30mm;display:flex;flex-direction:column;gap:1.6mm;align-items:center}
+.meter .z .h{font-weight:800;font-size:10pt}
+.meter .z .s{font-size:7.6pt;line-height:1.3}
+.meter .z .slots{display:flex;gap:2mm}
+.meter .z1{background:#EAF3EC;color:var(--sage-d)}
+.meter .z2{background:#FDEDE5;color:var(--peach-d)}
+.meter .z3{background:#F6DCDC;color:#A33B3B}
+.meterbar{height:3mm;border-radius:2mm;background:linear-gradient(90deg,#B9D3C4,#F2AE94,#E07B7B);margin:1.4mm 0 .6mm}
+.nums2{display:grid;grid-template-columns:1fr auto;gap:1.2mm 3mm;font-size:9.2pt;align-items:center}
+.nums2 .bx{display:inline-block;width:8mm;height:6.4mm;border:1.4px solid var(--night);border-radius:1.4mm;background:var(--lav)}
+.mix{display:grid;grid-template-columns:1fr 1fr;gap:2mm 3mm;font-size:9.2pt}
+.mix div{background:#fff;border:1.2px solid var(--line);border-radius:2.6mm;padding:1.8mm 3mm;line-height:1.5}
+.mix .w{display:inline-flex;gap:1.6mm;margin-left:1mm}
+.mix .w span{border:1.2px solid var(--night);border-radius:10mm;padding:0 2.4mm;font-weight:600;font-size:8.6pt}
+.tone{display:inline-flex;align-items:center;gap:1.2mm;padding:.5mm 2.2mm .5mm 1mm;border-radius:10mm;font-size:7.6pt;font-weight:700;white-space:nowrap}
+.tone.sin{background:#DDF1E3;color:#1E7B45;border:1.2px solid #8FCBA3}
+.tone.sar{background:#EDE3FA;color:#5B3A99;border:1.2px solid #B9A3E0}
+.tone .box{width:4.2mm;height:4.2mm;border-radius:1mm;border-width:1.2px}
+.tone.sin .box{border-color:#1E7B45}.tone.sar .box{border-color:#5B3A99}
+.sar .sit .t{min-height:0}
+.log th{background:var(--night);color:#F8E3C4;font-size:8.2pt;font-weight:600;padding:1.8mm 2mm;text-align:left}
+.log th:first-child{border-radius:3mm 0 0 0}.log th:last-child{border-radius:0 3mm 0 0;text-align:center}
+.log td{border:1px solid #E6DFEE;height:7mm;font-size:8.4pt;padding:0 2mm;vertical-align:middle}
+.log td.d{font-weight:700;color:var(--night);background:var(--lav);width:12mm;text-align:center}
+.log td.c{text-align:center;width:34mm;font-size:8pt;color:var(--muted)}
+
+/* ---- new in messy-room ---- */
+.claim{display:inline-flex;align-items:center;gap:1.2mm;padding:.5mm 2.2mm .5mm 1mm;border-radius:10mm;font-size:7.6pt;font-weight:700;white-space:nowrap}
+.claim.fair{background:#DDF1E3;color:#1E7B45;border:1.2px solid #8FCBA3}
+.claim.strong{background:#FBE1DE;color:#C0392B;border:1.2px solid #EDA59D}
+.claim .box{width:4.2mm;height:4.2mm;border-radius:1mm;border-width:1.2px}
+.claim.fair .box{border-color:#1E7B45}.claim.strong .box{border-color:#C0392B}
+.sort{border-collapse:separate;border-spacing:0 1.1mm;width:100%}
+.sort th{font-size:8.3pt;font-weight:800;padding:1.4mm 1mm;text-align:center}
+.sort th.it{text-align:left;color:var(--night);padding-left:1mm}
+.sort th.keep{background:#DDF1E3;color:#1E7B45;border-radius:2.4mm 0 0 2.4mm}
+.sort th.give{background:#DCEFF3;color:#1F5F70}
+.sort th.out{background:#FBE1DE;color:#C0392B;border-radius:0 2.4mm 2.4mm 0}
+.sort td{font-size:8.9pt;padding:.9mm 1mm;border-bottom:1px dashed var(--line)}
+.sort td.c{text-align:center;width:27mm}
+.sort td.k .box{border-color:#1E7B45}.sort td.g .box{border-color:#1F5F70}.sort td.o .box{border-color:#C0392B}
+.studies{display:grid;grid-template-columns:repeat(3,1fr);gap:2.4mm}
+.studies div{border-radius:3mm;padding:2mm 3mm;font-size:8.3pt;line-height:1.35;color:var(--ink)}
+.studies .h{display:block;font-size:9.3pt;margin-bottom:.3mm}
+.puts{display:grid;grid-template-columns:repeat(3,1fr);gap:2.4mm;margin-top:1.6mm}
+.puts div{border-radius:3mm;padding:2mm 3mm;font-size:8.5pt;line-height:1.38;text-align:center}
+.puts .e{display:block;font-size:15pt;line-height:1.2}
+.puts b{display:block;color:var(--night);font-size:9.3pt}
+.chat.wide .msg .b{max-width:154mm;padding:1.4mm 3.6mm}
+.claim.calm{background:#DCEFF3;color:#1F5F70;border:1.2px solid #9CCAD6}.claim.calm .box{border-color:#1F5F70}
+.claim.mess{background:#FDE3D3;color:#B9542B;border:1.2px solid #F2B796}.claim.mess .box{border-color:#B9542B}
+.tm2{display:grid;grid-template-columns:1fr auto auto;gap:1.4mm;align-items:center;font-size:8.6pt;padding:.8mm 0;white-space:nowrap;border-bottom:1px dashed var(--line)}
+.wf .blank{min-width:19mm}
+.wf{display:grid;grid-template-columns:1fr 1fr;gap:1.8mm 5mm;font-size:9.1pt}
+.keycols{display:grid;grid-template-columns:1fr 1fr;gap:2mm;margin-top:2.6mm;align-items:start}
+.keycols>div{display:flex;flex-direction:column;gap:2mm}
+.week td{height:6.4mm}
+.week td.a{width:50mm;font-weight:600;color:var(--night)}
+
+/* ---- new in talk-to-yourself ---- */
+.claim.chal{background:#DDF1E3;color:#1E7B45;border:1.2px solid #8FCBA3}.claim.chal .box{border-color:#1E7B45}
+.claim.thr{background:#FBE1DE;color:#C0392B;border:1.2px solid #EDA59D}.claim.thr .box{border-color:#C0392B}
+.ways{display:grid;grid-template-columns:1fr 1.5fr;gap:2.4mm 5mm;align-items:start}
+.ways .ex{font-size:8.8pt;line-height:1.5}
+.ways .ex div{margin-bottom:1.1mm}
+.friend td{padding:1.8mm 1mm;font-size:9.2pt;vertical-align:bottom}
+.friend td.i{width:52%;color:#C0392B}
+.pep{display:grid;grid-template-columns:.8fr 1.1fr 1fr 1.25fr;gap:1.6mm 2.4mm;margin-top:1.6mm}
+.pep>div{border-radius:3mm;padding:1.8mm 2.6mm;font-size:9.4pt;color:var(--night)}
+.pep .lb{display:block;font-size:6.8pt;font-weight:800;letter-spacing:.3pt;margin-bottom:.4mm}
+.pep .me{background:none;padding:2.4mm 1mm 0}
+.ws td{width:7mm;height:7mm;font-size:10.2pt}
+.clues{font-size:8.8pt;gap:1.7mm}
+.hero2{background:var(--lav);border-radius:6mm;height:55mm;position:relative;overflow:hidden;border:1px solid var(--lav2)}
+
+/* ---- new in being-bored ---- */
+.claim.ed{background:#DCEFF3;color:#1F5F70;border:1.2px solid #9CCAD6}.claim.ed .box{border-color:#1F5F70}
+.claim.ing{background:#FDE3D3;color:#B9542B;border:1.2px solid #F2B796}.claim.ing .box{border-color:#B9542B}
+.claim.ok{background:#DDF1E3;color:#1E7B45;border:1.2px solid #8FCBA3}.claim.ok .box{border-color:#1E7B45}
+.claim.no{background:#FBE1DE;color:#C0392B;border:1.2px solid #EDA59D}.claim.no .box{border-color:#C0392B}
+.edrule{display:grid;grid-template-columns:1fr 1fr;gap:2.4mm;margin:1.6mm 0 2mm}
+.edrule div{border-radius:3mm;padding:1.6mm 3mm;font-size:8.6pt;line-height:1.4}
+
+/* ---- new in kindness ---- */
+.ws td{width:6.9mm;height:6.9mm;font-size:10pt}
+.scale{position:relative;height:14mm;margin:1mm 3mm 0}
+.scale .end{position:absolute;top:0;font-size:7.4pt;font-weight:700;color:var(--muted)}
+.scale .bar{position:absolute;left:0;right:0;top:5mm;height:2.4mm;border-radius:2mm;background:linear-gradient(90deg,#F6C9C2,#F3EFF8 50%,#BFE3CD)}
+.scale .tk{position:absolute;top:8.4mm;transform:translateX(-50%);font-size:7pt;color:var(--muted);font-weight:600}
+.scale .mk{position:absolute;top:0;transform:translateX(-50%);text-align:center;font-size:7.2pt;font-weight:700;white-space:nowrap}
+.scale .mk span{display:block;width:0;height:0;margin:0 auto;border-left:1.6mm solid transparent;border-right:1.6mm solid transparent;border-top:2.2mm solid currentColor}
+.claim.un{background:#DCEFF3;color:#1F5F70;border:1.2px solid #9CCAD6}.claim.un .box{border-color:#1F5F70}
+.claim.ov{background:#FDE3D3;color:#B9542B;border:1.2px solid #F2B796}.claim.ov .box{border-color:#B9542B}
+.phr{display:grid;grid-template-columns:1.05fr .95fr;gap:4mm;align-items:start}
+
+/* ---- new in remember-more ---- */
+.claim.rec{background:#FDE3D3;color:#B9542B;border:1.2px solid #F2B796}.claim.rec .box{border-color:#B9542B}
+.claim.cal{background:#DDF1E3;color:#1E7B45;border:1.2px solid #8FCBA3}.claim.cal .box{border-color:#1E7B45}
+.chart{display:flex;justify-content:center;gap:14mm;align-items:flex-end;height:29mm;padding:0 2mm;border-bottom:1.4px solid var(--night)}
+.chart .grp{display:flex;flex-direction:column;align-items:center}
+.chart .pair{display:flex;gap:3mm;align-items:flex-end}
+.chart .bar{width:14mm;border-radius:2mm 2mm 0 0;display:flex;align-items:flex-start;justify-content:center;font-weight:800;font-size:9pt;padding-top:1mm;box-sizing:border-box}
+.chart .bar.r{background:#F7C9AE;color:#9A4320}.chart .bar.c{background:#A9DDBE;color:#1E6B3E}
+.chart-l{display:flex;justify-content:center;gap:14mm;font-size:8.4pt;font-weight:700;color:var(--night);margin-top:1mm}
+.chart-l div{width:31mm;text-align:center}
+.legend{display:flex;flex-direction:column;justify-content:center;gap:2.4mm;font-size:8.6pt}
+.legend span{display:inline-flex;align-items:center;gap:1.2mm}
+.legend i{display:inline-block;width:3.4mm;height:3.4mm;border-radius:.8mm}
+.flow{display:grid;grid-template-columns:repeat(5,1fr);gap:1.6mm;align-items:stretch}
+.flow div{border-radius:3mm;padding:1.8mm 2mm;font-size:8pt;line-height:1.35;text-align:center;position:relative}
+.flow div b{display:block;font-size:13pt;line-height:1.2}
+.tracker td.w{width:28mm}.tracker td.k{width:17mm;text-align:center}
+.tracker th{text-align:center}
+
+/* ---- new in reading-books ---- */
+.ws td{width:7.2mm;height:7.2mm;font-size:10.4pt}
+.dots{display:flex;flex-wrap:wrap;gap:1mm;margin:1.4mm 0}
+.dots i{display:inline-block;width:2.6mm;height:2.6mm;border-radius:50%;background:#D9D2E6}
+.dots i.u{background:#E8875F}
+.cov{display:grid;grid-template-columns:1fr 1fr;gap:3mm}
+.cov>div{border-radius:3mm;padding:2mm 3mm;font-size:8.6pt;line-height:1.4}
+.story-text{font-family:Georgia,'Times New Roman',serif;font-size:10.4pt;line-height:1.75;color:#2B2440;background:#FFFDF8;border:1px solid #EFE2D0;border-radius:3mm;padding:3mm 5mm}
+.meter{display:flex;gap:2mm;font-size:8.4pt;margin-top:1.6mm}
+.meter span{flex:1;border-radius:2.4mm;padding:1.2mm 2mm;text-align:center;font-weight:700}
+.checks{display:grid;grid-template-columns:1fr 1fr;gap:1.4mm 5mm;font-size:8.9pt}
+.checks div{display:flex;gap:1.8mm;align-items:center}
+
+/* ---- new in make-friends ---- */
+.ladder{display:grid;grid-template-columns:repeat(4,1fr);gap:2mm;align-items:end}
+.ladder div{border-radius:3mm 3mm 0 0;padding:1.8mm 2mm;text-align:center;font-size:8.4pt;line-height:1.35;color:var(--night)}
+.ladder div b{display:block;font-size:9.2pt}
+.ladder div .e{display:block;font-size:14pt;line-height:1.2}
+.sorter3{display:grid;grid-template-columns:1fr auto;gap:1.2mm 3mm;align-items:center;font-size:9pt}
+.sorter3 .ph{padding:1.1mm 0;border-bottom:1px dashed var(--line)}
+.key3{display:flex;gap:2mm;margin:1.6mm 0 2mm}
+.key3 span{border-radius:2.4mm;padding:1mm 2.6mm;font-size:8.4pt;font-weight:700}
+.inv{display:grid;grid-template-columns:repeat(3,1fr);gap:2mm;margin-top:1.6mm}
+.inv div{border-radius:3mm;padding:1.6mm 2.4mm;font-size:8.4pt;text-align:center}
+.inv div b{display:block;font-size:12pt}
+
+/* ---- new in put-things-off ---- */
+.ws td{width:7.2mm;height:7.2mm;font-size:10.4pt}
+.circle{display:grid;grid-template-columns:repeat(5,1fr);gap:4.2mm;align-items:stretch;position:relative}
+.circle>div{border-radius:3mm;padding:2mm 1.6mm;font-size:8.3pt;line-height:1.4;text-align:center;position:relative}
+.circle>div b.e{display:block;font-size:14pt;line-height:1.2}
+.circle>div:not(:last-child)::after{content:"➜";position:absolute;right:-3.7mm;top:42%;font-size:9pt;color:var(--mauve);z-index:2}
+.loop{margin-top:1.2mm;border:1.6px dashed var(--mauve);border-top:none;border-radius:0 0 4mm 4mm;height:4mm;position:relative}
+.loop span{position:absolute;left:50%;transform:translateX(-50%);bottom:-2.6mm;background:#fff;padding:0 2mm;font-size:8pt;font-weight:700;color:var(--mauve)}
+.ifthen td{padding:2.1mm 1mm;font-size:9pt;vertical-align:middle}
+.tiny td{padding:1.1mm 1mm}
+.feel{display:grid;grid-template-columns:repeat(4,1fr);gap:1.8mm}
+.feel div{border-radius:3mm;padding:1.6mm 2.2mm;font-size:8.2pt;line-height:1.35}
+.feel div b{display:block;font-size:8.8pt;color:var(--night)}
+</style>
+</head>
+<body>
+
+<!-- ================= PAGE 1 ================= -->
+<section class="page">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-top:1mm">
+    <div class="brand"><img src="img/logo.jpg">DAILY SPEAK ENGLISH · PODCAST WORKSHEET</div>
+    <div><span class="pill">B1–B2</span> <span class="pill p">⏱ 50 min</span></div>
+  </div>
+  <div style="display:grid;grid-template-columns:1.12fr .88fr;gap:4mm;margin-top:4mm;align-items:center">
+    <div>
+      <div class="small" style="font-weight:700;color:var(--mauve);letter-spacing:.7pt">LISTEN · LEARN · SPEAK</div>
+      <h1>Why We Put Things Off (And How to Stop)</h1>
+      <p style="margin:2.4mm 0 0;font-size:9.6pt;color:var(--muted)">Why procrastination is about feelings, not laziness, why your brain treats "future you" like a stranger, the two-minute trick, natural English for plans, delays and deadlines – and Lucy's passport form.</p>
+      <div style="margin-top:4mm;display:grid;grid-template-columns:auto 1fr;gap:1.6mm 3mm;font-size:9.3pt;align-items:end">
+        <b style="color:var(--night)">Name:</b><span class="blank xl"></span>
+        <b style="color:var(--night)">Date:</b><span class="blank xl"></span>
+        <b style="color:var(--night)">My score:</b><span><span class="blank s"></span> / 100 ⭐</span>
+      </div>
+    </div>
+    <div class="hero2">
+      <div style="position:absolute;z-index:2;top:3.4mm;left:3.4mm;background:#fff;border-radius:4mm;padding:1mm 3mm;font-size:8.6pt;font-weight:700;color:var(--night);box-shadow:0 1px 0 var(--lav2)">"I'll do it after a cup of tea…" ☕</div>
+      <img class="char" src="img/f/32-lucy-coffee-chat-right-lav.jpg" style="position:absolute;bottom:0;left:2mm;width:36mm">
+      <img class="char" src="img/f/72-jack-confused-lav.jpg" style="position:absolute;bottom:0;right:1mm;width:37mm">
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><span class="num">★</span>How to use this worksheet</h2>
+    <div class="steps" style="margin-top:2.4mm">
+      <div class="step"><div class="h">1 · Before you listen 🧠</div><div class="s">Do the warm-up and learn the key words. Questions with 🧠 can be answered before listening.</div></div>
+      <div class="step"><div class="h">2 · While you listen 🎧</div><div class="s">Answer the 🎧 questions. The ⏱ times show where to find each part of the video.</div></div>
+      <div class="step"><div class="h">3 · Don't put it off! ⏱️</div><div class="s">Jack's tip: open this worksheet today – even if you only do the first exercise!</div></div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><span class="num">0</span>Warm-up: My procrastination check <span class="tag fun">fun · no points</span></h2>
+    <p class="instr">Be honest! Tick everything that is true for you. 😅</p>
+    <div style="display:grid;grid-template-columns:1.42fr .58fr;gap:4mm;align-items:stretch">
+      <div class="card white" style="display:flex;flex-direction:column;gap:1.8mm;justify-content:center;padding:2.6mm 3.6mm">
+        <div class="conf" style="grid-template-columns:1fr 1fr;justify-content:stretch;font-size:8.7pt">
+          <div><span class="box sm"></span>🧹 I clean when I should work</div>
+          <div><span class="box sm"></span>📧 I leave emails for days</div>
+          <div><span class="box sm"></span>🗓️ I say "I'll start tomorrow"</div>
+          <div><span class="box sm"></span>📱 My phone is my easy escape</div>
+          <div><span class="box sm"></span>⏰ I do things at the last minute</div>
+          <div><span class="box sm"></span>✅ I usually start straight away</div>
+        </div>
+        <div style="font-size:9pt"><b style="color:var(--night)">My procrastination score:</b> <span class="blank s"></span> / 6</div>
+        <div style="border-top:1px dashed var(--lav2);padding-top:2mm;font-size:8.9pt"><b style="color:var(--night)">Guess!</b> Lucy avoided her passport form for three weeks. When she finally did it, how long did it take?</div>
+        <div style="display:flex;gap:3.4mm;font-size:8.7pt;white-space:nowrap"><span><span class="circ">a</span> eleven minutes</span><span><span class="circ">b</span> two hours</span><span><span class="circ">c</span> a whole weekend</span></div>
+        <div class="hint">🎧 Check your guess at ⏱ 22:00</div>
+      </div>
+      <div class="card peach" style="display:flex;flex-direction:column;align-items:center;gap:1.4mm;padding:2.6mm 3mm 0;justify-content:space-between">
+        <div style="background:#fff;border-radius:4mm;padding:1.8mm 2.4mm;font-size:8.1pt;border:1.2px solid #F4D2C2;line-height:1.36"><b style="color:var(--night)">Jack:</b> "My bike's been broken for two months. Future Jack will fix it!" 🚲</div>
+        <img class="char" src="img/f/51-jack-stopwatch-peach.jpg" style="width:27mm">
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><span class="num">💬</span>Let's talk</h2>
+    <p class="instr">Say your answers out loud – or write them in your notebook.</p>
+    <div class="grid2" style="gap:2.4mm">
+      <div class="card teal" style="padding:2.2mm 3.6mm"><b>1.</b> What's one thing you've been putting off?</div>
+      <div class="card teal" style="padding:2.2mm 3.6mm"><b>2.</b> What do you do instead – your "spice jars"?</div>
+      <div class="card teal" style="padding:2.2mm 3.6mm"><b>3.</b> Do you work better with a deadline? Why?</div>
+      <div class="card teal" style="padding:2.2mm 3.6mm"><b>4.</b> What would "future you" say to you today?</div>
+    </div>
+  </div>
+  {{FOOT1}}
+</section>
+
+<!-- ================= PAGE 2 ================= -->
+<section class="page">
+  <div class="sec" style="margin-top:3mm">
+    <h2><span class="num">1</span>Key words <span class="tag">vocabulary</span><span class="tag pts">10 points</span></h2>
+    <p class="instr">Match each word or phrase (1–10) to its meaning (a–j). Write the letter in the box. 🧠 Then check at ⏱ 14:33 and ⏱ 15:52</p>
+    <div class="grid2" style="gap:5mm;align-items:start">
+      <table class="match">
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--night)">1.</b> to procrastinate</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--night)">2.</b> to put something off</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--night)">3.</b> to get round to</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--night)">4.</b> a deadline</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--night)">5.</b> at the last minute</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--night)">6.</b> momentum</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--night)">7.</b> chronic</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--night)">8.</b> overwhelmed</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--night)">9.</b> to revise (for an exam)</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--night)">10.</b> to forgive yourself</td></tr>
+      </table>
+      <div class="card" style="font-size:9pt;line-height:1.55">
+        <b>a)</b> to delay something to a later time<br>
+        <b>b)</b> the force that keeps something moving once it has started<br>
+        <b>c)</b> to delay doing something you should do, usually because you don't want to<br>
+        <b>d)</b> to study again to prepare for an exam (British English)<br>
+        <b>e)</b> the time or day by which you have to finish something<br>
+        <b>f)</b> to stop being angry with yourself for a mistake<br>
+        <b>g)</b> to finally do something, after a long time of not doing it<br>
+        <b>h)</b> happening again and again, for a long time<br>
+        <b>i)</b> at the latest possible time<br>
+        <b>j)</b> feeling that something is too big or difficult to deal with
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="bub">
+      <img class="char" src="img/f/03-lucy-did-you-know-w.jpg" style="width:20mm;flex:none">
+      <div class="txt"><b>Pronunciation corner 🔊</b> pro-<b style="color:var(--peach-d)">CRAS</b>-ti-nate · pro-cras-ti-<b style="color:var(--peach-d)">NA</b>-tion · mo-<b style="color:var(--peach-d)">MEN</b>-tum · <b style="color:var(--peach-d)">DEAD</b>-line · <span style="white-space:nowrap">o-ver-<b style="color:var(--peach-d)">WHELMED</b>.</span> Say it: <i>"I keep putting it off – let's just get it over with!"</i></div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><span class="num">2</span>First listen: the big idea <span class="tag">listening</span><span class="tag pts">2 points</span></h2>
+    <p class="instr">Watch the whole episode once without stopping. Which sentence is the <b>main message</b>? 🎧</p>
+    <div class="card white">
+      <div class="opt" style="font-size:9.6pt;margin:1.2mm 0"><span class="c">a</span>People put things off because they are lazy, so they need a better calendar.</div>
+      <div class="opt" style="font-size:9.6pt;margin:1.2mm 0"><span class="c">b</span>The best way to stop procrastinating is to be very hard on yourself.</div>
+      <div class="opt" style="font-size:9.6pt;margin:1.2mm 0"><span class="c">c</span>We put things off to escape a bad feeling – tiny first steps and being kind to yourself (and "future you") help.</div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="bub">
+      <div class="ava" style="width:22mm;height:22mm"><img src="img/f/06-jack-listening-lav.jpg" style="height:140%"></div>
+      <div class="txt"><b>Jack's tip:</b> First listen = the <b>big picture</b>. Don't stop the video and don't worry about every word. Second listen = the <b>details</b>. That's when you answer the 🎧 questions.</div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="card sage">
+      <b style="color:var(--night)">🔮 Predict before you listen!</b> <span class="small">(no points)</span> Seven of these words are in the episode. One is <b>not</b>. Circle the one you think you <b>won't</b> hear – then check while you listen.
+      <div class="chips predict-chips" style="margin-top:2mm;justify-content:center;gap:1.4mm"><span>kettle</span><span>spice jars</span><span>curtains</span><span>fridge</span><span>biscuits</span><span>bike</span><span>umbrella</span><span>dentist</span></div>
+    </div>
+  </div>
+  {{FOOT2}}
+</section>
+
+<!-- ================= PAGE 3 ================= -->
+<section class="page">
+  <div class="sec" style="margin-top:3mm;display:flex;justify-content:space-between;align-items:flex-start;gap:4mm">
+    <div>
+      <h2><span class="num">3</span>Know it or hear it? <span class="tag">quiz + listening</span><span class="tag pts">10 points</span></h2>
+      <p class="instr" style="margin-bottom:0">Circle a, b or c. Questions 🧠 1–5: you can probably answer them <b>before</b> you listen. Questions 🎧 6–10: listen to find the answer.</p>
+    </div>
+    <img class="char" src="img/f/31-duo-quiz-w.jpg" style="width:36mm;flex:none;margin-top:-2mm">
+  </div>
+  <div class="small" style="margin:2.4mm 0 1.6mm 10.8mm;font-weight:700;color:var(--sage-d)">🧠 YOU MIGHT ALREADY KNOW</div>
+  <div class="mc">
+    <div class="mcq"><div class="qq">1. "I keep ______ it off."</div><div class="opt"><span class="c">a</span>put</div><div class="opt"><span class="c">b</span>to put</div><div class="opt"><span class="c">c</span>putting</div><div class="hint">🧠 Grammar you know</div></div>
+    <div class="mcq"><div class="qq">2. "I finished my essay ______ the last minute."</div><div class="opt"><span class="c">a</span>at</div><div class="opt"><span class="c">b</span>in</div><div class="opt"><span class="c">c</span>on</div><div class="hint">🧠 Tricky – think about it!</div></div>
+    <div class="mcq"><div class="qq">3. Which sentence is correct?</div><div class="opt"><span class="c">a</span>I put off it.</div><div class="opt"><span class="c">b</span>I put it off.</div><div class="opt"><span class="c">c</span>I it put off.</div><div class="hint">🧠 Tricky – think about it!</div></div>
+    <div class="mcq"><div class="qq">4. "I finally bit the bullet." I…</div><div class="opt"><span class="c">a</span>ate something very hard</div><div class="opt"><span class="c">b</span>did something difficult I'd been avoiding</div><div class="opt"><span class="c">c</span>got very angry</div><div class="hint">🧠 Imagine it!</div></div>
+    <div class="mcq"><div class="qq">5. "I'll do it ______." (= at a later time)</div><div class="opt"><span class="c">a</span>after</div><div class="opt"><span class="c">b</span>last</div><div class="opt"><span class="c">c</span>later</div><div class="hint">🧠 Everyday English</div></div>
+    <div class="mcq" style="background:var(--sage);border-color:#BFD7C8;display:flex;align-items:center;gap:3mm"><span style="font-size:18pt">🎉</span><span style="font-size:9.1pt"><b style="color:var(--night)">How many did you know?</b><br>Now press play and test your ears!</span></div>
+  </div>
+  <div class="small" style="margin:3.4mm 0 1.6mm 10.8mm;font-weight:700;color:var(--peach-d)">🎧 LISTEN AND FIND OUT</div>
+  <div class="mc">
+    <div class="mcq"><div class="qq">6. How long did Lucy avoid the passport form?</div><div class="opt"><span class="c">a</span>three days</div><div class="opt"><span class="c">b</span>three weeks</div><div class="opt"><span class="c">c</span>three months</div><div class="hint">🎧 ⏱ 0:05</div></div>
+    <div class="mcq"><div class="qq">7. What did Lucy put in alphabetical order?</div><div class="opt"><span class="c">a</span>her books</div><div class="opt"><span class="c">b</span>her socks</div><div class="opt"><span class="c">c</span>her spice jars</div><div class="hint">🎧 ⏱ 0:05</div></div>
+    <div class="mcq"><div class="qq">8. About how many adults are chronic procrastinators?</div><div class="opt"><span class="c">a</span>15–20%</div><div class="opt"><span class="c">b</span>1–2%</div><div class="opt"><span class="c">c</span>50–60%</div><div class="hint">🎧 ⏱ 2:57</div></div>
+    <div class="mcq"><div class="qq">9. In the brain scanner, thinking about "you in ten years" looked a lot like thinking about…</div><div class="opt"><span class="c">a</span>your best friend</div><div class="opt"><span class="c">b</span>a stranger</div><div class="opt"><span class="c">c</span>your parents</div><div class="hint">🎧 ⏱ 5:54</div></div>
+    <div class="mcq"><div class="qq">10. What has Jack been putting off for two months?</div><div class="opt"><span class="c">a</span>calling his mum</div><div class="opt"><span class="c">b</span>cleaning the fridge</div><div class="opt"><span class="c">c</span>fixing the wheel on his bike</div><div class="hint">🎧 ⏱ 9:37</div></div>
+    <div class="mcq" style="background:var(--lav);border-color:var(--lav2);display:flex;align-items:center;gap:3mm"><span style="font-size:18pt">🧂</span><span style="font-size:9.1pt"><b style="color:var(--night)">Fun fact:</b> Lucy's spice jars went from <i>allspice</i> to <i>turmeric</i> – and they're still in alphabetical order!</span></div>
+  </div>
+  {{FOOT3}}
+</section>
+
+<!-- ================= PAGE 4 ================= -->
+<section class="page">
+  <div class="sec" style="margin-top:3mm">
+    <h2><span class="num">4</span>True or false? <span class="tag">listening</span><span class="tag pts">6 points</span></h2>
+    <p class="instr">Listen and circle <b>T</b> (true) or <b>F</b> (false). The ⏱ times help you find the answer.</p>
+    <table class="tf">
+      <tr><td class="n">1</td><td>Lucy had promised to visit her grandmother in the spring.</td><td class="ck"><span class="circ">T</span> <span class="circ">F</span></td><td class="tm">⏱ 0:05</td></tr>
+      <tr><td class="n">2</td><td>Tim Pychyl says procrastination is mainly a time management problem.</td><td class="ck"><span class="circ">T</span> <span class="circ">F</span></td><td class="tm">⏱ 3:40</td></tr>
+      <tr><td class="n">3</td><td>Avoiding a task makes us feel better for a long time.</td><td class="ck"><span class="circ">T</span> <span class="circ">F</span></td><td class="tm">⏱ 3:40</td></tr>
+      <tr><td class="n">4</td><td>People who saw an older version of their face saved more money.</td><td class="ck"><span class="circ">T</span> <span class="circ">F</span></td><td class="tm">⏱ 5:54</td></tr>
+      <tr><td class="n">5</td><td>Students who forgave themselves procrastinated more before the second exam.</td><td class="ck"><span class="circ">T</span> <span class="circ">F</span></td><td class="tm">⏱ 7:49</td></tr>
+      <tr><td class="n">6</td><td>The self-forgiveness study was a survey, so it shows a link, not definite proof.</td><td class="ck"><span class="circ">T</span> <span class="circ">F</span></td><td class="tm">⏱ 7:49</td></tr>
+    </table>
+  </div>
+
+  <div class="sec">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:4mm">
+      <div>
+        <h2><span class="num">5</span>Three procrastination studies 🔍 <span class="tag">listening</span><span class="tag pts">6 points</span></h2>
+        <p class="instr" style="margin-bottom:0">Which study is each sentence about? Write <b>A</b>, <b>B</b> or <b>C</b>. ⏱ 2:57 · 5:54 · 7:49</p>
+      </div>
+      <img class="char" src="img/f/20-jack-glasses-laptop-w.jpg" style="width:16mm;flex:none;margin-top:-4mm">
+    </div>
+    <div class="studies" style="margin-top:2mm">
+      <div style="background:var(--peach-l)"><b class="h" style="color:var(--peach-d)">A · How common? 📊</b>2007 · Piers Steel, University of Calgary</div>
+      <div style="background:var(--lav)"><b class="h" style="color:var(--mauve-d)">B · Future you 🧓</b>2009 · Hal Hershfield and colleagues, Stanford</div>
+      <div style="background:var(--sage)"><b class="h" style="color:var(--sage-d)">C · Forgive yourself 💜</b>2010 · Wohl, Pychyl &amp; Bennett, Carleton University</div>
+    </div>
+    <table class="tf" style="margin-top:1.6mm">
+      <tr><td class="n">1</td><td>People lay in a brain scanner and thought about different people.</td><td class="ck"><span class="box"></span></td></tr>
+      <tr><td class="n">2</td><td>It looked at hundreds of studies on procrastination.</td><td class="ck"><span class="box"></span></td></tr>
+      <tr><td class="n">3</td><td>First-year students had two big exams during the term.</td><td class="ck"><span class="box"></span></td></tr>
+      <tr><td class="n">4</td><td>About one in five adults put things off again and again.</td><td class="ck"><span class="box"></span></td></tr>
+      <tr><td class="n">5</td><td>"You in ten years" looked more like a famous actor you've never met.</td><td class="ck"><span class="box"></span></td></tr>
+      <tr><td class="n">6</td><td>Being kind to yourself after a mistake made it easier to start again.</td><td class="ck"><span class="box"></span></td></tr>
+    </table>
+  </div>
+
+  <div class="sec">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:4mm">
+      <div>
+        <h2><span class="num">6</span>The procrastination circle <span class="tag">new! complete the diagram</span><span class="tag pts">6 points</span></h2>
+        <p class="instr" style="margin-bottom:0">Write one word in each gap: <b>avoid · better · emotion · guilty · time · worse</b>. ⏱ 3:40</p>
+      </div>
+      <img class="char" src="img/f/75-lucy-a-bit-sad-w.jpg" style="width:14mm;flex:none;margin-top:-4mm">
+    </div>
+    <div class="circle" style="margin-top:2mm">
+      <div style="background:#EEE9F6"><b class="e">😟</b>A task makes you feel bad: bored, worried or unsure.</div>
+      <div style="background:#DCEFF3"><b class="e">🏃</b>So you <span class="blank s" style="min-width:12mm"></span> it. <span class="small">(1)</span></div>
+      <div style="background:#DDF1E3"><b class="e">😌</b>You feel <span class="blank s" style="min-width:12mm"></span> – but only for a few minutes. <span class="small">(2)</span></div>
+      <div style="background:#FDF1D9"><b class="e">⏳</b>Now there's less time, and you feel <span class="blank s" style="min-width:12mm"></span>. <span class="small">(3)</span></div>
+      <div style="background:#FBE1DE"><b class="e">😩</b>The task feels even <span class="blank s" style="min-width:12mm"></span>! <span class="small">(4)</span></div>
+    </div>
+    <div class="loop"><span>↺ … and the circle starts again</span></div>
+    <div class="card white" style="margin-top:3.6mm;padding:2mm 4mm;font-size:9.1pt">💬 Pychyl: "Procrastination is an <span class="blank s"></span> regulation problem, not a <span class="blank s"></span> management problem." <span class="small">(5, 6)</span></div>
+  </div>
+  <div class="sec">
+    <div class="bub">
+      <img class="char" src="img/f/73-lucy-calm-w.jpg" style="width:16mm;flex:none">
+      <div class="txt"><b>Lucy's tip:</b> If procrastination is about <b>feelings</b>, the solution isn't a better calendar. It's learning to deal with that uncomfortable feeling for a few minutes – and then just starting. 💜</div>
+    </div>
+  </div>
+  {{FOOT4}}
+</section>
+
+<!-- ================= PAGE 5 ================= -->
+<section class="page">
+  <div class="sec" style="margin-top:3mm;display:flex;justify-content:space-between;align-items:flex-start;gap:4mm">
+    <div>
+      <h2><span class="num">7</span>"Let's just get it over with!" <span class="tag">listening</span><span class="tag pts">10 points</span></h2>
+      <p class="instr" style="margin-bottom:0">A sister has an important exam next week – and she hasn't started studying. Listen at ⏱ 13:30 and write <b>one word</b> in each gap (1–8). Then answer A and B. The breakdown at ⏱ 14:33 can help.</p>
+    </div>
+    <img class="char" src="img/f/19-lucy-glasses-book-w.jpg" style="width:17mm;flex:none;margin-top:-3mm">
+  </div>
+  <div class="chat wide" style="margin-top:2mm;gap:.5mm">
+    <div class="msg l"><div class="ava"><img src="img/f/37-lucy-thinking-right-lav.jpg"></div><div class="b"><span class="who">LUCY</span>Ugh. I really need to start <span class="gap">1</span> for my exam.</div></div>
+    <div class="msg j"><div class="ava"><img src="img/f/15-jack-shrug-left-lav.jpg"></div><div class="b"><span class="who">JACK</span>You said that yesterday. And the day before. When is it again?</div></div>
+    <div class="msg l"><div class="ava"><img src="img/f/38-lucy-explaining-right-lav.jpg"></div><div class="b"><span class="who">LUCY</span>Next Thursday. I keep <span class="gap">2</span> it off. Every time I open my notes, I just feel <span class="gap">3</span>. There's so much to learn.</div></div>
+    <div class="msg j"><div class="ava"><img src="img/f/43-jack-explaining-left-lav.jpg"></div><div class="b"><span class="who">JACK</span>Okay, so don't try to learn it all tonight. What's the first topic?</div></div>
+    <div class="msg l"><div class="ava"><img src="img/f/11-lucy-asking-right-lav.jpg"></div><div class="b"><span class="who">LUCY</span>The first <span class="gap">4</span>, I suppose. But it's really long.</div></div>
+    <div class="msg j"><div class="ava"><img src="img/f/13-jack-talking-left-lav.jpg"></div><div class="b"><span class="who">JACK</span>Then just do ten minutes. Set a <span class="gap">5</span>. If you want to stop after ten minutes, you can stop.</div></div>
+    <div class="msg l"><div class="ava"><img src="img/f/09-lucy-talking-right-lav.jpg"></div><div class="b"><span class="who">LUCY</span>Only ten minutes? I can probably <span class="gap">6</span> that.</div></div>
+    <div class="msg j"><div class="ava"><img src="img/f/44-jack-embarrassed-left-lav.jpg"></div><div class="b"><span class="who">JACK</span>And give me your phone. You can have it back when the timer goes off.</div></div>
+    <div class="msg l"><div class="ava"><img src="img/f/36-lucy-surprised-right-lav.jpg"></div><div class="b"><span class="who">LUCY</span>Fine. Let's just get it <span class="gap">7</span> with.</div></div>
+    <div class="msg j"><div class="ava"><img src="img/f/45-jack-agreeing-left-lav.jpg"></div><div class="b"><span class="who">JACK</span>That's the <span class="gap">8</span>. You've got this.</div></div>
+    <div class="msg l"><div class="ava"><img src="img/f/12-lucy-laughing-right-lav.jpg"></div><div class="b"><span class="who">LUCY</span>Okay. Thanks. Honestly, I think the worrying is worse than the actual studying.</div></div>
+    <div class="msg j"><div class="ava"><img src="img/f/41-jack-laughing-left-lav.jpg"></div><div class="b"><span class="who">JACK</span>It usually is.</div></div>
+  </div>
+  <div class="grid2" style="margin-top:2.4mm;gap:3mm">
+    <div class="card" style="padding:2.2mm 4mm;font-size:9.2pt"><b style="color:var(--night)">A.</b> The exam is next <span class="blank" style="min-width:26mm"></span>.</div>
+    <div class="card" style="padding:2.2mm 4mm;font-size:9.2pt"><b style="color:var(--night)">B.</b> Jack takes her <span class="blank" style="min-width:24mm"></span> away.</div>
+  </div>
+
+  <div class="sec" style="margin-top:3.4mm">
+    <h2><span class="num">8</span>Phrases to steal <span class="tag">expressions</span><span class="tag pts">4 points</span></h2>
+    <p class="instr">Match each phrase from the chat (1–4) to its meaning (a–d). ⏱ 14:33</p>
+    <div class="grid2" style="gap:4mm;align-items:start">
+      <table class="match" style="font-size:9.2pt">
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--night)">1.</b> "I keep putting it off."</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--night)">2.</b> "I can probably manage that."</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--night)">3.</b> "Let's just get it over with."</td></tr>
+        <tr><td class="ans"><span class="box"></span></td><td><b style="color:var(--night)">4.</b> "That's the spirit!"</td></tr>
+      </table>
+      <div class="card" style="font-size:8.9pt;line-height:1.62">
+        <b>a)</b> Let's do it quickly, so it's finished.<br>
+        <b>b)</b> Great – I like your positive attitude!<br>
+        <b>c)</b> I delay it again and again.<br>
+        <b>d)</b> I can succeed in doing that.
+      </div>
+    </div>
+  </div>
+  {{FOOT5}}
+</section>
+
+<!-- ================= PAGE 6 ================= -->
+<section class="page">
+  <div class="sec" style="margin-top:3mm;display:flex;justify-content:space-between;align-items:flex-start;gap:4mm">
+    <div>
+      <h2><span class="num">9</span>Idioms for getting started <span class="tag">idioms</span><span class="tag pts">6 points</span></h2>
+      <p class="instr" style="margin-bottom:0">Complete each sentence with a word from the box. ⏱ 15:52</p>
+    </div>
+    <img class="char" src="img/f/47-jack-pointing-right-w.jpg" style="width:17mm;flex:none;margin-top:-3mm">
+  </div>
+  <div class="chips" style="margin:1.6mm 0 2mm 10.8mm"><span>ball</span><span>bullet</span><span>can</span><span>minute</span><span>present</span><span>round</span></div>
+  <table class="coll" style="margin-left:2mm">
+    <tr><td>1. 📞 "Should I call him tomorrow?" "There's no time like the <span class="blank s"></span>!"</td></tr>
+    <tr><td>2. 🧾 I finally bit the <span class="blank s"></span> and started my tax form.</td></tr>
+    <tr><td>3. ⚽ Let's get the <span class="blank s"></span> rolling with a quick meeting on Monday.</td></tr>
+    <tr><td>4. 🥫 Stop kicking the <span class="blank s"></span> down the road – deal with it now!</td></tr>
+    <tr><td>5. 🧳 He always packs his suitcase at the last <span class="blank s"></span>.</td></tr>
+    <tr><td>6. 🚲 I haven't got <span class="blank s"></span> to fixing my bike yet.</td></tr>
+  </table>
+  <div class="bub" style="margin-top:2.2mm">
+    <img class="char" src="img/f/02-jack-lightbulb-idea-w.jpg" style="width:17mm;flex:none">
+    <div class="txt"><b>Jack's tip:</b> <b>Kick the can down the road</b> 🥫 = instead of putting the can in the bin, you just kick it a little further. The problem doesn't go away – it waits for <b>future you</b>! And in American English, people say <i>get <b>around</b> to</i>.</div>
+  </div>
+
+  <div class="sec">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:4mm">
+      <div>
+        <h2><span class="num">10</span>If–then plans <span class="tag">new! plan it</span><span class="tag pts">6 points</span></h2>
+        <p class="instr" style="margin-bottom:0">Match each <b>if</b> (1–6) to a <b>then</b> (a–f). With an if–then plan, the decision is already made! ⏱ 10:21</p>
+      </div>
+      <img class="char" src="img/f/63-jack-at-work-w.jpg" style="width:15mm;flex:none;margin-top:-4mm">
+    </div>
+    <div class="phr" style="margin-top:2mm;grid-template-columns:1fr 1fr">
+      <table class="match ifthen">
+        <tr><td class="ans" style="width:8mm"><span class="box sm"></span></td><td><b style="color:var(--night)">1.</b> 🚌 If I'm on the bus to work,</td></tr>
+        <tr><td class="ans" style="width:8mm"><span class="box sm"></span></td><td><b style="color:var(--night)">2.</b> 🍽️ If it's seven o'clock and I've finished dinner,</td></tr>
+        <tr><td class="ans" style="width:8mm"><span class="box sm"></span></td><td><b style="color:var(--night)">3.</b> 📱 If I want to check my phone while I'm working,</td></tr>
+        <tr><td class="ans" style="width:8mm"><span class="box sm"></span></td><td><b style="color:var(--night)">4.</b> 😵 If I feel overwhelmed by a big task,</td></tr>
+        <tr><td class="ans" style="width:8mm"><span class="box sm"></span></td><td><b style="color:var(--night)">5.</b> 📅 If I miss a day,</td></tr>
+        <tr><td class="ans" style="width:8mm"><span class="box sm"></span></td><td><b style="color:var(--night)">6.</b> ☕ If I'm making my morning coffee,</td></tr>
+      </table>
+      <div class="card" style="font-size:8.9pt;line-height:2.2"><b>a)</b> then I'll put it in another room.<br><b>b)</b> then I'll forgive myself and start again tomorrow.<br><b>c)</b> then I'll listen to an English podcast.<br><b>d)</b> then I'll learn five new words.<br><b>e)</b> then I'll do fifteen minutes of English.<br><b>f)</b> then I'll write down the first three steps.<br></div>
+    </div>
+    <div class="bub" style="margin-top:2.2mm">
+      <img class="char" src="img/f/01-lucy-thumbs-up-w.jpg" style="width:16mm;flex:none">
+      <div class="txt"><b>Lucy's tip:</b> Psychologists call these <b>implementation intentions</b>. Connect your English to something you <b>already</b> do every day – the bus, your coffee, dinner – and you don't have to decide again. Write your own: <i>If <span class="blank" style="min-width:30mm"></span>, then I'll <span class="blank" style="min-width:34mm"></span>.</i></div>
+    </div>
+  </div>
+  {{FOOT6}}
+</section>
+
+<!-- ================= PAGE 7 ================= -->
+<section class="page">
+  <div class="sec" style="margin-top:3mm">
+    <h2><span class="num">11</span>Say it better <span class="tag">common mistakes</span><span class="tag pts">10 points</span></h2>
+    <p class="instr">These sentences sound unnatural. Write a more natural version (2 points each). ⏱ 19:25</p>
+    <table style="font-size:9.4pt">
+      <tr><td style="width:49%;padding:1.7mm 0">😐 1. "I am procrastinating my homework."</td><td>😊 <span class="blank l"></span></td></tr>
+      <tr><td style="padding:1.7mm 0">😐 2. "I did it in the last minute."</td><td>😊 <span class="blank l"></span></td></tr>
+      <tr><td style="padding:1.7mm 0">😐 3. "I will do it after."</td><td>😊 <span class="blank l"></span></td></tr>
+      <tr><td style="padding:1.7mm 0">😐 4. "I'm so lazy. I never finish anything."</td><td>😊 <span class="blank l"></span></td></tr>
+      <tr><td style="padding:1.7mm 0">😐 5. "Tomorrow I will begin, I promise."</td><td>😊 <span class="blank l"></span></td></tr>
+    </table>
+    <div class="bub" style="margin-top:2.4mm">
+      <img class="char" src="img/f/07-lucy-great-job-w.jpg" style="width:18mm;flex:none">
+      <div class="txt"><b>Lucy's tip:</b> <b>Procrastinate</b> usually has no object: <i>"I'm procrastinating."</i> To say <i>what</i> you're delaying, use <b>put off</b>: <i>"I'm putting off my homework."</i> And <b>first thing</b> = early, before anything else: <i>"I'll start first thing tomorrow."</i></div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:4mm">
+      <div>
+        <h2><span class="num">✅</span>Put it off – or put off it? <span class="tag fun">tick · no points</span></h2>
+        <p class="instr" style="margin-bottom:0">Tick the right one. Remember: with <b>it</b> or <b>them</b>, the small word goes at the <b>end</b> – and after <b>keep</b> and <b>get round to</b>, use <b>-ing</b>. ⏱ 15:52</p>
+      </div>
+      <img class="char" src="img/f/48-lucy-holding-blank-card-w.jpg" style="width:14mm;flex:none;margin-top:-3mm">
+    </div>
+    <div style="margin-top:1.6mm">
+      <div class="tm2" style="grid-template-columns:1fr 28mm 28mm"><span>1. Please don't put ______ again! (it)</span><span class="claim ed"><span class="box"></span>off it</span><span class="claim ing"><span class="box"></span>it off</span></div>
+      <div class="tm2" style="grid-template-columns:1fr 28mm 28mm"><span>2. Stop putting ______ – start now! (them)</span><span class="claim ed"><span class="box"></span>them off</span><span class="claim ing"><span class="box"></span>off them</span></div>
+      <div class="tm2" style="grid-template-columns:1fr 28mm 28mm"><span>3. I keep ______ my homework.</span><span class="claim ed"><span class="box"></span>to put off</span><span class="claim ing"><span class="box"></span>putting off</span></div>
+      <div class="tm2" style="grid-template-columns:1fr 28mm 28mm"><span>4. I finally got round to ______ my bike.</span><span class="claim ed"><span class="box"></span>fixing</span><span class="claim ing"><span class="box"></span>fix</span></div>
+      <div class="tm2" style="grid-template-columns:1fr 28mm 28mm"><span>5. I haven't got round ______ it yet.</span><span class="claim ed"><span class="box"></span>to</span><span class="claim ing"><span class="box"></span>for</span></div>
+      <div class="tm2" style="grid-template-columns:1fr 28mm 28mm"><span>6. Why do you always leave it ______ the last minute?</span><span class="claim ed"><span class="box"></span>in</span><span class="claim ing"><span class="box"></span>until</span></div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="card teal" style="padding:2.6mm 4mm">
+      <b style="color:var(--night);font-size:9.6pt">💭 Name the feeling!</b> <span class="small">(no points) Lucy's first tip. When you avoid something, ask: "What am I feeling right now?" – then try the fix. ⏱ 10:21</span>
+      <div class="feel" style="margin-top:1.8mm">
+        <div style="background:#fff"><b>🥱 bored</b>Make it a game: set a timer for two minutes.</div>
+        <div style="background:#fff"><b>😰 scared of doing it badly</b>"The first try can be messy. I'll improve it later."</div>
+        <div style="background:#fff"><b>🤷 don't know where to start</b>Write down the first three steps.</div>
+        <div style="background:#fff"><b>😵 overwhelmed</b>Do only the smallest part – one page, one question.</div>
+      </div>
+      <div style="font-size:9pt;margin-top:2mm">Something I'm avoiding: <span class="blank" style="min-width:42mm"></span> · I feel: <span class="blank" style="min-width:30mm"></span> · My fix: <span class="blank" style="min-width:34mm"></span></div>
+    </div>
+  </div>
+  <div class="sec">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:4mm">
+      <div>
+        <h2><span class="num">🐜</span>Make the first step tiny! <span class="tag fun">write · no points</span></h2>
+        <p class="instr" style="margin-bottom:0">Starting is like pushing a heavy car – the first push is the hardest. Turn each big task into a tiny first step. ⏱ 10:21</p>
+      </div>
+      <img class="char" src="img/f/55-jack-thumbs-up-w.jpg" style="width:14mm;flex:none;margin-top:-3mm">
+    </div>
+    <table class="friend tiny" style="margin-top:1mm">
+      <tr><td class="i" style="color:var(--night);width:40%">😩 Study English for two hours</td><td>🐜 <i>Open my book and read one page.</i></td></tr>
+      <tr><td class="i" style="color:var(--night)">😩 Clean the whole flat</td><td>🐜 <span class="blank l" style="min-width:76mm"></span></td></tr>
+      <tr><td class="i" style="color:var(--night)">😩 Fix my bike (Jack!)</td><td>🐜 <span class="blank l" style="min-width:76mm"></span></td></tr>
+    </table>
+  </div>
+  {{FOOT7}}
+</section>
+
+<!-- ================= PAGE 8 ================= -->
+<section class="page">
+  <div class="sec" style="margin-top:3mm;display:flex;justify-content:space-between;align-items:flex-start;gap:4mm">
+    <div>
+      <h2><span class="num">12</span>Clue word search + secret message <span class="tag">puzzle</span><span class="tag pts">10 points</span></h2>
+      <p class="instr" style="margin-bottom:0"><b>Step 1:</b> Complete each clue – the first letter and the number of letters are given (1 point each). <b>Step 2:</b> Find the 10 words in the grid. They go → ↓ ↘ or ↗ and never cross each other.</p>
+    </div>
+    <img class="char" src="img/f/50-lucy-puzzle-piece-w.jpg" style="width:20mm;flex:none;margin-top:-3mm">
+  </div>
+  <div style="display:grid;grid-template-columns:1fr auto;gap:3mm;margin-top:2.2mm;align-items:center">
+    <div class="card white clues" style="padding:2.4mm 3mm">
+      <div><span class="n">1</span><span>Lucy avoided her <span style="white-space:nowrap"><span class="slots"><b class="sl1">p</b><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span></span></span> form for three weeks.</span></div>
+      <div><span class="n">2</span><span>Once you start, you keep going: <span style="white-space:nowrap"><span class="slots"><b class="sl1">m</b><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span></span>.</span></span></div>
+      <div><span class="n">3</span><span>The day you must finish by: a <span style="white-space:nowrap"><span class="slots"><b class="sl1">d</b><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span></span>.</span></span></div>
+      <div><span class="n">4</span><span>Lucy washed the kitchen <span style="white-space:nowrap"><span class="slots"><b class="sl1">c</b><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span></span>.</span></span></div>
+      <div><span class="n">5</span><span>Grandma bought Lucy's favourite <span style="white-space:nowrap"><span class="slots"><b class="sl1">b</b><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span></span>.</span></span></div>
+      <div><span class="n">6</span><span>To our brain, future you is like a <span style="white-space:nowrap"><span class="slots"><b class="sl1">s</b><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span></span>.</span></span></div>
+      <div><span class="n">7</span><span>Do the hard thing: bite the <span style="white-space:nowrap"><span class="slots"><b class="sl1">b</b><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span></span>.</span></span></div>
+      <div><span class="n">8</span><span>Lucy put her <span style="white-space:nowrap"><span class="slots"><b class="sl1">s</b><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span></span></span> in A–Z order.</span></div>
+      <div><span class="n">9</span><span>Just two minutes – set a <span style="white-space:nowrap"><span class="slots"><b class="sl1">t</b><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span></span>!</span></span></div>
+      <div><span class="n">10</span><span>The easy escape: your <span style="white-space:nowrap"><span class="slots"><b class="sl1">p</b><span class="sl"></span><span class="sl"></span><span class="sl"></span><span class="sl"></span></span>.</span></span></div>
+    </div>
+    <div><table class="ws"><tr><td>D</td><td>M</td><td>C</td><td>U</td><td>R</td><td>T</td><td>A</td><td>I</td><td>N</td><td>S</td></tr><tr><td>E</td><td>T</td><td>O</td><td>S</td><td>P</td><td>I</td><td>C</td><td>E</td><td>S</td><td>S</td></tr><tr><td>A</td><td>P</td><td>H</td><td>M</td><td>T</td><td>I</td><td>M</td><td>E</td><td>R</td><td>T</td></tr><tr><td>D</td><td>I</td><td>A</td><td>S</td><td>E</td><td>M</td><td>I</td><td>T</td><td>G</td><td>R</td></tr><tr><td>L</td><td>P</td><td>H</td><td>S</td><td>T</td><td>N</td><td>E</td><td>O</td><td>N</td><td>A</td></tr><tr><td>I</td><td>H</td><td>L</td><td>Y</td><td>S</td><td>L</td><td>T</td><td>T</td><td>A</td><td>N</td></tr><tr><td>N</td><td>O</td><td>K</td><td>E</td><td>L</td><td>P</td><td>E</td><td>U</td><td>L</td><td>G</td></tr><tr><td>E</td><td>N</td><td>E</td><td>U</td><td>V</td><td>E</td><td>O</td><td>N</td><td>M</td><td>E</td></tr><tr><td>M</td><td>E</td><td>B</td><td>I</td><td>N</td><td>U</td><td>T</td><td>R</td><td>E</td><td>R</td></tr><tr><td>B</td><td>I</td><td>S</td><td>C</td><td>U</td><td>I</td><td>T</td><td>S</td><td>T</td><td>S</td></tr></table></div>
+  </div>
+  <div class="card sage" style="margin-top:2.6mm;padding:2.6mm 4mm">
+    <b style="color:var(--night)">🤫 Step 3 – the secret message</b> <span class="small">(no points)</span> Cross out the 10 words. Then write the letters that are left, row by row, from left to right. It's what Lucy thinks now, whenever she wants to put something off!
+    <div class="msgrow" style="margin-top:2.6mm"><span class="mw"><span class="mb"></span><span class="mb"></span><span class="mb"></span><span class="mb"></span></span><span class="mw"><span class="mb"></span><span class="mb"></span><span class="mb"></span><span class="mb"></span><span class="mb"></span></span><span class="mw"><span class="mb"></span><span class="mb"></span><span class="mb"></span><span class="mb"></span></span><span class="mw"><span class="mb"></span><span class="mb"></span><span class="mb"></span><span class="mb"></span></span><span class="mw"><span class="mb"></span><span class="mb"></span><span class="mb"></span><span class="mb"></span><span class="mb"></span><span class="mb"></span></span><span class="mw"><span class="mb"></span><span class="mb"></span><span class="mb"></span><span class="mb"></span><span class="mb"></span><span class="mb"></span><span class="mb"></span><span class="ap">.</span></span></div>
+  </div>
+
+  <div class="sec">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:4mm">
+      <div>
+        <h2><span class="num">13</span>Lucy's passport story 🛂 <span class="tag">listening</span><span class="tag pts">6 points</span></h2>
+        <p class="instr" style="margin-bottom:0">Listen at ⏱ 0:05 and ⏱ 22:00. Put the events in the right order. Write 1–6 in the boxes.</p>
+      </div>
+      <img class="char" src="img/f/28-lucy-travel-w.jpg" style="width:16mm;flex:none;margin-top:-3mm">
+    </div>
+    <div class="story" style="margin-top:2mm">
+      <div class="ev"><span class="box"></span><span class="e">📞</span><span>Her grandmother called: "I've bought your favourite biscuits!"</span></div>
+      <div class="ev"><span class="box"></span><span class="e">💻</span><span>Lucy opened the form and thought, "I'll do this after a cup of tea."</span></div>
+      <div class="ev"><span class="box"></span><span class="e">✈️</span><span>The form took eleven minutes – the passport came ten days before her flight.</span></div>
+      <div class="ev"><span class="box"></span><span class="e">🧂</span><span>She put all her spice jars in alphabetical order.</span></div>
+      <div class="ev"><span class="box"></span><span class="e">⏱️</span><span>She set a two-minute timer and answered the first question.</span></div>
+      <div class="ev"><span class="box"></span><span class="e">🧽</span><span>She washed the curtains and cleaned behind the fridge.</span></div>
+    </div>
+    <div class="card teal" style="margin-top:2.4mm;padding:2.4mm 4mm"><b style="color:var(--night)">Think about it 💭</b> <span class="small">(no points)</span> Why did the two-minute timer work? Use the word <b>momentum</b>.<div class="lines"></div><div class="lines"></div></div>
+  </div>
+  {{FOOT8}}
+</section>
+
+<!-- ================= PAGE 9 ================= -->
+<section class="page">
+  <div class="sec" style="margin-top:3mm;display:flex;justify-content:space-between;align-items:flex-start;gap:4mm">
+    <div>
+      <h2><span class="num">14</span>Your turn <span class="tag">writing</span><span class="tag pts">8 points</span></h2>
+      <p class="instr" style="margin-bottom:0">2 points for each good sentence.</p>
+    </div>
+    <img class="char" src="img/f/05-lucy-writing-w.jpg" style="width:17mm;flex:none;margin-top:-3mm">
+  </div>
+  <div class="grid2" style="margin-top:2.2mm;gap:3mm;align-items:stretch">
+    <div class="card" style="padding:2.6mm 4mm">
+      <b style="color:var(--night);font-size:9.2pt">A. What I've been putting off 🙈</b>
+      <div class="small" style="margin-top:1mm">What is it, and how does it make you feel? <i>e.g. "I've been putting off a phone call to my bank, because I'm worried it'll take ages."</i></div>
+      <div class="lines"></div><div class="lines"></div>
+    </div>
+    <div class="card peach" style="padding:2.6mm 4mm">
+      <b style="color:var(--night);font-size:9.2pt">B. Dear future me 💌</b>
+      <div class="small" style="margin-top:1mm">Write a short note to "future you", like Jack. <i>e.g. "Dear Friday Maria, I've already done the hard part for you. You're welcome!"</i></div>
+      <div class="lines"></div><div class="lines"></div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:4mm">
+      <div>
+        <h2><span class="num">⏱</span>My two-minute week <span class="tag fun">your 7-day mission</span></h2>
+        <p class="instr" style="margin-bottom:0">Every day, choose one small thing you've been putting off. Set a timer for two minutes and start. You're allowed to stop – but you probably won't!</p>
+      </div>
+      <img class="char" src="img/f/59-jack-phone-w.jpg" style="width:15mm;flex:none">
+    </div>
+    <table class="log week" style="margin-top:2mm">
+      <tr><th>Day</th><th>The thing I put off</th><th>Did I keep going after two minutes?</th><th>Done?</th></tr>
+      <tr><td class="d">1</td><td class="a">📧 a message I've avoided</td><td></td><td class="c"><span class="box sm"></span></td></tr>
+      <tr><td class="d">2</td><td class="a">📝 a form or a task</td><td></td><td class="c"><span class="box sm"></span></td></tr>
+      <tr><td class="d">3</td><td class="a">📞 a phone call</td><td></td><td class="c"><span class="box sm"></span></td></tr>
+      <tr><td class="d">4</td><td class="a">📚 two minutes of English</td><td></td><td class="c"><span class="box sm"></span></td></tr>
+      <tr><td class="d">5</td><td class="a">🔧 a small repair</td><td></td><td class="c"><span class="box sm"></span></td></tr>
+      <tr><td class="d">6</td><td class="a">🗂️ the hardest task first</td><td></td><td class="c"><span class="box sm"></span></td></tr>
+      <tr><td class="d">7</td><td class="a">💌 a note to future me</td><td></td><td class="c"><span class="box sm"></span></td></tr>
+    </table>
+  </div>
+
+  <div class="sec">
+    <div class="pocket">
+      <span class="sc">✂️ Cut out and keep in your pocket</span>
+      <div class="pc">
+        <div><b style="color:var(--peach-d)">🙈 DELAYING</b>I keep putting it off.<br>I haven't got round to it.<br>I'll do it later.</div>
+        <div><b style="color:var(--sage-d)">🚀 STARTING</b>Let's get the ball rolling.<br>I finally bit the bullet.<br>Let's get it over with.</div>
+        <div><b style="color:var(--mauve-d)">💜 BEING KIND</b>That happened – I'll start again.<br>That's the spirit!<br>You've got this.</div>
+        <div><b style="color:#C0392B">⏱️ TRICKS</b>just two minutes<br>phone in another room<br>if–then plans</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><span class="num">✓</span>Can you do it now?</h2>
+    <table class="cando" style="margin-top:1.4mm">
+      <tr><th style="text-align:left">I can…</th><th>Not yet</th><th>Almost</th><th>Yes!</th></tr>
+      <tr><td>explain why procrastination is about feelings, not laziness.</td><td class="f">😟</td><td class="f">🙂</td><td class="f">😄</td></tr>
+      <tr><td>use put off, get round to and at the last minute correctly.</td><td class="f">😟</td><td class="f">🙂</td><td class="f">😄</td></tr>
+      <tr><td>make an if–then plan for my English practice.</td><td class="f">😟</td><td class="f">🙂</td><td class="f">😄</td></tr>
+      <tr><td>use idioms like "bite the bullet" and "get the ball rolling".</td><td class="f">😟</td><td class="f">🙂</td><td class="f">😄</td></tr>
+    </table>
+  </div>
+
+  <div class="sec">
+    <div class="bub">
+      <img class="char" src="img/f/52-lucy-phone-comment-w.jpg" style="width:19mm;flex:none">
+      <div class="txt"><b>Share it with us!</b> Tell us in the comments what you've been putting off – and whether you <b>got round to it</b>. Did you <b>bite the bullet</b>? Did you <b>get the ball rolling</b>? And have you ever organised something silly to avoid something important? 🧂😅</div>
+    </div>
+  </div>
+  {{FOOT9}}
+</section>
+
+<!-- ================= PAGE 10 (KEY) ================= -->
+<section class="page key">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-top:2mm">
+    <h2><span class="num">✓</span>Answer key</h2>
+    <span class="small">Count your points and write your score on page 1!</span>
+  </div>
+  <div class="keycols">
+   <div>
+    <div class="k"><h3>0 · Warm-up &amp; predict</h3><p>Guess: a – only eleven minutes! · Predict: <b>umbrella</b> ☂️ isn't in the episode.</p></div>
+    <div class="k"><h3>1 · Key words · 2 · The big idea</h3><p>1 c · 2 a · 3 g · 4 e · 5 i · 6 b · 7 h · 8 j · 9 d · 10 f<br>Big idea: c (2 points)</p></div>
+    <div class="k"><h3>3 · Know it or hear it?</h3><p>1 c · 2 a · 3 b · 4 b · 5 c · 6 b · 7 c · 8 a · 9 b · 10 c</p></div>
+    <div class="k"><h3>4 · True or false?</h3><p>1 T · 2 F (it's an emotion regulation problem) · 3 F (only for a few minutes) · 4 T · 5 F (they procrastinated less) · 6 T</p></div>
+    <div class="k"><h3>5 · Three studies · 6 · The circle</h3><p>5: 1 B · 2 A · 3 C · 4 A · 5 B · 6 C<br>6: 1 avoid · 2 better · 3 guilty · 4 worse · 5 emotion · 6 time</p></div>
+    <div class="k"><h3>7 · "Let's just get it over with!"</h3><p>1 revising · 2 putting · 3 overwhelmed · 4 chapter · 5 timer · 6 manage · 7 over · 8 spirit · A Thursday · B phone</p></div>
+    <div class="k"><h3>8 · Phrases to steal</h3><p>1 c · 2 d · 3 a · 4 b</p></div>
+   </div>
+   <div>
+    <div class="k"><h3>9 · Idioms · 10 · If–then plans</h3><p>9: 1 present · 2 bullet · 3 ball · 4 can · 5 minute · 6 round<br>10: 1 c · 2 e · 3 a · 4 f · 5 b · 6 d</p></div>
+    <div class="k"><h3>11 · Say it better (2 points each)</h3><p>1 I'm putting off my homework. / I'm procrastinating. · 2 I did it at the last minute. · 3 I'll do it later. / I'll do it in a bit. · 4 I've been putting this off. Let me do a small part now. · 5 I'll start first thing tomorrow.<br><i>Put it off?</i> 1 it off · 2 them off · 3 putting off · 4 fixing · 5 to · 6 until</p></div>
+    <div class="k" style="display:grid;grid-template-columns:1fr auto;gap:2.4mm;align-items:center"><div><h3>12 · Word search (1 point per word)</h3><p>1 passport · 2 momentum · 3 deadline · 4 curtains · 5 biscuits · 6 stranger · 7 bullet · 8 spices · 9 timer · 10 phone<br><b>Secret:</b> This might only take eleven minutes.</p></div><svg viewBox="0 0 100 100" style="width:34mm;height:34mm;font-family:Poppins,sans-serif;display:block"><rect width="100" height="100" rx="3" fill="#fff"/><line x1="15.0" y1="25.0" x2="85.0" y2="95.0" stroke="#F2AE94" stroke-width="8.2" stroke-linecap="round" opacity=".85"/><line x1="15.0" y1="5.0" x2="85.0" y2="75.0" stroke="#9ECBB4" stroke-width="8.2" stroke-linecap="round" opacity=".85"/><line x1="5.0" y1="5.0" x2="5.0" y2="75.0" stroke="#B9A9DA" stroke-width="8.2" stroke-linecap="round" opacity=".85"/><line x1="25.0" y1="5.0" x2="95.0" y2="5.0" stroke="#9CCAD6" stroke-width="8.2" stroke-linecap="round" opacity=".85"/><line x1="5.0" y1="95.0" x2="75.0" y2="95.0" stroke="#F5CF7A" stroke-width="8.2" stroke-linecap="round" opacity=".85"/><line x1="95.0" y1="15.0" x2="95.0" y2="85.0" stroke="#F2AE94" stroke-width="8.2" stroke-linecap="round" opacity=".85"/><line x1="25.0" y1="85.0" x2="75.0" y2="35.0" stroke="#9ECBB4" stroke-width="8.2" stroke-linecap="round" opacity=".85"/><line x1="35.0" y1="15.0" x2="85.0" y2="15.0" stroke="#B9A9DA" stroke-width="8.2" stroke-linecap="round" opacity=".85"/><line x1="45.0" y1="25.0" x2="85.0" y2="25.0" stroke="#9CCAD6" stroke-width="8.2" stroke-linecap="round" opacity=".85"/><line x1="15.0" y1="45.0" x2="15.0" y2="85.0" stroke="#F5CF7A" stroke-width="8.2" stroke-linecap="round" opacity=".85"/><text x="5.0" y="7.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">D</text><text x="15.0" y="7.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">M</text><text x="25.0" y="7.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">C</text><text x="35.0" y="7.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">U</text><text x="45.0" y="7.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">R</text><text x="55.0" y="7.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">T</text><text x="65.0" y="7.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">A</text><text x="75.0" y="7.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">I</text><text x="85.0" y="7.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">N</text><text x="95.0" y="7.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">S</text><text x="5.0" y="17.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">E</text><text x="15.0" y="17.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">T</text><text x="25.0" y="17.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">O</text><text x="35.0" y="17.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">S</text><text x="45.0" y="17.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">P</text><text x="55.0" y="17.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">I</text><text x="65.0" y="17.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">C</text><text x="75.0" y="17.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">E</text><text x="85.0" y="17.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">S</text><text x="95.0" y="17.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">S</text><text x="5.0" y="27.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">A</text><text x="15.0" y="27.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">P</text><text x="25.0" y="27.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">H</text><text x="35.0" y="27.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">M</text><text x="45.0" y="27.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">T</text><text x="55.0" y="27.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">I</text><text x="65.0" y="27.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">M</text><text x="75.0" y="27.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">E</text><text x="85.0" y="27.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">R</text><text x="95.0" y="27.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">T</text><text x="5.0" y="37.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">D</text><text x="15.0" y="37.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">I</text><text x="25.0" y="37.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">A</text><text x="35.0" y="37.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">S</text><text x="45.0" y="37.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">E</text><text x="55.0" y="37.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">M</text><text x="65.0" y="37.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">I</text><text x="75.0" y="37.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">T</text><text x="85.0" y="37.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">G</text><text x="95.0" y="37.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">R</text><text x="5.0" y="47.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">L</text><text x="15.0" y="47.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">P</text><text x="25.0" y="47.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">H</text><text x="35.0" y="47.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">S</text><text x="45.0" y="47.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">T</text><text x="55.0" y="47.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">N</text><text x="65.0" y="47.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">E</text><text x="75.0" y="47.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">O</text><text x="85.0" y="47.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">N</text><text x="95.0" y="47.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">A</text><text x="5.0" y="57.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">I</text><text x="15.0" y="57.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">H</text><text x="25.0" y="57.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">L</text><text x="35.0" y="57.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">Y</text><text x="45.0" y="57.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">S</text><text x="55.0" y="57.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">L</text><text x="65.0" y="57.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">T</text><text x="75.0" y="57.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">T</text><text x="85.0" y="57.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">A</text><text x="95.0" y="57.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">N</text><text x="5.0" y="67.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">N</text><text x="15.0" y="67.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">O</text><text x="25.0" y="67.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">K</text><text x="35.0" y="67.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">E</text><text x="45.0" y="67.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">L</text><text x="55.0" y="67.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">P</text><text x="65.0" y="67.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">E</text><text x="75.0" y="67.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">U</text><text x="85.0" y="67.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">L</text><text x="95.0" y="67.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">G</text><text x="5.0" y="77.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">E</text><text x="15.0" y="77.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">N</text><text x="25.0" y="77.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">E</text><text x="35.0" y="77.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">U</text><text x="45.0" y="77.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">V</text><text x="55.0" y="77.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">E</text><text x="65.0" y="77.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">O</text><text x="75.0" y="77.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">N</text><text x="85.0" y="77.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">M</text><text x="95.0" y="77.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">E</text><text x="5.0" y="87.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">M</text><text x="15.0" y="87.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">E</text><text x="25.0" y="87.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">B</text><text x="35.0" y="87.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">I</text><text x="45.0" y="87.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">N</text><text x="55.0" y="87.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">U</text><text x="65.0" y="87.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">T</text><text x="75.0" y="87.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">R</text><text x="85.0" y="87.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">E</text><text x="95.0" y="87.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">R</text><text x="5.0" y="97.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">B</text><text x="15.0" y="97.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">I</text><text x="25.0" y="97.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">S</text><text x="35.0" y="97.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">C</text><text x="45.0" y="97.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">U</text><text x="55.0" y="97.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">I</text><text x="65.0" y="97.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">T</text><text x="75.0" y="97.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">S</text><text x="85.0" y="97.3" text-anchor="middle" font-size="6.2" font-weight="700" fill="#1B2147">T</text><text x="95.0" y="97.3" text-anchor="middle" font-size="6.2" font-weight="500" fill="#A99BC2">S</text></svg></div>
+    <div class="k"><h3>13 · The passport story · 14 · Your turn</h3><p>1 💻 "after a cup of tea" · 2 🧂 spice jars · 3 🧽 curtains and fridge · 4 📞 Grandma called · 5 ⏱️ two-minute timer · 6 ✈️ eleven minutes<br><i>Think about it, e.g.:</i> once she started, she got some momentum and just kept going.<br>14: your own answers – 2 points per good sentence.</p></div>
+    <div class="k"><h3>Your score</h3><p>90–100 🏆 <b>No time like the present!</b> · 70–89 🚀 <b>Great momentum</b> · 50–69 ⏱️ <b>Two more minutes</b> · 0–49 🧂 <b>Still sorting the spices – try again!</b></p></div>
+   </div>
+  </div>
+  <div style="display:grid;grid-template-columns:auto 1fr auto;gap:4mm;align-items:center;margin-top:2.6mm;background:var(--night);border-radius:5mm;padding:3.2mm 4.6mm;color:#F8E3C4">
+    <img src="img/qr.png" style="width:24mm;height:24mm;border-radius:2mm;background:#fff;padding:1mm">
+    <div style="font-size:8.8pt;line-height:1.5"><b style="font-size:11pt;color:var(--peach)">Enjoyed this worksheet? 🎉</b><br>Scan to subscribe to <b>Daily Speak English</b> – new episodes with Jack and Lucy. You didn't put this off – you did it! And remember: future you is not a stranger. Be kind to them. 💜<br>More free worksheets: <b style="color:#fff">dailyspeakenglish.github.io/worksheets</b></div>
+    <img class="char" src="img/f/66-duo-podcast-night.jpg" style="width:40mm">
+  </div>
+  {{FOOT10}}
+</section>
+
+</body>
+</html>
