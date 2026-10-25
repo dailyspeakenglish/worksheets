@@ -1,0 +1,47 @@
+{
+ "max_cols": 14,
+ "max_rows": 12,
+ "seed": 1,
+ "words": [
+  [
+   "TOMATOES",
+   "Red fruits that many people think are vegetables – Jack grew five of them."
+  ],
+  [
+   "BALCONY",
+   "Jack's little garden was on his ___."
+  ],
+  [
+   "BASKET",
+   "In the photo, the neighbour was holding a huge ___."
+  ],
+  [
+   "SEEDS",
+   "The neighbour gave Jack a little bag of ___ to try next year."
+  ],
+  [
+   "BIRDS",
+   "In the neighbour's first year, the ___ ate everything!"
+  ],
+  [
+   "NOTEBOOK",
+   "The neighbour writes down everything that went wrong in his garden ___."
+  ],
+  [
+   "BRONZE",
+   "Third place – but often happier than second: a ___ medal."
+  ],
+  [
+   "PODIUM",
+   "“I nearly didn't get a medal at all – I'm on the ___!”"
+  ],
+  [
+   "BROTHER",
+   "Jack compares himself to his very organised older ___."
+  ],
+  [
+   "PROGRESS",
+   "Moving forward and getting better (it's uncountable!): ___."
+  ]
+ ]
+}
